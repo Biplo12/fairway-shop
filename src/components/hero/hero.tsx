@@ -3,26 +3,13 @@ import { Search, User, ShoppingBag } from "lucide-react";
 
 import { Mark } from "@/components/brand/mark";
 import { Media } from "@/components/ui/media";
+import { Arrow } from "@/components/ui/arrow";
 
 const tabs = [
   { href: "/", name: "Home Page", index: "01", current: true },
   { href: "/shop", name: "Equipment Store", index: "02", current: false },
   { href: "/custom", name: "Fitting", index: "03", current: false },
 ];
-
-/** Long rule + arrowhead, the reference's link marker. */
-function Arrow({ className = "" }: { className?: string }) {
-  return (
-    <svg
-      aria-hidden
-      viewBox="0 0 34 8"
-      className={`h-2 w-[34px] shrink-0 ${className}`}
-      fill="none"
-    >
-      <path d="M0 4h32M28 1l4 3-4 3" stroke="currentColor" strokeWidth="1" />
-    </svg>
-  );
-}
 
 export function Hero() {
   return (
@@ -74,10 +61,10 @@ export function Hero() {
             />
 
             <div className="rise" style={{ animationDelay: "440ms" }}>
-              <h2 className="text-[clamp(2.5rem,4vw,3.75rem)] font-normal leading-[1.05] tracking-[-0.025em]">
+              <h2 className="text-[clamp(2.75rem,5vw,4.5rem)] font-normal leading-[1.05] tracking-[-0.025em]">
                 Consistency
               </h2>
-              <p className="mt-5 text-[1.0625rem] leading-[1.6] text-charcoal/85">
+              <p className="mt-5 text-[1.1875rem] leading-[1.55] text-charcoal/85">
                 Two years on the dimple pattern. Another in{" "}
                 <Link href="/about" className="underline underline-offset-2">
                   the wind off the North Sea
@@ -170,16 +157,16 @@ export function Hero() {
             </div>
 
             <div
-              className="rise my-auto max-w-[34rem]"
+              className="rise my-auto max-w-[38rem]"
               style={{ animationDelay: "420ms" }}
             >
               <span className="inline-flex items-center rounded-full bg-white px-3.5 py-2 text-[0.75rem] uppercase leading-none tracking-[0.02em] text-charcoal">
                 Est. 1987
               </span>
-              <h1 className="mt-5 text-[clamp(2.25rem,4.2vw,3.5rem)] font-normal leading-[1.05] tracking-[-0.025em] text-white">
+              <h1 className="mt-5 text-[clamp(2.5rem,4.6vw,4rem)] font-normal leading-[1.05] tracking-[-0.025em] text-white">
                 Play the long game
               </h1>
-              <p className="mt-4 text-[1rem] leading-[1.6] text-white/90">
+              <p className="mt-4 text-[1.125rem] leading-[1.55] text-white/90">
                 Equipment designed around the way golf is actually played. Made
                 for the shot, built for the story.
               </p>

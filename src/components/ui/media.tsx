@@ -25,7 +25,7 @@ export function Media({
   className = "",
   style,
   priority = false,
-  quality = 88,
+  quality = 90,
 }: {
   src: string;
   alt: string;
