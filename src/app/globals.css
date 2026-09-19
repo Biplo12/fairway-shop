@@ -3,13 +3,13 @@
 @theme {
   /* Brand palette — CLAUDE.md §15. One light palette; dark is an editorial
      device (forest cards), never a theme. */
-  --color-offwhite: #f3f1ec;
-  --color-paper: #ece9e2;
+  --color-offwhite: #f6f6f6;
+  --color-paper: #efefef;
   --color-charcoal: #171817;
   --color-forest: #26352d;
   --color-olive: #69715c;
   --color-stone: #b5ada0;
-  --color-mist: #d8d5ce;
+  --color-mist: #e2e2e2;
 
   --font-display: var(--font-instrument-serif), Georgia, "Times New Roman", serif;
   --font-sans: var(--font-inter), system-ui, -apple-system, sans-serif;
