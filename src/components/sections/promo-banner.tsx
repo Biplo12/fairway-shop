@@ -18,7 +18,7 @@ const blocks: Record<Align, string> = {
 type Size = "tall" | "short";
 
 const heights: Record<Size, string> = {
-  tall: "md:aspect-[2.4/1]",
+  tall: "md:aspect-[3.2/1]",
   short: "md:aspect-[3.6/1] md:min-h-[24rem]",
 };
 

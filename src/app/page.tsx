@@ -33,6 +33,7 @@ export default function Home() {
           href="/shop/clubs/drivers"
           cta="Explore drivers"
           align="bottom"
+          focus="object-[50%_28%]"
         />
 
         <SplitFeature
