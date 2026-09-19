@@ -1,5 +1,6 @@
 import Link from "next/link";
 
+import { AddToBag } from "@/components/cart/add-to-bag";
 import { Media } from "@/components/ui/media";
 import { formatPrice, type Product } from "@/content/products";
 
@@ -36,13 +37,19 @@ export function ProductCard({ product }: { product: Product }) {
               {product.detail}
             </p>
           </div>
-          <p
-            className={`text-[0.75rem] uppercase tracking-[0.08em] ${
-              product.inStock ? "text-forest" : "text-charcoal/45"
-            }`}
-          >
-            {product.inStock ? "In stock" : "Back in Friday"}
-          </p>
+          {product.fittingRecommended ? (
+            <p className="text-[0.75rem] uppercase tracking-[0.08em] text-forest">
+              Fit first
+            </p>
+          ) : null}
+        </div>
+
+        <div className="mt-4">
+          <AddToBag
+            slug={product.slug}
+            model={product.model}
+            inStock={product.inStock}
+          />
         </div>
       </div>
     </Link>

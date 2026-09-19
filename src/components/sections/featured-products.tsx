@@ -1,7 +1,7 @@
 import { Arrow } from "@/components/ui/arrow";
 import { Button } from "@/components/ui/button";
 import { ProductCard } from "@/components/products/product-card";
-import { products } from "@/content/products";
+import { featuredProducts } from "@/content/products";
 import Link from "next/link";
 
 /**
@@ -25,7 +25,7 @@ export function FeaturedProducts() {
         </div>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 md:gap-4">
-          {products.map((product) => (
+          {featuredProducts.map((product) => (
             <ProductCard key={product.slug} product={product} />
           ))}
         </div>

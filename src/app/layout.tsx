@@ -1,6 +1,8 @@
 import type { Metadata } from "next";
 import { Inter, Instrument_Serif } from "next/font/google";
 import "./globals.css";
+import { CartProvider } from "@/components/cart/cart-context";
+import { CartDrawer } from "@/components/cart/cart-drawer";
 
 const inter = Inter({
   subsets: ["latin"],
@@ -36,7 +38,10 @@ export default function RootLayout({
         >
           Skip to content
         </a>
-        {children}
+        <CartProvider>
+          {children}
+          <CartDrawer />
+        </CartProvider>
       </body>
     </html>
   );

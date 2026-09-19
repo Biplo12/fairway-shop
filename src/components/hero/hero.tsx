@@ -2,6 +2,7 @@ import Link from "next/link";
 import { Search, User } from "lucide-react";
 
 import { Mark } from "@/components/brand/mark";
+import { CartButton } from "@/components/cart/cart-button";
 import { Media } from "@/components/ui/media";
 import { Arrow } from "@/components/ui/arrow";
 
@@ -131,15 +132,10 @@ export function Hero() {
                 >
                   <User className="size-4" strokeWidth={1.5} />
                 </Link>
-                <Link
-                  href="/bag"
-                  className="flex items-center gap-3 rounded-full bg-white py-1 pl-4 pr-1 text-[0.875rem] text-charcoal sm:w-[7.5rem] sm:justify-between sm:pl-5"
-                >
-                  Cart
-                  <span className="grid size-7 place-items-center rounded-full bg-charcoal text-[0.75rem] text-white">
-                    0
-                  </span>
-                </Link>
+                <CartButton
+                  tone="light"
+                  className="text-[0.875rem] sm:w-[7.5rem] sm:justify-between sm:pl-5"
+                />
               </div>
             </div>
 

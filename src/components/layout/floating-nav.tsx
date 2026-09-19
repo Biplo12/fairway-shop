@@ -5,6 +5,8 @@ import { useEffect, useState } from "react";
 import { Menu, Search, X } from "lucide-react";
 
 import { Mark } from "@/components/brand/mark";
+import { CartButton } from "@/components/cart/cart-button";
+import { useBag } from "@/components/cart/cart-context";
 
 const links = [
   { href: "/shop", label: "Shop", index: "01" },
@@ -21,6 +23,7 @@ const links = [
  * a panel behind a menu button. Nothing is hidden without a way back to it.
  */
 export function FloatingNav() {
+  const { count, setOpen: setBagOpen } = useBag();
   const [shown, setShown] = useState(false);
   const [menuOpen, setMenuOpen] = useState(false);
 
@@ -89,15 +92,7 @@ export function FloatingNav() {
             >
               <Search className="size-4" strokeWidth={1.5} />
             </button>
-            <Link
-              href="/bag"
-              className="flex items-center gap-2.5 rounded-full bg-offwhite py-1 pl-4 pr-1 text-[0.8125rem] text-charcoal"
-            >
-              Cart
-              <span className="grid size-7 place-items-center rounded-full bg-charcoal text-[0.75rem] text-offwhite">
-                0
-              </span>
-            </Link>
+            <CartButton />
             <button
               type="button"
               onClick={() => setMenuOpen(true)}
@@ -160,13 +155,16 @@ export function FloatingNav() {
         </nav>
 
         <div className="mt-10 border-t border-offwhite/15 pt-6">
-          <Link
-            href="/bag"
-            onClick={() => setMenuOpen(false)}
+          <button
+            type="button"
+            onClick={() => {
+              setMenuOpen(false);
+              setBagOpen(true);
+            }}
             className="text-[0.9375rem] uppercase tracking-[0.06em] text-offwhite/80"
           >
-            Cart, 0 items
-          </Link>
+            Cart, {count} {count === 1 ? "item" : "items"}
+          </button>
           <p className="mt-6 text-[0.875rem] leading-[1.6] text-offwhite/55">
             Fitting studio open seven days. Every brand that matters, fitted to
             the way you play.
