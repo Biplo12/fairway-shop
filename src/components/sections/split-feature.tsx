@@ -51,7 +51,7 @@ export function SplitFeature({
     <section className="px-3 pb-3 md:px-5 md:pb-5">
       <div className="grid overflow-hidden rounded-card md:grid-cols-2">
         <div
-          className={`relative min-h-[22rem] md:min-h-[44rem] ${
+          className={`relative min-h-[24rem] md:min-h-[52rem] ${
             imageSide === "right" ? "md:order-2" : ""
           }`}
         >
