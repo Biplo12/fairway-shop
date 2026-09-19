@@ -20,8 +20,10 @@ const tones: Record<Tone, { panel: string; chip: string; body: string }> = {
 };
 
 /**
- * Half photograph, half statement. Used for the services the shop sells on ,
- * the things a customer books rather than adds to a bag.
+ * Half photograph, half statement. Used for the services the shop sells on,
+ * the things a customer books rather than adds to a bag. Pass `sessions` and
+ * the panel carries a price list, which is what "sold like a product" means
+ * for something you cannot put in a bag.
  */
 export function SplitFeature({
   image,
@@ -33,6 +35,8 @@ export function SplitFeature({
   href,
   cta,
   meta,
+  sessions,
+  note,
   action = "link",
   imageSide = "left",
   tone = "light",
@@ -47,6 +51,10 @@ export function SplitFeature({
   cta: string;
   /** price, duration, anything a customer would ask at the counter */
   meta?: string[];
+  /** the bookable sessions, priced, for a service sold like a product */
+  sessions?: { name: string; duration: string; price: string }[];
+  /** the line a fitter would add after quoting a price */
+  note?: string;
   action?: "link" | "button";
   imageSide?: "left" | "right";
   tone?: Tone;
@@ -57,7 +65,7 @@ export function SplitFeature({
     <section className="px-3 pb-3 md:px-5 md:pb-5">
       <div className="grid overflow-hidden rounded-card md:grid-cols-2">
         <div
-          className={`relative min-h-[24rem] md:min-h-[52rem] ${
+          className={`relative min-h-[24rem] md:min-h-[44rem] ${
             imageSide === "right" ? "md:order-2" : ""
           }`}
         >
@@ -109,6 +117,34 @@ export function SplitFeature({
                 })}
               </dl>
             ) : null}
+
+            {sessions ? (
+              <ul className="mt-8 border-t border-current/15">
+                {sessions.map((session) => (
+                  <li
+                    key={session.name}
+                    className="flex items-baseline justify-between gap-6 border-b border-current/15 py-3.5"
+                  >
+                    <span className="text-[1.0625rem]">{session.name}</span>
+                    <span className="flex items-baseline gap-6">
+                      <span className="text-[0.8125rem] uppercase tracking-[0.08em] text-olive">
+                        {session.duration}
+                      </span>
+                      <span className="w-14 text-right text-[1.0625rem]">
+                        {session.price}
+                      </span>
+                    </span>
+                  </li>
+                ))}
+              </ul>
+            ) : null}
+
+            {note ? (
+              <p className={`mt-4 text-[0.875rem] leading-[1.6] ${t.body}`}>
+                {note}
+              </p>
+            ) : null}
+
             {action === "button" ? (
               <Button href={href} className="mt-8">
                 {cta}
