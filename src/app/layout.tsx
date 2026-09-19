@@ -17,11 +17,11 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: {
-    default: "FAIRWAY — Made for the shot. Built for the story.",
+    default: "FAIRWAY — Golf equipment, fitted properly",
     template: "%s — FAIRWAY",
   },
   description:
-    "Golf equipment designed around the way golf is actually played. Founded 1987 near St. Andrews, Scotland.",
+    "Titleist, TaylorMade, Callaway, Ping and Mizuno, fitted to the way you play. A specialist golf shop near St. Andrews since 1987.",
 };
 
 export default function RootLayout({

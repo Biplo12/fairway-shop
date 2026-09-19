@@ -1,6 +1,6 @@
 @AGENTS.md
 
-# FAIRWAY — Brand Website
+# FAIRWAY — Golf Equipment Retailer
 
 ## 0. WORKING RULES
 
@@ -19,457 +19,245 @@
 
 ---
 
-## 1. PROJECT OVERVIEW
+## 1. WHAT THIS IS
 
-Build a premium fictional golf brand website called **FAIRWAY**.
+FAIRWAY is a **multi-brand golf equipment retailer** — a shop, not a manufacturer. It sells the real
+brands golfers actually buy: Titleist, TaylorMade, Callaway, Ping, Mizuno, Srixon, Cleveland, Vokey,
+Scotty Cameron, FootJoy, Odyssey.
 
-Tagline:
+Positioning in one line:
 
-> MADE FOR THE SHOT. BUILT FOR THE STORY.
+> EVERY BRAND THAT MATTERS. FITTED TO THE WAY YOU PLAY.
 
-FAIRWAY is a fictional premium golf equipment and lifestyle brand founded in 1987 near St. Andrews, Scotland.
+The site should read like a specialist retailer with decades of counter time — closer to a serious
+fitting studio than to a discount warehouse. A fictional shop presented as a design project; never
+imply an official partnership, endorsement or affiliation with any brand it sells.
 
-The website should feel like a real established premium golf company, not like a generic fictional portfolio project.
-
-The goal is a highly polished, editorial, premium e-commerce experience combining:
-
-- luxury golf
-- modern product design
-- editorial photography
-- technical sports equipment
-- heritage craftsmanship
-- minimalist Swiss-inspired layout
-- contemporary fashion branding
-- premium e-commerce UX
-
-The visual references supplied by the user are the main art direction. Do NOT copy any reference literally.
-
-Use their principles: asymmetric editorial grid, large photography, rounded image containers, generous whitespace,
-small uppercase labels, refined typography, muted colors, premium product presentation, large editorial sections,
-subtle navigation, minimal UI, strong visual hierarchy.
-
-FAIRWAY must have its own identity.
+**Why this model:** generating convincing own-brand product photography is not realistic. Real
+products, photographed properly, are both credible and obtainable.
 
 ---
 
-## 2. BRAND STORY
+## 2. THE SHOP
 
-The name refers to the area between the tee and the green, and communicates:
-consistency, direction, progress, discipline, patience, precision.
+Founded 1987 near St. Andrews, Scotland, as a single fitting bench behind a pro shop. Now a
+specialist retailer with a fitting studio at its centre.
 
-FAIRWAY is not an extreme performance brand. It sits between TRADITION and TECHNOLOGY —
-traditional golf craftsmanship combined with modern performance engineering.
+What FAIRWAY sells on:
 
----
+- **Fitting first.** Nothing leaves the shop unmatched to the player. Launch monitor, not a guess.
+- **Curation.** Fewer lines, chosen deliberately. If it is on the rack, it earned the space.
+- **Counter knowledge.** Staff who play, and who will talk a customer out of the wrong purchase.
 
-## 3. FICTIONAL BRAND HISTORY
-
-Founded 1987 near St. Andrews, Scotland, by **Arthur Fairchild**, a golf club technician and craftsman.
-
-Arthur repaired and modified clubs for local players and noticed the best golfers rarely wanted the most
-complicated equipment. They wanted equipment they could trust: balance, consistency, feel, grip, weight,
-feedback, reliability. He began producing small batches in a small workshop.
-
-Original philosophy:
-
-> REMOVE EVERYTHING THAT DOESN'T IMPROVE THE SHOT.
-
-- **1994** — first forged iron; known locally for simple design and consistent feel.
-- **2001** — first driver; the move from craftsmanship toward modern engineering.
-- **2008** — FAIRWAY ONE golf ball launches; becomes a core product.
-- **2016** — internal design studio; clubs, balls, bags, gloves, apparel and accessories as one visual system.
-- **TODAY** — obsessed with one thing: the next shot.
-
-> GOLF IS MEASURED IN SHOTS. REMEMBERED IN MOMENTS.
+What it does not sell on: discounts, hype, or the newest thing because it is newest.
 
 ---
 
-## 4. BRAND PERSONALITY
+## 3. VOICE
 
-Should feel: quiet, confident, refined, precise, timeless, technical, human, understated, premium, mature.
+FAIRWAY speaks as a fitter behind a counter — specific, unhurried, occasionally willing to say
+"that's not for you".
 
-Should NOT feel: loud, aggressive, cheap, overly sporty, neon, futuristic, gamer-like, mass-market, overly corporate.
+The critical shift from a maker's voice: **FAIRWAY did not build these clubs, it chose them.**
 
-Avoid: giant motivational slogans everywhere, excessive gradients, neon green, aggressive italic typography,
-excessive shadows, excessive animations, generic golf stock imagery, cheesy golf terminology.
+- Good: "Three shafts in the same head. The difference is eleven yards of dispersion."
+- Good: "We keep the P790 and the i230 side by side because most players guess wrong between them."
+- Bad: "We spent two years refining the sole geometry." — that is the manufacturer's sentence.
+- Bad: "Revolutionary technology transforms your game."
 
-Communicate confidence through restraint.
+Copy is short, confident, understated, factual. Never generic marketing language.
 
 ---
 
-## 5. CORE BRAND MESSAGE
+## 4. PERSONALITY
+
+Should feel: quiet, confident, expert, precise, timeless, human, understated, premium, mature.
+
+Should NOT feel: loud, aggressive, cheap, discount-driven, overly sporty, neon, gamer-like,
+mass-market, overly corporate.
+
+Communicate authority through restraint and specificity.
+
+---
+
+## 5. MESSAGES
 
 Primary:
 
-> MADE FOR THE SHOT. BUILT FOR THE STORY.
+> EVERY BRAND THAT MATTERS. FITTED TO THE WAY YOU PLAY.
 
-Secondary (use sparingly — the site must not become a wall of slogans):
+Secondary, used sparingly:
 
-> EVERY SHOT TELLS A STORY. · PLAY THE LONG GAME. · BUILT TO BE TRUSTED. · LESS NOISE. MORE GOLF.
-> ENGINEERED FOR THE MOMENT. · PRECISION WITHOUT THE NOISE. · THE NEXT SHOT MATTERS.
-
----
-
-## 6. TARGET AUDIENCE
-
-Modern golfers approximately 25–55 who appreciate premium products, design, craftsmanship, quality materials,
-golf culture, understated luxury, fashion, architecture, photography and technology. Not necessarily professionals.
-
-Adjacent brand worlds: premium watches, technical outdoor clothing, luxury automobiles, premium audio,
-minimalist furniture, heritage fashion. Aspirational but accessible.
+> PLAY THE LONG GAME. · FITTED, NOT GUESSED. · THE RIGHT CLUB IS THE ONE THAT SUITS YOU.
+> LESS NOISE. MORE GOLF. · STOCKED BY PEOPLE WHO PLAY.
 
 ---
 
-## 7. PRODUCT CATEGORIES
+## 6. AUDIENCE
 
-Present FAIRWAY as a complete golf ecosystem.
-
-### CLUBS
-
-Drivers, Fairway Woods, Hybrids, Irons, Wedges, Putters.
-
-- **F-01 DRIVER** — BUILT FOR DISTANCE. DESIGNED FOR CONTROL.
-- **F-03 IRONS** — FORGED FOR CONSISTENCY.
-- **M1 PUTTER** — CONFIDENCE STARTS AT ADDRESS.
-- **W-02 WEDGE** — PRECISION AROUND THE GREEN.
-
-### 8. GOLF BALLS
-
-- **FAIRWAY ONE** (`01`) — premium all-round ball. Tour performance without unnecessary complexity.
-  Copy: TOUR PERFORMANCE GOLF BALL.
-- **FAIRWAY X** — higher performance. BUILT FOR SPEED. DESIGNED FOR CONTROL.
-  Finishes: White, Tour Yellow, Limited Black.
-
-### 9. GOLF BAGS
-
-- **THE WALKER** — premium stand bag. CARRY LESS. PLAY MORE. Colors: Black, Stone, Olive, Navy.
-- **THE CARRY** — lightweight, minimal and technical.
-- **THE CART** — premium cart bag, larger and more structured.
-
-### 10. APPAREL — FAIRWAY GOLF CLUB
-
-Classic Polo, Performance Polo, Merino Polo, Tour Trouser, Walker Pant, Tech Short, Rain Shell, Wind Jacket,
-Tour Jacket, Classic Cap, Rope Cap, Performance Cap, Visor, Beanie.
-
-Closer to premium contemporary clothing than golf merchandise. Avoid giant logos.
-
-### 11. GLOVES
-
-- **G-01 TOUR GLOVE** — SECOND SKIN. FIRST CONTACT.
-- **G-02 PERFORMANCE GLOVE** — technical alternative.
-
-### 12. ACCESSORIES
-
-Towels, ball markers, divot tools, tees, scorecard holders, leather headcovers, travel covers, umbrellas,
-socks, belts, ball cases. Example: **THE MARKER**, a minimal metal ball marker with the FW monogram.
+Golfers roughly 25–55 who care about equipment, value expertise over discount, and would rather be
+fitted once than buy twice. They appreciate design, craftsmanship, golf culture and understated
+premium retail.
 
 ---
 
-## 13. PRODUCT NUMBERING SYSTEM
+## 7. CATALOGUE
 
-Product codes appear throughout the site: Driver `F-01`, Irons `F-03`, Putter `M1`, Glove `G-01`,
-Bag `B-01`, Accessory `X-01`, Golf ball `ONE / 01`.
+Categories: **CLUBS** (drivers, fairway woods, hybrids, irons, wedges, putters) · **BALLS** ·
+**BAGS** · **GLOVES** · **HEADWEAR** · **APPAREL** · **ACCESSORIES** · **FITTING** (a service, sold
+like a product).
 
-No random product names. The naming system must feel systematic and industrial.
-
----
-
-## 14. LOGO DIRECTION
-
-Primary: typography-based **FAIRWAY** wordmark — uppercase, elegant, restrained, spacious, premium,
-generous letter spacing.
-
-Secondary: **FW** monogram, which may subtly reference a flagstick (the F can read as a flagstick).
-Must work on balls, clubs, caps, bags, gloves, packaging, favicon and UI icons.
-
-Never: cartoon golf balls, giant flags, shields, mascots, aggressive sports logos.
+Products carry the real brand and model — "TaylorMade P790 Irons", "Titleist Pro V1", "Ping Hoofer
+Lite". Never invent model names for real brands, and never attribute invented technology to them.
 
 ---
 
-## 15. COLOR SYSTEM
-
-| Token | Value | Use |
-| --- | --- | --- |
-| OFF WHITE | `#F3F1EC` | primary background |
-| CHARCOAL | `#171817` | primary text |
-| FOREST | `#26352D` | secondary / dark surfaces |
-| OLIVE | `#69715C` | accent |
-| STONE | `#B5ADA0` | neutral |
-| MIST | `#D8D5CE` | light neutral / borders |
-
-Mostly off-white, charcoal, muted greens, stone and grayscale photography.
-Avoid saturated colors, pure white everywhere, pure black everywhere. The site should feel warm, not sterile.
-
----
-
-## 16. TYPOGRAPHY
-
-A sophisticated serif for editorial headlines, a clean sans-serif for UI.
-
-- Display serif: Instrument Serif / Cormorant Garamond / DM Serif Display (Canela-like).
-- UI and body: Inter / Geist / Helvetica Neue.
-
-The hierarchy must contrast EDITORIAL against TECHNICAL:
-
-- small label — `GOLF EQUIPMENT / F-01`
-- large headline — PLAY THE LONG GAME.
-- body — Equipment designed around the way golf is actually played.
-- button — EXPLORE EQUIPMENT →
-
----
-
-## 17. PHOTOGRAPHY DIRECTION
-
-Wide course photography with a big sky — deep green turf, pale sand bunkers, heavy cloud, natural
-light. Figures are small in frame, seen from behind, never facing camera, never carrying visible
-third-party branding. Real photographic detail, no AI smoothness.
-
-Reference frame: `public/images/editorial/hero-links.jpg` (Andrew Shelley, Pexels).
-
-**Division of labour:** landscape and lifestyle frames come from stock (Pexels); only products are
-generated in Midjourney, carrying the mark via `--oref`.
-
-Photography is one of the most important parts of the site. Editorial, not stock.
-
-Visual world: golf courses at sunrise, fog, Scottish links, wet grass, clubs, close-ups of metal, leather,
-carbon fiber, balls, bags, hands holding clubs, golfers walking, golfers from behind, impact moments,
-equipment lying in grass, muted landscapes, architectural clubhouses.
-
-Avoid: smiling stock golfers, exaggerated action shots, green-screen golf photography, overly colorful images,
-staged corporate photography. Images should look like a premium fashion magazine.
-
----
-
-## 18. IMAGE TREATMENT
-
-Ratios 16:9, 4:3 and 1:1 with moderately rounded corners (16–24px). Do not over-round every element.
-Images may dominate the page; use large crops; some sections may intentionally crop people or products.
-
----
-
-## 19. WEBSITE STRUCTURE
-
-Minimal navigation: FAIRWAY wordmark · SHOP · APPAREL · STORIES · ABOUT · Search · Cart.
-No huge navigation bar.
-
----
-
-## 20. HOMEPAGE STRUCTURE
-
-Editorial rather than a conventional e-commerce homepage.
-
-1. **HERO** — large immersive course image. `PLAY THE LONG GAME.` / "Equipment designed around the way golf is
-   actually played." / EXPLORE EQUIPMENT → / OUR STORY →
-2. **INTRO** — label THE FAIRWAY PHILOSOPHY. `EVERY SHOT TELLS A STORY.` / "Golf is measured in numbers.
-   Remembered in moments." / OUR STORY →
-3. **FEATURED PRODUCT** — F-01 DRIVER, label `01 / CLUBS`, `BUILT FOR THE DRIVE.` / VIEW F-01 →
-4. **PRODUCT CATEGORIES** — 3–4 photographic cards: CLUBS, APPAREL, BAGS, ACCESSORIES.
-5. **GOLF BAGS** — THE WALKER, `CARRY LESS. PLAY MORE.` / EXPLORE BAGS →
-6. **PRODUCT FEATURE GRID** — G-01 TOUR GLOVE, ONE GOLF BALL, M1 PUTTER as product editorials.
-7. **BRAND STORY** — golfer walking, `BUILT TO BE TRUSTED.` / DISCOVER FAIRWAY →
-8. **FAIRWAY STORIES** — THE MORNING ROUND, BUILT BY HAND, THE COURSES, 18 HOLES WITH…
-9. **NEWSLETTER** — `STAY ON THE FAIRWAY.` minimal, not commercial.
-10. **FOOTER** — large FAIRWAY logo, EST. 1987, shop/company/legal links, Instagram and YouTube.
-
----
-
-## 21. OUR STORY PAGE
-
-Hero `THE LONG GAME.` with the subheading about equipment becoming invisible in your hands, then the timeline:
-1987 FOUNDATION · 1994 FIRST FORGED IRON · 2001 FIRST DRIVER · 2008 FAIRWAY ONE · 2016 DESIGN STUDIO ·
-TODAY THE NEXT SHOT. Large photography between sections. Should read like a magazine article.
-
----
-
-## 22. SHOP PAGE
-
-Filters: ALL, CLUBS, BALLS, BAGS, APPAREL, GLOVES, ACCESSORIES.
-Grid: 4 columns desktop where appropriate, 2 columns mobile.
-Cards: image, product code, name, short descriptor, price, optional color, hover image. Avoid excessive UI.
-
----
-
-## 23. PRODUCT DETAIL PAGE
-
-Metadata `F-01 / CLUBS / 2026`, large photography, price, one-line statement, options (LOFT, SHAFT, FLEX, GRIP),
-ADD TO BAG, and BUILD YOUR CLUB → as secondary.
-
-Sections: product hero, details, technology, materials, performance, photography, specifications, related products.
-
----
-
-## 24. CUSTOM CLUB BUILDER — FAIRWAY CUSTOM
-
-Configure club, loft, shaft, flex, grip, finish and engraving. Final state `YOUR FAIRWAY` with a visual
-representation of the configured club and ADD TO BAG.
-
----
-
-## 25. STORIES / JOURNAL — `/stories`
-
-Categories: COURSES, CRAFT, PEOPLE, EQUIPMENT, CULTURE. Cards should look like magazine covers, not blog posts.
-Each article: category, title, date, image.
-
----
-
-## 26. DESIGN SYSTEM
-
-Spacing scale: 8, 16, 24, 32, 48, 64, 96, 128, 160. Large whitespace matters; do not compress.
-
-## 27. GRID
-
-12-column desktop grid with asymmetric compositions (8/4, 4/8), offset blocks, varying image sizes,
-large empty space, strong vertical rhythm. Not every section symmetrical.
-
-## 28. BORDER RADIUS
-
-Large photography 16–24px · cards 12–16px · buttons 4–8px. Nothing pill-shaped by default. No SaaS UI aesthetics.
-
-## 29. BUTTONS
-
-Minimal: uppercase, small, letter-spaced, with an arrow — `VIEW PRODUCT →`. No huge rounded buttons.
-
-## 30. MICRO INTERACTIONS
-
-Subtle only: image scale on hover, underline animation, arrow movement, fade-in sections, image reveal,
-product image transitions, smooth page transitions. No bouncing, heavy parallax, flashy effects or scroll hijacking.
-The site should feel calm.
-
-## 31. LOADING EXPERIENCE
-
-Subtle and short: FAIRWAY / 01, then fade into the homepage. No long cinematic intro.
-
-## 32. RESPONSIVE DESIGN
-
-Desktop is the primary editorial composition, but mobile must be excellent. Mobile nav: FAIRWAY · MENU · Cart.
-Editorial sections collapse to 1 column, product grid to 2. Typography scales smoothly. No horizontal scrolling.
-
-## 33. ACCESSIBILITY
-
-Semantic HTML, accessible buttons, keyboard navigation, visible focus states, proper alt text, sufficient contrast,
-form labels, accessible navigation, reduced motion support. Never sacrifice accessibility for aesthetics.
-
-## 34. PERFORMANCE
-
-Optimize images, lazy loading, fonts, animations, JavaScript and layout shifts. Responsive image sizes.
-Avoid unnecessary client-side rendering; prefer server rendering.
-
-## 35. TECH STACK
-
-Next.js · React · TypeScript · Tailwind CSS · shadcn/ui where useful · Lucide icons.
-Modern Next.js architecture, real components, never one giant file.
-
-## 36. COMPONENT ARCHITECTURE
-
-`layout/` Header, Footer · `hero/` Hero, HeroImage · `products/` ProductCard, ProductGrid, ProductHero,
-ProductSpecs, ProductGallery · `editorial/` EditorialSection, StoryCard, StoryGrid, Timeline ·
-`ui/` Button, Label, Container. Reusable where repetition exists; do not over-engineer.
-
-## 37. DATA MODEL
+## 8. DATA MODEL
 
 Products are data-driven, never repeated hard-coded cards:
 
 ```ts
-{ id: "f-01", name: "F-01 Driver", category: "Clubs", price: 549,
-  description: "Built for distance. Designed for control.", image: "...", code: "F-01" }
+{ slug: "taylormade-p790-irons", brand: "TaylorMade", model: "P790 Irons",
+  category: "clubs", subcategory: "irons", price: 1499, currency: "GBP",
+  statement: "Forged face, hollow body, distance without the look.",
+  options: [{ id: "shaft", values: [...] }, { id: "flex", values: [...] }],
+  specs: [...], images: { primary, gallery }, inStock: true, fittingRecommended: true }
 ```
 
-## 38. COPYWRITING STYLE
-
-Short, confident, understated, intelligent, editorial. No generic AI marketing language.
-
-- Good: "Built for distance. Designed for control." · "Carry less. Play more."
-- Bad: "Experience the ultimate revolutionary golf technology…" · "Our amazing premium golf bag is perfect for every golfer."
-
-## 39. BRAND VOICE
-
-FAIRWAY speaks like an experienced craftsman — not a salesperson, startup or sports commentator.
-
-- Good: "We spent two years refining the sole geometry."
-- Bad: "Revolutionary new technology changes everything."
-
-## 40. PRODUCT COPY
-
-Every product carries: product code, name, one-line statement, short description, technical information, price.
-
-## 41. MOCK BRAND DETAILS
-
-HQ St. Andrews, Scotland · founded 1987 · Golf Equipment & Goods · fairway.golf.
-A fictional design project — never imply the company is real.
-
-## 42. PRODUCT COLLECTIONS
-
-CORE (essentials) · TOUR (technical performance) · LINKS (traditional links golf) · SUNDAY (lifestyle apparel) ·
-FOUNDERS (limited, inspired by 1987).
-
-## 43. FOUNDERS COLLECTION
-
-Cream, black, forest, brass. FOUNDERS F-01, FOUNDERS CAP, FOUNDERS BALL, FOUNDERS HEAD COVER.
-Packaging references EST. 1987.
-
-## 44. PACKAGING
-
-Extremely minimal. Ball: FAIRWAY / ONE / TOUR PERFORMANCE GOLF BALL / 01.
-Glove: FAIRWAY / G-01 / TOUR GLOVE / CABRETTA LEATHER / SIZE L.
-
-## 45. EASTER EGGS
-
-Subtle, not overused: EST. 1987 · FW · 01 · ST. ANDREWS ·
-"REMOVE EVERYTHING THAT DOESN'T IMPROVE THE SHOT." · "THE NEXT SHOT MATTERS."
+Brand is a first-class field: it drives filtering, the brand index, and the product card.
 
 ---
 
-## 46. VISUAL REFERENCES
+## 9. LOGO AND MARK
 
-Reference characteristics to absorb as art direction only, never to copy:
-off-white background, narrow centered content area, editorial grid, large rounded image containers,
-mixed image sizes, asymmetric layouts, large product photography, small uppercase metadata,
-serif editorial typography against modern sans UI, muted green/gray/black palette, large whitespace,
-sophisticated golf photography, minimal navigation, premium magazine feel.
+FAIRWAY is the retailer's own identity, and appears only in the interface, packaging and signage —
+never printed onto the products it sells.
 
-Secondary reference supplied by the user — a Titleist website concept
-(behance.net/gallery/179852943/TITLEIST-website-design): a bento arrangement of rounded cards inside a narrow
-column, alternating dark photographic cards carrying overlaid text with light product cards, micro uppercase
-label chips, thin arrow links. Borrow the card rhythm and density, not the styling.
+- **Wordmark:** FAIRWAY in uppercase Inter, letter-spaced `0.26em`–`0.3em`. Restrained and spacious.
+- **Mark:** the corridor symbol — two tapered bars converging to a point, the fairway seen from the
+  tee. `public/brand/mark-corridor.svg`, with `-compact` for UI below 32px and `src/app/icon.svg`
+  for the favicon.
 
-## 47. AVOID GENERIC AI WEBSITE DESIGN
+Never: mascots, shields, cartoon balls, aggressive sports logos.
 
-Not a SaaS landing page, Shopify template, sports site, startup site, dashboard, over-rounded card UI,
-gradients, glowing buttons, glassmorphism, or a generic hero with centered text on an image.
-Think EDITORIAL DESIGN + PREMIUM GOLF + FASHION + PRODUCT ENGINEERING.
+---
 
-## 48. VISUAL HIERARCHY
+## 10. COLOUR
 
-Every page: clear primary headline, strong hero photography, small technical metadata, restrained copy,
-large whitespace, intentional product placement.
+| Token | Value | Use |
+| --- | --- | --- |
+| OFF WHITE | `#F3F1EC` | page background |
+| PAPER | `#ECE9E2` | recessed surface |
+| CHARCOAL | `#171817` | primary text, dark cards |
+| FOREST | `#26352D` | dark surfaces |
+| OLIVE | `#69715C` | accent, secondary text |
+| STONE | `#B5ADA0` | neutral |
+| MIST | `#D8D5CE` | borders |
 
-## 49. SCROLL EXPERIENCE
+Mostly off-white, charcoal, muted greens and stone. Product photography brings whatever colour the
+brands bring — that contrast is the point. Avoid saturated interface colour, pure white and pure
+black.
 
-The homepage is a visual story: golf course → philosophy → product → collection → lifestyle → craft → story →
-brand → footer. Never an endless wall of product cards.
+---
 
-## 50. FINAL QUALITY BAR
+## 11. TYPOGRAPHY
 
-- **Brand** — reads as a real premium golf company, consistent identity, established, restrained copy.
-- **Design** — enough whitespace, editorial grid, dominant images, clear type levels, muted color.
-- **UX** — intuitive navigation, discoverable products, clear product detail, excellent mobile.
-- **Technical** — no TypeScript errors, no console errors, no broken images, responsive, accessible,
-  performant, reusable components, clean code.
+- **Inter** carries everything: headlines, UI, product data. Uppercase and letter-spaced for labels
+  and the wordmark, tight negative tracking for large headlines.
+- **Instrument Serif** is loaded and available for editorial moments, but the commerce surface is
+  sans-serif — this follows the bento reference rather than a magazine.
 
-## 51. GOLDEN RULE
+Scale: headlines `clamp(2.75rem, 5vw, 4.5rem)`, section headings `clamp(1.75rem, 2.6vw, 2.5rem)`,
+body `1.0625rem`–`1.1875rem`, labels `0.75rem`–`0.875rem` uppercase with `0.02em`–`0.04em` tracking.
 
-The visitor should believe FAIRWAY could actually exist — "a premium golf company with 40 years of history
-that happens to have an exceptionally good website", never "a developer made a fake golf website".
+---
 
-## 52. DESIGN NORTH STAR
+## 12. PHOTOGRAPHY
 
-When uncertain, ask: *would this exist on a premium golf equipment brand founded in 1987?*
-If it feels like a SaaS template, remove it. Too flashy, simplify. Too empty, add editorial photography
-rather than more UI. Too generic, add FAIRWAY-specific storytelling.
+**Sources:** stock photography of real equipment (Pexels), downloaded at original resolution and
+cropped locally. No AI generation — it cannot render real brands or sharp product detail credibly.
 
-## 53. FINAL CREATIVE DIRECTION
+**Look:** deep green turf, natural daylight, real photographic sharpness. Product shots may be
+studio-lit on black; on-course shots keep figures small, anonymous and seen from behind.
 
-Between premium golf equipment, Scottish heritage, contemporary fashion, technical product design,
-editorial photography and luxury outdoor brands. Quiet. Precise. Editorial. Premium. Timeless. Technical. Confident.
+**Quality bar, non-negotiable:** every image must be sharp at 2× device pixel ratio. That means the
+stored file is at least twice the CSS size of its largest slot — roughly 2400px for a card, 3200px
+for a full-bleed band. Downscale from a large original with `lanczos3` and a light unsharp pass;
+never upscale a small file.
 
-> MADE FOR THE SHOT. BUILT FOR THE STORY.
+Reference frames in the repo: `editorial/hero-links.jpg`, `editorial/banner-irons.jpg`,
+`categories/*.jpg`.
+
+---
+
+## 13. LAYOUT
+
+Full-bleed card composition with `12px`–`20px` gutters — cards edge to edge, not a narrow centred
+column. Rounded corners: media `20px`, cards `14px`, controls `6px`. Generous vertical rhythm,
+`clamp(5rem, 10vw, 10rem)` between major sections.
+
+The hero is two cards filling the viewport: a light editorial card and a photographic card carrying
+the navigation and the brand statement.
+
+---
+
+## 14. SITE STRUCTURE
+
+`/` home · `/shop` all products with brand and category filters · `/shop/[category]` ·
+`/shop/[category]/[slug]` product detail · `/brands` and `/brands/[brand]` · `/fitting` the studio
+and booking · `/stories` journal · `/about` the shop · `/bag`.
+
+---
+
+## 15. HOMEPAGE
+
+1. **Hero** — two cards: a featured product card and the photographic statement card with navigation.
+2. **Banner** — one wide dark band for the product push of the moment.
+3. **Categories** — three portrait cards into the fastest-moving categories.
+4. **Brands** — the logos or names FAIRWAY stocks, as a quiet band.
+5. **Fitting** — the service, sold like a product.
+6. **Stories** — editorial cards.
+7. **Newsletter** — minimal.
+8. **Footer** — large wordmark, EST. 1987, shop, company and legal links.
+
+---
+
+## 16. INTERACTION
+
+Subtle only: image scale on hover, arrow translation, underline animation, staggered entrance on
+load. No bouncing, parallax, scroll hijacking or flashy effects. Everything respects
+`prefers-reduced-motion`.
+
+---
+
+## 17. ACCESSIBILITY AND PERFORMANCE
+
+Semantic HTML, one `<h1>` per page, visible focus states in olive, labelled controls, real
+`<button>`/`<a>` semantics, sufficient contrast, proper alt text. Server components by default;
+client components only where interaction demands it. `next/image` everywhere with accurate `sizes`
+and `quality={90}` (declared in `next.config.ts`). Target LCP under 2s, CLS zero.
+
+---
+
+## 18. TECH
+
+Next.js 16 App Router · React 19 · TypeScript strict · Tailwind CSS v4 with CSS-first tokens ·
+`lucide-react` icons. No component library — the bento card language is hand-built. No CMS; content
+lives in typed modules under `src/content`.
+
+---
+
+## 19. QUALITY BAR
+
+- **Brand** — reads as a specialist retailer with real expertise, not a template store.
+- **Design** — dominant photography, clear type hierarchy, generous whitespace, muted interface.
+- **UX** — products discoverable by brand and by category, fitting always one click away.
+- **Technical** — no TypeScript errors, no console errors, every image sharp at 2×, responsive,
+  accessible, fast.
+
+## 20. NORTH STAR
+
+When uncertain, ask: *would a specialist shop with a fitting studio and forty years behind the
+counter put this on their site?* If it feels like a template, remove it. Too flashy, simplify. Too
+empty, add photography rather than interface. Too generic, add the specific detail only a fitter
+would know.

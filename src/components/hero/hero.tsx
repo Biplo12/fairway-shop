@@ -47,12 +47,12 @@ export function Hero() {
           <div className="flex min-h-0 flex-1 flex-col justify-center gap-6 p-5 md:p-7">
             <span style={{ animationDelay: "280ms" }}
               className="rise inline-flex w-fit items-center rounded-full border border-charcoal/40 px-4 py-2.5 text-[0.8125rem] uppercase leading-none tracking-[0.02em]">
-              New — Fairway One &amp; Fairway X
+              In stock — 2026 tour balls
             </span>
 
             <Media
-              src="/images/products/one-ball-g1.jpg"
-              alt="A FAIRWAY ONE golf ball resting in mown grass"
+              src="/images/products/tour-balls.jpg"
+              alt="Tour golf balls lit against a dark background"
               ratio="16/10"
               sizes="(min-width: 1024px) 48vw, 100vw"
               className="reveal rounded-[12px]"
@@ -62,32 +62,27 @@ export function Hero() {
 
             <div className="rise" style={{ animationDelay: "440ms" }}>
               <h2 className="text-[clamp(2.75rem,5vw,4.5rem)] font-normal leading-[1.05] tracking-[-0.025em]">
-                Consistency
+                Tour balls
               </h2>
               <p className="mt-5 text-[1.1875rem] leading-[1.55] text-charcoal/85">
-                Two years on the dimple pattern. Another in{" "}
-                <Link href="/about" className="underline underline-offset-2">
-                  the wind off the North Sea
-                </Link>
-                . FAIRWAY ONE holds its line when the weather moves other balls.{" "}
-                <Link
-                  href="/shop/x-ball"
-                  className="underline underline-offset-2"
-                >
-                  FAIRWAY X
+                Pro V1, Chrome Soft and TP5 on the same shelf. We fit a ball the
+                way we fit a club — by flight, spin and what you actually do off
+                the tee. Come in with a{" "}
+                <Link href="/fitting" className="underline underline-offset-2">
+                  sleeve of each
                 </Link>{" "}
-                adds speed for players who already make their own.
+                and leave knowing.
               </p>
 
               <div className="mt-6 flex justify-end">
                 <Link
-                  href="/shop/one-ball"
+                  href="/shop/balls"
                   className="group inline-flex items-center gap-3 text-[0.875rem] uppercase tracking-[0.04em]"
                 >
                   <Arrow className="transition-transform duration-200 group-hover:translate-x-1" />
                   <span className="underline underline-offset-4">
-                    Learn more
-                  </span>
+                      Shop balls
+                    </span>
                 </Link>
               </div>
             </div>
@@ -167,12 +162,12 @@ export function Hero() {
                 Play the long game
               </h1>
               <p className="mt-4 text-[1.125rem] leading-[1.55] text-white/90">
-                Equipment designed around the way golf is actually played. Made
-                for the shot, built for the story.
+                Titleist, TaylorMade, Callaway, Ping and Mizuno on the rack —
+                every one of them fitted to the way you actually play.
               </p>
 
               <p className="mt-8 text-[0.875rem] uppercase tracking-[0.02em] text-white">
-                New to Fairway? Start with the fitting.
+                New to Fairway? Start on the launch monitor.
               </p>
               <Link
                 href="/custom"
