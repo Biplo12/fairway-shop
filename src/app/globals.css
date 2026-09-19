@@ -61,7 +61,29 @@
   animation: fairway-rise 0.55s cubic-bezier(0.32, 0.72, 0.35, 1) both;
 }
 
+/* Section entrance. Transition rather than animation, so the observer can
+   flip one class and the browser interpolates from wherever it is. */
+.enter {
+  opacity: 0;
+  transform: translateY(22px);
+  transition:
+    opacity 0.9s cubic-bezier(0.22, 0.68, 0.24, 1),
+    transform 0.9s cubic-bezier(0.22, 0.68, 0.24, 1);
+  will-change: opacity, transform;
+}
+
+.enter-shown {
+  opacity: 1;
+  transform: none;
+}
+
 @media (prefers-reduced-motion: reduce) {
+  .enter {
+    opacity: 1;
+    transform: none;
+    transition: none;
+  }
+
   *,
   *::before,
   *::after {
