@@ -2,7 +2,7 @@
 
 import Link from "next/link";
 import { useEffect, useState } from "react";
-import { Search, ShoppingBag } from "lucide-react";
+import { Search } from "lucide-react";
 
 import { Mark } from "@/components/brand/mark";
 

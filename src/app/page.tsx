@@ -26,8 +26,8 @@ export default function Home() {
         <Reveal>
           <PromoBanner
             image="/images/editorial/irons-banner.jpg"
-            alt="A set of TaylorMade irons standing in a bag on the course"
-            label="New in: TaylorMade P790"
+            alt="TaylorMade irons standing in a bag on the course"
+            label="Irons, side by side"
             heading="Irons, fitted properly"
             body="P790, i230 and the JPX Tour on the rack. Hit all three before you choose. Most players guess wrong between them."
             href="/shop/clubs/irons"

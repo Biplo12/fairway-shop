@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Search, User, ShoppingBag } from "lucide-react";
+import { Search, User } from "lucide-react";
 
 import { Mark } from "@/components/brand/mark";
 import { Media } from "@/components/ui/media";

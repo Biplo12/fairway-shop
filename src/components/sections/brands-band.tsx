@@ -5,8 +5,8 @@ import { brands } from "@/content/brands";
 
 /**
  * The rack, listed. For a multi-brand shop this is the strongest trust signal
- * on the page. Logos render from public/brands when they are present, names
- * carry it until then.
+ * on the page. Every cell is the same height and BrandLogo sizes each mark to
+ * the same optical area, so twelve logos from twelve sources read as a set.
  */
 export function BrandsBand() {
   return (
@@ -24,12 +24,15 @@ export function BrandsBand() {
           </Link>
         </div>
 
-        <ul className="mt-10 grid grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
+        <ul className="mt-10 grid grid-cols-2 gap-x-10 gap-y-6 sm:grid-cols-3 lg:grid-cols-6">
           {brands.map((brand) => (
-            <li key={brand.slug}>
+            <li
+              key={brand.slug}
+              className="flex h-20 items-center justify-center"
+            >
               <Link
                 href={`/brands/${brand.slug}`}
-                className="group flex flex-col items-center gap-2 text-center opacity-80 transition-opacity hover:opacity-100"
+                className="flex h-full w-full items-center justify-center opacity-75 transition-opacity hover:opacity-100"
                 title={brand.note}
               >
                 <BrandLogo

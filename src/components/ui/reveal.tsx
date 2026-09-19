@@ -25,9 +25,10 @@ export function Reveal({
     const node = ref.current;
     if (!node) return;
 
+    // No observer, no reason to hold the section back.
     if (typeof IntersectionObserver === "undefined") {
-      setShown(true);
-      return;
+      const frame = requestAnimationFrame(() => setShown(true));
+      return () => cancelAnimationFrame(frame);
     }
 
     const observer = new IntersectionObserver(
