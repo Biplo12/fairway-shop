@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" role="img" aria-label="FAIRWAY">
+  <title>FAIRWAY flight mark</title>
+  <!-- The flight of a struck ball: thick off the face, thinning as it falls.
+       The taper is what gives the shape direction. -->
+  <path d="M4 96C8 38 28 10 52 10 76 10 90 30 98 58 90 36 74 22 52 22 32 22 20 46 16 96Z" fill="currentColor" />
+</svg>

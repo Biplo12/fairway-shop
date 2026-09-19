@@ -60,7 +60,7 @@ export default function Home() {
         />
 
         <PromoBanner
-          image="/images/editorial/bags-bw.jpg"
+          image="/images/editorial/bags-band.jpg"
           alt="Two golfers walking a fairway with bags over their shoulders"
           label="New season bags"
           heading="Carry less. Play more."
@@ -69,7 +69,6 @@ export default function Home() {
           cta="Shop bags"
           align="bottom"
           size="short"
-          focus="object-[50%_90%]"
         />
       </main>
       <Footer />

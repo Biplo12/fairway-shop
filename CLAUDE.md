@@ -136,9 +136,9 @@ FAIRWAY is the retailer's own identity, and appears only in the interface, packa
 It is never printed onto the products it sells.
 
 - **Wordmark:** FAIRWAY in uppercase Inter, letter-spaced `0.26em`–`0.3em`. Restrained and spacious.
-- **Mark:** the corridor symbol, two tapered bars converging to a point, the fairway seen from the
-  tee. `public/brand/mark-corridor.svg`, with `-compact` for UI below 32px and `src/app/icon.svg`
-  for the favicon.
+- **Mark:** the flight symbol, the path of a struck ball, thick off the face and thinning as it
+  falls. `public/brand/mark-flight.svg`, with `-compact` for UI below 32px and `src/app/icon.svg`
+  for the favicon. The taper carries the direction; never draw it as an even stroke.
 
 Never: mascots, shields, cartoon balls, aggressive sports logos.
 

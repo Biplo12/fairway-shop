@@ -1,10 +1,17 @@
 /**
- * The FAIRWAY corridor mark, two tapered bars converging to a point, the
- * fairway seen from the tee. Inherits colour from the surrounding text.
+ * The FAIRWAY flight mark: the path of a struck ball, thick off the face and
+ * thinning as it falls. The taper is what gives the shape direction, and the
+ * subject is what the shop actually sells, flight.
  *
- * `compact` crops the top quarter so the tips keep mass below 32px; use it in
- * UI chrome and keep the full version for large, ceremonial placements.
+ * `compact` is heavier with the thin end of the descent cut away, so the shape
+ * keeps mass below 32px. Use it in UI chrome and keep the full version for
+ * large placements.
  */
+const FULL =
+  "M4 96C8 38 28 10 52 10 76 10 90 30 98 58 90 36 74 22 52 22 32 22 20 46 16 96Z";
+const COMPACT =
+  "M6 94C10 36 30 12 54 12 76 12 90 30 96 50 86 32 72 26 54 26 34 26 24 48 20 94Z";
+
 export function Mark({
   className = "",
   compact = false,
@@ -12,10 +19,6 @@ export function Mark({
   className?: string;
   compact?: boolean;
 }) {
-  const paths = compact
-    ? ["M36.3 0 0 100 17.4 100 40.7 0Z", "M63.7 0 100 100 82.6 100 59.3 0Z"]
-    : ["M48.4 0 0 100 17.4 100Z", "M51.6 0 82.6 100 100 100Z"];
-
   return (
     <svg
       viewBox="0 0 100 100"
@@ -23,9 +26,7 @@ export function Mark({
       className={className}
       fill="currentColor"
     >
-      {paths.map((d) => (
-        <path key={d} d={d} />
-      ))}
+      <path d={compact ? COMPACT : FULL} />
     </svg>
   );
 }
