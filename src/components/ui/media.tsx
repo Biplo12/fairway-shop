@@ -15,8 +15,12 @@ const ratios = {
 
 /**
  * Photography wrapper. Resolves the file at render time so a frame that has not
- * been shot yet renders as a labelled placeholder instead of a broken image ,
- * the layout stays readable while the shoot list is still being worked through.
+ * been shot yet renders as a labelled placeholder instead of a broken image,
+ * which keeps the layout readable while the shoot list is still open.
+ *
+ * The root is always position: relative. To place a frame absolutely, wrap it
+ * rather than passing `absolute` in className, or ratio="fill" measures
+ * against nothing and collapses to zero height.
  */
 export function Media({
   src,
