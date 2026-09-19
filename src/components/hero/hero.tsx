@@ -17,7 +17,7 @@ export function Hero() {
       <div className="grid h-full gap-3 lg:grid-cols-2 lg:gap-4">
         {/* Light editorial card */}
         <div
-          className="rise flex min-h-0 flex-col overflow-hidden rounded-card bg-white"
+          className="rise order-2 flex min-h-0 flex-col overflow-hidden rounded-card bg-white lg:order-1"
           style={{ animationDelay: "90ms" }}
         >
           <nav aria-label="Sections" className="grid grid-cols-3">
@@ -26,7 +26,7 @@ export function Hero() {
                 key={tab.name}
                 href={tab.href}
                 aria-current={tab.current ? "page" : undefined}
-                className={`flex flex-col gap-6 px-5 pb-3 pt-4 text-[0.875rem] leading-none md:px-6 ${
+                className={`flex flex-col gap-4 px-3 pb-3 pt-4 text-[0.75rem] leading-tight md:gap-6 md:px-6 md:text-[0.875rem] ${
                   i < tabs.length - 1 ? "border-r border-mist/70" : ""
                 } ${
                   tab.current
@@ -85,7 +85,7 @@ export function Hero() {
         </div>
 
         {/* Photographic card */}
-        <div className="rise relative min-h-[30rem] overflow-hidden rounded-card bg-forest lg:min-h-0">
+        <div className="rise relative order-1 min-h-[30rem] overflow-hidden rounded-card bg-forest lg:order-2 lg:min-h-0">
           <Media
             src="/images/editorial/hero-links.jpg"
             alt="A golfer at the top of the backswing on a links fairway under a wide cloud-filled sky"
@@ -120,20 +120,20 @@ export function Hero() {
                 </button>
                 <button
                   type="button"
-                  className="grid size-9 place-items-center rounded-full border border-white/50 text-[0.75rem] text-white transition-colors hover:bg-white/15"
+                  className="hidden size-9 place-items-center rounded-full border border-white/50 text-[0.75rem] text-white transition-colors hover:bg-white/15 sm:grid"
                 >
                   En
                 </button>
                 <Link
                   href="/account"
                   aria-label="Account"
-                  className="grid size-9 place-items-center rounded-full border border-white/50 text-white transition-colors hover:bg-white/15"
+                  className="hidden size-9 place-items-center rounded-full border border-white/50 text-white transition-colors hover:bg-white/15 sm:grid"
                 >
                   <User className="size-4" strokeWidth={1.5} />
                 </Link>
                 <Link
                   href="/bag"
-                  className="flex w-[7.5rem] items-center justify-between rounded-full bg-white py-1 pl-5 pr-1 text-[0.875rem] text-charcoal"
+                  className="flex items-center gap-3 rounded-full bg-white py-1 pl-4 pr-1 text-[0.875rem] text-charcoal sm:w-[7.5rem] sm:justify-between sm:pl-5"
                 >
                   Cart
                   <span className="grid size-7 place-items-center rounded-full bg-charcoal text-[0.75rem] text-white">
