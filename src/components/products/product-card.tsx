@@ -15,7 +15,7 @@ export function ProductCard({ product }: { product: Product }) {
         alt={product.alt}
         ratio="1/1"
         sizes="(min-width: 1024px) 25vw, (min-width: 640px) 50vw, 100vw"
-        className="transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+        imageClassName="transition-transform duration-500 ease-out group-hover:scale-[1.03]"
       />
 
       <div className="flex flex-1 flex-col p-5">

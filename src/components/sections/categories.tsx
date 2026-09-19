@@ -40,7 +40,7 @@ export function Categories() {
               alt={category.alt}
               ratio="4/5"
               sizes="(min-width: 768px) 33vw, 100vw"
-              className="transition-transform duration-500 ease-out group-hover:scale-[1.03]"
+              imageClassName="transition-transform duration-500 ease-out group-hover:scale-[1.03]"
             />
             <div
               aria-hidden

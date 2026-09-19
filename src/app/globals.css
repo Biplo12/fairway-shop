@@ -42,6 +42,15 @@
     outline: 2px solid var(--color-olive);
     outline-offset: 3px;
   }
+
+  /* Tailwind v4 dropped cursor: pointer from the preflight for buttons.
+     Anything that acts like a control should say so under the cursor. */
+  button:not(:disabled),
+  [role="button"]:not(:disabled),
+  summary,
+  label[for] {
+    cursor: pointer;
+  }
 }
 
 /* Entrance, CLAUDE.md §16: one gesture, nothing bouncing.
