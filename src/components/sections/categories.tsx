@@ -7,14 +7,14 @@ const categories = [
   {
     href: "/shop/bags",
     title: "Golf bags",
-    image: "/images/categories/bag-studio.jpg",
-    alt: "A stand bag with clubs, lit against a dark background",
+    image: "/images/categories/bag-fairway.jpg",
+    alt: "A stand bag on the fairway, players in the distance",
   },
   {
     href: "/shop/gloves",
     title: "Gloves",
-    image: "/images/categories/glove-club.jpg",
-    alt: "A gloved hand resting on a club head",
+    image: "/images/categories/glove-grip.jpg",
+    alt: "Gloved hands resting on the grip of a club",
   },
   {
     href: "/shop/headwear",
@@ -38,7 +38,7 @@ export function Categories() {
             <Media
               src={category.image}
               alt={category.alt}
-              ratio="3/4"
+              ratio="4/5"
               sizes="(min-width: 768px) 33vw, 100vw"
               className="transition-transform duration-500 ease-out group-hover:scale-[1.03]"
             />
