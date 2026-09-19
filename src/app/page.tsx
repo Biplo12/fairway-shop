@@ -9,6 +9,11 @@ import { Footer } from "@/components/layout/footer";
 import { FloatingNav } from "@/components/layout/floating-nav";
 import { Reveal } from "@/components/ui/reveal";
 
+/**
+ * Order matters as much as the sections do. No two full bleed photographic
+ * bands sit next to each other, so each one lands against something light or
+ * flat: what the shop sells, who it stocks, how it fits, then the letter.
+ */
 export default function Home() {
   return (
     <>
@@ -21,10 +26,6 @@ export default function Home() {
         </Reveal>
 
         <Reveal>
-          <FeaturedProducts />
-        </Reveal>
-
-        <Reveal>
           <PromoBanner
             image="/images/editorial/irons-banner.jpg"
             alt="TaylorMade irons standing in a bag on the course"
@@ -33,6 +34,24 @@ export default function Home() {
             body="P790, i230 and the JPX Tour on the rack. Hit all three before you choose. Most players guess wrong between them."
             href="/shop/clubs/irons"
             cta="Explore irons"
+          />
+        </Reveal>
+
+        <Reveal>
+          <FeaturedProducts />
+        </Reveal>
+
+        <Reveal>
+          <PromoBanner
+            image="/images/editorial/bags-band.jpg"
+            alt="Two golfers walking a fairway with bags over their shoulders"
+            label="New season bags"
+            heading="Carry less. Play more."
+            body="Stand bags from Ping, Titleist and Sun Mountain, weighed on the same scale so you can compare what you will actually carry for four hours."
+            href="/shop/bags"
+            cta="Shop bags"
+            align="bottom"
+            size="short"
           />
         </Reveal>
 
@@ -57,20 +76,6 @@ export default function Home() {
             href="/fitting"
             cta="Book a fitting"
             action="button"
-          />
-        </Reveal>
-
-        <Reveal>
-          <PromoBanner
-            image="/images/editorial/bags-band.jpg"
-            alt="Two golfers walking a fairway with bags over their shoulders"
-            label="New season bags"
-            heading="Carry less. Play more."
-            body="Stand bags from Ping, Titleist and Sun Mountain, weighed on the same scale so you can compare what you will actually carry for four hours."
-            href="/shop/bags"
-            cta="Shop bags"
-            align="bottom"
-            size="short"
           />
         </Reveal>
 
