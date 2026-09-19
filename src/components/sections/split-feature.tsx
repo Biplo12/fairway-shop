@@ -19,7 +19,7 @@ const tones: Record<Tone, { panel: string; chip: string; body: string }> = {
 };
 
 /**
- * Half photograph, half statement. Used for the services the shop sells on —
+ * Half photograph, half statement. Used for the services the shop sells on ,
  * the things a customer books rather than adds to a bag.
  */
 export function SplitFeature({

@@ -1,5 +1,5 @@
 /**
- * The FAIRWAY corridor mark — two tapered bars converging to a point, the
+ * The FAIRWAY corridor mark, two tapered bars converging to a point, the
  * fairway seen from the tee. Inherits colour from the surrounding text.
  *
  * `compact` crops the top quarter so the tips keep mass below 32px; use it in

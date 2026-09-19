@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-/** Small uppercase metadata — the technical voice against the serif headlines. */
+/** Small uppercase metadata, the technical voice against the serif headlines. */
 export function Label({
   children,
   tone = "dark",

@@ -43,7 +43,7 @@ export function Hero() {
           <div className="flex min-h-0 flex-1 flex-col justify-center gap-6 p-5 md:p-7">
             <span
               className="inline-flex w-fit items-center rounded-full border border-charcoal/40 px-4 py-2.5 text-[0.8125rem] uppercase leading-none tracking-[0.02em]">
-              In stock — 2026 tour balls
+              In stock: 2026 tour balls
             </span>
 
             <Media
@@ -61,7 +61,7 @@ export function Hero() {
               </h2>
               <p className="mt-5 text-[1.1875rem] leading-[1.55] text-charcoal/85">
                 Pro V1, Chrome Soft and TP5 on the same shelf. We fit a ball the
-                way we fit a club — by flight, spin and what you actually do off
+                way we fit a club: by flight, spin and what you actually do off
                 the tee. Come in with a{" "}
                 <Link href="/fitting" className="underline underline-offset-2">
                   sleeve of each
@@ -107,7 +107,7 @@ export function Hero() {
                 <span className="text-[1rem] font-medium uppercase tracking-[0.26em]">
                   Fairway
                 </span>
-                <span className="sr-only">— home</span>
+                <span className="sr-only">home</span>
               </Link>
 
               <div className="flex items-center gap-2">
@@ -151,8 +151,8 @@ export function Hero() {
                 Play the long game
               </h1>
               <p className="mt-4 text-[1.125rem] leading-[1.55] text-white/90">
-                Titleist, TaylorMade, Callaway, Ping and Mizuno on the rack —
-                every one of them fitted to the way you actually play.
+                Titleist, TaylorMade, Callaway, Ping and Mizuno on the rack. Every
+                one of them fitted to the way you actually play.
               </p>
 
               <p className="mt-8 text-[0.875rem] uppercase tracking-[0.02em] text-white">

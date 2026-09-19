@@ -24,7 +24,7 @@ const categories = [
   },
 ];
 
-/** Three portrait cards — the way into the categories that sell fastest. */
+/** Three portrait cards, the way into the categories that sell fastest. */
 export function Categories() {
   return (
     <section className="px-3 pb-3 md:px-5 md:pb-5">

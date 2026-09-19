@@ -1,4 +1,4 @@
-/** Long rule with an arrowhead — the link marker used across the site. */
+/** Long rule with an arrowhead, the link marker used across the site. */
 export function Arrow({ className = "" }: { className?: string }) {
   return (
     <svg

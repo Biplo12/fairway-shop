@@ -17,8 +17,8 @@ const instrumentSerif = Instrument_Serif({
 
 export const metadata: Metadata = {
   title: {
-    default: "FAIRWAY — Golf equipment, fitted properly",
-    template: "%s — FAIRWAY",
+    default: "FAIRWAY. Golf equipment, fitted properly",
+    template: "%s | FAIRWAY",
   },
   description:
     "Titleist, TaylorMade, Callaway, Ping and Mizuno, fitted to the way you play. A specialist golf shop near St. Andrews since 1987.",

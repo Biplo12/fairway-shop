@@ -1,7 +1,7 @@
 import Link from "next/link";
 import type { ReactNode } from "react";
 
-/** Minimal uppercase link with a rule that extends on hover — CLAUDE.md §29. */
+/** Minimal uppercase link with a rule that extends on hover, CLAUDE.md §29. */
 export function ArrowLink({
   href,
   children,

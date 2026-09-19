@@ -1,8 +1,8 @@
 @import "tailwindcss";
 
 @theme {
-  /* Brand palette — CLAUDE.md §15. One light palette; dark is an editorial
-     device (forest cards), never a theme. */
+  /* Brand palette, CLAUDE.md §10. Neutral light page, white cards, dark
+     surfaces carried by photography rather than a theme. */
   --color-offwhite: #f6f6f6;
   --color-paper: #efefef;
   --color-charcoal: #171817;
@@ -44,7 +44,7 @@
   }
 }
 
-/* Entrance — CLAUDE.md §16: one gesture, nothing bouncing.
+/* Entrance, CLAUDE.md §16: one gesture, nothing bouncing.
    CSS-only so it costs no JavaScript and runs before hydration. */
 @keyframes fairway-rise {
   from {

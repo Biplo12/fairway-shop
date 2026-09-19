@@ -1,6 +1,6 @@
 import type { ReactNode } from "react";
 
-/** The narrow centred column every section sits in — CLAUDE.md §46. */
+/** The narrow centred column every section sits in, CLAUDE.md §46. */
 export function Container({
   children,
   className = "",

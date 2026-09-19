@@ -15,7 +15,7 @@ const ratios = {
 
 /**
  * Photography wrapper. Resolves the file at render time so a frame that has not
- * been shot yet renders as a labelled placeholder instead of a broken image —
+ * been shot yet renders as a labelled placeholder instead of a broken image ,
  * the layout stays readable while the shoot list is still being worked through.
  */
 export function Media({

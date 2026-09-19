@@ -3,19 +3,21 @@ import { PromoBanner } from "@/components/sections/promo-banner";
 import { Categories } from "@/components/sections/categories";
 import { SplitFeature } from "@/components/sections/split-feature";
 import { Footer } from "@/components/layout/footer";
+import { FloatingNav } from "@/components/layout/floating-nav";
 
 export default function Home() {
   return (
     <>
+      <FloatingNav />
       <main id="main">
         <Hero />
 
         <PromoBanner
           image="/images/editorial/irons-banner.jpg"
           alt="A set of TaylorMade irons standing in a bag on the course"
-          label="New — TaylorMade P790"
+          label="New in: TaylorMade P790"
           heading="Irons, fitted properly"
-          body="P790, i230 and the JPX Tour on the rack. Hit all three before you choose — most players guess wrong between them."
+          body="P790, i230 and the JPX Tour on the rack. Hit all three before you choose. Most players guess wrong between them."
           href="/shop/clubs/irons"
           cta="Explore irons"
         />
@@ -39,7 +41,7 @@ export default function Home() {
           overlay="A ball that suits your flight is worth more than a new driver. It is also a hundred times cheaper."
           label="Ball fitting"
           heading="Find your best golf ball"
-          body="The ball is the only piece of equipment you use on every shot, and the gap between models is wider than most players expect. Half an hour on the monitor settles it — spin off the wedge, flight off the tee, and how it behaves into wind."
+          body="The ball is the only piece of equipment you use on every shot, and the gap between models is wider than most players expect. Half an hour on the monitor settles it: spin off the wedge, flight off the tee, and how it behaves into wind."
           href="/fitting/ball"
           cta="Explore ball fitting"
         />
@@ -65,6 +67,7 @@ export default function Home() {
           href="/shop/bags"
           cta="Shop bags"
           align="bottom"
+          size="short"
         />
       </main>
       <Footer />

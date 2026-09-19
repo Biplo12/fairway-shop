@@ -59,9 +59,6 @@ export function Footer() {
               A specialist golf shop and fitting studio near St. Andrews. Every
               brand that matters, fitted to the way you play.
             </p>
-            <p className="mt-8 text-[0.75rem] uppercase tracking-[0.16em] text-offwhite/50">
-              Est. 1987 — St. Andrews, Scotland
-            </p>
           </div>
 
           <nav

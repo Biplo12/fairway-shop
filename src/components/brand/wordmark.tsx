@@ -1,5 +1,5 @@
 /**
- * Primary wordmark — CLAUDE.md §14: uppercase, spacious, restrained.
+ * Primary wordmark, CLAUDE.md §14: uppercase, spacious, restrained.
  * The script mark from the identity work is a separate, ceremonial asset;
  * this is what carries the UI.
  */
