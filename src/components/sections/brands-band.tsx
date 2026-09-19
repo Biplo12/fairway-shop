@@ -1,10 +1,12 @@
 import Link from "next/link";
 
+import { BrandLogo } from "@/components/brand/brand-logo";
 import { brands } from "@/content/brands";
 
 /**
  * The rack, listed. For a multi-brand shop this is the strongest trust signal
- * on the page, so it gets a quiet band of its own rather than a logo soup.
+ * on the page. Logos render from public/brands when they are present, names
+ * carry it until then.
  */
 export function BrandsBand() {
   return (
@@ -22,16 +24,19 @@ export function BrandsBand() {
           </Link>
         </div>
 
-        <ul className="mt-8 grid grid-cols-2 gap-x-6 gap-y-5 sm:grid-cols-3 lg:grid-cols-6">
+        <ul className="mt-10 grid grid-cols-2 items-center gap-x-8 gap-y-10 sm:grid-cols-3 lg:grid-cols-6">
           {brands.map((brand) => (
             <li key={brand.slug}>
-              <Link href={`/brands/${brand.slug}`} className="group block">
-                <p className="text-[1.0625rem] leading-none transition-colors group-hover:text-offwhite/70">
-                  {brand.name}
-                </p>
-                <p className="mt-1.5 text-[0.75rem] text-offwhite/45">
-                  {brand.note}
-                </p>
+              <Link
+                href={`/brands/${brand.slug}`}
+                className="group flex flex-col items-center gap-2 text-center opacity-80 transition-opacity hover:opacity-100"
+                title={brand.note}
+              >
+                <BrandLogo
+                  slug={brand.slug}
+                  name={brand.name}
+                  imageClassName="brightness-0 invert"
+                />
               </Link>
             </li>
           ))}

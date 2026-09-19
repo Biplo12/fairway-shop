@@ -14,6 +14,10 @@ export default function Home() {
       <main id="main">
         <Hero />
 
+        <Categories />
+
+        <FeaturedProducts />
+
         <PromoBanner
           image="/images/editorial/irons-banner.jpg"
           alt="A set of TaylorMade irons standing in a bag on the course"
@@ -24,20 +28,7 @@ export default function Home() {
           cta="Explore irons"
         />
 
-        <FeaturedProducts />
-
-        <Categories />
-
-        <PromoBanner
-          image="/images/editorial/drivers-band.jpg"
-          alt="A driver and an iron lying on mown turf"
-          label="Titleist TSR metals"
-          heading="Find your faster"
-          body="Four heads that behave differently and nine grams of movable weight. We put all four on the monitor and read the numbers with you."
-          href="/shop/clubs/drivers"
-          cta="Explore drivers"
-          align="bottom"
-        />
+        <BrandsBand />
 
         <SplitFeature
           image="/images/fitting/ball-fitting.jpg"
@@ -50,8 +41,6 @@ export default function Home() {
           href="/fitting/ball"
           cta="Explore ball fitting"
         />
-
-        <BrandsBand />
 
         <SplitFeature
           image="/images/fitting/club-fitting.jpg"
