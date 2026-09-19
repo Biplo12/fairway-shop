@@ -1,0 +1,205 @@
+import Link from "next/link";
+import { Search, User, ShoppingBag } from "lucide-react";
+
+import { Mark } from "@/components/brand/mark";
+import { Media } from "@/components/ui/media";
+
+const tabs = [
+  { href: "/", name: "Home Page", index: "01", current: true },
+  { href: "/shop", name: "Equipment Store", index: "02", current: false },
+  { href: "/custom", name: "Fitting", index: "03", current: false },
+];
+
+/** Long rule + arrowhead, the reference's link marker. */
+function Arrow({ className = "" }: { className?: string }) {
+  return (
+    <svg
+      aria-hidden
+      viewBox="0 0 34 8"
+      className={`h-2 w-[34px] shrink-0 ${className}`}
+      fill="none"
+    >
+      <path d="M0 4h32M28 1l4 3-4 3" stroke="currentColor" strokeWidth="1" />
+    </svg>
+  );
+}
+
+export function Hero() {
+  return (
+    <section className="p-3 md:p-5 lg:h-dvh">
+      <div className="grid h-full gap-3 lg:grid-cols-2 lg:gap-4">
+        {/* Light editorial card */}
+        <div
+          className="rise flex min-h-0 flex-col overflow-hidden rounded-card bg-white"
+          style={{ animationDelay: "80ms" }}
+        >
+          <nav
+            aria-label="Sections"
+            className="rise grid grid-cols-3"
+            style={{ animationDelay: "200ms" }}
+          >
+            {tabs.map((tab, i) => (
+              <Link
+                key={tab.name}
+                href={tab.href}
+                aria-current={tab.current ? "page" : undefined}
+                className={`flex flex-col gap-6 px-5 pb-3 pt-4 text-[0.875rem] leading-none md:px-6 ${
+                  i < tabs.length - 1 ? "border-r border-mist/70" : ""
+                } ${
+                  tab.current
+                    ? "border-b-[3px] border-b-forest text-charcoal"
+                    : "border-b border-b-mist/70 text-charcoal/80 hover:text-charcoal"
+                }`}
+              >
+                <span>{tab.name}</span>
+                <span className="self-start text-charcoal/50">{tab.index}</span>
+              </Link>
+            ))}
+          </nav>
+
+          <div className="flex min-h-0 flex-1 flex-col justify-center gap-6 p-5 md:p-7">
+            <span style={{ animationDelay: "280ms" }}
+              className="rise inline-flex w-fit items-center rounded-full border border-charcoal/40 px-4 py-2.5 text-[0.8125rem] uppercase leading-none tracking-[0.02em]">
+              New — Fairway One &amp; Fairway X
+            </span>
+
+            <Media
+              src="/images/products/one-ball-g1.jpg"
+              alt="A FAIRWAY ONE golf ball resting in mown grass"
+              ratio="16/10"
+              sizes="(min-width: 1024px) 48vw, 100vw"
+              className="reveal rounded-[12px]"
+              style={{ animationDelay: "340ms" }}
+              priority
+            />
+
+            <div className="rise" style={{ animationDelay: "440ms" }}>
+              <h2 className="text-[clamp(2.5rem,4vw,3.75rem)] font-normal leading-[1.05] tracking-[-0.025em]">
+                Consistency
+              </h2>
+              <p className="mt-5 text-[1.0625rem] leading-[1.6] text-charcoal/85">
+                Two years on the dimple pattern. Another in{" "}
+                <Link href="/about" className="underline underline-offset-2">
+                  the wind off the North Sea
+                </Link>
+                . FAIRWAY ONE holds its line when the weather moves other balls.{" "}
+                <Link
+                  href="/shop/x-ball"
+                  className="underline underline-offset-2"
+                >
+                  FAIRWAY X
+                </Link>{" "}
+                adds speed for players who already make their own.
+              </p>
+
+              <div className="mt-6 flex justify-end">
+                <Link
+                  href="/shop/one-ball"
+                  className="group inline-flex items-center gap-3 text-[0.875rem] uppercase tracking-[0.04em]"
+                >
+                  <Arrow className="transition-transform duration-200 group-hover:translate-x-1" />
+                  <span className="underline underline-offset-4">
+                    Learn more
+                  </span>
+                </Link>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        {/* Photographic card */}
+        <div className="rise relative min-h-[30rem] overflow-hidden rounded-card bg-forest lg:min-h-0">
+          <Media
+            src="/images/editorial/hero-links.jpg"
+            alt="A golfer at the top of the backswing on a links fairway under a wide cloud-filled sky"
+            ratio="fill"
+            sizes="100vw"
+            quality={90}
+            className="h-full w-full"
+            priority
+          />
+          <div
+            aria-hidden
+            className="absolute inset-0 bg-gradient-to-b from-charcoal/75 via-charcoal/30 to-charcoal/10"
+          />
+
+          <div className="absolute inset-0 flex flex-col p-5 md:p-7">
+            <div
+              className="rise flex items-start justify-between gap-4"
+              style={{ animationDelay: "260ms" }}
+            >
+              <Link href="/" className="flex items-center gap-3 text-white">
+                <Mark compact className="h-5 w-5" />
+                <span className="text-[1rem] font-medium uppercase tracking-[0.26em]">
+                  Fairway
+                </span>
+                <span className="sr-only">— home</span>
+              </Link>
+
+              <div className="flex items-center gap-2">
+                <button
+                  type="button"
+                  aria-label="Search"
+                  className="grid size-9 place-items-center rounded-full border border-white/50 text-white transition-colors hover:bg-white/15"
+                >
+                  <Search className="size-4" strokeWidth={1.5} />
+                </button>
+                <button
+                  type="button"
+                  className="grid size-9 place-items-center rounded-full border border-white/50 text-[0.75rem] text-white transition-colors hover:bg-white/15"
+                >
+                  En
+                </button>
+                <Link
+                  href="/account"
+                  aria-label="Account"
+                  className="grid size-9 place-items-center rounded-full border border-white/50 text-white transition-colors hover:bg-white/15"
+                >
+                  <User className="size-4" strokeWidth={1.5} />
+                </Link>
+                <Link
+                  href="/bag"
+                  className="flex w-[7.5rem] items-center justify-between rounded-full bg-white py-1 pl-5 pr-1 text-[0.875rem] text-charcoal"
+                >
+                  Cart
+                  <span className="grid size-7 place-items-center rounded-full bg-charcoal text-[0.75rem] text-white">
+                    0
+                  </span>
+                </Link>
+              </div>
+            </div>
+
+            <div
+              className="rise my-auto max-w-[34rem]"
+              style={{ animationDelay: "420ms" }}
+            >
+              <span className="inline-flex items-center rounded-full bg-white px-3.5 py-2 text-[0.75rem] uppercase leading-none tracking-[0.02em] text-charcoal">
+                Est. 1987
+              </span>
+              <h1 className="mt-5 text-[clamp(2.25rem,4.2vw,3.5rem)] font-normal leading-[1.05] tracking-[-0.025em] text-white">
+                Play the long game
+              </h1>
+              <p className="mt-4 text-[1rem] leading-[1.6] text-white/90">
+                Equipment designed around the way golf is actually played. Made
+                for the shot, built for the story.
+              </p>
+
+              <p className="mt-8 text-[0.875rem] uppercase tracking-[0.02em] text-white">
+                New to Fairway? Start with the fitting.
+              </p>
+              <Link
+                href="/custom"
+                className="group mt-3 inline-flex items-center gap-3 text-[0.875rem] uppercase tracking-[0.02em] text-white"
+              >
+                <Arrow className="transition-transform duration-200 group-hover:translate-x-1" />
+                <span className="underline underline-offset-4">
+                  Book a fitting
+                </span>
+              </Link>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+}

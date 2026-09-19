@@ -1,0 +1,7 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" fill="none" role="img" aria-label="FAIRWAY">
+  <title>FAIRWAY corridor mark, compact</title>
+  <!-- The same corridor with the top quarter cropped, so the tips keep mass
+       below 32px. Use this in UI chrome; use mark-corridor.svg large. -->
+  <path d="M36.3 0 0 100 17.4 100 40.7 0Z" fill="currentColor" />
+  <path d="M63.7 0 100 100 82.6 100 59.3 0Z" fill="currentColor" />
+</svg>
