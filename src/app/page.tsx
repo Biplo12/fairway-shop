@@ -25,7 +25,7 @@ export default function Home() {
         <Categories />
 
         <PromoBanner
-          image="/images/editorial/drivers-banner.jpg"
+          image="/images/editorial/drivers-band.jpg"
           alt="A driver and an iron lying on mown turf"
           label="Titleist TSR metals"
           heading="Find your faster"
@@ -33,7 +33,6 @@ export default function Home() {
           href="/shop/clubs/drivers"
           cta="Explore drivers"
           align="bottom"
-          focus="object-[50%_28%]"
         />
 
         <SplitFeature
