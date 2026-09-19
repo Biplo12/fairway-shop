@@ -18,13 +18,9 @@ export function Hero() {
         {/* Light editorial card */}
         <div
           className="rise flex min-h-0 flex-col overflow-hidden rounded-card bg-white"
-          style={{ animationDelay: "80ms" }}
+          style={{ animationDelay: "90ms" }}
         >
-          <nav
-            aria-label="Sections"
-            className="rise grid grid-cols-3"
-            style={{ animationDelay: "200ms" }}
-          >
+          <nav aria-label="Sections" className="grid grid-cols-3">
             {tabs.map((tab, i) => (
               <Link
                 key={tab.name}
@@ -45,8 +41,8 @@ export function Hero() {
           </nav>
 
           <div className="flex min-h-0 flex-1 flex-col justify-center gap-6 p-5 md:p-7">
-            <span style={{ animationDelay: "280ms" }}
-              className="rise inline-flex w-fit items-center rounded-full border border-charcoal/40 px-4 py-2.5 text-[0.8125rem] uppercase leading-none tracking-[0.02em]">
+            <span
+              className="inline-flex w-fit items-center rounded-full border border-charcoal/40 px-4 py-2.5 text-[0.8125rem] uppercase leading-none tracking-[0.02em]">
               In stock — 2026 tour balls
             </span>
 
@@ -55,12 +51,11 @@ export function Hero() {
               alt="Tour golf balls lit against a dark background"
               ratio="16/10"
               sizes="(min-width: 1024px) 48vw, 100vw"
-              className="reveal rounded-[12px]"
-              style={{ animationDelay: "340ms" }}
+              className="rounded-[12px]"
               priority
             />
 
-            <div className="rise" style={{ animationDelay: "440ms" }}>
+            <div>
               <h2 className="text-[clamp(2.75rem,5vw,4.5rem)] font-normal leading-[1.05] tracking-[-0.025em]">
                 Tour balls
               </h2>
@@ -106,10 +101,7 @@ export function Hero() {
           />
 
           <div className="absolute inset-0 flex flex-col p-5 md:p-7">
-            <div
-              className="rise flex items-start justify-between gap-4"
-              style={{ animationDelay: "260ms" }}
-            >
+            <div className="flex items-start justify-between gap-4">
               <Link href="/" className="flex items-center gap-3 text-white">
                 <Mark compact className="h-5 w-5" />
                 <span className="text-[1rem] font-medium uppercase tracking-[0.26em]">
@@ -151,10 +143,7 @@ export function Hero() {
               </div>
             </div>
 
-            <div
-              className="rise my-auto max-w-[38rem]"
-              style={{ animationDelay: "420ms" }}
-            >
+            <div className="my-auto max-w-[38rem]">
               <span className="inline-flex items-center rounded-full bg-white px-3.5 py-2 text-[0.75rem] uppercase leading-none tracking-[0.02em] text-charcoal">
                 Est. 1987
               </span>

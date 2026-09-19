@@ -7,20 +7,20 @@ const categories = [
   {
     href: "/shop/bags",
     title: "Golf bags",
-    image: "/images/categories/bags.jpg",
-    alt: "A tour golf bag standing on a fairway in morning mist",
+    image: "/images/categories/bag-studio.jpg",
+    alt: "A stand bag with clubs, lit against a dark background",
   },
   {
     href: "/shop/gloves",
     title: "Gloves",
-    image: "/images/categories/gloves.jpg",
-    alt: "A gloved hand resting on a golf club",
+    image: "/images/categories/glove-club.jpg",
+    alt: "A gloved hand resting on a club head",
   },
   {
     href: "/shop/headwear",
     title: "Headwear",
-    image: "/images/categories/headwear.jpg",
-    alt: "A golfer in a cap carrying a club over the shoulder",
+    image: "/images/categories/cap-portrait.jpg",
+    alt: "A golfer in a cap with a club over the shoulder",
   },
 ];
 
