@@ -3,8 +3,8 @@
 @theme {
   /* Brand palette, CLAUDE.md §10. Neutral light page, white cards, dark
      surfaces carried by photography rather than a theme. */
-  --color-offwhite: #f6f6f6;
-  --color-paper: #efefef;
+  --color-offwhite: #ededed;
+  --color-paper: #f6f6f6;
   --color-charcoal: #171817;
   --color-forest: #26352d;
   --color-olive: #69715c;

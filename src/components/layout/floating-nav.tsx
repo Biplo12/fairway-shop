@@ -41,7 +41,7 @@ export function FloatingNav() {
       >
         <Link href="/" className="flex items-center gap-2.5">
           <Mark compact className="h-4 w-4" />
-          <span className="text-[0.8125rem] font-medium uppercase tracking-[0.24em]">
+          <span className="text-[0.875rem] font-medium uppercase leading-none tracking-[0.24em]">
             Fairway
           </span>
         </Link>
@@ -51,7 +51,7 @@ export function FloatingNav() {
             <li key={link.href}>
               <Link
                 href={link.href}
-                className="text-[0.875rem] text-offwhite/80 underline-offset-4 transition-colors hover:text-offwhite hover:underline"
+                className="text-[0.875rem] leading-none text-offwhite/80 underline-offset-4 transition-colors hover:text-offwhite hover:underline"
               >
                 {link.label}
               </Link>

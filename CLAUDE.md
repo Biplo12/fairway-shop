@@ -148,15 +148,16 @@ Never: mascots, shields, cartoon balls, aggressive sports logos.
 
 | Token | Value | Use |
 | --- | --- | --- |
-| OFF WHITE | `#F6F6F6` | page background |
-| PAPER | `#EFEFEF` | recessed surface |
+| OFF WHITE | `#EDEDED` | page background |
+| PAPER | `#F6F6F6` | recessed surface |
 | CHARCOAL | `#171817` | primary text, dark cards |
 | FOREST | `#26352D` | accent, active tab rule |
 | OLIVE | `#69715C` | focus ring, secondary text |
 | STONE | `#B5ADA0` | neutral |
 | MIST | `#E2E2E2` | borders |
 
-A neutral light grey page with white cards, measured off the reference board. Product photography
+A neutral light grey page with white cards. The page sits a shade below the cards so their
+edges read without a border. Product photography
 brings whatever colour the brands bring, that contrast is the point. Avoid saturated interface
 colour and pure black.
 
