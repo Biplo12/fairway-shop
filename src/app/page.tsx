@@ -52,6 +52,7 @@ export default function Home() {
         href="/fitting/clubs"
         cta="Explore club fitting"
         imageSide="right"
+        tone="dark"
       />
     </main>
   );
