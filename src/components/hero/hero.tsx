@@ -6,9 +6,9 @@ import { Media } from "@/components/ui/media";
 import { Arrow } from "@/components/ui/arrow";
 
 const tabs = [
-  { href: "/", name: "Home Page", index: "01", current: true },
-  { href: "/shop", name: "Equipment Store", index: "02", current: false },
-  { href: "/custom", name: "Fitting", index: "03", current: false },
+  { href: "/shop", name: "Shop", index: "01", current: false },
+  { href: "/brands", name: "Brands", index: "02", current: false },
+  { href: "/fitting", name: "Fitting", index: "03", current: false },
 ];
 
 export function Hero() {
@@ -159,7 +159,7 @@ export function Hero() {
                 New to Fairway? Start on the launch monitor.
               </p>
               <Link
-                href="/custom"
+                href="/fitting"
                 className="group mt-3 inline-flex items-center gap-3 text-[0.875rem] uppercase tracking-[0.02em] text-white"
               >
                 <Arrow className="transition-transform duration-200 group-hover:translate-x-1" />

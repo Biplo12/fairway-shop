@@ -1,6 +1,8 @@
 import { Hero } from "@/components/hero/hero";
 import { PromoBanner } from "@/components/sections/promo-banner";
+import { FeaturedProducts } from "@/components/sections/featured-products";
 import { Categories } from "@/components/sections/categories";
+import { BrandsBand } from "@/components/sections/brands-band";
 import { SplitFeature } from "@/components/sections/split-feature";
 import { Footer } from "@/components/layout/footer";
 import { FloatingNav } from "@/components/layout/floating-nav";
@@ -22,6 +24,8 @@ export default function Home() {
           cta="Explore irons"
         />
 
+        <FeaturedProducts />
+
         <Categories />
 
         <PromoBanner
@@ -29,7 +33,7 @@ export default function Home() {
           alt="A driver and an iron lying on mown turf"
           label="Titleist TSR metals"
           heading="Find your faster"
-          body="Nine grams of movable weight and four heads that behave differently. We put all four on the monitor and read the numbers with you."
+          body="Four heads that behave differently and nine grams of movable weight. We put all four on the monitor and read the numbers with you."
           href="/shop/clubs/drivers"
           cta="Explore drivers"
           align="bottom"
@@ -41,10 +45,13 @@ export default function Home() {
           overlay="A ball that suits your flight is worth more than a new driver. It is also a hundred times cheaper."
           label="Ball fitting"
           heading="Find your best golf ball"
-          body="The ball is the only piece of equipment you use on every shot, and the gap between models is wider than most players expect. Half an hour on the monitor settles it: spin off the wedge, flight off the tee, and how it behaves into wind."
+          body="The ball is the only piece of equipment you use on every shot, and the gap between models is wider than most players expect. We test three models across wedge, mid iron and driver, then give you the numbers to keep."
+          meta={["£40|Session", "45 min|On the monitor", "3|Models tested"]}
           href="/fitting/ball"
           cta="Explore ball fitting"
         />
+
+        <BrandsBand />
 
         <SplitFeature
           image="/images/fitting/club-fitting.jpg"
@@ -53,8 +60,14 @@ export default function Home() {
           label="Club fitting"
           heading="Better fit. Better game."
           body="A fitting is not about writing down your specs. It is about finding which shots you are missing and which clubs give them back. We work through distance, dispersion and descent angle, then gap the whole bag so no two clubs do the same job."
+          meta={[
+            "£75|Session",
+            "90 min|On the monitor",
+            "Refunded|Against a purchase",
+          ]}
           href="/fitting/clubs"
-          cta="Explore club fitting"
+          cta="Book a fitting"
+          action="button"
           imageSide="right"
         />
 

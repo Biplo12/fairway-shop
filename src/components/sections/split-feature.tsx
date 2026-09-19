@@ -1,6 +1,7 @@
 import Link from "next/link";
 
 import { Arrow } from "@/components/ui/arrow";
+import { Button } from "@/components/ui/button";
 import { Media } from "@/components/ui/media";
 
 type Tone = "light" | "dark";
@@ -31,6 +32,8 @@ export function SplitFeature({
   body,
   href,
   cta,
+  meta,
+  action = "link",
   imageSide = "left",
   tone = "light",
 }: {
@@ -42,6 +45,9 @@ export function SplitFeature({
   body: string;
   href: string;
   cta: string;
+  /** price, duration, anything a customer would ask at the counter */
+  meta?: string[];
+  action?: "link" | "button";
   imageSide?: "left" | "right";
   tone?: Tone;
 }) {
@@ -85,13 +91,37 @@ export function SplitFeature({
             <p className={`mt-5 text-[1.0625rem] leading-[1.6] ${t.body}`}>
               {body}
             </p>
-            <Link
-              href={href}
-              className="group mt-8 inline-flex items-center gap-3 text-[0.9375rem] uppercase tracking-[0.04em]"
-            >
-              <Arrow className="transition-transform duration-200 group-hover:translate-x-1" />
-              <span className="underline underline-offset-4">{cta}</span>
-            </Link>
+
+            {meta ? (
+              <dl className="mt-7 flex flex-wrap gap-x-10 gap-y-4">
+                {meta.map((entry) => {
+                  const [value, label] = entry.split("|");
+                  return (
+                    <div key={entry}>
+                      <dt className="text-[0.6875rem] uppercase tracking-[0.16em] text-olive">
+                        {label}
+                      </dt>
+                      <dd className="mt-1.5 text-[1.375rem] leading-none">
+                        {value}
+                      </dd>
+                    </div>
+                  );
+                })}
+              </dl>
+            ) : null}
+            {action === "button" ? (
+              <Button href={href} className="mt-8">
+                {cta}
+              </Button>
+            ) : (
+              <Link
+                href={href}
+                className="group mt-8 inline-flex items-center gap-3 text-[0.9375rem] uppercase tracking-[0.04em]"
+              >
+                <Arrow className="transition-transform duration-200 group-hover:translate-x-1" />
+                <span className="underline underline-offset-4">{cta}</span>
+              </Link>
+            )}
           </div>
         </div>
       </div>
