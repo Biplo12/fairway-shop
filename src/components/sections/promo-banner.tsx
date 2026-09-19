@@ -41,6 +41,7 @@ export function PromoBanner({
   cta,
   align = "middle",
   size = "tall",
+  focus = "object-center",
 }: {
   image: string;
   alt: string;
@@ -51,6 +52,8 @@ export function PromoBanner({
   cta: string;
   align?: Align;
   size?: Size;
+  /** where the crop holds when the band is shorter than the frame */
+  focus?: string;
 }) {
   return (
     <section className="px-3 pb-3 md:px-5 md:pb-5">
@@ -62,6 +65,7 @@ export function PromoBanner({
           sizes="100vw"
           quality={90}
           className={heights[size]}
+          imageClassName={focus}
         />
         <div aria-hidden className={`absolute inset-0 ${gradients[align]}`} />
 

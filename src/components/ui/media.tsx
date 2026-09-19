@@ -24,6 +24,7 @@ export function Media({
   ratio = "4/3",
   sizes = "100vw",
   className = "",
+  imageClassName = "",
   style,
   priority = false,
   quality = 90,
@@ -33,6 +34,8 @@ export function Media({
   ratio?: keyof typeof ratios;
   sizes?: string;
   className?: string;
+  /** object-position and any other classes for the image itself. */
+  imageClassName?: string;
   style?: CSSProperties;
   priority?: boolean;
   quality?: number;
@@ -52,7 +55,7 @@ export function Media({
           sizes={sizes}
           quality={quality}
           priority={priority}
-          className="object-cover"
+          className={`object-cover ${imageClassName}`}
         />
       ) : (
         <div className="absolute inset-0 grid place-items-center p-6 text-center">

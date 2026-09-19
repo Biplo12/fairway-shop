@@ -68,6 +68,7 @@ export default function Home() {
           cta="Shop bags"
           align="bottom"
           size="short"
+          focus="object-[50%_90%]"
         />
       </main>
       <Footer />
