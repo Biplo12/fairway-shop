@@ -491,6 +491,420 @@ export const productPages: Record<string, ProductPage> = {
     suits: "Walkers who want a towel they can actually find.",
   },
 
+  "ping-hoofer-14": {
+    tagline: "Fourteen dividers",
+    description:
+      "The Hoofer Lite with the full set of dividers, and half a kilo of extra weight to pay for them. If you carry fourteen clubs and hate untangling them on the tee, this is the trade.",
+    headline: "Nothing tangles on the tee",
+    marks: ["2.5 kg", "14 dividers", "Double strap"],
+    notes: [
+      "Half a kilo heavier than the Lite. That is the price of the full dividers.",
+      "Fourteen slots means every club has its own. Nothing rattles and nothing catches.",
+      "Same strap system as the Lite, which is the part that decides whether you finish the round.",
+      "Weighed on the shop scale like every carry bag here, so the numbers compare.",
+    ],
+    counter:
+      "The Lite or the 14 comes down to one question: does untangling clubs on the tee annoy you? Be honest.",
+    specs: [
+      { label: "Weight", value: "2.5 kg empty" },
+      { label: "Top", value: "14 way" },
+      { label: "Strap", value: "Double, adjustable" },
+      { label: "Legs", value: "Stand" },
+    ],
+    suits: "Walkers carrying a full set who want every club in its own slot.",
+  },
+
+  "ping-hoofer-tour": {
+    tagline: "Built heavier on purpose",
+    description:
+      "A carry bag made for someone who plays every week and keeps a bag for five years. Heavier fabric, heavier hardware, and it will still look right when the Lite has given up.",
+    headline: "Heavier, and that is the point",
+    marks: ["2.9 kg", "Tour build", "Reinforced base"],
+    notes: [
+      "Nearly three kilos. If you only play in summer, buy the Lite instead.",
+      "Heavier fabric and hardware. This is where the extra weight went, not into features.",
+      "The base is reinforced, which is where carry bags usually fail first.",
+      "Expect five seasons from it. We have customers on their second decade.",
+    ],
+    counter:
+      "Cheap bags are expensive. You buy three of them in the time this one lasts.",
+    specs: [
+      { label: "Weight", value: "2.9 kg empty" },
+      { label: "Build", value: "Tour weight fabric" },
+      { label: "Base", value: "Reinforced" },
+      { label: "Legs", value: "Stand" },
+    ],
+    suits: "Players out every week, in all weather, who want to buy once.",
+  },
+
+  "ping-moonlite": {
+    tagline: "One kilo",
+    description:
+      "A pencil bag for nine holes after work with six clubs in it. It is not trying to be your main bag and it will be better than your main bag for the evenings you actually play.",
+    headline: "For the nine you fit in after work",
+    marks: ["1.0 kg", "Six clubs", "Single strap"],
+    notes: [
+      "One kilo. You will forget it is there, which is the whole idea.",
+      "Six or seven clubs, not fourteen. Pick them on the way out of the door.",
+      "Single strap. On a bag this light a double strap is weight you do not need.",
+      "It rolls flat, so it lives in a car boot without taking the boot.",
+    ],
+    counter:
+      "The best round of the week is usually the quick nine. Carry a bag that makes it easy to go.",
+    specs: [
+      { label: "Weight", value: "1.0 kg empty" },
+      { label: "Capacity", value: "Six to seven clubs" },
+      { label: "Strap", value: "Single" },
+      { label: "Storage", value: "Rolls flat" },
+    ],
+    suits: "Evening nines, holidays, and anyone who walks to the course.",
+  },
+
+  "ping-reserve-bag": {
+    tagline: "Bought once",
+    description:
+      "The bag people photograph on the first tee, and the one they keep long enough for the leather to go the right colour. Expensive, and nobody who has bought one has been back to complain.",
+    headline: "The one you keep",
+    marks: ["2.3 kg", "Leather trim", "Stand"],
+    notes: [
+      "Leather trim, which means it will mark and then look better for it.",
+      "Light for what it is. The weight is in the materials, not the hardware.",
+      "White shows everything. That is a choice, and it ages well if you let it.",
+      "This is the bag we would take if we were buying one and keeping it.",
+    ],
+    counter:
+      "There is a bag for every budget on this wall. There is one bag on it that you will still own in ten years.",
+    specs: [
+      { label: "Weight", value: "2.3 kg empty" },
+      { label: "Trim", value: "Leather" },
+      { label: "Top", value: "Four way" },
+      { label: "Legs", value: "Stand" },
+    ],
+    suits: "Players buying their last carry bag rather than their next one.",
+  },
+
+  "ping-pioneer": {
+    tagline: "Fifteen pockets, all reachable",
+    description:
+      "A cart bag designed by someone who has actually stood beside a trolley. Every pocket opens with the bag strapped down, which sounds obvious and is not true of most of them.",
+    headline: "Every pocket opens on the trolley",
+    marks: ["15 pockets", "Strap pass through", "Cart base"],
+    notes: [
+      "Fifteen pockets and you can reach all of them with the bag strapped to a trolley.",
+      "The strap passes through the back, so the bag does not twist on the third hole.",
+      "Cart bags do not need to be light. Buy the one with the storage you want.",
+      "It will not stand up on its own. That is the trade for a cart base.",
+    ],
+    counter:
+      "Take a cart bag out to the trolley before you buy it. Half of them cover their own pockets.",
+    specs: [
+      { label: "Pockets", value: "15" },
+      { label: "Base", value: "Cart" },
+      { label: "Strap", value: "Pass through" },
+      { label: "Top", value: "15 way" },
+    ],
+    suits: "Anyone who rides or pulls a trolley and wants to stop unstrapping the bag.",
+  },
+
+  "ping-traverse": {
+    tagline: "Fits every trolley we have tried",
+    description:
+      "That sounds like a small claim until a bag does not fit yours. The base is shaped for the common trolley frames, and we have put it on the four we keep in the shop.",
+    headline: "It fits, and that is not a given",
+    marks: ["14 way top", "Trolley base", "Quiet colours"],
+    notes: [
+      "Bring your trolley if you have one. We will put the bag on it here.",
+      "Fourteen way top, so every club has a slot and nothing rubs.",
+      "Grey and black. It will not date in three seasons.",
+      "Cart bag, so no legs. It leans against the trolley, not on its own.",
+    ],
+    counter:
+      "Nobody checks whether the bag fits the trolley until they are in the car park in the rain.",
+    specs: [
+      { label: "Top", value: "14 way" },
+      { label: "Base", value: "Trolley shaped" },
+      { label: "Pockets", value: "10" },
+      { label: "Colour", value: "Heather grey and black" },
+    ],
+    suits: "Trolley users who have had a bag that did not sit properly.",
+  },
+
+  "ping-dlx": {
+    tagline: "Quiet colours, deep pockets",
+    description:
+      "A cart bag that does not shout. Plain navy, proper storage and hardware that will still work in five years. The sort of bag people move to once they stop caring what it looks like on Instagram.",
+    headline: "A cart bag for grown ups",
+    marks: ["14 way top", "12 pockets", "Navy"],
+    notes: [
+      "Twelve pockets including a cooler and a valuables pocket that actually locks shut.",
+      "Plain navy. It will look the same in five years as it does today.",
+      "Cart base, no legs. It is not a carry bag and does not pretend to be.",
+      "Back in on Friday in navy. Other colours we order in.",
+    ],
+    counter:
+      "Ask yourself how many pockets you used last season. The answer is usually four, and then buy for that.",
+    specs: [
+      { label: "Top", value: "14 way" },
+      { label: "Pockets", value: "12" },
+      { label: "Base", value: "Cart" },
+      { label: "Colour", value: "Navy" },
+    ],
+    suits: "Riders and trolley users who want storage without decoration.",
+  },
+
+  "titleist-pro-v1x": {
+    tagline: "Higher, firmer, more spin",
+    description:
+      "The other half of the Pro V1 conversation. Higher flight, firmer feel and more spin on full irons. Which of the two suits you is a question the monitor answers in ten shots.",
+    headline: "The other half of the conversation",
+    marks: ["Urethane cover", "Higher flight", "Firmer feel"],
+    notes: [
+      "Higher flight than the Pro V1, and firmer at impact. Both are noticeable.",
+      "If your ball flight is already high, the standard Pro V1 is more likely your ball.",
+      "Never buy one on a friend's recommendation. Their launch is not yours.",
+      "Ball fitting is forty pounds and settles this in a session.",
+    ],
+    counter:
+      "Pro V1 or V1x is the most common question we get and the easiest one to answer properly. It takes ten shots.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Cover", value: "Urethane" },
+      { label: "Flight", value: "Higher than the Pro V1" },
+      { label: "Fitting", value: "Forty pounds, forty five minutes" },
+    ],
+    suits: "Players with a flatter flight who need help getting the ball up.",
+  },
+
+  "titleist-velocity": {
+    tagline: "Distance, and nothing else claimed",
+    description:
+      "A two piece ball that goes a long way and does not pretend to spin around the green. Half the price of a tour ball, and the right buy for a lot of people who are playing the wrong one.",
+    headline: "Honest about what it does",
+    marks: ["Two piece", "Long off the tee", "Half the price"],
+    notes: [
+      "It will not check on the green. Nothing at this price does and anything claiming to is lying.",
+      "If you lose three or more a round, play this and spend the difference on a lesson.",
+      "Long off the tee, which is what most players actually notice.",
+      "Dozen. Buy two and stop worrying about the water on the seventh.",
+    ],
+    counter:
+      "There is no shame in this ball. There is something slightly silly about losing four tour balls a round.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Build", value: "Two piece" },
+      { label: "Spin", value: "Low" },
+      { label: "Flight", value: "High and long" },
+    ],
+    suits: "Higher handicaps, anyone who loses balls, and winter golf.",
+  },
+
+  "srixon-z-star": {
+    tagline: "The softer Z-Star",
+    description:
+      "The standard Z-Star to the XV's firmer build. More spin into the green and a softer feel off the putter, which is where most people decide what they think of a ball.",
+    headline: "The softer of the two",
+    marks: ["Urethane cover", "Softer feel", "More greenside spin"],
+    notes: [
+      "Softer than the XV, with more spin on approach shots.",
+      "If your wedges come off the front of the green, it is the XV you want instead.",
+      "A genuine tour ball at a little under the Titleist price.",
+      "Two rounds before you decide. First impressions on a ball are usually wrong.",
+    ],
+    counter:
+      "Srixon are the quiet ones in the ball aisle. Plenty of people who try a sleeve stay on them for years.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Cover", value: "Urethane" },
+      { label: "Feel", value: "Softer than the XV" },
+      { label: "Fitting", value: "Forty pounds, forty five minutes" },
+    ],
+    suits: "Players who want tour spin without the tour ball price.",
+  },
+
+  "srixon-soft-feel": {
+    tagline: "Soft, cheap and honest",
+    description:
+      "A ball that does exactly what the name says and costs a fraction of the ones above it. If you are learning, or playing in winter, this is a better buy than a tour ball you cannot use yet.",
+    headline: "A good ball to learn on",
+    marks: ["Soft feel", "Low compression", "Dozen"],
+    notes: [
+      "Low compression, so it suits slower swing speeds and cold mornings.",
+      "It will not spin like a urethane ball. At this price nothing does.",
+      "Winter golf eats balls. This is the one to eat.",
+      "Comes in white or a green you can actually find in the rough.",
+    ],
+    counter:
+      "Play the ball that suits the golf you are playing today, not the golf you are hoping to play next year.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Compression", value: "Low" },
+      { label: "Feel", value: "Soft" },
+      { label: "Colour", value: "White or green" },
+    ],
+    suits: "Beginners, slower swing speeds and anyone playing through winter.",
+  },
+
+  "ping-captains-snapback": {
+    tagline: "Gold leaf on navy",
+    description:
+      "Louder than most of what we stock, and it earns it. Gold detailing on a navy crown, structured front, and it looks better in person than it does in a photograph.",
+    headline: "Louder than we usually go",
+    marks: ["Structured front", "Snapback", "One size"],
+    notes: [
+      "One size, snapback. It will fit, the question is the crown height.",
+      "Structured front, so it holds its shape rather than folding in the bag.",
+      "The gold is a print, not thread. It will not catch or fray.",
+      "Cold water, air dry. A machine will take the shape out of the crown.",
+    ],
+    counter:
+      "We do not stock much that shouts. This one gets bought more than anything else on the shelf.",
+    specs: [
+      { label: "Fit", value: "One size, snapback" },
+      { label: "Crown", value: "Structured" },
+      { label: "Brim", value: "Flat" },
+      { label: "Care", value: "Cold water, air dry" },
+    ],
+    suits: "Anyone who wants one cap that is not plain.",
+  },
+
+  "ping-wheel-boonie": {
+    tagline: "A full brim",
+    description:
+      "Not a cap. A full brim goes all the way round, which is the difference between a comfortable August round and the back of your neck reminding you about it for three days.",
+    headline: "Your neck will thank you in August",
+    marks: ["Full brim", "Two sizes", "Packable"],
+    notes: [
+      "Full brim, so the sun stays off your neck and your ears as well as your face.",
+      "Two sizes rather than one. Measure your head or try it on here.",
+      "It packs down without creasing, so it lives in the bag from May.",
+      "White reflects. A dark hat in August is a decision you feel by the twelfth.",
+    ],
+    counter:
+      "Everyone buys a cap and then wishes they had a brim on the one hot week of the year.",
+    specs: [
+      { label: "Style", value: "Full brim" },
+      { label: "Sizes", value: "S/M and L/XL" },
+      { label: "Packs", value: "Yes" },
+      { label: "Care", value: "Cold water, air dry" },
+    ],
+    suits: "Summer golf, and anyone who has burned the back of their neck once.",
+  },
+
+  "ping-get-a-grip-cap": {
+    tagline: "Black on black",
+    description:
+      "Tonal detailing on a black crown, so there is nothing on it to match or clash with. The cap for people who do not want a cap to be a decision.",
+    headline: "Nothing you have to explain",
+    marks: ["Tonal detail", "Adjustable", "One size"],
+    notes: [
+      "Black on black. It goes with everything because it says nothing.",
+      "Adjustable rather than snapback, so the fit is finer.",
+      "Unstructured front, so it folds into a bag pocket without a crease.",
+      "Black shows salt marks from sweat. Rinse it rather than washing it.",
+    ],
+    counter:
+      "Half the people who come in for a cap want one that does not have anything on it. This is that cap.",
+    specs: [
+      { label: "Fit", value: "One size, adjustable" },
+      { label: "Crown", value: "Unstructured" },
+      { label: "Detail", value: "Tonal" },
+      { label: "Care", value: "Rinse, air dry" },
+    ],
+    suits: "Anyone who wants the cap to be the least interesting thing they wear.",
+  },
+
+  "ping-phoenician-cap": {
+    tagline: "Rope brim, flat front",
+    description:
+      "The old clubhouse shape brought back, with a rope across the brim. Tan, unlined, and it is one of the few things in here that genuinely looks better after a season of use.",
+    headline: "Better after a season",
+    marks: ["Rope brim", "Flat front", "Snapback"],
+    notes: [
+      "The rope is decorative and the shape is not. This is the flat front clubhouse cut.",
+      "Tan fades. That is the point, and it is why it looks better in year two.",
+      "One size, snapback. Structured front, so the shape holds.",
+      "Do not machine wash it. The rope will not survive and neither will the crown.",
+    ],
+    counter:
+      "This is the one the staff wear off the course, which is as honest a recommendation as we give.",
+    specs: [
+      { label: "Fit", value: "One size, snapback" },
+      { label: "Brim", value: "Flat, rope detail" },
+      { label: "Colour", value: "Tan" },
+      { label: "Care", value: "Spot clean only" },
+    ],
+    suits: "Anyone who likes the old shapes and is happy for a hat to age.",
+  },
+
+  "ping-single-canopy-umbrella": {
+    tagline: "Single canopy",
+    description:
+      "Double canopy umbrellas vent the wind and cost more. On a links in a real gale neither survives, so we stock the single, keep it cheap, and tell you to put it away when it gets serious.",
+    headline: "Honest about what an umbrella can do",
+    marks: ["62 inch", "Single canopy", "Fibreglass ribs"],
+    notes: [
+      "Sixty two inches, which covers you and the bag if you angle it properly.",
+      "Fibreglass ribs. They bend back rather than snapping, most of the time.",
+      "In a real links wind, put it away. No umbrella wins that argument.",
+      "Dry it open at home. Folding it wet is how the fabric goes.",
+    ],
+    counter:
+      "The expensive umbrella and the cheap one both turn inside out at forty miles an hour. Buy the cheap one.",
+    specs: [
+      { label: "Canopy", value: "62 inch, single" },
+      { label: "Ribs", value: "Fibreglass" },
+      { label: "Handle", value: "Rubber grip" },
+      { label: "Care", value: "Dry open" },
+    ],
+    suits: "Everyone who plays here, which is to say everyone.",
+  },
+
+  "ping-fur-driver-headcover": {
+    tagline: "It stops the ringing",
+    description:
+      "A headcover is not decoration. It is what stops your driver crown chiming against your irons for four hours, which is how crowns get marked and how heads get loose.",
+    headline: "The cheapest insurance in the bag",
+    marks: ["Fits 460cc", "Fur", "Elasticated"],
+    notes: [
+      "Fits any driver head up to 460cc, which is all of them.",
+      "Fur is soft on the crown. Anything stiff is what marks a driver.",
+      "Put it back on after every shot. That is the entire job.",
+      "It will get wet and it will dry. Do not put it in a machine.",
+    ],
+    counter:
+      "The scratches on a used driver crown are almost always from the irons next to it, not from the ball.",
+    specs: [
+      { label: "Fits", value: "Up to 460cc" },
+      { label: "Material", value: "Fur" },
+      { label: "Closure", value: "Elasticated" },
+      { label: "Care", value: "Air dry" },
+    ],
+    suits: "Anyone whose driver shares a bag with irons, which is everyone.",
+  },
+
+  "ping-captains-blade-cover": {
+    tagline: "Magnetic closure",
+    description:
+      "The difference between a cover you use and one that lives in the bottom of the bag is whether you can put it back on one handed. This one closes with a magnet, so you will.",
+    headline: "You will actually put it back on",
+    marks: ["Magnetic", "Blade putters", "Lined"],
+    notes: [
+      "Magnetic closure, so it goes back on with one hand while you walk off the green.",
+      "Blade putters only. Bring the putter if you are not sure it fits.",
+      "Lined, so the face stays unmarked. Putter faces mark more easily than people expect.",
+      "Navy. It will not look tired in two seasons.",
+    ],
+    counter:
+      "A cover you have to fight with is a cover you stop using. That is the only test that matters.",
+    specs: [
+      { label: "Fits", value: "Blade putters" },
+      { label: "Closure", value: "Magnetic" },
+      { label: "Lining", value: "Soft" },
+      { label: "Colour", value: "Navy" },
+    ],
+    suits: "Blade players who want the face to stay as it came.",
+  },
+
   "ping-i230-irons": {
     tagline: "A cavity that reads like a blade",
     description:
