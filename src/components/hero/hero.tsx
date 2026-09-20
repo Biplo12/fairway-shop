@@ -119,12 +119,6 @@ export function Hero() {
                 >
                   <Search className="size-4" strokeWidth={1.5} />
                 </button>
-                <button
-                  type="button"
-                  className="hidden size-9 place-items-center rounded-full border border-white/50 text-[0.75rem] text-white transition-colors hover:bg-white/15 sm:grid"
-                >
-                  En
-                </button>
                 <Link
                   href="/account"
                   aria-label="Account"

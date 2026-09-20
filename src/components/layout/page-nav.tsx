@@ -68,12 +68,6 @@ export function PageNav({
           >
             <Search className="size-4" strokeWidth={1.5} />
           </Link>
-          <button
-            type="button"
-            className="hidden size-9 place-items-center rounded-full border border-offwhite/40 text-[0.75rem] text-offwhite transition-colors hover:bg-white/15 sm:grid"
-          >
-            En
-          </button>
           <Link
             href="/account"
             aria-label="Account"

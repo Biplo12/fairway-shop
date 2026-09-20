@@ -51,7 +51,7 @@ export default function Delivery() {
       footnote="FAIRWAY is a fictional shop, built as a design project. Nothing ordered here is dispatched, and no money changes hands."
       cta={{ href: "/shop", label: "Back to the rack" }}
     >
-      <div className="mt-10 max-w-[44rem] overflow-hidden rounded-card bg-paper">
+      <div className="mt-10 max-w-[44rem] self-start overflow-hidden rounded-card bg-paper lg:mt-0">
         <dl>
           {deliveryOptions.map((option) => (
             <div

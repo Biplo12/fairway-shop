@@ -37,22 +37,28 @@ export function InfoPage({
       <FloatingNav />
       <main id="main" className="p-3 md:p-5">
         <div className="overflow-hidden rounded-card bg-white">
-          <PageNav current="shop" />
+          <PageNav current="info" />
 
           <div className="px-6 py-12 md:px-12 md:py-16">
-            <div className="max-w-[40rem]">
-              <p className="text-[0.75rem] uppercase tracking-[0.16em] text-olive">
-                {label}
-              </p>
-              <h1 className="mt-3 text-[clamp(1.875rem,3vw,2.5rem)] font-normal leading-[1.05] tracking-[-0.025em]">
-                {heading}
-              </h1>
-              <p className="mt-5 text-[1.0625rem] leading-[1.6] text-charcoal/70">
-                {intro}
-              </p>
-            </div>
+            {/* The heading keeps its measure and whatever the page brings with
+                it, a price table for instance, sits beside it rather than
+                under it. Both of them left on a wide screen leaves half the
+                card empty. With nothing passed the column is simply unused. */}
+            <div className="grid gap-x-16 lg:grid-cols-2">
+              <div className="max-w-[40rem]">
+                <p className="text-[0.75rem] uppercase tracking-[0.16em] text-olive">
+                  {label}
+                </p>
+                <h1 className="mt-3 text-[clamp(1.875rem,3vw,2.5rem)] font-normal leading-[1.05] tracking-[-0.025em]">
+                  {heading}
+                </h1>
+                <p className="mt-5 text-[1.0625rem] leading-[1.6] text-charcoal/70">
+                  {intro}
+                </p>
+              </div>
 
-            {children}
+              {children}
+            </div>
 
             <dl className="mt-12 grid gap-y-10 md:grid-cols-2 md:gap-x-12">
               {sections.map((section) => (
