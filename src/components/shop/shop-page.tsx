@@ -21,10 +21,14 @@ import { categoryName, products, type Category } from "@/content/products";
  * One frame per shelf, none of them reused anywhere else on the site.
  * Files are named for what is in them, so replacing a frame means a new path
  * and no browser can serve the old one from cache.
+ *
+ * `focus` is for the narrow end. A phone shows roughly the middle quarter of
+ * a 3.05:1 frame, so anything whose subject does not sit dead centre needs
+ * the crop nudged onto it.
  */
 const bands: Record<
   string,
-  { image: string; alt: string; body: string }
+  { image: string; alt: string; body: string; focus?: string }
 > = {
   all: {
     image: "/images/shop/driver-and-iron.jpg",
@@ -39,21 +43,25 @@ const bands: Record<
   balls: {
     image: "/images/shop/ball-at-the-hole.jpg",
     alt: "A golf ball resting on the lip of the hole beside the flagstick",
+    focus: "object-[52%_center]",
     body: "The only piece of equipment you use on every shot, and the gap between models is wider than most players expect. Come in with a sleeve of each.",
   },
   bags: {
     image: "/images/shop/three-stand-bags.jpg",
     alt: "Three stand bags with their legs out on a fairway",
+    focus: "object-[45%_center]",
     body: "Stand bags and cart bags, weighed on the same scale, so you can compare what you will actually carry for four hours.",
   },
   gloves: {
     image: "/images/shop/glove-going-on.jpg",
     alt: "A golfer pulling a white leather glove onto their hand",
+    focus: "object-[52%_center]",
     body: "Cabretta leather wears out. That is the point of it. Buy the size that feels a shade tight on the first hole.",
   },
   headwear: {
     image: "/images/shop/caps-on-the-links.jpg",
     alt: "Two golfers in caps and coats standing on a links fairway",
+    focus: "object-[44%_center]",
     body: "Caps and visors, vented where it matters. Nothing here carries our name, because we did not make any of it.",
   },
 };
@@ -89,33 +97,35 @@ export function ShopPage({
             alt={band.alt}
             heading={heading}
             body={band.body}
+            focus={band.focus}
             brand={brand}
           />
 
-          <div className="px-6 py-8 md:px-10 md:py-10">
-            <div className="flex flex-wrap items-baseline justify-between gap-x-8 gap-y-5">
+          {/* The results lift over the band, so the photograph runs on behind
+              the panel's rounded shoulders instead of stopping at a seam. */}
+          <div className="relative -mt-7 rounded-t-[1.75rem] bg-white px-6 py-8 md:-mt-9 md:rounded-t-[2.25rem] md:px-10 md:py-10">
+            <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-4">
               <h2 className="text-[1.375rem] leading-none">
                 {shelf.length} {shelf.length === 1 ? "result" : "results"}
                 {brandLabel ? (
                   <span className="text-charcoal/45">, {brandLabel}</span>
                 ) : null}
               </h2>
-              {brand ? (
-                <Link
-                  href={category ? `/shop/${category}` : "/shop"}
-                  className="text-[0.8125rem] uppercase tracking-[0.06em] text-charcoal/60 underline underline-offset-4 hover:text-charcoal"
-                >
-                  Clear brand
-                </Link>
-              ) : null}
-            </div>
-
-            <div className="mt-6 border-t border-mist pt-6">
-              <BrandFilter category={category} brand={brand} />
+              <div className="flex items-center gap-4">
+                {brand ? (
+                  <Link
+                    href={category ? `/shop/${category}` : "/shop"}
+                    className="text-[0.8125rem] uppercase tracking-[0.06em] text-charcoal/60 underline underline-offset-4 hover:text-charcoal"
+                  >
+                    Clear
+                  </Link>
+                ) : null}
+                <BrandFilter category={category} brand={brand} />
+              </div>
             </div>
 
             {shelf.length > 0 ? (
-              <div className="mt-8 grid gap-3 sm:grid-cols-2 md:gap-4 lg:grid-cols-3">
+              <div className="mt-8 grid gap-3 sm:grid-cols-2 md:gap-4 lg:grid-cols-3 xl:grid-cols-4">
                 {shelf.map((product) => (
                   <ProductCard key={product.slug} product={product} />
                 ))}

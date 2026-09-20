@@ -1,14 +1,16 @@
 import Link from "next/link";
+import { SlidersHorizontal } from "lucide-react";
 
 import { products, type Category } from "@/content/products";
 
 /**
- * Filtering as links, not state. The server already has the catalogue, so this
- * needs no JavaScript, every shelf has its own address, and a customer can
- * send someone the exact view they are looking at.
+ * One control, opened as a disclosure. `details` rather than state, so the
+ * panel costs no JavaScript and the filters inside it stay plain links: every
+ * shelf has its own address and a customer can send someone the exact view
+ * they are looking at.
  *
- * The counts are counted inside the current category, and a brand with nothing
- * on this shelf is not offered at all. A filter that leads to an empty page is
+ * Counts are counted inside the current category and a brand with nothing on
+ * this shelf is not offered, because a filter that leads to an empty page is
  * worse than no filter.
  */
 export function BrandFilter({
@@ -30,31 +32,44 @@ export function BrandFilter({
     }));
 
   return (
-    <div className="flex flex-col gap-3 md:flex-row md:items-baseline md:gap-6">
-      <p className="shrink-0 text-[0.6875rem] uppercase tracking-[0.16em] text-olive md:pt-2">
-        Brand
-      </p>
-      <ul className="flex flex-wrap gap-2">
-        <li>
-          <Chip href={path} active={!brand}>
-            All
-          </Chip>
-        </li>
-        {brands.map((entry) => (
-          <li key={entry.name}>
-            <Chip
-              href={`${path}?brand=${encodeURIComponent(entry.name.toLowerCase())}`}
-              active={brand?.toLowerCase() === entry.name.toLowerCase()}
-            >
-              {entry.name}
-              <span className="text-[0.6875rem] tabular-nums opacity-55">
-                {entry.count}
-              </span>
+    <details className="group relative">
+      <summary
+        className={`inline-flex cursor-pointer select-none items-center gap-2.5 rounded-full border px-4 py-2 text-[0.8125rem] uppercase tracking-[0.06em] transition-colors [&::-webkit-details-marker]:hidden ${
+          brand
+            ? "border-charcoal bg-charcoal text-offwhite"
+            : "border-charcoal/25 text-charcoal hover:border-charcoal/60"
+        }`}
+      >
+        Filter
+        <SlidersHorizontal className="size-3.5" strokeWidth={1.75} />
+      </summary>
+
+      <div className="absolute right-0 top-[calc(100%+0.75rem)] z-20 w-[min(21rem,calc(100vw-3rem))] rounded-card border border-mist bg-white p-5 shadow-[0_18px_40px_rgba(23,24,23,0.14)]">
+        <p className="text-[0.6875rem] uppercase tracking-[0.16em] text-olive">
+          Brand
+        </p>
+        <ul className="mt-4 flex flex-wrap gap-2">
+          <li>
+            <Chip href={path} active={!brand}>
+              All
             </Chip>
           </li>
-        ))}
-      </ul>
-    </div>
+          {brands.map((entry) => (
+            <li key={entry.name}>
+              <Chip
+                href={`${path}?brand=${encodeURIComponent(entry.name.toLowerCase())}`}
+                active={brand?.toLowerCase() === entry.name.toLowerCase()}
+              >
+                {entry.name}
+                <span className="text-[0.6875rem] tabular-nums opacity-55">
+                  {entry.count}
+                </span>
+              </Chip>
+            </li>
+          ))}
+        </ul>
+      </div>
+    </details>
   );
 }
 
@@ -71,7 +86,7 @@ function Chip({
     <Link
       href={href}
       aria-current={active ? "true" : undefined}
-      className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-[0.8125rem] transition-colors ${
+      className={`inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-[0.8125rem] transition-colors ${
         active
           ? "border-charcoal bg-charcoal text-offwhite"
           : "border-charcoal/20 text-charcoal hover:border-charcoal/60"

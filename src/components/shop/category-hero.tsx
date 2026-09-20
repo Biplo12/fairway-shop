@@ -7,6 +7,15 @@ import { shopCategories, type Category } from "@/content/products";
  * The band under the navigation: where you are, what the shelf is, and the
  * way across to the other shelves. Categories live here as pills rather than
  * in a filter panel, because moving between them is navigation, not filtering.
+ *
+ * From lg the band takes the frames' own 3.05:1, so it grows with the card
+ * instead of holding a fixed height. A fixed height on a wide screen makes the
+ * band wider than the photograph and crops the subject out of the top of it.
+ * The minimum heights underneath still hold the narrow end.
+ *
+ * The bottom padding is deeper than the rest because the results panel lifts
+ * over this band, and without it the category pills sit against the panel's
+ * edge.
  */
 export function CategoryHero({
   category,
@@ -14,6 +23,7 @@ export function CategoryHero({
   alt,
   heading,
   body,
+  focus = "object-center",
   brand,
 }: {
   category?: Category;
@@ -21,6 +31,8 @@ export function CategoryHero({
   alt: string;
   heading: string;
   body: string;
+  /** where the crop holds when the band is narrower than the frame */
+  focus?: string;
   brand?: string;
 }) {
   const query = brand ? `?brand=${encodeURIComponent(brand.toLowerCase())}` : "";
@@ -28,14 +40,21 @@ export function CategoryHero({
   return (
     <div className="relative bg-charcoal">
       <div className="absolute inset-0">
-        <Media src={image} alt={alt} ratio="fill" sizes="100vw" priority />
+        <Media
+          src={image}
+          alt={alt}
+          ratio="fill"
+          sizes="100vw"
+          imageClassName={focus}
+          priority
+        />
       </div>
       <div
         aria-hidden
         className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/45 to-charcoal/25"
       />
 
-      <div className="relative flex min-h-[28rem] flex-col justify-between gap-10 p-6 md:min-h-[27rem] md:p-10 lg:min-h-[31rem] lg:p-12">
+      <div className="relative flex min-h-[28rem] flex-col justify-between gap-10 p-6 pb-16 md:min-h-[27rem] md:p-10 md:pb-20 lg:min-h-[31rem] lg:p-12 lg:pb-24 lg:aspect-[3.05/1]">
         <nav aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-white/70">
             <li>

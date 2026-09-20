@@ -122,27 +122,45 @@ export function CartDrawer() {
                 key={product.slug}
                 className="flex gap-4 border-b border-mist py-5"
               >
-                <div className="size-20 shrink-0 overflow-hidden rounded-[10px] bg-white">
+                {/* self-stretch, so the packshot is as tall as the line it
+                    belongs to rather than a thumbnail floating beside it */}
+                <div className="w-28 shrink-0 self-stretch overflow-hidden rounded-[10px] bg-white">
                   <Image
                     src={product.image}
                     alt={product.alt}
-                    width={160}
-                    height={160}
-                    sizes="80px"
-                    className="size-full object-cover"
+                    width={224}
+                    height={224}
+                    sizes="112px"
+                    className="size-full object-contain"
                   />
                 </div>
 
                 <div className="flex min-w-0 flex-1 flex-col">
-                  <p className="text-[0.6875rem] uppercase tracking-[0.16em] text-olive">
-                    {product.brand}
-                  </p>
-                  <p className="mt-1 truncate text-[1rem]">{product.model}</p>
-                  <p className="mt-0.5 text-[0.8125rem] text-charcoal/55">
-                    {product.detail}
-                  </p>
+                  <div className="flex items-start justify-between gap-3">
+                    <div className="min-w-0">
+                      <p className="text-[0.6875rem] uppercase tracking-[0.16em] text-olive">
+                        {product.brand}
+                      </p>
+                      <p className="mt-1 truncate text-[1rem]">
+                        {product.model}
+                      </p>
+                      <p className="mt-0.5 text-[0.8125rem] text-charcoal/55">
+                        {product.detail}
+                      </p>
+                    </div>
 
-                  <div className="mt-3 flex items-center justify-between gap-3">
+                    <button
+                      type="button"
+                      tabIndex={open ? 0 : -1}
+                      onClick={() => remove(product.slug)}
+                      aria-label={`Remove ${product.model}`}
+                      className="shrink-0 text-[0.75rem] uppercase tracking-[0.08em] text-charcoal/45 underline underline-offset-4 transition-colors hover:text-charcoal"
+                    >
+                      Remove
+                    </button>
+                  </div>
+
+                  <div className="mt-auto flex items-end justify-between gap-3 pt-4">
                     <div className="flex items-center rounded-control border border-charcoal/20">
                       <button
                         type="button"
@@ -170,21 +188,11 @@ export function CartDrawer() {
                       </button>
                     </div>
 
-                    <p className="text-[1rem] tabular-nums">
+                    <p className="text-[1.0625rem] tabular-nums">
                       {formatPrice(product.price * quantity)}
                     </p>
                   </div>
                 </div>
-
-                <button
-                  type="button"
-                  tabIndex={open ? 0 : -1}
-                  onClick={() => remove(product.slug)}
-                  aria-label={`Remove ${product.model}`}
-                  className="self-start text-[0.75rem] uppercase tracking-[0.08em] text-charcoal/45 underline underline-offset-4 transition-colors hover:text-charcoal"
-                >
-                  Remove
-                </button>
               </li>
             ))}
           </ul>

@@ -19,7 +19,7 @@ export function AddToBag({
 
   if (!inStock) {
     return (
-      <span className="block w-full rounded-control border border-mist px-4 py-2.5 text-center text-[0.8125rem] uppercase tracking-[0.06em] text-charcoal/40">
+      <span className="block w-full rounded-control border border-mist px-4 py-2 text-center text-[0.75rem] uppercase tracking-[0.06em] text-charcoal/40">
         Back in Friday
       </span>
     );
@@ -34,7 +34,7 @@ export function AddToBag({
         add(slug);
       }}
       aria-label={`Add ${model} to bag`}
-      className="block w-full rounded-control border border-charcoal/25 px-4 py-2.5 text-[0.8125rem] uppercase tracking-[0.06em] transition-colors hover:border-charcoal hover:bg-charcoal hover:text-offwhite"
+      className="block w-full rounded-control border border-charcoal/25 px-4 py-2 text-[0.75rem] uppercase tracking-[0.06em] transition-colors hover:border-charcoal hover:bg-charcoal hover:text-offwhite"
     >
       Add to bag
     </button>
