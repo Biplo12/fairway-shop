@@ -18,7 +18,7 @@ export function Sessions() {
   return (
     <div
       id="sessions"
-      className="relative -mt-7 scroll-mt-4 rounded-t-[1.75rem] bg-white px-6 py-10 md:-mt-9 md:rounded-t-[2.25rem] md:px-10 md:py-12"
+      className="relative -mt-7 scroll-mt-24 rounded-t-[1.75rem] bg-white px-6 py-10 md:-mt-9 md:rounded-t-[2.25rem] md:px-10 md:py-12"
     >
       <div className="flex flex-col gap-4 md:flex-row md:items-end md:justify-between">
         <div className="max-w-[34rem]">
@@ -40,7 +40,7 @@ export function Sessions() {
           <article
             key={session.slug}
             id={session.slug}
-            className="group flex scroll-mt-6 flex-col overflow-hidden rounded-card bg-paper"
+            className="group flex scroll-mt-24 flex-col overflow-hidden rounded-card bg-paper"
           >
             {session.image ? (
               <Media
@@ -100,7 +100,7 @@ export function Sessions() {
 
         <article
           id={fullBag.slug}
-          className="group flex scroll-mt-6 flex-col justify-between gap-10 rounded-card bg-charcoal p-6 text-offwhite md:p-8 lg:col-span-2 lg:flex-row lg:items-end"
+          className="group flex scroll-mt-24 flex-col justify-between gap-10 rounded-card bg-charcoal p-6 text-offwhite md:p-8 lg:col-span-2 lg:flex-row lg:items-end"
         >
           <div className="max-w-[38rem]">
             <div className="flex items-baseline gap-5">

@@ -19,7 +19,7 @@ export function Booking({ selected }: { selected?: string }) {
   }));
 
   return (
-    <section id="book" className="scroll-mt-4 px-3 pb-3 md:px-5 md:pb-5">
+    <section id="book" className="scroll-mt-24 px-3 pb-3 md:px-5 md:pb-5">
       <div className="overflow-hidden rounded-card bg-charcoal text-offwhite">
         <div className="grid lg:grid-cols-2">
           <div className="relative min-h-[24rem] lg:min-h-[38rem]">

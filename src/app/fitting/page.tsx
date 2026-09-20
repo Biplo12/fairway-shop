@@ -60,8 +60,8 @@ export default async function Fitting({
             label="Straight answers"
             heading="We will talk you out of the wrong club"
             body="It happens most weeks. Somebody books a driver fitting and leaves with a three wood and their own driver reshafted, because that is what the numbers said. The fee is the same either way."
-            href="#book"
-            cta="Book a session"
+            href="/fitting?session=club-fitting#book"
+            cta="Book a club fitting"
             size="short"
           />
         </Reveal>
@@ -75,8 +75,8 @@ export default async function Fitting({
             body="The bay sits at the back of the shop, past the rack, with a launch monitor on the floor and a lie board under the mat. Every session is written down, so a player who was fitted five years ago is measured against their own numbers rather than from scratch. Shafts come off the wall behind you, which is why a fitting here takes ninety minutes and not a morning."
             meta={studioMeta}
             note="No session is sold on the strength of a swing you made once. If the numbers are flat, we book you back in."
-            href="#book"
-            cta="Book a session"
+            href="#sessions"
+            cta="What a session covers"
             action="button"
             imageSide="right"
             tone="dark"

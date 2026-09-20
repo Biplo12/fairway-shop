@@ -1,5 +1,3 @@
-import Link from "next/link";
-
 import { questions } from "@/content/fitting";
 
 /**
@@ -23,12 +21,12 @@ export function Questions() {
               If yours is not here, call the shop on 01334 555 187 and ask for
               the studio. Somebody who fits clubs will answer it.
             </p>
-            <Link
-              href="#book"
+            <a
+              href="tel:+441334555187"
               className="mt-7 inline-flex rounded-control border border-charcoal/30 px-6 py-3.5 text-[0.875rem] uppercase tracking-[0.06em] transition-colors hover:border-charcoal/70"
             >
-              Book a session
-            </Link>
+              Call the studio
+            </a>
           </div>
 
           <div>

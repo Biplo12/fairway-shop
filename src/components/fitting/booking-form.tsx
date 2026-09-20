@@ -1,5 +1,7 @@
 "use client";
 
+import Link from "next/link";
+import { ChevronDown } from "lucide-react";
 import { useState } from "react";
 
 import { times } from "@/content/fitting";
@@ -14,6 +16,9 @@ import { times } from "@/content/fitting";
  * higher up the page can choose it and the choice survives a reload. A select
  * only reads its default value once, so it is keyed on the slug and remounts
  * when the query changes.
+ *
+ * Neither select is marked required: the first option is selected from the
+ * start, so there is nothing for the browser to enforce.
  */
 export function BookingForm({
   options,
@@ -62,24 +67,30 @@ export function BookingForm({
         <label htmlFor="booking-session" className={label}>
           Session
         </label>
-        <select
-          id="booking-session"
-          name="session"
-          key={selected ?? "none"}
-          defaultValue={selected}
-          required
-          className={`${field} mt-2.5 appearance-none`}
-        >
-          {options.map((option) => (
-            <option
-              key={option.slug}
-              value={option.slug}
-              className="bg-charcoal"
-            >
-              {option.name}, {option.duration}, {option.price}
-            </option>
-          ))}
-        </select>
+        <div className="relative mt-2.5">
+          <select
+            id="booking-session"
+            name="session"
+            key={selected ?? "none"}
+            defaultValue={selected}
+            className={`${field} appearance-none pr-12`}
+          >
+            {options.map((option) => (
+              <option
+                key={option.slug}
+                value={option.slug}
+                className="bg-charcoal"
+              >
+                {option.name}, {option.duration}, {option.price}
+              </option>
+            ))}
+          </select>
+          <ChevronDown
+            aria-hidden
+            className="pointer-events-none absolute right-4 top-1/2 size-4 -translate-y-1/2 text-offwhite/60"
+            strokeWidth={1.75}
+          />
+        </div>
       </div>
 
       <div>
@@ -141,18 +152,24 @@ export function BookingForm({
         <label htmlFor="booking-time" className={label}>
           Time of day
         </label>
-        <select
-          id="booking-time"
-          name="time"
-          required
-          className={`${field} mt-2.5 appearance-none`}
-        >
-          {times.map((time) => (
-            <option key={time} value={time} className="bg-charcoal">
-              {time}
-            </option>
-          ))}
-        </select>
+        <div className="relative mt-2.5">
+          <select
+            id="booking-time"
+            name="time"
+            className={`${field} appearance-none pr-12`}
+          >
+            {times.map((time) => (
+              <option key={time} value={time} className="bg-charcoal">
+                {time}
+              </option>
+            ))}
+          </select>
+          <ChevronDown
+            aria-hidden
+            className="pointer-events-none absolute right-4 top-1/2 size-4 -translate-y-1/2 text-offwhite/60"
+            strokeWidth={1.75}
+          />
+        </div>
       </div>
 
       <div className="sm:col-span-2">
@@ -176,7 +193,12 @@ export function BookingForm({
           Request a session
         </button>
         <p className="mt-4 text-[0.8125rem] leading-[1.6] text-offwhite/55 sm:mt-0">
-          We call to confirm the slot. Nothing is charged online.
+          We call to confirm the slot. Nothing is charged online, and your
+          number is used for that call and nothing else.{" "}
+          <Link href="/privacy" className="underline underline-offset-4">
+            What we keep
+          </Link>
+          .
         </p>
       </div>
     </form>
