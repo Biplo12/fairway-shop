@@ -188,7 +188,7 @@ export function BookingForm({
       <div className="sm:col-span-2 sm:flex sm:items-center sm:gap-6">
         <button
           type="submit"
-          className="w-full rounded-control bg-offwhite px-6 py-3.5 text-[0.875rem] uppercase tracking-[0.06em] text-charcoal transition-colors hover:bg-white sm:w-auto"
+          className="w-full shrink-0 whitespace-nowrap rounded-control bg-offwhite px-8 py-4 text-[0.875rem] uppercase tracking-[0.06em] text-charcoal transition-colors hover:bg-white sm:w-auto"
         >
           Request a session
         </button>

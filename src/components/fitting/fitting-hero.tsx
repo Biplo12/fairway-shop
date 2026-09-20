@@ -20,11 +20,10 @@ export function FittingHero({
     <div className="relative bg-charcoal">
       <div className="absolute inset-0">
         <Media
-          src="/images/fitting/range-tee.jpg"
-          alt="A golfer teeing a ball on the mat at the practice ground"
+          src="/images/fitting/the-bay.jpg"
+          alt="The fitting bay, a bag on the mat in front of the screen"
           ratio="fill"
           sizes="100vw"
-          imageClassName="object-[70%_center] lg:object-center"
           priority
         />
       </div>

@@ -50,8 +50,8 @@ export const sessions: Session[] = [
       "Flight held into wind",
       "Feel off the putter face",
     ],
-    image: "/images/fitting/ball-fitting.jpg",
-    alt: "A Titleist ball sitting on the lip of the hole beside the flagstick",
+    image: "/images/fitting/iron-macro.jpg",
+    alt: "Two golf balls and an iron head lying in deep green grass",
   },
   {
     slug: "putter-fitting",
@@ -80,8 +80,8 @@ export const sessions: Session[] = [
       "Bounce against the turf you play",
       "Grind and sole for your attack angle",
     ],
-    image: "/images/fitting/iron-macro.jpg",
-    alt: "An iron and two balls lying in deep green grass",
+    image: "/images/fitting/wedge-on-the-mat.jpg",
+    alt: "A wedge set behind a ball on the studio mat",
   },
 ];
 

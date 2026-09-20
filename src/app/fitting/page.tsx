@@ -68,8 +68,8 @@ export default async function Fitting({
 
         <Reveal>
           <SplitFeature
-            image="/images/fitting/studio-bay.jpg"
-            alt="The fitting bay, a bag standing on the mat in front of the screen"
+            image="/images/fitting/launch-monitor.jpg"
+            alt="A launch monitor standing on the mat in the fitting bay"
             label="The studio"
             heading="One bay, and forty years of notes"
             body="The bay sits at the back of the shop, past the rack, with a launch monitor on the floor and a lie board under the mat. Every session is written down, so a player who was fitted five years ago is measured against their own numbers rather than from scratch. Shafts come off the wall behind you, which is why a fitting here takes ninety minutes and not a morning."
