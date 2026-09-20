@@ -43,113 +43,113 @@ export function ProductPage({
         <div className="overflow-hidden rounded-card bg-white">
           <PageNav current="shop" />
 
-          <div className="px-4 py-4 md:px-5 md:py-5">
-            <div className="rounded-card bg-paper p-4 md:p-6">
-              <div className="grid gap-4 lg:grid-cols-[1.05fr_1fr] lg:gap-6">
-                <ProductGallery
-                  images={images}
-                  alt={product.alt}
-                  model={product.model}
-                />
+          {/* One container, not three. The packshot and what it costs sit
+              inside the page's own card rather than each in a card of their
+              own, which on a phone was three rounded boxes deep. */}
+          <div className="md:px-6 md:py-6 lg:px-8 lg:py-8">
+            <div className="grid gap-0 md:gap-6 lg:grid-cols-[1.05fr_1fr] lg:gap-12">
+              <ProductGallery
+                images={images}
+                alt={product.alt}
+                model={product.model}
+              />
 
-                <div className="flex flex-col rounded-card bg-white p-6 md:p-9">
-                  <nav aria-label="Breadcrumb">
-                    <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-charcoal/50">
-                      <li>
-                        <Link href="/shop" className="hover:text-charcoal">
-                          Equipment store
-                        </Link>
-                      </li>
-                      <li aria-hidden>/</li>
-                      <li>
-                        <Link
-                          href={`/shop/${product.category}`}
-                          className="hover:text-charcoal"
-                        >
-                          {categoryName(product.category)}
-                        </Link>
-                      </li>
-                    </ol>
-                  </nav>
+              <div className="flex flex-col border-t border-mist bg-white p-6 md:border-0 md:p-0 lg:py-2">
+                <nav aria-label="Breadcrumb">
+                  <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-charcoal/50">
+                    <li>
+                      <Link href="/shop" className="hover:text-charcoal">
+                        Equipment store
+                      </Link>
+                    </li>
+                    <li aria-hidden>/</li>
+                    <li>
+                      <Link
+                        href={`/shop/${product.category}`}
+                        className="hover:text-charcoal"
+                      >
+                        {categoryName(product.category)}
+                      </Link>
+                    </li>
+                  </ol>
+                </nav>
 
-                  <h1 className="mt-5 text-[clamp(1.875rem,3vw,2.5rem)] font-normal leading-[1.05] tracking-[-0.025em]">
-                    {product.brand} {product.model}
-                  </h1>
-                  <p className="mt-3 text-[0.75rem] uppercase tracking-[0.16em] text-olive">
-                    {detail.tagline}
+                <h1 className="mt-5 text-[clamp(1.875rem,3vw,2.5rem)] font-normal leading-[1.05] tracking-[-0.025em]">
+                  {product.brand} {product.model}
+                </h1>
+                <p className="mt-3 text-[0.75rem] uppercase tracking-[0.16em] text-olive">
+                  {detail.tagline}
+                </p>
+                <p className="mt-5 text-[1rem] leading-[1.6] text-charcoal/75">
+                  {detail.description}
+                </p>
+
+                <div className="mt-7 flex items-baseline justify-between gap-4 border-t border-mist pt-5">
+                  <p className="text-[1.75rem] leading-none tabular-nums">
+                    {formatPrice(product.price)}
                   </p>
-                  <p className="mt-5 text-[1rem] leading-[1.6] text-charcoal/75">
-                    {detail.description}
+                  <p className="text-[0.8125rem] text-charcoal/55">
+                    {product.detail}
                   </p>
+                </div>
 
-                  <div className="mt-7 flex items-baseline justify-between gap-4 border-t border-mist pt-5">
-                    <p className="text-[1.75rem] leading-none tabular-nums">
-                      {formatPrice(product.price)}
+                <div className="mt-5">
+                  <AddToBag
+                    slug={product.slug}
+                    model={product.model}
+                    inStock={product.inStock}
+                    size="large"
+                  />
+                </div>
+
+                <p className="mt-3 text-[0.8125rem] leading-[1.5] text-charcoal/55">
+                  {product.fittingRecommended ? (
+                    <>
+                      Worth fitting before you buy it. The session fee comes off
+                      the price, and we will say so if it makes no difference.
+                    </>
+                  ) : (
+                    <>
+                      In the shop today. Free delivery over £75, and you can
+                      bring it back if it is not right.
+                    </>
+                  )}
+                </p>
+
+                <div className="mt-7 border-t border-mist">
+                  <Disclosure title="Specifications">
+                    <dl className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
+                      {detail.specs.map((spec, index) => {
+                        // the rule under the last row would sit against the
+                        // panel's own edge, and the grid is one column on a
+                        // phone and two above it
+                        const inLastRow =
+                          index >=
+                          detail.specs.length -
+                            (detail.specs.length % 2 === 0 ? 2 : 1);
+                        return (
+                          <div
+                            key={spec.label}
+                            className={`flex items-baseline justify-between gap-4 border-b border-mist pb-2 last:border-0 last:pb-0 ${
+                              inLastRow ? "sm:border-0 sm:pb-0" : ""
+                            }`}
+                          >
+                            <dt className="text-[0.6875rem] uppercase tracking-[0.16em] text-olive">
+                              {spec.label}
+                            </dt>
+                            <dd className="text-right text-[0.9375rem]">
+                              {spec.value}
+                            </dd>
+                          </div>
+                        );
+                      })}
+                    </dl>
+                  </Disclosure>
+                  <Disclosure title="Who it suits">
+                    <p className="text-[0.9375rem] leading-[1.6] text-charcoal/75">
+                      {detail.suits}
                     </p>
-                    <p className="text-[0.8125rem] text-charcoal/55">
-                      {product.detail}
-                    </p>
-                  </div>
-
-                  <div className="mt-5">
-                    <AddToBag
-                      slug={product.slug}
-                      model={product.model}
-                      inStock={product.inStock}
-                      size="large"
-                    />
-                  </div>
-
-                  <p className="mt-3 text-[0.8125rem] leading-[1.5] text-charcoal/55">
-                    {product.fittingRecommended ? (
-                      <>
-                        Worth fitting before you buy it. The session fee comes
-                        off the price, and we will say so if it makes no
-                        difference.
-                      </>
-                    ) : (
-                      <>
-                        In the shop today. Free delivery over £75, and you can
-                        bring it back if it is not right.
-                      </>
-                    )}
-                  </p>
-
-                  <div className="mt-7 border-t border-mist">
-                    <Disclosure title="Specifications">
-                      <dl className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
-                        {detail.specs.map((spec, index) => {
-                          // the rule under the last row would sit against the
-                          // panel's own edge, and the grid is one column on a
-                          // phone and two above it
-                          const inLastRow =
-                            index >=
-                            detail.specs.length -
-                              (detail.specs.length % 2 === 0 ? 2 : 1);
-                          return (
-                            <div
-                              key={spec.label}
-                              className={`flex items-baseline justify-between gap-4 border-b border-mist pb-2 last:border-0 last:pb-0 ${
-                                inLastRow ? "sm:border-0 sm:pb-0" : ""
-                              }`}
-                            >
-                              <dt className="text-[0.6875rem] uppercase tracking-[0.16em] text-olive">
-                                {spec.label}
-                              </dt>
-                              <dd className="text-right text-[0.9375rem]">
-                                {spec.value}
-                              </dd>
-                            </div>
-                          );
-                        })}
-                      </dl>
-                    </Disclosure>
-                    <Disclosure title="Who it suits">
-                      <p className="text-[0.9375rem] leading-[1.6] text-charcoal/75">
-                        {detail.suits}
-                      </p>
-                    </Disclosure>
-                  </div>
+                  </Disclosure>
                 </div>
               </div>
             </div>

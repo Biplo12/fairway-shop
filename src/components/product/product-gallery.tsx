@@ -33,7 +33,7 @@ export function ProductGallery({
         zoom={2.4}
         priority
         sizes="(min-width: 1024px) 45vw, 92vw"
-        className="aspect-square w-full rounded-card bg-white"
+        className="aspect-square w-full bg-white md:rounded-media"
       />
 
       {images.length > 1 ? (
