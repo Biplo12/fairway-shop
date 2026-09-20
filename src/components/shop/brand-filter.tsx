@@ -11,7 +11,8 @@ import { products, type Category } from "@/content/products";
  *
  * Counts are counted inside the current category and a brand with nothing on
  * this shelf is not offered, because a filter that leads to an empty page is
- * worse than no filter.
+ * worse than no filter. A chip that is already on turns itself off, so the way
+ * back to the whole shelf is the control you just pressed.
  */
 export function BrandFilter({
   category,
@@ -54,19 +55,33 @@ export function BrandFilter({
               All
             </Chip>
           </li>
-          {brands.map((entry) => (
-            <li key={entry.name}>
-              <Chip
-                href={`${path}?brand=${encodeURIComponent(entry.name.toLowerCase())}`}
-                active={brand?.toLowerCase() === entry.name.toLowerCase()}
-              >
-                {entry.name}
-                <span className="text-[0.6875rem] tabular-nums opacity-55">
-                  {entry.count}
-                </span>
-              </Chip>
-            </li>
-          ))}
+          {brands.map((entry) => {
+            const active = brand?.toLowerCase() === entry.name.toLowerCase();
+            return (
+              <li key={entry.name}>
+                <Chip
+                  // an active chip turns itself off, so the way back to the
+                  // whole shelf is the control you just used
+                  href={
+                    active
+                      ? path
+                      : `${path}?brand=${encodeURIComponent(entry.name.toLowerCase())}`
+                  }
+                  active={active}
+                  label={
+                    active
+                      ? `Clear the ${entry.name} filter`
+                      : `Show ${entry.name} only`
+                  }
+                >
+                  {entry.name}
+                  <span className="text-[0.6875rem] tabular-nums opacity-55">
+                    {entry.count}
+                  </span>
+                </Chip>
+              </li>
+            );
+          })}
         </ul>
       </div>
     </details>
@@ -76,16 +91,20 @@ export function BrandFilter({
 function Chip({
   href,
   active,
+  label,
   children,
 }: {
   href: string;
   active: boolean;
+  label?: string;
   children: React.ReactNode;
 }) {
   return (
     <Link
       href={href}
       aria-current={active ? "true" : undefined}
+      aria-label={label}
+      title={label}
       className={`inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-[0.8125rem] transition-colors ${
         active
           ? "border-charcoal bg-charcoal text-offwhite"

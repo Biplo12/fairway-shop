@@ -7,6 +7,7 @@ import { shopCategories, type Category } from "@/content/products";
  * The band under the navigation: where you are, what the shelf is, and the
  * way across to the other shelves. Categories live here as pills rather than
  * in a filter panel, because moving between them is navigation, not filtering.
+ * The pill you are standing on steps back up to the whole store.
  *
  * From lg the band takes the frames' own 3.05:1, so it grows with the card
  * instead of holding a fixed height. A fixed height on a wide screen makes the
@@ -35,7 +36,9 @@ export function CategoryHero({
   focus?: string;
   brand?: string;
 }) {
-  const query = brand ? `?brand=${encodeURIComponent(brand.toLowerCase())}` : "";
+  const query = brand
+    ? `?brand=${encodeURIComponent(brand.toLowerCase())}`
+    : "";
 
   return (
     <div className="relative bg-charcoal">
@@ -97,8 +100,17 @@ export function CategoryHero({
               return (
                 <li key={entry.slug}>
                   <Link
-                    href={`/shop/${entry.slug}${query}`}
+                    // an active pill steps back up to the whole store, so the
+                    // way out of a shelf is the pill you came in on
+                    href={
+                      active ? `/shop${query}` : `/shop/${entry.slug}${query}`
+                    }
                     aria-current={active ? "true" : undefined}
+                    aria-label={
+                      active
+                        ? `Leave ${entry.name} and see the whole store`
+                        : `Show ${entry.name}`
+                    }
                     className={`inline-flex items-center gap-2 rounded-full border px-4 py-2 text-[0.8125rem] uppercase tracking-[0.04em] transition-colors ${
                       active
                         ? "border-white bg-white text-charcoal"
