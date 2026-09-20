@@ -208,7 +208,10 @@ the navigation and the brand statement.
 
 `/` home · `/shop` all products with brand and category filters · `/shop/[category]` ·
 `/shop/[category]/[slug]` product detail · `/brands` and `/brands/[brand]` · `/fitting` the studio
-and booking · `/stories` journal · `/about` the shop · `/bag`.
+and booking · `/about` the shop · `/bag`.
+
+No journal. A shop this size does not publish enough to keep one honest, and a stale journal reads
+worse than none.
 
 ---
 
@@ -219,9 +222,8 @@ and booking · `/stories` journal · `/about` the shop · `/bag`.
 3. **Categories**, three portrait cards into the fastest-moving categories.
 4. **Brands**, the logos or names FAIRWAY stocks, as a quiet band.
 5. **Fitting**, the service, sold like a product.
-6. **Stories**, editorial cards.
-7. **Newsletter**, minimal.
-8. **Footer**, large wordmark, EST. 1987, shop, company and legal links.
+6. **Newsletter**, minimal.
+7. **Footer**, large wordmark, EST. 1987, shop, company and legal links.
 
 ---
 

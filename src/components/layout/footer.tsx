@@ -36,7 +36,6 @@ const columns = [
     title: "Shop info",
     links: [
       { href: "/about", label: "About" },
-      { href: "/stories", label: "Stories" },
       { href: "/contact", label: "Contact" },
       { href: "/delivery", label: "Delivery & returns" },
     ],

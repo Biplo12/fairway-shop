@@ -12,7 +12,6 @@ const links = [
   { href: "/shop", label: "Shop", index: "01" },
   { href: "/brands", label: "Brands", index: "02" },
   { href: "/fitting", label: "Fitting", index: "03" },
-  { href: "/stories", label: "Stories", index: "04" },
 ];
 
 /**
@@ -20,8 +19,11 @@ const links = [
  * scrolled away. Every page carries its own navigation in that card, so this
  * only exists below it.
  *
- * The pill has no room for four links on a phone, so below md they move into
- * a panel behind a menu button. Nothing is hidden without a way back to it.
+ * The pill has no room for the links on a phone, so below md they move into a
+ * panel behind a menu button. Nothing is hidden without a way back to it.
+ *
+ * The three match the hero's tabs and the numbers on the inner page bar, so a
+ * customer meets the same three rooms wherever they are.
  */
 export function FloatingNav() {
   const { count, setOpen: setBagOpen } = useBag();
