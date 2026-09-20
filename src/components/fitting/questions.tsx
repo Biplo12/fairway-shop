@@ -18,8 +18,14 @@ export function Questions() {
               What people ask at the counter
             </h2>
             <p className="mt-4 text-[1.0625rem] leading-[1.6] text-charcoal/70">
-              If yours is not here, call the shop on 01334 555 187 and ask for
-              the studio. Somebody who fits clubs will answer it.
+              If yours is not here, call the shop on{" "}
+              <a
+                href="tel:+441334555187"
+                className="text-charcoal underline underline-offset-4"
+              >
+                01334 555 187
+              </a>{" "}
+              and ask for the studio. Somebody who fits clubs will answer it.
             </p>
             <a
               href="tel:+441334555187"

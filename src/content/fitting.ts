@@ -35,8 +35,8 @@ export const sessions: Session[] = [
       "Lie angle off the board",
       "Dispersion, not only distance",
     ],
-    image: "/images/fitting/iron-head.jpg",
-    alt: "A TaylorMade P790 iron head lit against a dark studio background",
+    image: "/images/fitting/driver-and-iron.jpg",
+    alt: "A driver head and an iron standing together on the practice ground",
   },
   {
     slug: "ball-fitting",
@@ -50,8 +50,8 @@ export const sessions: Session[] = [
       "Flight held into wind",
       "Feel off the putter face",
     ],
-    image: "/images/fitting/iron-macro.jpg",
-    alt: "Two golf balls and an iron head lying in deep green grass",
+    image: "/images/fitting/practice-balls.jpg",
+    alt: "A stack of practice balls waiting on the grass",
   },
   {
     slug: "putter-fitting",
@@ -65,8 +65,8 @@ export const sessions: Session[] = [
       "Head shape against your stroke",
       "Grip size and counterweight",
     ],
-    image: "/images/fitting/putter-mat.jpg",
-    alt: "A putter and two balls on the studio putting mat",
+    image: "/images/fitting/blade-on-the-mat.jpg",
+    alt: "A blade putter set behind a ball on the studio mat",
   },
   {
     slug: "wedge-gapping",

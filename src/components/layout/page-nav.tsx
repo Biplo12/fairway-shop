@@ -18,8 +18,8 @@ const tabs = [
 export function PageNav({
   current,
 }: {
-  /** "bag" and "brands" stand on none of the three, so no tab is current */
-  current: "home" | "shop" | "fitting" | "bag" | "brands";
+  /** "bag", "brands" and "info" stand on none of the three, so no tab is current */
+  current: "home" | "shop" | "fitting" | "bag" | "brands" | "info";
 }) {
   return (
     <nav
