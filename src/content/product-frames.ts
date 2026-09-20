@@ -91,8 +91,8 @@ export const clubFrames: Record<string, { band: Frame; note: Frame }> = {
   },
   "fairway woods": {
     band: {
-      image: "/images/product/a-wood-and-an-iron.jpg",
-      alt: "A fairway wood and an iron lying together on cut grass",
+      image: "/images/product/a-wood-on-the-grass.jpg",
+      alt: "A fairway wood head and three balls lying on cut grass",
     },
     note: {
       image: "/images/product/a-basket-at-the-range.jpg",
@@ -101,8 +101,8 @@ export const clubFrames: Record<string, { band: Frame; note: Frame }> = {
   },
   hybrids: {
     band: {
-      image: "/images/product/an-iron-on-the-turf.jpg",
-      alt: "Balls and an iron head sitting on the turf in low sun",
+      image: "/images/product/a-hybrid-at-address.jpg",
+      alt: "A hybrid set behind a ball at address on cut grass",
     },
     note: {
       image: "/images/product/two-clubs-on-the-turf.jpg",
@@ -121,8 +121,8 @@ export const clubFrames: Record<string, { band: Frame; note: Frame }> = {
   },
   putters: {
     band: {
-      image: "/images/product/on-the-putting-green.jpg",
-      alt: "A putter and ball on the green beside a golfer",
+      image: "/images/product/putter-ball-and-hole.jpg",
+      alt: "A mallet putter and a ball beside the hole on a green",
     },
     note: {
       image: "/images/product/blade-behind-the-ball.jpg",
