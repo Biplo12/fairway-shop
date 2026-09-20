@@ -5,7 +5,7 @@
  */
 export const site = {
   url:
-    process.env.NEXT_PUBLIC_SITE_URL ?? "https://fairway-roan-delta.vercel.app",
+    process.env.NEXT_PUBLIC_SITE_URL ?? "https://fairway-shop.vercel.app",
   name: "FAIRWAY",
   statement: "Every brand that matters. Fitted to the way you play.",
 } as const;
