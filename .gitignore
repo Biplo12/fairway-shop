@@ -42,3 +42,6 @@ next-env.d.ts
 
 # product photography sources, rebuilt into public/images/products
 /assets/product-shots
+
+# transient browser-tool output
+/.playwright-mcp
