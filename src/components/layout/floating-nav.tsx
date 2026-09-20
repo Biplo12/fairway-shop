@@ -16,8 +16,9 @@ const links = [
 ];
 
 /**
- * Pill navigation that arrives once the hero has scrolled away. The hero
- * carries its own navigation, so this only exists below it.
+ * Pill navigation that arrives once the card at the top of the page has
+ * scrolled away. Every page carries its own navigation in that card, so this
+ * only exists below it.
  *
  * The pill has no room for four links on a phone, so below md they move into
  * a panel behind a menu button. Nothing is hidden without a way back to it.

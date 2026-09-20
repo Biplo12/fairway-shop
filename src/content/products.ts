@@ -128,6 +128,30 @@ export const products: Product[] = [
     detail: "Dozen",
   },
   {
+    slug: "ping-tour-glove",
+    brand: "Ping",
+    model: "Tour Glove",
+    category: "gloves",
+    price: 2400,
+    statement: "Cabretta leather. Wears out because it fits, not because it is cheap.",
+    image: "/images/products/ping-tour-glove.jpg",
+    alt: "A white Ping Tour cabretta leather golf glove, on white",
+    inStock: true,
+    detail: "Sizes S to XL",
+  },
+  {
+    slug: "ping-tour-vented-delta",
+    brand: "Ping",
+    model: "Tour Vented Delta",
+    category: "headwear",
+    price: 3200,
+    statement: "Laser cut vents on the crown. The one the staff wear in July.",
+    image: "/images/products/ping-tour-vented-delta.jpg",
+    alt: "A black Ping Tour Vented Delta cap, on white",
+    inStock: true,
+    detail: "One size, snapback",
+  },
+  {
     slug: "srixon-z-star-xv",
     brand: "Srixon",
     model: "Z-STAR XV",
@@ -143,6 +167,42 @@ export const products: Product[] = [
 
 /** the four on the homepage grid */
 export const featuredProducts = products.filter((product) => product.featured);
+
+const categoryNames: Record<Category, string> = {
+  clubs: "Clubs",
+  balls: "Balls",
+  bags: "Bags",
+  gloves: "Gloves",
+  headwear: "Headwear",
+  accessories: "Accessories",
+};
+
+/**
+ * Derived from the rack rather than written out, so the shop can never
+ * advertise a shelf with nothing on it.
+ */
+export const shopCategories = (Object.keys(categoryNames) as Category[])
+  .map((slug) => ({
+    slug,
+    name: categoryNames[slug],
+    count: products.filter((product) => product.category === slug).length,
+  }))
+  .filter((category) => category.count > 0);
+
+export const shopBrands = [...new Set(products.map((product) => product.brand))]
+  .sort((a, b) => a.localeCompare(b))
+  .map((name) => ({
+    name,
+    count: products.filter((product) => product.brand === name).length,
+  }));
+
+export function isCategory(value: string): value is Category {
+  return value in categoryNames;
+}
+
+export function categoryName(slug: Category) {
+  return categoryNames[slug];
+}
 
 export function findProduct(slug: string) {
   return products.find((product) => product.slug === slug);

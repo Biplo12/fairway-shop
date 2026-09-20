@@ -32,7 +32,7 @@ export default function Home() {
             label="Irons, side by side"
             heading="Irons, fitted properly"
             body="P790, i230 and the JPX Tour on the rack. Hit all three before you choose. Most players guess wrong between them."
-            href="/shop/clubs/irons"
+            href="/shop/clubs"
             cta="Explore irons"
           />
         </Reveal>
