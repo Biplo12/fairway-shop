@@ -35,7 +35,7 @@ export function CategoryHero({
         className="absolute inset-0 bg-gradient-to-t from-charcoal/90 via-charcoal/45 to-charcoal/25"
       />
 
-      <div className="relative flex min-h-[26rem] flex-col justify-between gap-10 p-6 md:min-h-[22rem] md:p-10">
+      <div className="relative flex min-h-[28rem] flex-col justify-between gap-10 p-6 md:min-h-[27rem] md:p-10 lg:min-h-[31rem] lg:p-12">
         <nav aria-label="Breadcrumb">
           <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-white/70">
             <li>

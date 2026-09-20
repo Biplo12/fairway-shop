@@ -16,37 +16,39 @@ import { categoryName, products, type Category } from "@/content/products";
  * Navigation, band and results sit in a single card, the way the rest of the
  * site is built: the page is cards on a grey ground, not a header over a body.
  */
+
+/** One frame per shelf, none of them reused anywhere else on the site. */
 const bands: Record<
   string,
   { image: string; alt: string; body: string }
 > = {
   all: {
-    image: "/images/editorial/drivers-band.jpg",
+    image: "/images/shop/all-shelf.jpg",
     alt: "A driver and an iron lying on cut fairway grass",
     body: "Twelve brands, chosen line by line. If it is on the rack it earned the space, and anything marked fit first is worth putting on the monitor before you buy it.",
   },
   clubs: {
-    image: "/images/editorial/irons-banner.jpg",
-    alt: "Irons standing in a bag on the course",
+    image: "/images/shop/clubs-shelf.jpg",
+    alt: "A driver and a set of irons lying on the grass beside a bag",
     body: "Drivers, irons, wedges and putters from the makers worth carrying. Hit two before you choose one. Most players guess wrong between them.",
   },
   balls: {
-    image: "/images/shop/balls-band.jpg",
+    image: "/images/shop/balls-shelf.jpg",
     alt: "Three golf balls and a tee on cut grass in low sun",
     body: "The only piece of equipment you use on every shot, and the gap between models is wider than most players expect. Come in with a sleeve of each.",
   },
   bags: {
-    image: "/images/editorial/bags-band.jpg",
-    alt: "Two golfers walking a fairway with bags over their shoulders",
+    image: "/images/shop/bags-shelf.jpg",
+    alt: "Three stand bags with their legs out on a fairway",
     body: "Stand bags and cart bags, weighed on the same scale, so you can compare what you will actually carry for four hours.",
   },
   gloves: {
-    image: "/images/shop/gloves-band.jpg",
+    image: "/images/shop/gloves-shelf.jpg",
     alt: "A gloved hand holding three golf balls",
     body: "Cabretta leather wears out. That is the point of it. Buy the size that feels a shade tight on the first hole.",
   },
   headwear: {
-    image: "/images/shop/headwear-band.jpg",
+    image: "/images/shop/headwear-shelf.jpg",
     alt: "A cap, a glove and golf balls resting on the grass",
     body: "Caps and visors, vented where it matters. Nothing here carries our name, because we did not make any of it.",
   },
