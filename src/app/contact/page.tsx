@@ -28,7 +28,7 @@ export default function Contact() {
           <PageNav current="info" />
 
           <div className="grid lg:grid-cols-[1.25fr_1fr]">
-            <div className="px-6 py-12 md:px-12 md:py-14">
+            <div className="px-6 pb-10 pt-12 md:px-12 md:pb-10 md:pt-14">
               <nav aria-label="Breadcrumb">
                 <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-charcoal/55">
                   <li>

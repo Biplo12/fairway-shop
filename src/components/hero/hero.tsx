@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Search, User } from "lucide-react";
+import { Search } from "lucide-react";
 
 import { Mark } from "@/components/brand/mark";
 import { CartButton } from "@/components/cart/cart-button";
@@ -119,13 +119,6 @@ export function Hero() {
                 >
                   <Search className="size-4" strokeWidth={1.5} />
                 </button>
-                <Link
-                  href="/account"
-                  aria-label="Account"
-                  className="hidden size-9 place-items-center rounded-full border border-white/50 text-white transition-colors hover:bg-white/15 sm:grid"
-                >
-                  <User className="size-4" strokeWidth={1.5} />
-                </Link>
                 <CartButton
                   tone="light"
                   className="text-[0.875rem] sm:w-[7.5rem] sm:justify-between sm:pl-5"

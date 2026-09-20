@@ -100,9 +100,9 @@ export function AboutPage() {
                       One bench, then a studio
                     </h1>
                     <p className="mt-4 text-[1rem] leading-[1.55] text-white/80">
-                      FAIRWAY opened in 1987 as a fitting bench behind somebody
-                      else's pro shop. The bench is still here. Everything else
-                      was built around it.
+                      FAIRWAY opened in 1987 as a fitting bench behind another
+                      shop&apos;s counter. The bench is still here. Everything
+                      else was built around it.
                     </p>
                   </div>
 

@@ -1,5 +1,5 @@
 import Link from "next/link";
-import { Search, User } from "lucide-react";
+import { Search } from "lucide-react";
 
 import { CartButton } from "@/components/cart/cart-button";
 import { Mark } from "@/components/brand/mark";
@@ -67,13 +67,6 @@ export function PageNav({
             className="grid size-9 place-items-center rounded-full border border-offwhite/40 text-offwhite transition-colors hover:bg-white/15"
           >
             <Search className="size-4" strokeWidth={1.5} />
-          </Link>
-          <Link
-            href="/account"
-            aria-label="Account"
-            className="hidden size-9 place-items-center rounded-full border border-offwhite/40 text-offwhite transition-colors hover:bg-white/15 sm:grid"
-          >
-            <User className="size-4" strokeWidth={1.5} />
           </Link>
           <CartButton className="sm:w-[7.5rem] sm:justify-between sm:pl-5" />
         </div>

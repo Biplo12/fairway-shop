@@ -165,8 +165,8 @@ export const brandPages: Record<string, BrandPage> = {
     founded: "1996",
     home: "Fairhaven, Massachusetts",
     since: "1997",
-    image: "/images/brands/vokey-ball-in-sand.jpg",
-    alt: "A ball sitting in the sand of a bunker",
+    image: "/images/brands/vokey-out-of-the-bunker.jpg",
+    alt: "A wedge moving a wall of sand out of a links bunker",
     body: [
       "Bob Vokey has been shaping Titleist wedges since the mid nineties, and the SM line is the closest thing golf has to a standard. The lofts are the easy part. The grind, the shape of the sole, is the part nobody buys correctly off a website.",
       "It comes down to two questions we ask at the counter: what does your turf do in winter, and how deep is your divot. Answer those honestly and the six grinds become two. Then we put both on the mat and you hit twenty shots off a tight lie.",
@@ -231,8 +231,8 @@ export const brandPages: Record<string, BrandPage> = {
     founded: "1857",
     home: "Fairhaven, Massachusetts",
     since: "1987",
-    image: "/images/brands/footjoy-glove-and-ball.jpg",
-    alt: "A gloved hand holding a golf ball",
+    image: "/images/brands/footjoy-shoe-and-ball.jpg",
+    alt: "A golf shoe and a ball on the green in low evening light",
     body: [
       "FootJoy shares a parent with Titleist and has been making golf shoes for longer than most clubs have existed. Shoes in real widths, gloves in sizes that mean something, and cabretta leather that wears out because that is what cabretta does.",
       "Nothing here needs a launch monitor, which makes it the easiest counter conversation in the shop and the one most often got wrong at home. A glove bought a size large will be loose by the fourth hole, and a shoe bought narrow will be remembered on the eighteenth.",
