@@ -258,42 +258,43 @@ export function AboutPage() {
 
         <Reveal>
           <section className="px-3 pb-3 md:px-5 md:pb-5">
-            <div className="relative overflow-hidden rounded-card bg-paper">
-              <div className="absolute inset-0">
-                <Media
-                  src="/images/shop-info/about-dusk.jpg"
-                  alt="A calm sea at dusk seen from the links, an island on the horizon"
-                  ratio="fill"
-                  sizes="100vw"
-                />
+            {/* The copy sits on paper beside the photograph rather than on top
+                of it. Charcoal type on an open sky was legible only where the
+                sky happened to be pale, which is not something to design on. */}
+            <div className="grid overflow-hidden rounded-card md:grid-cols-[0.9fr_1.1fr]">
+              <div className="flex flex-col justify-end bg-paper p-6 md:p-12 lg:p-14">
+                <p className="text-[clamp(1.75rem,3vw,2.75rem)] font-normal leading-[1.1] tracking-[-0.025em]">
+                  Play the long game.
+                </p>
+                <p className="mt-4 max-w-[28rem] text-[1rem] leading-[1.6] text-charcoal/75">
+                  Fitted once beats bought twice, and a set that suits you is
+                  still the right set in ten years. That is the whole argument
+                  and we have not needed another one since 1987.
+                </p>
+                <div className="mt-8 flex flex-wrap gap-3">
+                  <Link
+                    href="/fitting#book"
+                    className="rounded-control bg-charcoal px-6 py-3.5 text-[0.875rem] uppercase tracking-[0.06em] text-offwhite transition-colors hover:bg-charcoal/90"
+                  >
+                    Book a fitting
+                  </Link>
+                  <Link
+                    href="/contact"
+                    className="rounded-control border border-charcoal/40 px-6 py-3.5 text-[0.875rem] uppercase tracking-[0.06em] text-charcoal transition-colors hover:border-charcoal/80"
+                  >
+                    Find the shop
+                  </Link>
+                </div>
               </div>
 
-              {/* A pale frame, so the copy is charcoal on the photograph
-                  rather than white under a scrim. */}
-              <div className="relative flex min-h-[22rem] items-end p-6 md:min-h-[24rem] md:p-12">
-                <div className="max-w-[30rem]">
-                  <p className="text-[clamp(1.75rem,3vw,2.75rem)] font-normal leading-[1.1] tracking-[-0.025em] text-charcoal">
-                    Play the long game.
-                  </p>
-                  <p className="mt-4 text-[1rem] leading-[1.6] text-charcoal/75">
-                    Fitted once beats bought twice, and a set that suits you is
-                    still the right set in ten years. That is the whole argument
-                    and we have not needed another one since 1987.
-                  </p>
-                  <div className="mt-7 flex flex-wrap gap-3">
-                    <Link
-                      href="/fitting#book"
-                      className="rounded-control bg-charcoal px-6 py-3.5 text-[0.875rem] uppercase tracking-[0.06em] text-offwhite transition-colors hover:bg-charcoal/90"
-                    >
-                      Book a fitting
-                    </Link>
-                    <Link
-                      href="/contact"
-                      className="rounded-control border border-charcoal/40 px-6 py-3.5 text-[0.875rem] uppercase tracking-[0.06em] text-charcoal transition-colors hover:border-charcoal/80"
-                    >
-                      Find the shop
-                    </Link>
-                  </div>
+              <div className="relative order-first min-h-[16rem] md:order-none md:min-h-[26rem]">
+                <div className="absolute inset-0">
+                  <Media
+                    src="/images/shop-info/about-evening-links.jpg"
+                    alt="A links fairway in the last of the evening light, a trolley standing alone by a bunker"
+                    ratio="fill"
+                    sizes="(min-width: 768px) 55vw, 100vw"
+                  />
                 </div>
               </div>
             </div>
