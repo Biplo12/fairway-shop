@@ -11,7 +11,7 @@ fictional shop near St. Andrews with a fitting studio at its centre: it does not
 chooses them. The whole site is written from that position, which is a different voice from a
 manufacturer's and a different information architecture from a marketplace.
 
-> Live: <https://fairway-shop.vercel.app> · Repository: <https://github.com/Biplo12/fairway>
+> Live: <https://fairway-shop.vercel.app> · Repository: <https://github.com/Biplo12/fairway-shop>
 
 ---
 
