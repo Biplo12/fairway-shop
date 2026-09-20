@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { BrandsIndex } from "@/components/brands/brands-index";
+import { BrandsIndex } from "./_components/brands-index";
 
 export const metadata: Metadata = {
   title: "Brands",

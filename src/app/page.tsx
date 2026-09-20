@@ -1,20 +1,15 @@
-import { Hero } from "@/components/hero/hero";
-import { PromoBanner } from "@/components/sections/promo-banner";
-import { FeaturedProducts } from "@/components/sections/featured-products";
-import { Categories } from "@/components/sections/categories";
-import { ClubTypes } from "@/components/sections/club-types";
-import { BrandsBand } from "@/components/sections/brands-band";
-import { SplitFeature } from "@/components/sections/split-feature";
-import { Newsletter } from "@/components/sections/newsletter";
+import { Hero } from "./_components/hero";
+import { PromoBanner } from "@/components/promo-banner";
+import { FeaturedProducts } from "./_components/featured-products";
+import { Categories } from "./_components/categories";
+import { ClubTypes } from "./_components/club-types";
+import { BrandsBand } from "./_components/brands-band";
+import { SplitFeature } from "@/components/split-feature";
+import { Newsletter } from "./_components/newsletter";
 import { Footer } from "@/components/layout/footer";
 import { FloatingNav } from "@/components/layout/floating-nav";
 import { Reveal } from "@/components/ui/reveal";
 
-/**
- * Order matters as much as the sections do. No two full bleed photographic
- * bands sit next to each other, so each one lands against something light or
- * flat: what the shop sells, who it stocks, how it fits, then the letter.
- */
 export default function Home() {
   return (
     <>

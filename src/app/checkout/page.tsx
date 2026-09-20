@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
-import { CheckoutPage } from "@/components/checkout/checkout-page";
-import { CheckoutShell } from "@/components/checkout/checkout-shell";
+import { CheckoutForm } from "./_components/checkout-form";
+import { CheckoutShell } from "./_components/checkout-shell";
 
 export const metadata: Metadata = {
   title: "Checkout",
@@ -13,7 +13,7 @@ export const metadata: Metadata = {
 export default function Checkout() {
   return (
     <CheckoutShell back="/bag" backLabel="Back to the bag">
-      <CheckoutPage />
+      <CheckoutForm />
     </CheckoutShell>
   );
 }

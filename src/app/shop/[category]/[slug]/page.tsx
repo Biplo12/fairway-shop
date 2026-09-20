@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { ProductPage } from "@/components/product/product-page";
+import { ProductPage } from "./_components/product-page";
 import { productPage } from "@/content/product-pages";
 import { findProduct, products } from "@/content/products";
 

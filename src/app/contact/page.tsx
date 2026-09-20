@@ -1,12 +1,19 @@
 import type { Metadata } from "next";
 import Link from "next/link";
 
-import { ContactForm } from "@/components/contact/contact-form";
+import { ContactForm } from "./_components/contact-form";
 import { FloatingNav } from "@/components/layout/floating-nav";
 import { Footer } from "@/components/layout/footer";
 import { PageNav } from "@/components/layout/page-nav";
 import { Media } from "@/components/ui/media";
 import { hours } from "@/content/fitting";
+
+/** the three ways into the shop, in the order the counter would give them */
+const contactRoutes = [
+  { href: "tel:+441334555187", label: "01334 555 187" },
+  { href: "mailto:shop@fairwaygolf.co.uk", label: "shop@fairwaygolf.co.uk" },
+  { href: "mailto:studio@fairwaygolf.co.uk", label: "studio@fairwaygolf.co.uk" },
+];
 
 export const metadata: Metadata = {
   title: "Contact",
@@ -14,11 +21,6 @@ export const metadata: Metadata = {
     "Fairway Golf, 12 Links Road, St. Andrews. Telephone, email, opening hours and how to find the shop and the fitting studio behind it.",
 };
 
-/**
- * Opening hours come off the fitting content, because the studio and the shop
- * keep the same door and there is no version of this where the two lists are
- * allowed to drift apart.
- */
 export default function Contact() {
   return (
     <>
@@ -67,8 +69,6 @@ export default function Contact() {
               </div>
             </div>
 
-            {/* Media is position: relative, so the absolute box goes around it
-                rather than on it. */}
             <div className="relative order-first min-h-[18rem] lg:order-none lg:min-h-0">
               <div className="absolute inset-0">
                 <Media
@@ -82,7 +82,7 @@ export default function Contact() {
             </div>
           </div>
 
-          <div className="grid gap-10 border-t border-mist px-6 py-10 md:grid-cols-3 md:px-12 md:py-12">
+          <div className="grid gap-10 px-6 py-10 md:grid-cols-3 md:px-12 md:py-12">
             <div>
               <h2 className="text-[0.6875rem] uppercase tracking-[0.16em] text-olive">
                 Where
@@ -127,30 +127,16 @@ export default function Contact() {
                 Voice, or writing
               </h2>
               <ul className="mt-5 space-y-2.5 text-[0.9375rem] text-charcoal/80">
-                <li>
-                  <a
-                    href="tel:+441334555187"
-                    className="underline underline-offset-4 hover:text-charcoal"
-                  >
-                    01334 555 187
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:shop@fairwaygolf.co.uk"
-                    className="underline underline-offset-4 hover:text-charcoal"
-                  >
-                    shop@fairwaygolf.co.uk
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="mailto:studio@fairwaygolf.co.uk"
-                    className="underline underline-offset-4 hover:text-charcoal"
-                  >
-                    studio@fairwaygolf.co.uk
-                  </a>
-                </li>
+                {contactRoutes.map((route) => (
+                  <li key={route.href}>
+                    <a
+                      href={route.href}
+                      className="underline underline-offset-4 hover:text-charcoal"
+                    >
+                      {route.label}
+                    </a>
+                  </li>
+                ))}
               </ul>
               <p className="mt-4 text-[0.875rem] leading-[1.6] text-charcoal/55">
                 The telephone is answered faster than the inbox, and on a

@@ -10,12 +10,6 @@ const inter = Inter({
   display: "swap",
 });
 
-/**
- * The root layout itself failed, so there is no navigation, no cart and no
- * footer to lean on: this file replaces the document. It carries its own
- * html and body, its own stylesheet and one typeface, and says the only two
- * things still worth saying.
- */
 export default function GlobalError({
   error,
   retry,

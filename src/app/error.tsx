@@ -7,15 +7,6 @@ import { RotateCcw } from "lucide-react";
 import { Footer } from "@/components/layout/footer";
 import { PageNav } from "@/components/layout/page-nav";
 
-/**
- * Something broke on our side. The customer gets the plain version of that,
- * a button that retries the segment rather than the whole page, and the
- * navigation, because a dead end here is worse than the error.
- *
- * The digest is printed on purpose. It is the only thing that ties what
- * somebody saw to what the server wrote down, and reading six characters
- * down the phone is easier than describing a page.
- */
 export default function Error({
   error,
   retry,

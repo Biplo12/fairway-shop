@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { BagPage } from "@/components/cart/bag-page";
+import { BagPage } from "./_components/bag-page";
 import { FloatingNav } from "@/components/layout/floating-nav";
 import { Footer } from "@/components/layout/footer";
 import { PageNav } from "@/components/layout/page-nav";

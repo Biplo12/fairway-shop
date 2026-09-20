@@ -1,13 +1,5 @@
 import type { Category } from "@/content/products";
 
-/**
- * Photography for the product page. Its own set: none of these frames appear
- * on the homepage or on a shop shelf, so a customer who walks from the rack
- * into a product never meets the same photograph twice.
- *
- * `band` is the wide statement, cut to 3.05:1. `note` sits in a half width
- * column beside what you need to know, cut to 3:2.
- */
 type Frame = { image: string; alt: string };
 
 export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
@@ -67,17 +59,12 @@ export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
       alt: "A cap, a glove and two balls lying on the grass beside a driver",
     },
     note: {
-      image: "/images/product/driver-glove-and-balls.jpg",
-      alt: "A driver head, a glove and two balls resting on cut grass",
+      image: "/images/product/driver-and-balls.jpg",
+      alt: "A driver head, a glove, a cap and two balls resting on cut grass",
     },
   },
 };
 
-/**
- * Clubs is six different things. A driver page has no business showing irons,
- * so anything on the clubs shelf takes its frames from its own subcategory and
- * only falls back to the shelf when there is none.
- */
 export const clubFrames: Record<string, { band: Frame; note: Frame }> = {
   drivers: {
     band: {
@@ -86,7 +73,7 @@ export const clubFrames: Record<string, { band: Frame; note: Frame }> = {
     },
     note: {
       image: "/images/product/driver-and-balls.jpg",
-      alt: "A driver head, two balls and a cap resting on the grass",
+      alt: "A driver head, a glove, a cap and two balls resting on cut grass",
     },
   },
   "fairway woods": {

@@ -3,15 +3,16 @@ import type { Metadata } from "next";
 import { FloatingNav } from "@/components/layout/floating-nav";
 import { Footer } from "@/components/layout/footer";
 import { PageNav } from "@/components/layout/page-nav";
-import { Booking } from "@/components/fitting/booking";
-import { FittingHero } from "@/components/fitting/fitting-hero";
-import { HowItRuns } from "@/components/fitting/how-it-runs";
-import { Questions } from "@/components/fitting/questions";
-import { Sessions } from "@/components/fitting/sessions";
-import { PromoBanner } from "@/components/sections/promo-banner";
-import { SplitFeature } from "@/components/sections/split-feature";
+import { Booking } from "./_components/booking";
+import { FittingHero } from "./_components/fitting-hero";
+import { HowItRuns } from "./_components/how-it-runs";
+import { Questions } from "./_components/questions";
+import { Sessions } from "./_components/sessions";
+import { PromoBanner } from "@/components/promo-banner";
+import { SplitFeature } from "@/components/split-feature";
 import { Reveal } from "@/components/ui/reveal";
 import { fullBag, sessions, studioMeta } from "@/content/fitting";
+import { studioFacts } from "./constants";
 
 export const metadata: Metadata = {
   title: "Fitting studio",
@@ -19,20 +20,12 @@ export const metadata: Metadata = {
     "Club, ball, putter and wedge fittings in the studio at the back of the shop. Ninety minutes on a launch monitor, the fee off anything you buy on the day.",
 };
 
-const facts = [
-  { value: "1987", label: "Fitting since" },
-  { value: "11 brands", label: "On the rack" },
-  { value: "£75", label: "Club fitting, 90 min" },
-];
-
 export default async function Fitting({
   searchParams,
 }: {
   searchParams: Promise<{ session?: string }>;
 }) {
   const { session } = await searchParams;
-  // only a slug the studio actually sells reaches the form, so a stray query
-  // cannot pick an option that does not exist
   const selected = [...sessions, fullBag].some((entry) => entry.slug === session)
     ? session
     : undefined;
@@ -44,7 +37,7 @@ export default async function Fitting({
         <section className="p-3 md:p-5">
           <div className="overflow-hidden rounded-card bg-white">
             <PageNav current="fitting" />
-            <FittingHero facts={facts} />
+            <FittingHero facts={studioFacts} />
             <Sessions />
           </div>
         </section>
@@ -68,7 +61,7 @@ export default async function Fitting({
 
         <Reveal>
           <SplitFeature
-            image="/images/fitting/launch-monitor.jpg"
+            image="/images/fitting/monitor-on-the-mat.jpg"
             alt="A launch monitor standing on the mat in the fitting bay"
             label="The studio"
             heading="One bay, and forty years of notes"

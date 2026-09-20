@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { BrandPage } from "@/components/brands/brand-page";
+import { BrandPage } from "./_components/brand-page";
 import { brands } from "@/content/brands";
 import { brandPages } from "@/content/brand-pages";
 
@@ -32,7 +32,6 @@ export default async function Brand({
 }) {
   const { brand: slug } = await params;
   const brand = brands.find((entry) => entry.slug === slug);
-  // a brand with no page written for it is not a brand this shop stocks
   if (!brand || !brandPages[slug]) notFound();
 
   return <BrandPage brand={brand} />;

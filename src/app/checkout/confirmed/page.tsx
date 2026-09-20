@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
-import { CheckoutShell } from "@/components/checkout/checkout-shell";
-import { Confirmation } from "@/components/checkout/confirmation";
+import { CheckoutShell } from "../_components/checkout-shell";
+import { Confirmation } from "./_components/confirmation";
 
 export const metadata: Metadata = {
   title: "Order placed",

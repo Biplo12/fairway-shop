@@ -1,30 +1,15 @@
 import { generatedPage } from "@/content/product-copy";
 import type { Product } from "@/content/products";
 
-/**
- * What the shop has to say about a product, kept apart from the catalogue so
- * products.ts stays a list of things with prices.
- *
- * Every line here is FAIRWAY's, not the manufacturer's. The shop did not build
- * any of this, it chose it, so nothing below claims a technology or quotes a
- * tour player. Specifications describe what we sell and how we sell it.
- */
 export type ProductPage = {
-  /** the line under the title */
   tagline: string;
-  /** the paragraph beside the packshot */
   description: string;
-  /** the headline on the photographic band */
   headline: string;
-  /** three short marks under that headline */
   marks: [string, string, string];
-  /** what a customer should know before buying, in the fitter's order */
   notes: [string, string, string, string];
-  /** the line a fitter would actually say at the counter */
   counter: string;
   specs: { label: string; value: string }[];
   suits: string;
-  /** extra views, primary first. Only rendered when there is more than one */
   gallery?: string[];
 };
 
@@ -3756,10 +3741,6 @@ export const productPages: Record<string, ProductPage> = {
   },
 };
 
-/**
- * A bespoke page if the shop wrote one, otherwise one built from the product's
- * own data. Either way a product on the rack always has a page behind it.
- */
 export function productPage(product: Product): ProductPage {
   const page = productPages[product.slug] ?? generatedPage(product);
   return page.gallery || !product.gallery

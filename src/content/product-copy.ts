@@ -1,15 +1,6 @@
 import type { ProductPage } from "@/content/product-pages";
 import type { Product } from "@/content/products";
 
-/**
- * The long tail of the rack. A shop this size writes a full page for the lines
- * it argues about across the counter, and for everything else it writes down
- * what the thing is and who it suits. This builds the second kind from the
- * product's own data, so nothing here claims a technology or invents a number.
- *
- * Bespoke pages live in product-pages.ts and always win.
- */
-
 function pick<T>(slug: string, salt: number, options: readonly T[]): T {
   let hash = salt * 2654435761;
   for (let i = 0; i < slug.length; i++) hash = (hash * 31 + slug.charCodeAt(i)) >>> 0;

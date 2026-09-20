@@ -1,19 +1,9 @@
 import type { Category } from "@/content/products";
 
-/**
- * One frame per shelf, none of them reused anywhere else on the site.
- * Files are named for what is in them, so replacing a frame means a new path
- * and no browser can serve the old one from cache.
- *
- * `focus` is for the narrow end. A phone shows roughly the middle quarter of
- * a 3.05:1 frame, so anything whose subject does not sit dead centre needs
- * the crop nudged onto it.
- */
 export type Shelf = {
   image: string;
   alt: string;
   body: string;
-  /** where the crop holds when the band is narrower than the frame */
   focus?: string;
 };
 

@@ -5,7 +5,7 @@ import { Search } from "lucide-react";
 import { FloatingNav } from "@/components/layout/floating-nav";
 import { Footer } from "@/components/layout/footer";
 import { PageNav } from "@/components/layout/page-nav";
-import { ProductCard } from "@/components/products/product-card";
+import { ProductCard } from "@/components/product-card";
 import { Arrow } from "@/components/ui/arrow";
 import { rackPicks, shopCategories } from "@/content/products";
 
@@ -15,15 +15,6 @@ export const metadata: Metadata = {
     "The page is not here. The search box and every shelf in the shop are, so start from one of those.",
 };
 
-/**
- * A wrong address is somebody who already wanted something, so this page is a
- * way back to the rack rather than an apology. Search first, because it is
- * faster than guessing, then the shelves with their counts, then four things
- * that are actually in stock.
- *
- * This file also catches every unmatched URL, not only the segments that call
- * notFound(), so it cannot assume what the customer was after.
- */
 export default function NotFound() {
   const picks = rackPicks(4);
 
@@ -60,7 +51,7 @@ export default function NotFound() {
                   type="search"
                   autoComplete="off"
                   placeholder="Brand, model or type. Try wedge, or Pro V1."
-                  className="w-full rounded-control border border-charcoal/25 px-4 py-3.5 text-[1rem] placeholder:text-charcoal/40 focus:border-charcoal focus:outline-none"
+                  className="w-full rounded-control border border-charcoal/25 px-4 py-3.5 text-[1rem] placeholder:text-charcoal/40 focus:border-charcoal"
                 />
                 <button
                   type="submit"

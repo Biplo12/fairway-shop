@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-import { ShopPage } from "@/components/shop/shop-page";
+import { ShopPage } from "../_components/shop-page";
 import { categoryName, isCategory, shopCategories } from "@/content/products";
 
 export function generateStaticParams() {

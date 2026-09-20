@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { ShopPage } from "@/components/shop/shop-page";
+import { ShopPage } from "./_components/shop-page";
 
 export const metadata: Metadata = {
   title: "Shop",

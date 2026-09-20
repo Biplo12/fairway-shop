@@ -1,20 +1,11 @@
 import type { Product } from "@/content/products";
 
-/**
- * What a customer has to choose before a club or a glove is actually theirs.
- *
- * Nothing here is a claim about a model. Hand, flex and shaft material are
- * what any shop offers on any club, and where a specific set of numbers is
- * quoted it is read off the product's own `detail` line rather than invented.
- * Section 7: never attribute a specification to a maker that the maker did
- * not publish.
- */
 export type ProductOption = {
   id: string;
   label: string;
   values: string[];
-  /** the fitter's line under the control, where there is one worth saying */
   note?: string;
+  priceFactor?: Record<string, number>;
 };
 
 const HAND: ProductOption = {
@@ -30,7 +21,6 @@ const FLEX: ProductOption = {
   note: "Set on the monitor, not off a chart.",
 };
 
-/** pulls a list of numbers out of a detail line, e.g. "9, 10.5 and 12 degrees" */
 function numbersIn(detail: string, unit: string) {
   const match = detail.match(/^([\d.,\s]+(?:and)?[\d.\s]*)\s*(degrees|inches)/i);
   if (!match) return null;
@@ -70,7 +60,7 @@ export function productOptions(product: Product): ProductOption[] {
         id: "quantity",
         label: "Boxes",
         values: ["1 dozen", "3 dozen", "6 dozen"],
-        note: "Three dozen is a season for most people.",
+        priceFactor: { "1 dozen": 1, "3 dozen": 3, "6 dozen": 6 },
       },
     ];
   }
@@ -105,4 +95,16 @@ export function productOptions(product: Product): ProductOption[] {
 
   options.push(FLEX, HAND);
   return options;
+}
+
+export function optionPriceFactor(
+  product: Product,
+  chosen?: Record<string, string>,
+) {
+  if (!chosen) return 1;
+
+  return productOptions(product).reduce((factor, option) => {
+    const value = chosen[option.id];
+    return factor * (option.priceFactor?.[value] ?? 1);
+  }, 1);
 }

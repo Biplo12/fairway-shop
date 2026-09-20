@@ -1,6 +1,6 @@
 import type { Metadata } from "next";
 
-import { SearchPage } from "@/components/shop/search-page";
+import { SearchPage } from "./_components/search-page";
 
 export const metadata: Metadata = {
   title: "Search",

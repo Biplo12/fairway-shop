@@ -1,6 +1,5 @@
 export type Brand = { slug: string; name: string; note: string };
 
-/** The rack, in the order a customer would recognise it. */
 export const brands: Brand[] = [
   { slug: "titleist", name: "Titleist", note: "Balls, metals, wedges" },
   { slug: "taylormade", name: "TaylorMade", note: "Metals, irons" },

@@ -1,28 +1,13 @@
-/**
- * A page for every brand on the rack, written the way a fitter would answer
- * "why do you keep them?" rather than the way the maker would answer it.
- *
- * Everything factual here is public knowledge about the maker. FAIRWAY chose
- * these lines, it did not build them, and nothing on these pages implies a
- * partnership: `since` is the year the shop started stocking them, which is
- * the shop's own history, not theirs.
- */
-
 export type BrandPage = {
   slug: string;
-  /** one line, the reason the brand is on the rack */
   statement: string;
   founded: string;
   home: string;
-  /** the year FAIRWAY put them on the rack */
   since: string;
   image: string;
   alt: string;
-  /** the shop's view, two paragraphs */
   body: string[];
-  /** the lines we actually keep or order */
   stocked: string[];
-  /** what a fitter says across the counter about them */
   counter: string;
 };
 

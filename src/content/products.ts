@@ -12,26 +12,17 @@ export type Product = {
   model: string;
   category: Category;
   subcategory?: string;
-  /** pence, so the page never does floating point money */
   price: number;
   statement: string;
   image: string;
   alt: string;
   inStock: boolean;
   fittingRecommended?: boolean;
-  /** the number a fitter would quote about this product */
   detail: string;
-  /** extra views of the same product, primary first */
   gallery?: string[];
-  /** on the homepage grid, four at a time */
   featured?: boolean;
 };
 
-/**
- * Photography is the manufacturers' own studio work, cut to one tile by
- * scripts/build-product-shots.mjs. Anything listed here needs a real packshot
- * behind it, so the rack is the products we can show properly.
- */
 export const products: Product[] = [
   {
     slug: "taylormade-p790-irons",
@@ -8556,7 +8547,6 @@ export const products: Product[] = [
   },
 ];
 
-/** the four on the homepage grid */
 export const featuredProducts = products.filter((product) => product.featured);
 
 const categoryNames: Record<Category, string> = {
@@ -8568,10 +8558,6 @@ const categoryNames: Record<Category, string> = {
   accessories: "Accessories",
 };
 
-/**
- * Derived from the rack rather than written out, so the shop can never
- * advertise a shelf with nothing on it.
- */
 export const shopCategories = (Object.keys(categoryNames) as Category[])
   .map((slug) => ({
     slug,
@@ -8596,11 +8582,6 @@ const clubTypeOrder = [
   "putters",
 ];
 
-/**
- * Clubs is six different things and nobody shops for a club, they shop for a
- * wedge. Derived from the rack so a type with nothing behind it is never
- * offered.
- */
 export const clubTypes = clubTypeOrder
   .map((slug) => ({
     slug,
@@ -8608,7 +8589,6 @@ export const clubTypes = clubTypeOrder
   }))
   .filter((type) => type.count > 0);
 
-/** the week of the year, so the rack turns over without anyone editing a flag */
 function weekOfYear(today = new Date()) {
   const start = Date.UTC(today.getUTCFullYear(), 0, 1);
   const day = Date.UTC(
@@ -8619,11 +8599,6 @@ function weekOfYear(today = new Date()) {
   return Math.floor((day - start) / 604_800_000);
 }
 
-/**
- * What the shop would put in your hands this week. The four marked `featured`
- * lead, then one from each remaining shelf, rotated by the week so the front
- * of the shop is not the same four products every time somebody rebuilds it.
- */
 export function rackPicks(count = 8) {
   const picks: Product[] = [...featuredProducts].slice(0, count);
   const shelves = shopCategories.map((category) =>
@@ -8643,7 +8618,6 @@ export function rackPicks(count = 8) {
   return picks;
 }
 
-/** price bands, in pence, wide enough that a shelf is never cut into slivers */
 export const priceBands = [
   { slug: "under-50", name: "Under £50", min: 0, max: 4999 },
   { slug: "50-150", name: "£50 to £150", min: 5000, max: 14999 },
@@ -8677,11 +8651,6 @@ export function sortProducts(shelf: Product[], slug?: string) {
   return sorted;
 }
 
-/**
- * Enough to find a club by name, brand or type. No index and no fuzziness: a
- * shop this size needs the search to be honest about what it matched, not
- * clever about what it guessed.
- */
 export function searchProducts(query: string) {
   const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
   if (!terms.length) return [];
@@ -8707,11 +8676,6 @@ export function searchProducts(query: string) {
     .map((entry) => entry.product);
 }
 
-/**
- * The two or three we would put beside it on the bench. Same type where there
- * is one, then the closest in price, because that is the comparison a customer
- * is actually making. Section 3.
- */
 export function relatedProducts(product: Product, count = 3) {
   const sameType = products.filter(
     (other) =>

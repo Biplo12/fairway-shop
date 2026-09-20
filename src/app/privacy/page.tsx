@@ -4,37 +4,14 @@ import Link from "next/link";
 import { FloatingNav } from "@/components/layout/floating-nav";
 import { Footer } from "@/components/layout/footer";
 import { PageNav } from "@/components/layout/page-nav";
+import { cn } from "@/utils";
+import { privacyPoints } from "./constants";
 
 export const metadata: Metadata = {
   title: "What we keep",
   description:
     "What FAIRWAY does with a name, a telephone number and an email address, written the way it would be said at the counter.",
 };
-
-/**
- * A privacy page for a shop that takes bookings on the phone and sells clubs
- * across a counter. It says what happens to the three things the site asks
- * for and stops, because a page that runs to two thousand words is a page
- * written to be skipped.
- */
-const points = [
-  {
-    title: "A booking request",
-    body: "Name, telephone number, email address, the session you want and roughly when. Somebody from the studio rings to put it in the diary, and that is the only reason the number is there. Nothing is charged online.",
-  },
-  {
-    title: "The letter",
-    body: "One email address, twelve times a year, and a link at the foot of every one that takes you off the list. We do not sell it, lend it or hand it to a maker whose clubs we stock.",
-  },
-  {
-    title: "Your bag",
-    body: "What you put in the bag stays in your own browser and never reaches us. Clear your browser data and it is gone, which is also why it does not follow you to another computer.",
-  },
-  {
-    title: "Fitting notes",
-    body: "Numbers from a session are written down and kept, so a player fitted five years ago is measured against their own numbers rather than from scratch. Ask and we will read them back to you, or delete them.",
-  },
-];
 
 export default function Privacy() {
   return (
@@ -61,8 +38,11 @@ export default function Privacy() {
             </div>
 
             <dl className="mt-12 grid gap-y-10 md:grid-cols-2 md:gap-x-12">
-              {points.map((point) => (
-                <div key={point.title} className="border-t border-mist pt-5">
+              {privacyPoints.map((point, i) => (
+                <div
+                  key={point.title}
+                  className={cn("border-t border-mist pt-5", i === 0 ? "border-t-0 pt-0" : "", i === 1 ? "md:border-t-0 md:pt-0" : "")}
+                >
                   <dt className="text-[1.25rem] leading-[1.2] tracking-[-0.015em]">
                     {point.title}
                   </dt>

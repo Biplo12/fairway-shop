@@ -1,21 +1,11 @@
-/**
- * The fitting studio, written the way it is quoted at the counter: a session
- * is a length of time, a price and a question somebody walked in with.
- *
- * Prices are strings rather than pence because nothing here goes in a bag.
- * A session is booked, confirmed on the phone and paid for in the shop, so the
- * number is copy, not a line item.
- */
 
 export type Session = {
   slug: string;
   name: string;
   duration: string;
   price: string;
-  /** the question the customer came in with, in their words */
   question: string;
   body: string;
-  /** what the session actually measures */
   covers: string[];
   image?: string;
   alt?: string;
@@ -35,8 +25,8 @@ export const sessions: Session[] = [
       "Lie angle off the board",
       "Dispersion, not only distance",
     ],
-    image: "/images/fitting/driver-and-iron.jpg",
-    alt: "A driver head and an iron standing together on the practice ground",
+    image: "/images/fitting/irons-in-a-row.jpg",
+    alt: "Five iron heads laid out in a row on the turf with practice balls around them",
   },
   {
     slug: "ball-fitting",
@@ -85,7 +75,6 @@ export const sessions: Session[] = [
   },
 ];
 
-/** The long session, sold without a photograph because it is all of the above. */
 export const fullBag = {
   slug: "full-bag",
   name: "Full bag",
@@ -122,7 +111,6 @@ export const steps: Step[] = [
   },
 ];
 
-/** value|label, the way SplitFeature reads a spec */
 export const studioMeta = [
   "Launch monitor|every session",
   "120|shafts on the wall",
