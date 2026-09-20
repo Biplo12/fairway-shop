@@ -23,11 +23,13 @@ export default async function ShopCategory({
   searchParams,
 }: {
   params: Promise<{ category: string }>;
-  searchParams: Promise<{ brand?: string }>;
+  searchParams: Promise<{ brand?: string; page?: string }>;
 }) {
   const { category } = await params;
   if (!isCategory(category)) notFound();
 
-  const { brand } = await searchParams;
-  return <ShopPage category={category} brand={brand} />;
+  const { brand, page } = await searchParams;
+  return (
+    <ShopPage category={category} brand={brand} page={Number(page) || 1} />
+  );
 }

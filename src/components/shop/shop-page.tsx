@@ -2,6 +2,7 @@ import Link from "next/link";
 
 import { BrandFilter } from "@/components/shop/brand-filter";
 import { CategoryHero } from "@/components/shop/category-hero";
+import { Pagination } from "@/components/shop/pagination";
 import { ProductCard } from "@/components/products/product-card";
 import { Footer } from "@/components/layout/footer";
 import { FloatingNav } from "@/components/layout/floating-nav";
@@ -66,18 +67,36 @@ const bands: Record<
   },
 };
 
+/** one full row at xl, where the grid runs four across */
+const PAGE_SIZE = 8;
+
 export function ShopPage({
   category,
   brand,
+  page = 1,
 }: {
   category?: Category;
   brand?: string;
+  page?: number;
 }) {
   const shelf = products.filter(
     (product) =>
       (!category || product.category === category) &&
       (!brand || product.brand.toLowerCase() === brand.toLowerCase()),
   );
+
+  const pages = Math.max(1, Math.ceil(shelf.length / PAGE_SIZE));
+  const current = Math.min(Math.max(page, 1), pages);
+  const shown = shelf.slice((current - 1) * PAGE_SIZE, current * PAGE_SIZE);
+
+  const path = category ? `/shop/${category}` : "/shop";
+  const pageHref = (next: number) => {
+    const query = new URLSearchParams();
+    if (brand) query.set("brand", brand.toLowerCase());
+    if (next > 1) query.set("page", String(next));
+    const search = query.toString();
+    return search ? `${path}?${search}` : path;
+  };
 
   const band = bands[category ?? "all"];
   const heading = category ? categoryName(category) : "Equipment store";
@@ -125,11 +144,14 @@ export function ShopPage({
             </div>
 
             {shelf.length > 0 ? (
-              <div className="mt-8 grid gap-3 sm:grid-cols-2 md:gap-4 lg:grid-cols-3 xl:grid-cols-4">
-                {shelf.map((product) => (
-                  <ProductCard key={product.slug} product={product} />
-                ))}
-              </div>
+              <>
+                <div className="mt-8 grid gap-3 sm:grid-cols-2 md:gap-4 lg:grid-cols-3 xl:grid-cols-4">
+                  {shown.map((product) => (
+                    <ProductCard key={product.slug} product={product} />
+                  ))}
+                </div>
+                <Pagination page={current} pages={pages} href={pageHref} />
+              </>
             ) : (
               <div className="py-16">
                 <p className="text-[1.375rem] leading-[1.25]">
