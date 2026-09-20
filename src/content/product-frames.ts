@@ -72,3 +72,61 @@ export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
     },
   },
 };
+
+/**
+ * Clubs is six different things. A driver page has no business showing irons,
+ * so anything on the clubs shelf takes its frames from its own subcategory and
+ * only falls back to the shelf when there is none.
+ */
+export const clubFrames: Record<string, { band: Frame; note: Frame }> = {
+  drivers: {
+    band: {
+      image: "/images/product/ball-on-a-tee.jpg",
+      alt: "A ball teed up beside a driver face in autumn light",
+    },
+    note: {
+      image: "/images/product/driver-and-balls.jpg",
+      alt: "A driver head, two balls and a cap resting on the grass",
+    },
+  },
+  "fairway woods": {
+    band: {
+      image: "/images/product/a-wood-and-an-iron.jpg",
+      alt: "A fairway wood and an iron lying together on cut grass",
+    },
+    note: {
+      image: "/images/product/a-basket-at-the-range.jpg",
+      alt: "A basket of range balls beside a club on the mat",
+    },
+  },
+  hybrids: {
+    band: {
+      image: "/images/product/the-long-approach.jpg",
+      alt: "A long links hole with bunkers short of the green",
+    },
+    note: {
+      image: "/images/product/clubs-at-the-range.jpg",
+      alt: "Clubs standing in a bag at the end of a range mat",
+    },
+  },
+  wedges: {
+    band: {
+      image: "/images/product/out-of-the-bunker.jpg",
+      alt: "A golfer playing out of a bunker in low evening light",
+    },
+    note: {
+      image: "/images/product/wedge-behind-the-ball.jpg",
+      alt: "A wedge set behind a ball on close cut grass",
+    },
+  },
+  putters: {
+    band: {
+      image: "/images/product/over-the-putt.jpg",
+      alt: "A putter and a ball at a golfer's feet on the green",
+    },
+    note: {
+      image: "/images/product/blade-behind-the-ball.jpg",
+      alt: "A blade putter set behind a ball on the green",
+    },
+  },
+};

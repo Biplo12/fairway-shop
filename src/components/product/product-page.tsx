@@ -9,7 +9,7 @@ import { ProductGallery } from "@/components/product/product-gallery";
 import { Media } from "@/components/ui/media";
 import { categoryName, formatPrice, type Product } from "@/content/products";
 import { type ProductPage as Detail } from "@/content/product-pages";
-import { productFrames } from "@/content/product-frames";
+import { clubFrames, productFrames } from "@/content/product-frames";
 
 /**
  * One product, laid out the way the reference lays one out: the buy block on a
@@ -32,7 +32,9 @@ export function ProductPage({
   detail: Detail;
 }) {
   const images = detail.gallery ?? [product.image];
-  const { band, note } = productFrames[product.category];
+  const { band, note } =
+    (product.subcategory ? clubFrames[product.subcategory] : undefined) ??
+    productFrames[product.category];
 
   return (
     <>
