@@ -63,12 +63,12 @@ export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
   },
   accessories: {
     band: {
-      image: "/images/product/a-set-on-the-grass.jpg",
-      alt: "A driver, irons, a wedge and a putter laid out on cut grass",
+      image: "/images/product/what-hangs-off-the-bag.jpg",
+      alt: "A glove and a towel clipped to the outside of a bag",
     },
     note: {
-      image: "/images/product/irons-on-black.jpg",
-      alt: "Three irons laid out on black cloth in low studio light",
+      image: "/images/product/gear-in-the-bag.jpg",
+      alt: "Woods and irons standing in a bag, lit against black",
     },
   },
 };

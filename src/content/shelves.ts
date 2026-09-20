@@ -46,6 +46,11 @@ export const shelves: Partial<Record<Category, Shelf>> & { all: Shelf } = {
     focus: "object-[52%_center]",
     body: "Cabretta leather wears out. That is the point of it. Buy the size that feels a shade tight on the first hole.",
   },
+  accessories: {
+    image: "/images/shop/what-hangs-off-the-bag.jpg",
+    alt: "A glove and a towel clipped to the outside of a bag",
+    body: "Towels, tools and the small things that decide whether your grooves are clean on the fourteenth. None of it is exciting and all of it matters.",
+  },
   headwear: {
     image: "/images/shop/caps-on-the-links.jpg",
     alt: "Two golfers in caps and coats standing on a links fairway",

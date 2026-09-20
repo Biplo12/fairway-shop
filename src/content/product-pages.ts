@@ -238,6 +238,259 @@ export const productPages: Record<string, ProductPage> = {
     ],
   },
 
+  "ping-g440-max-driver": {
+    tagline: "The forgiving one",
+    description:
+      "The driver we hand people who have just told us they hit it everywhere. Off centre still goes forward, and forward and straight beats long and lost every round of your life.",
+    headline: "Off centre still finds the short grass",
+    marks: ["High forgiveness", "Three lofts", "Adjustable hosel"],
+    notes: [
+      "Three lofts. More loft is the fix for most slices and nobody wants to hear it.",
+      "Adjustable hosel, so we set it here and you never need to touch it again.",
+      "The Max is the forgiving head. The LST is for higher speeds and lower spin.",
+      "We will show you the dispersion, not just the carry. That is the number costing you shots.",
+    ],
+    counter:
+      "Everyone wants the longest one. The longest one you can buy is the one you hit in play.",
+    specs: [
+      { label: "Loft", value: "9, 10.5 and 12 degrees" },
+      { label: "Hosel", value: "Adjustable, set here" },
+      { label: "Head", value: "High forgiveness" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits:
+      "Anyone whose driver misses are costing them holes, which is nearly everybody.",
+    gallery: [
+      "/images/products/ping-g440-max-driver.jpg",
+      "/images/products/ping-g440-max-driver-2.jpg",
+    ],
+  },
+
+  "srixon-zxi-driver": {
+    tagline: "Quiet, and a shape you can look at",
+    description:
+      "Srixon sell fewer drivers than the big two and the players who own one tend to keep it. It is quieter at impact and the crown is the sort good players stop noticing, which is the compliment.",
+    headline: "The one that does not shout",
+    marks: ["Quiet at impact", "Two lofts", "Neutral shape"],
+    notes: [
+      "Two lofts, both neutral. There is no draw bias hiding in this head.",
+      "Sound is not a gimmick. If a driver annoys you at impact you will not swing it freely.",
+      "Test it against the G440 Max back to back. They suit different players and both are here.",
+      "Shaft first, head second. That order is the whole of driver fitting.",
+    ],
+    counter:
+      "Half of what people call feel in a driver is sound. Hit two with your eyes shut and you will hear it.",
+    specs: [
+      { label: "Loft", value: "9.5 and 10.5 degrees" },
+      { label: "Shape", value: "Neutral" },
+      { label: "Sound", value: "Muted at impact" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits:
+      "Players who already find the fairway and want the shape and the sound to stop bothering them.",
+    gallery: [
+      "/images/products/srixon-zxi-driver.jpg",
+      "/images/products/srixon-zxi-driver-2.jpg",
+    ],
+  },
+
+  "srixon-zxi-fairway": {
+    tagline: "Shallow face, sits low",
+    description:
+      "Most fairway woods are bought to be hit off a tee and then never come out on the deck. This one sits low enough behind the ball that it works from the turf, which is the only reason to carry it.",
+    headline: "Easier off the deck than it looks",
+    marks: ["Shallow face", "Three lofts", "Low profile"],
+    notes: [
+      "Three lofts. The 5 wood leaves the shop more often than the 3 and that is not an accident.",
+      "Hit it off the turf in the bay. If it only works off a tee it is a second driver.",
+      "The 7 wood covers the yardage most players cannot fill with a long iron.",
+      "Shaft length here is worth measuring. Standard is long for a lot of people.",
+    ],
+    counter:
+      "If you only ever hit your 3 wood off a tee, you are carrying fourteen clubs and using thirteen.",
+    specs: [
+      { label: "Lofts", value: "3, 5 and 7 wood" },
+      { label: "Face", value: "Shallow" },
+      { label: "Use", value: "Off the deck" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits:
+      "Players who need a club that works from the fairway, not just from a peg.",
+  },
+
+  "ping-g440-hybrid": {
+    tagline: "Sits square at address",
+    description:
+      "Half the trouble people have with hybrids is that the head looks shut, so they aim right to compensate. This one sits square, which sounds like nothing and is most of the problem solved.",
+    headline: "Square at address, and that is most of it",
+    marks: ["Sits square", "Five lofts", "Iron length"],
+    notes: [
+      "Five lofts, 17 through 30. Pick by the gap, never by the number.",
+      "If your hybrid goes left, it is usually the head shape and your aim, not your swing.",
+      "Set up at iron length, so lie angle matters and we set it on the bench.",
+      "Bring the long iron you are replacing. The comparison takes five minutes.",
+    ],
+    counter:
+      "Aim it at a target before you hit anything. If it looks shut to you, that is the club telling you something.",
+    specs: [
+      { label: "Lofts", value: "17 to 30 degrees" },
+      { label: "Address", value: "Square" },
+      { label: "Length", value: "Iron length" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits:
+      "Players who have tried a hybrid, pulled it left, and blamed themselves.",
+  },
+
+  "ping-i530-irons": {
+    tagline: "Distance with a thin top line",
+    description:
+      "The i530 sits between the i230 and a full distance iron. You get the extra carry without the top line that makes better players put it straight back in the rack.",
+    headline: "Distance that still looks right",
+    marks: ["Hollow body", "Thin top line", "4 to PW"],
+    notes: [
+      "Seven clubs, 4 iron to pitching wedge.",
+      "Stronger lofts than the i230, so check the gap to your wedges before you commit.",
+      "If you like how the i230 looks but want another club of carry, this is that club.",
+      "Lie angle is set on the bench before it goes in the bag, at no extra cost.",
+    ],
+    counter:
+      "Hit the i230 and the i530 back to back. Six shots each settles an argument you have had with yourself for two years.",
+    specs: [
+      { label: "Set", value: "7 clubs, 4 to PW" },
+      { label: "Build", value: "Hollow body" },
+      { label: "Lofts", value: "Stronger than the i230" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits:
+      "Players who want distance but will not look down at a thick top line to get it.",
+    gallery: [
+      "/images/products/ping-i530-irons.jpg",
+      "/images/products/ping-i530-irons-2.jpg",
+    ],
+  },
+
+  "srixon-zx7-mk-ii-irons": {
+    tagline: "Forged tour blade",
+    description:
+      "A players iron that has not been widened, strengthened or softened to sell more of them. If you strike it out of the middle, this is what that is supposed to feel like.",
+    headline: "No help you did not ask for",
+    marks: ["Forged", "Compact head", "Traditional lofts"],
+    notes: [
+      "Seven clubs, 4 iron to pitching wedge, steel as standard.",
+      "Traditional lofts. Your gapping stays where it is.",
+      "This is not a forgiving iron. That is the point of it and we will say so.",
+      "Back in on Friday. We hold one demo set in the bay meanwhile.",
+    ],
+    counter:
+      "If you are not finding the middle four times out of five, this iron will tell you so every hole. Some people want that.",
+    specs: [
+      { label: "Set", value: "7 clubs, 4 to PW" },
+      { label: "Build", value: "Forged" },
+      { label: "Lofts", value: "Traditional" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits: "Low handicaps, and anyone who has outgrown help they no longer need.",
+  },
+
+  "ping-s159-wedge": {
+    tagline: "Six grinds",
+    description:
+      "More sole options than anyone needs, which means there is one that suits your turf and your swing exactly. That is the whole argument for it, and it is a good one.",
+    headline: "One of these six is yours",
+    marks: ["Six grinds", "46 to 62 degrees", "Chrome or black"],
+    notes: [
+      "Six grinds. We will narrow it to two in the bay in about ten minutes.",
+      "Lofts from 46 to 62. Gap it off your set pitching wedge first.",
+      "Turf matters. A grind that works on links sand does not work on soft parkland.",
+      "Chrome or black. Both wear with use and that is normal.",
+    ],
+    counter:
+      "Nobody walks in asking for a different grind. Everybody who has been fitted for one asks about it next time.",
+    specs: [
+      { label: "Loft", value: "46 to 62 degrees" },
+      { label: "Grinds", value: "Six" },
+      { label: "Finish", value: "Chrome or black" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits:
+      "Anyone who plays the same course most weeks. We can match the sole to that turf.",
+    gallery: [
+      "/images/products/ping-s159-wedge.jpg",
+      "/images/products/ping-s159-wedge-2.jpg",
+    ],
+  },
+
+  "ping-scottsdale-tec": {
+    tagline: "A plain blade with an insert",
+    description:
+      "No alignment lines, no colour, nothing to argue with at address. The insert takes the click off the strike, which most people notice on the second putt rather than the first.",
+    headline: "Nothing to distract you",
+    marks: ["Blade head", "Face insert", "Three lengths"],
+    notes: [
+      "Three lengths. Get measured, because putter length is the most commonly wrong number in golf.",
+      "No sight line. If you aim better without one, and plenty do, this is your putter.",
+      "The insert softens the strike. Roll ten putts before you decide whether you want that.",
+      "Putter fitting is forty five pounds and we do it on the same mat every time.",
+    ],
+    counter:
+      "Take the sight line away and a lot of people aim better. They had been lining up the line, not the putt.",
+    specs: [
+      { label: "Head", value: "Blade" },
+      { label: "Face", value: "Insert" },
+      { label: "Length", value: "33, 34 and 35 inches" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits:
+      "Players who set up well and then aim themselves off line with a graphic.",
+  },
+
+  "ping-tri-fold-towel": {
+    tagline: "Three panels, one clean",
+    description:
+      "One panel stays dry, one gets wet, one does the grooves. It sounds like a small thing until you have played a wet round behind someone wiping a club on their trousers.",
+    headline: "Three panels, and each has a job",
+    marks: ["Cotton", "Carabiner clip", "Tri-fold"],
+    notes: [
+      "Wet one panel at the first tee and keep the other two dry.",
+      "Cotton, because microfibre pushes the mud around rather than lifting it.",
+      "The clip is a carabiner, so it comes off without threading it through anything.",
+      "Wash it cold. Fabric softener is what stops a towel absorbing anything.",
+    ],
+    counter:
+      "Clean grooves are worth more spin than any wedge on this wall. They are also free.",
+    specs: [
+      { label: "Fabric", value: "Cotton" },
+      { label: "Fold", value: "Tri-fold" },
+      { label: "Clip", value: "Carabiner" },
+      { label: "Care", value: "Cold wash, no softener" },
+    ],
+    suits: "Anyone who plays in weather, which in Scotland is everyone.",
+  },
+
+  "ping-bow-tie-towel": {
+    tagline: "Clips through the middle",
+    description:
+      "It hangs from the centre rather than a corner, so both ends stay where your hand goes. A small idea, and the reason this one does not end up behind the bag.",
+    headline: "Where your hand actually goes",
+    marks: ["Cotton", "Centre clip", "Two ends"],
+    notes: [
+      "Centre clip, so both ends hang within reach instead of one long tail.",
+      "Smaller than the tri-fold. It is the one for a walk round, not a wet day.",
+      "Cotton again. Lifting mud beats smearing it.",
+      "Wash it cold and skip the softener.",
+    ],
+    counter:
+      "People lose towels because they hang them where they cannot reach them. This one solves that and nothing else.",
+    specs: [
+      { label: "Fabric", value: "Cotton" },
+      { label: "Clip", value: "Centre" },
+      { label: "Size", value: "Smaller than the tri-fold" },
+      { label: "Care", value: "Cold wash, no softener" },
+    ],
+    suits: "Walkers who want a towel they can actually find.",
+  },
+
   "ping-i230-irons": {
     tagline: "A cavity that reads like a blade",
     description:
