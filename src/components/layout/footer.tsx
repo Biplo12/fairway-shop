@@ -55,8 +55,23 @@ export function Footer() {
                 Fairway
               </span>
             </Link>
+
+            {/* The founding line, set like the plate under a shop sign. It
+                borrows the wordmark's letterspacing a shade tighter, so the
+                two read as one lockup rather than a label stuck underneath. */}
+            <dl className="mt-6 flex max-w-[26rem] flex-wrap items-baseline justify-between gap-x-8 gap-y-2 border-t border-offwhite/20 pt-4 text-[0.6875rem] uppercase leading-none tracking-[0.24em] text-offwhite/55">
+              <div>
+                <dt className="sr-only">Established</dt>
+                <dd>Est. 1987</dd>
+              </div>
+              <div>
+                <dt className="sr-only">Shop</dt>
+                <dd>St. Andrews, Scotland</dd>
+              </div>
+            </dl>
+
             <p className="mt-6 max-w-[26rem] text-[0.9375rem] leading-[1.6] text-offwhite/70">
-              A specialist golf shop and fitting studio near St. Andrews. Every
+              A specialist golf shop with a fitting studio at its centre. Every
               brand that matters, fitted to the way you play.
             </p>
           </div>

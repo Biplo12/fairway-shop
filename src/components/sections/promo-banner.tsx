@@ -17,14 +17,19 @@ const blocks: Record<Align, string> = {
 
 type Size = "tall" | "short";
 
+/**
+ * A phone gets a minimum height and lets the copy set the rest. A wide screen
+ * gets the band proportion, with the minimum still underneath it so a long
+ * heading can never be cut off by the ratio.
+ */
 const heights: Record<Size, string> = {
-  tall: "md:aspect-[3.2/1]",
-  short: "md:aspect-[3.6/1] md:min-h-[24rem]",
+  tall: "min-h-[26rem] md:aspect-[3.2/1] md:min-h-[24rem]",
+  short: "min-h-[24rem] md:aspect-[3.6/1] md:min-h-[24rem]",
 };
 
 const headings: Record<Size, string> = {
-  tall: "text-[clamp(2.75rem,5vw,4.5rem)]",
-  short: "text-[clamp(2rem,3.2vw,3rem)]",
+  tall: "text-[clamp(2.25rem,5vw,4.5rem)]",
+  short: "text-[clamp(1.875rem,3.2vw,3rem)]",
 };
 
 /**
@@ -58,18 +63,28 @@ export function PromoBanner({
   return (
     <section className="px-3 pb-3 md:px-5 md:pb-5">
       <div className="relative overflow-hidden rounded-card bg-charcoal">
-        <Media
-          src={image}
-          alt={alt}
-          ratio="16/9"
-          sizes="100vw"
-          quality={90}
-          className={heights[size]}
-          imageClassName={focus}
-        />
+        {/* Media is position: relative, so the absolute box goes around it
+            rather than on it. The copy sets the card height, the photograph
+            fills whatever that turns out to be. */}
+        <div className="absolute inset-0">
+          <Media
+            src={image}
+            alt={alt}
+            ratio="fill"
+            sizes="100vw"
+            quality={90}
+            imageClassName={focus}
+          />
+        </div>
         <div aria-hidden className={`absolute inset-0 ${gradients[align]}`} />
+        {/* The band gradients run across or up the frame, which is right on a
+            wide card. On a phone the copy crosses all of it, so it gets a flat
+            veil underneath as well. */}
+        <div aria-hidden className="absolute inset-0 bg-charcoal/35 md:hidden" />
 
-        <div className={`absolute inset-0 flex p-6 md:p-12 ${blocks[align]}`}>
+        <div
+          className={`relative flex p-6 md:p-12 ${heights[size]} ${blocks[align]}`}
+        >
           <div className="max-w-[38rem]">
             <span className="inline-flex items-center rounded-full border border-white/50 px-4 py-2.5 text-[0.875rem] uppercase leading-none tracking-[0.02em] text-white">
               {label}
