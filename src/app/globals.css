@@ -26,6 +26,9 @@
   html {
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    /* Anchors on a long page, the fitting sessions above all, should travel
+       rather than jump. Cancelled under prefers-reduced-motion below. */
+    scroll-behavior: smooth;
   }
 
   body {

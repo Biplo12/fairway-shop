@@ -214,21 +214,32 @@ export function CartDrawer() {
                 : "Delivery calculated at checkout. Free over £75."}
             </p>
 
-            <button
-              type="button"
-              tabIndex={open ? 0 : -1}
-              className="mt-5 w-full rounded-control bg-charcoal px-6 py-4 text-[0.875rem] uppercase tracking-[0.06em] text-offwhite transition-colors hover:bg-charcoal/90"
-            >
-              Checkout
-            </button>
-            <button
-              type="button"
+            <Link
+              href="/checkout"
               tabIndex={open ? 0 : -1}
               onClick={() => setOpen(false)}
-              className="mt-3 w-full text-[0.8125rem] uppercase tracking-[0.06em] text-charcoal/60 underline underline-offset-4 transition-colors hover:text-charcoal"
+              className="mt-5 block w-full rounded-control bg-charcoal px-6 py-4 text-center text-[0.875rem] uppercase tracking-[0.06em] text-offwhite transition-colors hover:bg-charcoal/90"
             >
-              Keep looking
-            </button>
+              Checkout
+            </Link>
+            <div className="mt-3 flex items-center justify-center gap-6 text-[0.8125rem] uppercase tracking-[0.06em] text-charcoal/60">
+              <Link
+                href="/bag"
+                tabIndex={open ? 0 : -1}
+                onClick={() => setOpen(false)}
+                className="underline underline-offset-4 transition-colors hover:text-charcoal"
+              >
+                View the bag
+              </Link>
+              <button
+                type="button"
+                tabIndex={open ? 0 : -1}
+                onClick={() => setOpen(false)}
+                className="underline underline-offset-4 transition-colors hover:text-charcoal"
+              >
+                Keep looking
+              </button>
+            </div>
           </footer>
         ) : null}
       </div>

@@ -28,12 +28,15 @@ type Bag = {
   add: (slug: string, quantity?: number) => void;
   setQuantity: (slug: string, quantity: number) => void;
   remove: (slug: string) => void;
+  /** emptied when an order is placed, not when a customer changes their mind */
+  clear: () => void;
   setOpen: (open: boolean) => void;
 };
 
 const BagContext = createContext<Bag | null>(null);
 
-/** localStorage is the only store. There is no checkout behind this yet. */
+/** localStorage is the only store. The checkout in front of it takes an order
+    as far as a confirmation and no further: there is no till behind this. */
 function read(): Line[] {
   try {
     const raw = window.localStorage.getItem(STORAGE_KEY);
@@ -111,6 +114,8 @@ export function CartProvider({ children }: { children: ReactNode }) {
     setLines((current) => current.filter((line) => line.slug !== slug));
   }, []);
 
+  const clear = useCallback(() => setLines([]), []);
+
   const value = useMemo<Bag>(() => {
     const resolved = lines.flatMap((line) => {
       const product = findProduct(line.slug);
@@ -129,9 +134,10 @@ export function CartProvider({ children }: { children: ReactNode }) {
       add,
       setQuantity,
       remove,
+      clear,
       setOpen,
     };
-  }, [lines, open, ready, add, setQuantity, remove]);
+  }, [lines, open, ready, add, setQuantity, remove, clear]);
 
   return <BagContext.Provider value={value}>{children}</BagContext.Provider>;
 }

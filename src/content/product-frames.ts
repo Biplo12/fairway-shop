@@ -125,7 +125,7 @@ export const clubFrames: Record<string, { band: Frame; note: Frame }> = {
       alt: "A mallet putter and a ball beside the hole on a green",
     },
     note: {
-      image: "/images/product/blade-on-the-green.jpg",
+      image: "/images/product/ping-blade-low-on-the-green.jpg",
       alt: "A blade putter set behind a ball on a putting green",
     },
   },

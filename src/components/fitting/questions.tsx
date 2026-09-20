@@ -35,7 +35,7 @@ export function Questions() {
             {questions.map((entry) => (
               <details
                 key={entry.question}
-                className="group border-b border-charcoal/12 first:border-t"
+                className="group border-b border-charcoal/12 last:border-b-0"
               >
                 <summary className="flex items-start justify-between gap-6 py-5 text-[1.0625rem] leading-[1.4] marker:content-none [&::-webkit-details-marker]:hidden">
                   {entry.question}

@@ -23,14 +23,17 @@ export function Booking({ selected }: { selected?: string }) {
       <div className="overflow-hidden rounded-card bg-charcoal text-offwhite">
         <div className="grid lg:grid-cols-2">
           <div className="relative min-h-[24rem] lg:min-h-[38rem]">
-            <Media
-              src="/images/fitting/grip-dark.jpg"
-              alt="A gloved hand resting on the grip of a club against a black studio background"
-              ratio="fill"
-              sizes="(min-width: 1024px) 50vw, 100vw"
-              className="absolute inset-0"
-              imageClassName="object-[center_20%]"
-            />
+            {/* Media is position: relative, so the absolute box goes around it
+                rather than on it, or ratio="fill" measures against nothing. */}
+            <div className="absolute inset-0">
+              <Media
+                src="/images/fitting/grip-dark.jpg"
+                alt="A gloved hand resting on the grip of a club against a black studio background"
+                ratio="fill"
+                sizes="(min-width: 1024px) 50vw, 100vw"
+                imageClassName="object-[center_20%]"
+              />
+            </div>
             <div
               aria-hidden
               className="absolute inset-0 bg-gradient-to-t from-charcoal via-charcoal/45 to-transparent"

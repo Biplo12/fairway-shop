@@ -62,7 +62,6 @@ export default async function Fitting({
             body="It happens most weeks. Somebody books a driver fitting and leaves with a three wood and their own driver reshafted, because that is what the numbers said. The fee is the same either way."
             href="#book"
             cta="Book a session"
-            align="bottom"
             size="short"
           />
         </Reveal>

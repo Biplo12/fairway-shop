@@ -126,7 +126,6 @@ export const steps: Step[] = [
 export const studioMeta = [
   "Launch monitor|every session",
   "120|shafts on the wall",
-  "11|brands on the rack",
   "7 days|sessions run",
 ];
 
