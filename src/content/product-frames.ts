@@ -13,8 +13,8 @@ type Frame = { image: string; alt: string };
 export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
   clubs: {
     band: {
-      image: "/images/product/clubs-from-above.jpg",
-      alt: "A driver and irons laid out on cut grass, seen from above",
+      image: "/images/product/a-set-on-the-grass.jpg",
+      alt: "A driver, irons, a wedge and a putter laid out on cut grass",
     },
     note: {
       image: "/images/product/irons-on-black.jpg",
@@ -63,8 +63,8 @@ export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
   },
   accessories: {
     band: {
-      image: "/images/product/clubs-from-above.jpg",
-      alt: "A driver and irons laid out on cut grass, seen from above",
+      image: "/images/product/a-set-on-the-grass.jpg",
+      alt: "A driver, irons, a wedge and a putter laid out on cut grass",
     },
     note: {
       image: "/images/product/irons-on-black.jpg",

@@ -126,6 +126,118 @@ export const productPages: Record<string, ProductPage> = {
     ],
   },
 
+  "callaway-elyte-max-fast": {
+    tagline: "Light through the whole club",
+    description:
+      "Built for players who have stopped trying to swing hard, which is most of us after forty. Lighter head, lighter shaft, lighter grip, and the speed comes back without any extra effort.",
+    headline: "Speed you do not have to force",
+    marks: ["Lightweight build", "Draw bias", "10.5 and 12 degrees"],
+    notes: [
+      "Two lofts on the rack, 10.5 and 12. Most players who come in for this one leave with the 12.",
+      "The whole club is light, not just the head. That is the point, and it changes the shaft you need.",
+      "Draw bias is real on this head. If you fight a hook, look at the Triple Diamond instead.",
+      "A driver is the club most worth fitting and the one most often bought off a shelf.",
+    ],
+    counter:
+      "Swing speed is not something you decide. It is something we measure, and then we pick a club that suits it.",
+    specs: [
+      { label: "Loft", value: "10.5 and 12 degrees" },
+      { label: "Build", value: "Lightweight throughout" },
+      { label: "Bias", value: "Draw" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits:
+      "Moderate swing speeds, and anyone whose driver has felt heavy for a couple of seasons.",
+    gallery: [
+      "/images/products/callaway-elyte-max-fast.jpg",
+      "/images/products/callaway-elyte-max-fast-2.jpg",
+    ],
+  },
+
+  "ping-g440-max-fairway": {
+    tagline: "The club most bags are missing",
+    description:
+      "Nobody comes in asking for a fairway wood, and almost everybody should. It is the club that covers the gap between a driver you cannot always hit and a long iron you cannot hit at all.",
+    headline: "The gap nobody fills",
+    marks: ["3, 4, 5 and 7 wood", "Off the deck", "Forgiving face"],
+    notes: [
+      "Four lofts. The 7 wood is the one that surprises people, and it stays in the bag.",
+      "Test it off the turf, not off a tee. That is where it has to work.",
+      "If you carry a 3 iron you never hit, this is the club that replaces it.",
+      "Shaft length matters more here than in any other wood. Get it measured.",
+    ],
+    counter:
+      "Everyone wants to talk about the driver. The fairway wood is the club that saves the hole after the driver goes wrong.",
+    specs: [
+      { label: "Lofts", value: "3, 4, 5 and 7 wood" },
+      { label: "Use", value: "Off the deck and the tee" },
+      { label: "Shaft", value: "Length set to you" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits:
+      "Anyone with a gap between the driver and the longest iron they trust, which is most bags we see.",
+    gallery: [
+      "/images/products/ping-g440-max-fairway.jpg",
+      "/images/products/ping-g440-max-fairway-2.jpg",
+    ],
+  },
+
+  "srixon-zxi-hybrid": {
+    tagline: "For the long iron you never hit",
+    description:
+      "A hybrid is not a compromise, it is the right tool. The long iron it replaces was designed for a swing speed most amateurs have never had, and the scorecard does not ask which club you used.",
+    headline: "Replace the club you avoid",
+    marks: ["16 to 25 degrees", "Iron length", "Wood forgiveness"],
+    notes: [
+      "Four lofts, 16 to 25 degrees. Pick it by the yardage gap, not by the number stamped on it.",
+      "It sits between your fairway wood and your irons. Bring both when you come in.",
+      "If you still carry a 4 iron out of habit, hit them side by side once and settle it.",
+      "Hybrids are set up at iron length, so the lie angle matters as much as it does in a set.",
+    ],
+    counter:
+      "Nobody has ever regretted putting a hybrid in the bag. Plenty of people regret the three years they waited.",
+    specs: [
+      { label: "Lofts", value: "16 to 25 degrees" },
+      { label: "Length", value: "Iron length" },
+      { label: "Lie", value: "Set on the bench" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits:
+      "Anyone carrying a long iron they would rather not hit. Look in your own bag and you will know.",
+    gallery: [
+      "/images/products/srixon-zxi-hybrid.jpg",
+      "/images/products/srixon-zxi-hybrid-2.jpg",
+    ],
+  },
+
+  "odyssey-dfx-one": {
+    tagline: "Counter hang shaft, blade head",
+    description:
+      "Odd to look at and quick to get used to. The shaft enters behind the face, which changes how the head hangs in your hands and makes it easier to start the ball where you aimed.",
+    headline: "Strange to look at, easy to start on line",
+    marks: ["Blade head", "Counter hang", "33, 34 and 35 inches"],
+    notes: [
+      "Three lengths. Putter length is the most commonly wrong measurement in golf.",
+      "The shaft entry is the point of it. Give it five minutes before you decide.",
+      "Bring your own putter. We compare start line on the same mat, not from memory.",
+      "Putter fitting is forty five pounds and takes forty five minutes.",
+    ],
+    counter:
+      "People change putters when they should change length. We measure first, and quite often you leave with the one you came in with.",
+    specs: [
+      { label: "Head", value: "Blade" },
+      { label: "Shaft", value: "Counter hang" },
+      { label: "Length", value: "33, 34 and 35 inches" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits:
+      "Players who push or pull the first foot of the putt. If your speed is good and your line is not, start here.",
+    gallery: [
+      "/images/products/odyssey-dfx-one.jpg",
+      "/images/products/odyssey-dfx-one-2.jpg",
+    ],
+  },
+
   "ping-i230-irons": {
     tagline: "A cavity that reads like a blade",
     description:
