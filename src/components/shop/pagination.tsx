@@ -3,9 +3,32 @@ import { ChevronLeft, ChevronRight } from "lucide-react";
 
 /**
  * Pages as links, like the filters, so a shelf keeps one address per view and
- * paging costs no JavaScript. Ten products do not need this yet, but a rack
- * that cannot page is a rack that stops growing.
+ * paging costs no JavaScript.
+ *
+ * At most ten numbers, then a gap and the last page. Two hundred and three
+ * clubs is thirteen pages and every one of them printed is a strip of numbers
+ * nobody reads, so the window follows where you are and the far end stays
+ * reachable in one press.
  */
+const WINDOW = 10;
+
+/** the numbers to print: a run around the current page, then the last one */
+function pageNumbers(page: number, pages: number) {
+  if (pages <= WINDOW) {
+    return Array.from({ length: pages }, (_, index) => index + 1);
+  }
+
+  const run = WINDOW - 2;
+  let first = Math.max(1, page - Math.floor(run / 2));
+  const last = Math.min(pages - 1, first + run - 1);
+  first = Math.max(1, last - run + 1);
+
+  const numbers: (number | "gap")[] = [];
+  for (let number = first; number <= last; number++) numbers.push(number);
+  if (last < pages - 1) numbers.push("gap");
+  numbers.push(pages);
+  return numbers;
+}
 export function Pagination({
   page,
   pages,
@@ -32,7 +55,19 @@ export function Pagination({
         <ChevronLeft className="size-4" strokeWidth={1.75} />
       </Step>
 
-      {Array.from({ length: pages }, (_, index) => index + 1).map((number) => {
+      {pageNumbers(page, pages).map((number, index) => {
+        if (number === "gap") {
+          return (
+            <span
+              key={`gap-${index}`}
+              aria-hidden
+              className="grid size-9 place-items-center text-[0.9375rem] text-charcoal/35"
+            >
+              &hellip;
+            </span>
+          );
+        }
+
         const current = number === page;
         return (
           <Link
