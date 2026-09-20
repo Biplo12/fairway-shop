@@ -1,0 +1,413 @@
+- generic [active] [ref=e1]:
+  - link "Skip to content" [ref=e2] [cursor=pointer]:
+    - /url: "#main"
+  - generic:
+    - navigation "Primary":
+      - link "Fairway":
+        - /url: /
+      - list:
+        - listitem:
+          - link "Shop":
+            - /url: /shop
+        - listitem:
+          - link "Brands":
+            - /url: /brands
+        - listitem:
+          - link "Fitting":
+            - /url: /fitting
+      - generic:
+        - button "Search"
+        - button "Open bag, 0 items": Cart
+  - main [ref=e3]:
+    - generic [ref=e5]:
+      - navigation "Primary" [ref=e6]:
+        - list [ref=e7]:
+          - listitem [ref=e8]:
+            - link "Home page 01" [ref=e9] [cursor=pointer]:
+              - /url: /
+              - generic [ref=e10]: Home page
+              - generic [ref=e11]: "01"
+          - listitem [ref=e12]:
+            - link "Equipment store 02" [ref=e13] [cursor=pointer]:
+              - /url: /shop
+              - generic [ref=e14]: Equipment store
+              - generic [ref=e15]: "02"
+          - listitem [ref=e16]:
+            - link "Fitting 03" [ref=e17] [cursor=pointer]:
+              - /url: /fitting
+              - generic [ref=e18]: Fitting
+              - generic [ref=e19]: "03"
+        - generic [ref=e20]:
+          - link "Fairway" [ref=e21] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e25]:
+            - button "Search" [ref=e26] [cursor=pointer]
+            - button "En" [ref=e30] [cursor=pointer]
+            - link "Account" [ref=e31] [cursor=pointer]:
+              - /url: /account
+            - button "Open bag, 0 items" [ref=e35] [cursor=pointer]: Cart
+      - generic [ref=e37]:
+        - img "A golfer teeing a ball on the mat at the practice ground" [ref=e40]
+        - generic [ref=e42]:
+          - navigation "Breadcrumb" [ref=e43]:
+            - list [ref=e44]:
+              - listitem [ref=e45]:
+                - link "Home" [ref=e46] [cursor=pointer]:
+                  - /url: /
+              - listitem [aria-hidden] [ref=e47]: /
+              - listitem [ref=e48]: Fitting studio
+          - generic [ref=e49]:
+            - generic [ref=e50]:
+              - generic [ref=e51]: Fitting studio, since 1987
+              - heading "Fitted, not guessed" [level=1] [ref=e52]
+              - paragraph [ref=e53]: A fitting is not a list of specs written down. It is finding which shots you are missing and which clubs give them back, then gapping the rest of the bag so nothing does the same job twice.
+              - generic [ref=e54]:
+                - link "Book a session" [ref=e55] [cursor=pointer]:
+                  - /url: "#book"
+                - link "What we fit" [ref=e56] [cursor=pointer]:
+                  - /url: "#sessions"
+            - generic [ref=e57]:
+              - generic [ref=e58]:
+                - term [ref=e59]: Fitting since
+                - definition [ref=e60]: "1987"
+              - generic [ref=e61]:
+                - term [ref=e62]: On the rack
+                - definition [ref=e63]: 11 brands
+              - generic [ref=e64]:
+                - term [ref=e65]: Club fitting, 90 min
+                - definition [ref=e66]: £75
+      - generic [ref=e67]:
+        - generic [ref=e68]:
+          - generic [ref=e69]:
+            - heading "Five sessions" [level=2] [ref=e70]
+            - paragraph [ref=e71]: Book the one that matches the question you came in with. If you pick the wrong one we will say so at the door and swap it.
+          - paragraph [ref=e72]: The session fee comes off anything you buy on the day. It stands if you buy nothing.
+        - generic [ref=e73]:
+          - article [ref=e74]:
+            - img "A TaylorMade P790 iron head lit against a dark studio background" [ref=e76]
+            - generic [ref=e77]:
+              - generic [ref=e78]:
+                - heading "Club fitting" [level=3] [ref=e79]
+                - generic [ref=e80]:
+                  - generic [ref=e81]: 90 min
+                  - generic [ref=e82]: £75
+              - paragraph [ref=e83]: Which head, which shaft, and is it the one already in my bag?
+              - paragraph [ref=e84]: Driver through wedge on the monitor. Shaft first, head second, because the shaft decides more of it than anybody expects. We stop when two clubs are left and you choose between them by feel.
+              - list [ref=e85]:
+                - listitem [ref=e86]: Shaft weight, flex and profile
+                - listitem [ref=e87]: Head and loft
+                - listitem [ref=e88]: Lie angle off the board
+                - listitem [ref=e89]: Dispersion, not only distance
+              - link "Book club fitting" [ref=e90] [cursor=pointer]:
+                - /url: /fitting?session=club-fitting#book
+          - article [ref=e94]:
+            - img "A Titleist ball sitting on the lip of the hole beside the flagstick" [ref=e96]
+            - generic [ref=e97]:
+              - generic [ref=e98]:
+                - heading "Ball fitting" [level=3] [ref=e99]
+                - generic [ref=e100]:
+                  - generic [ref=e101]: 45 min
+                  - generic [ref=e102]: £40
+              - paragraph [ref=e103]: Am I playing the right ball, or the one on offer?
+              - paragraph [ref=e104]: Three models, wedge first, then mid iron, then driver. Most players pick a ball for the tee shot and pay for it from sixty yards, which is where the round is actually decided.
+              - list [ref=e105]:
+                - listitem [ref=e106]: Spin off a full wedge
+                - listitem [ref=e107]: Flight held into wind
+                - listitem [ref=e108]: Feel off the putter face
+              - link "Book ball fitting" [ref=e109] [cursor=pointer]:
+                - /url: /fitting?session=ball-fitting#book
+          - article [ref=e113]:
+            - img "A putter and two balls on the studio putting mat" [ref=e115]
+            - generic [ref=e116]:
+              - generic [ref=e117]:
+                - heading "Putter fitting" [level=3] [ref=e118]
+                - generic [ref=e119]:
+                  - generic [ref=e120]: 45 min
+                  - generic [ref=e121]: £45
+              - paragraph [ref=e122]: Why does a straight putt start left?
+              - paragraph [ref=e123]: Same mat, same distance, every time. We measure where the ball starts rather than where it finishes, because the finish belongs to the green and the start belongs to the putter.
+              - list [ref=e124]:
+                - listitem [ref=e125]: Length and lie
+                - listitem [ref=e126]: Head shape against your stroke
+                - listitem [ref=e127]: Grip size and counterweight
+              - link "Book putter fitting" [ref=e128] [cursor=pointer]:
+                - /url: /fitting?session=putter-fitting#book
+          - article [ref=e132]:
+            - img "An iron and two balls lying in deep green grass" [ref=e134]
+            - generic [ref=e135]:
+              - generic [ref=e136]:
+                - heading "Wedge and gapping" [level=3] [ref=e137]
+                - generic [ref=e138]:
+                  - generic [ref=e139]: 60 min
+                  - generic [ref=e140]: £55
+              - paragraph [ref=e141]: What do I hit from ninety yards?
+              - paragraph [ref=e142]: The shots inside a hundred yards you cannot hit today, and the two clubs that would give them back. Bounce and grind come off your turf and your attack angle, not off a chart on the wall.
+              - list [ref=e143]:
+                - listitem [ref=e144]: Carry gaps through the set
+                - listitem [ref=e145]: Bounce against the turf you play
+                - listitem [ref=e146]: Grind and sole for your attack angle
+              - link "Book wedge and gapping" [ref=e147] [cursor=pointer]:
+                - /url: /fitting?session=wedge-gapping#book
+          - article [ref=e151]:
+            - generic [ref=e152]:
+              - generic [ref=e153]:
+                - heading "Full bag" [level=3] [ref=e154]
+                - generic [ref=e155]: 3 hours
+              - paragraph [ref=e156]: Fourteen clubs in one session, gapped so no two do the same job. Usually the last fitting somebody books and the one they should have booked first.
+            - generic [ref=e157]:
+              - generic [ref=e158]: £180
+              - link "Book the day" [ref=e159] [cursor=pointer]:
+                - /url: /fitting?session=full-bag#book
+    - generic [ref=e165]:
+      - generic [ref=e166]:
+        - text: How a session runs
+        - heading "Ninety minutes, in four parts" [level=2] [ref=e167]
+        - paragraph [ref=e168]: The same order every time, whatever the session. The shorter ones skip nothing, they simply cover fewer clubs.
+      - list [ref=e169]:
+        - listitem [ref=e170]:
+          - text: "01"
+          - heading "You talk first" [level=3] [ref=e171]
+          - paragraph [ref=e172]: Ten minutes on what you play, where you play it and which shot has gone missing. No clubs in hand yet.
+        - listitem [ref=e173]:
+          - text: "02"
+          - heading "Your own club, on the monitor" [level=3] [ref=e174]
+          - paragraph [ref=e175]: You hit what is in your bag before you hit anything of ours, so every number after it has something to be measured against.
+        - listitem [ref=e176]:
+          - text: "03"
+          - heading "Down to two" [level=3] [ref=e177]
+          - paragraph [ref=e178]: The wall narrows quickly, then the rest of the hour goes on the shortlist. A fitting that ends with six options has not ended.
+        - listitem [ref=e179]:
+          - text: "04"
+          - heading "Written down, ordered or not" [level=3] [ref=e180]
+          - paragraph [ref=e181]: Your specs go on paper whether you buy or not. Nothing is ordered in the room. Go home and think about it.
+    - generic [ref=e184]:
+      - img "Driver and fairway wood heads standing in a rack" [ref=e187]
+      - generic [ref=e190]:
+        - generic [ref=e191]: Straight answers
+        - heading "We will talk you out of the wrong club" [level=2] [ref=e192]
+        - paragraph [ref=e193]: It happens most weeks. Somebody books a driver fitting and leaves with a three wood and their own driver reshafted, because that is what the numbers said. The fee is the same either way.
+        - link "Book a session" [ref=e194] [cursor=pointer]:
+          - /url: "#book"
+    - generic [ref=e200]:
+      - img "The fitting bay, a bag standing on the mat in front of the screen" [ref=e203]
+      - generic [ref=e204]:
+        - generic [ref=e205]: The studio
+        - generic [ref=e206]:
+          - heading "One bay, and forty years of notes" [level=2] [ref=e207]
+          - paragraph [ref=e208]: The bay sits at the back of the shop, past the rack, with a launch monitor on the floor and a lie board under the mat. Every session is written down, so a player who was fitted five years ago is measured against their own numbers rather than from scratch. Shafts come off the wall behind you, which is why a fitting here takes ninety minutes and not a morning.
+          - generic [ref=e209]:
+            - generic [ref=e210]:
+              - term [ref=e211]: every session
+              - definition [ref=e212]: Launch monitor
+            - generic [ref=e213]:
+              - term [ref=e214]: shafts on the wall
+              - definition [ref=e215]: "120"
+            - generic [ref=e216]:
+              - term [ref=e217]: brands on the rack
+              - definition [ref=e218]: "11"
+            - generic [ref=e219]:
+              - term [ref=e220]: sessions run
+              - definition [ref=e221]: 7 days
+          - paragraph [ref=e222]: No session is sold on the strength of a swing you made once. If the numbers are flat, we book you back in.
+          - link "Book a session" [ref=e223] [cursor=pointer]:
+            - /url: "#book"
+    - generic [ref=e226]:
+      - generic [ref=e227]:
+        - generic [ref=e228]:
+          - img "A gloved hand resting on the grip of a club against a black studio background" [ref=e230]
+          - generic [ref=e232]:
+            - generic [ref=e233]: Booking
+            - heading "Take the bay for an hour" [level=2] [ref=e234]
+            - paragraph [ref=e235]: One bay, one fitter, no queue behind you. Tell us which session and roughly when, and somebody will call to put it in the diary.
+            - paragraph [ref=e236]:
+              - text: Or ring the studio on
+              - link "01334 555 187" [ref=e237] [cursor=pointer]:
+                - /url: tel:+441334555187
+        - generic [ref=e239]:
+          - generic [ref=e240]:
+            - generic [ref=e241] [cursor=pointer]: Session
+            - combobox "Session" [ref=e242]:
+              - option "Club fitting, 90 min, £75" [selected]
+              - option "Ball fitting, 45 min, £40"
+              - option "Putter fitting, 45 min, £45"
+              - option "Wedge and gapping, 60 min, £55"
+              - option "Full bag, 3 hours, £180"
+          - generic [ref=e243]:
+            - generic [ref=e244] [cursor=pointer]: Name
+            - textbox "Name" [ref=e245]
+          - generic [ref=e246]:
+            - generic [ref=e247] [cursor=pointer]: Telephone
+            - textbox "Telephone" [ref=e248]
+          - generic [ref=e249]:
+            - generic [ref=e250] [cursor=pointer]: Email
+            - textbox "Email" [ref=e251]
+          - generic [ref=e252]:
+            - generic [ref=e253] [cursor=pointer]: Preferred date
+            - textbox "Preferred date" [ref=e254]
+          - generic [ref=e255]:
+            - generic [ref=e256] [cursor=pointer]: Time of day
+            - combobox "Time of day" [ref=e257]:
+              - option "Morning" [selected]
+              - option "Afternoon"
+              - option "Evening, after 17.00"
+              - option "Weekend"
+          - generic [ref=e258]:
+            - generic [ref=e259] [cursor=pointer]: What are you missing?
+            - textbox "What are you missing?" [ref=e260]:
+              - /placeholder: Handicap, the shot that has gone, what is in the bag now.
+          - generic [ref=e261]:
+            - button "Request a session" [ref=e262] [cursor=pointer]
+            - paragraph [ref=e263]: We call to confirm the slot. Nothing is charged online.
+      - generic [ref=e264]:
+        - generic [ref=e265]:
+          - heading "Studio hours" [level=3] [ref=e266]
+          - generic [ref=e267]:
+            - generic [ref=e268]:
+              - term [ref=e269]: Monday to Friday
+              - definition [ref=e270]: 9.00 to 18.00
+            - generic [ref=e271]:
+              - term [ref=e272]: Saturday
+              - definition [ref=e273]: 8.00 to 17.00
+            - generic [ref=e274]:
+              - term [ref=e275]: Sunday
+              - definition [ref=e276]: 10.00 to 16.00
+          - paragraph [ref=e277]: Last session starts ninety minutes before we close.
+        - generic [ref=e278]:
+          - heading "Bring with you" [level=3] [ref=e279]
+          - list [ref=e280]:
+            - listitem [ref=e281]: The clubs you play now, all of them
+            - listitem [ref=e282]: The ball you played last Sunday
+            - listitem [ref=e283]: Your glove, worn in
+            - listitem [ref=e284]: Shoes you can swing in
+        - generic [ref=e285]:
+          - heading "Where" [level=3] [ref=e286]
+          - generic [ref=e287]: Fairway Golf12 Links RoadSt. Andrews, FifeKY16 9JA
+          - paragraph [ref=e288]: The studio is through the shop, past the rack, on the left.
+    - generic [ref=e292]:
+      - generic [ref=e293]:
+        - text: Before you book
+        - heading "What people ask at the counter" [level=2] [ref=e294]
+        - paragraph [ref=e295]: If yours is not here, call the shop on 01334 555 187 and ask for the studio. Somebody who fits clubs will answer it.
+        - link "Book a session" [ref=e296] [cursor=pointer]:
+          - /url: "#book"
+      - generic [ref=e297]:
+        - group [ref=e298]:
+          - generic "Do I need to bring my own clubs?" [ref=e299] [cursor=pointer]
+        - group [ref=e301]:
+          - generic "I have never been fit. Am I good enough?" [ref=e302] [cursor=pointer]
+        - group [ref=e304]:
+          - generic "How long until the clubs arrive?" [ref=e305] [cursor=pointer]
+        - group [ref=e307]:
+          - generic "Can I book a fitting as a gift?" [ref=e308] [cursor=pointer]
+        - group [ref=e310]:
+          - generic "What if I buy nothing?" [ref=e311] [cursor=pointer]
+        - group [ref=e313]:
+          - generic "Is it all indoors?" [ref=e314] [cursor=pointer]
+  - contentinfo [ref=e316]:
+    - generic [ref=e317]:
+      - generic [ref=e318]:
+        - generic [ref=e319]:
+          - link "Fairway" [ref=e320] [cursor=pointer]:
+            - /url: /
+          - generic [ref=e324]:
+            - generic [ref=e325]:
+              - term [ref=e326]: Established
+              - definition [ref=e327]: Est. 1987
+            - generic [ref=e328]:
+              - term [ref=e329]: Shop
+              - definition [ref=e330]: St. Andrews, Scotland
+          - paragraph [ref=e331]: A specialist golf shop with a fitting studio at its centre. Every brand that matters, fitted to the way you play.
+        - navigation "Footer" [ref=e332]:
+          - generic [ref=e333]:
+            - heading "Shop" [level=2] [ref=e334]
+            - list [ref=e335]:
+              - listitem [ref=e336]:
+                - link "Clubs" [ref=e337] [cursor=pointer]:
+                  - /url: /shop/clubs
+              - listitem [ref=e338]:
+                - link "Balls" [ref=e339] [cursor=pointer]:
+                  - /url: /shop/balls
+              - listitem [ref=e340]:
+                - link "Bags" [ref=e341] [cursor=pointer]:
+                  - /url: /shop/bags
+              - listitem [ref=e342]:
+                - link "Gloves" [ref=e343] [cursor=pointer]:
+                  - /url: /shop/gloves
+              - listitem [ref=e344]:
+                - link "Headwear" [ref=e345] [cursor=pointer]:
+                  - /url: /shop/headwear
+          - generic [ref=e346]:
+            - heading "Brands" [level=2] [ref=e347]
+            - list [ref=e348]:
+              - listitem [ref=e349]:
+                - link "Titleist" [ref=e350] [cursor=pointer]:
+                  - /url: /brands/titleist
+              - listitem [ref=e351]:
+                - link "TaylorMade" [ref=e352] [cursor=pointer]:
+                  - /url: /brands/taylormade
+              - listitem [ref=e353]:
+                - link "Callaway" [ref=e354] [cursor=pointer]:
+                  - /url: /brands/callaway
+              - listitem [ref=e355]:
+                - link "Ping" [ref=e356] [cursor=pointer]:
+                  - /url: /brands/ping
+              - listitem [ref=e357]:
+                - link "All brands" [ref=e358] [cursor=pointer]:
+                  - /url: /brands
+          - generic [ref=e359]:
+            - heading "Fitting" [level=2] [ref=e360]
+            - list [ref=e361]:
+              - listitem [ref=e362]:
+                - link "Club fitting" [ref=e363] [cursor=pointer]:
+                  - /url: /fitting#club-fitting
+              - listitem [ref=e364]:
+                - link "Ball fitting" [ref=e365] [cursor=pointer]:
+                  - /url: /fitting#ball-fitting
+              - listitem [ref=e366]:
+                - link "Putter fitting" [ref=e367] [cursor=pointer]:
+                  - /url: /fitting#putter-fitting
+              - listitem [ref=e368]:
+                - link "Book a session" [ref=e369] [cursor=pointer]:
+                  - /url: /fitting#book
+          - generic [ref=e370]:
+            - heading "Shop info" [level=2] [ref=e371]
+            - list [ref=e372]:
+              - listitem [ref=e373]:
+                - link "About" [ref=e374] [cursor=pointer]:
+                  - /url: /about
+              - listitem [ref=e375]:
+                - link "Contact" [ref=e376] [cursor=pointer]:
+                  - /url: /contact
+              - listitem [ref=e377]:
+                - link "Delivery & returns" [ref=e378] [cursor=pointer]:
+                  - /url: /delivery
+      - generic [ref=e379]:
+        - paragraph [ref=e380]: © 2026 Fairway Golf. A fictional shop, built as a design project.
+        - generic [ref=e381]:
+          - link "Privacy" [ref=e382] [cursor=pointer]:
+            - /url: /privacy
+          - link "Terms" [ref=e383] [cursor=pointer]:
+            - /url: /terms
+          - link "Instagram" [ref=e384] [cursor=pointer]:
+            - /url: /instagram
+          - link "YouTube" [ref=e385] [cursor=pointer]:
+            - /url: /youtube
+  - generic [aria-hidden]:
+    - button
+    - dialog:
+      - banner:
+        - generic:
+          - heading [level=2]: Your bag
+          - paragraph: Empty
+        - button
+      - generic:
+        - paragraph: Nothing in the bag yet.
+        - paragraph: If you are between two models, do not pick here. Put both on the monitor, keep the numbers, then come back.
+        - generic:
+          - link:
+            - /url: /shop
+            - text: Shop the rack
+          - link:
+            - /url: /fitting
+            - text: Book a fitting
+  - button "Open Next.js Dev Tools" [ref=e391] [cursor=pointer]

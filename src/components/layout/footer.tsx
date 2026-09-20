@@ -26,10 +26,10 @@ const columns = [
   {
     title: "Fitting",
     links: [
-      { href: "/fitting/clubs", label: "Club fitting" },
-      { href: "/fitting/ball", label: "Ball fitting" },
-      { href: "/fitting/putter", label: "Putter fitting" },
-      { href: "/fitting", label: "Book a session" },
+      { href: "/fitting#club-fitting", label: "Club fitting" },
+      { href: "/fitting#ball-fitting", label: "Ball fitting" },
+      { href: "/fitting#putter-fitting", label: "Putter fitting" },
+      { href: "/fitting#book", label: "Book a session" },
     ],
   },
   {
