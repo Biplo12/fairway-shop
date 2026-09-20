@@ -152,9 +152,12 @@ Never: mascots, shields, cartoon balls, aggressive sports logos.
 | PAPER | `#F6F6F6` | recessed surface |
 | CHARCOAL | `#171817` | primary text, dark cards |
 | FOREST | `#26352D` | accent, active tab rule |
-| OLIVE | `#69715C` | focus ring, secondary text |
+| OLIVE | `#626A56` | focus ring, secondary text |
 | STONE | `#B5ADA0` | neutral |
 | MIST | `#E2E2E2` | borders |
+
+Olive was `#69715C` until it was measured: 4.36 to 1 against the page, under the 4.5 that
+small text needs. Charcoal text starts at 65 percent and offwhite at 55 for the same reason.
 
 A neutral light grey page with white cards. The page sits a shade below the cards so their
 edges read without a border. Product photography
