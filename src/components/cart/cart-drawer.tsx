@@ -117,9 +117,9 @@ export function CartDrawer() {
           </div>
         ) : (
           <ul className="flex-1 overflow-y-auto px-5 md:px-7">
-            {lines.map(({ product, quantity }) => (
+            {lines.map(({ key, product, quantity, options }) => (
               <li
-                key={product.slug}
+                key={key}
                 className="flex gap-4 border-b border-mist py-5"
               >
                 {/* self-stretch, so the packshot is as tall as the line it
@@ -145,14 +145,16 @@ export function CartDrawer() {
                         {product.model}
                       </p>
                       <p className="mt-0.5 text-[0.8125rem] text-charcoal/55">
-                        {product.detail}
+                        {options && Object.keys(options).length
+                          ? Object.values(options).join(", ")
+                          : product.detail}
                       </p>
                     </div>
 
                     <button
                       type="button"
                       tabIndex={open ? 0 : -1}
-                      onClick={() => remove(product.slug)}
+                      onClick={() => remove(key)}
                       aria-label={`Remove ${product.model}`}
                       className="shrink-0 text-[0.75rem] uppercase tracking-[0.08em] text-charcoal/45 underline underline-offset-4 transition-colors hover:text-charcoal"
                     >
@@ -165,7 +167,7 @@ export function CartDrawer() {
                       <button
                         type="button"
                         tabIndex={open ? 0 : -1}
-                        onClick={() => setQuantity(product.slug, quantity - 1)}
+                        onClick={() => setQuantity(key, quantity - 1)}
                         aria-label={`One fewer ${product.model}`}
                         className="grid size-8 place-items-center text-charcoal/70 transition-colors hover:text-charcoal"
                       >
@@ -180,7 +182,7 @@ export function CartDrawer() {
                       <button
                         type="button"
                         tabIndex={open ? 0 : -1}
-                        onClick={() => setQuantity(product.slug, quantity + 1)}
+                        onClick={() => setQuantity(key, quantity + 1)}
                         aria-label={`One more ${product.model}`}
                         className="grid size-8 place-items-center text-charcoal/70 transition-colors hover:text-charcoal"
                       >

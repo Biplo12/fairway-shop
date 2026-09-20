@@ -2633,6 +2633,972 @@ export const productPages: Record<string, ProductPage> = {
     suits: "Players who want spin and do not mind the club looking its age.",
   },
 
+  "callaway-quantum-max-driver": {
+    tagline: "The forgiving head",
+    description:
+      "The driver we hand people who have just told us they hit it everywhere. Forward and straight beats long and lost on every card you will ever sign, and this is the head built around that.",
+    headline: "Off centre still finds the short grass",
+    marks: ["High forgiveness", "Adjustable hosel", "Fit first"],
+    notes: [
+      "Adjustable hosel, set here on the bench so you never have to touch it.",
+      "More loft fixes more slices than anybody wants to hear. We will suggest it.",
+      "Shaft first, head second. That order is the whole of driver fitting.",
+      "We will show you dispersion, not just carry. That is the number costing you shots.",
+    ],
+    counter:
+      "Everybody asks for the longest driver. The longest one you own is the one you can find afterwards.",
+    specs: [
+      { label: "Spec", value: "Adjustable hosel" },
+      { label: "Head", value: "High forgiveness" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone whose driver misses are costing them holes, which is nearly everybody.",
+  },
+
+  "callaway-paradym-ai-smoke-max-driver": {
+    tagline: "Last season, same numbers",
+    description:
+      "A driver does not get worse because a new one arrives. This one sat at the front of the bay for a year, it still puts up the numbers it put up then, and it now costs less than the head beside it.",
+    headline: "It did not get slower when the new one landed",
+    marks: ["Adjustable hosel", "Previous season", "Fit first"],
+    notes: [
+      "Previous season, which is most of the reason it is priced where it is.",
+      "Put it on the monitor next to this year's head. Let the numbers argue.",
+      "Adjustable hosel, set on the bench before it leaves.",
+      "If the two are within a yard of each other, buy this one and spend the difference on a fitting.",
+    ],
+    counter:
+      "We sell more last season drivers than new ones to people who have seen both on a screen.",
+    specs: [
+      { label: "Spec", value: "Adjustable hosel" },
+      { label: "Season", value: "Previous" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone who would rather spend the difference on being fitted properly.",
+  },
+
+  "srixon-zxi-max-driver": {
+    tagline: "Quiet, and a shape you can look at",
+    description:
+      "Srixon sell fewer drivers than the big two and the people who own one tend to keep it. The MAX is the forgiving head in that line, and the sound at impact is the thing owners mention first.",
+    headline: "The one that does not shout",
+    marks: ["High forgiveness", "Muted at impact", "Fit first"],
+    notes: [
+      "Sound is not a gimmick. A driver that annoys you at impact is one you will not swing freely.",
+      "The MAX is the forgiving head. The LS is lower spinning and asks more of you.",
+      "Test it against the Quantum Max back to back. They suit different players and both are here.",
+      "Adjustable hosel, set on the bench.",
+    ],
+    counter:
+      "Half of what people call feel in a driver is sound. Hit two with your eyes shut and you will hear it.",
+    specs: [
+      { label: "Spec", value: "Adjustable hosel" },
+      { label: "Head", value: "High forgiveness" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Srixon" },
+    ],
+    suits: "Players who already find the fairway and want the sound to stop bothering them.",
+  },
+
+  "callaway-quantum-max-fairway-woods": {
+    tagline: "Off the deck, not just the tee",
+    description:
+      "Most fairway woods get bought to be hit off a peg and then never come out on the deck. The forgiving head in this line sits low enough behind the ball that it works from the turf, which is the only reason to carry one.",
+    headline: "Easier off the deck than it looks",
+    marks: ["Shallow face", "3, 5 and 7 wood", "Fit first"],
+    notes: [
+      "Hit it off the turf in the bay. If it only works off a tee it is a second driver.",
+      "The 5 wood leaves this shop more often than the 3, and that is not an accident.",
+      "The 7 wood fills the yardage most players cannot fill with a long iron.",
+      "Standard shaft length is long for a lot of people. We measure.",
+    ],
+    counter:
+      "If your 3 wood only ever comes out on a tee, you are carrying fourteen clubs and playing thirteen.",
+    specs: [
+      { label: "Spec", value: "3, 5 and 7 wood" },
+      { label: "Use", value: "Off the deck" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Players who need a club that works from the fairway, not just from a peg.",
+  },
+
+  "callaway-apex-utility-woods": {
+    tagline: "Between a wood and a long iron",
+    description:
+      "Smaller than a fairway wood, bigger than a driving iron, and built for the shot that has to start low and stay under a wind. It is a specialist, and we will tell you if you do not need one.",
+    headline: "For the shot that has to stay low",
+    marks: ["Compact head", "Lower flight", "Fit first"],
+    notes: [
+      "Lower flighted than a fairway wood, which is the whole point of it.",
+      "It is not a forgiving club. It is a club for a shot you have in mind.",
+      "If you cannot name the shot you want it for, buy the fairway wood.",
+      "Set on the bench for lie and length before it goes in the bag.",
+    ],
+    counter:
+      "A utility is the club people buy because a tour player has one. Ask yourself which hole you would hit it on.",
+    specs: [
+      { label: "Spec", value: "Compact head" },
+      { label: "Flight", value: "Lower" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Better players with a wind to play into and a shot already in mind.",
+  },
+
+  "callaway-elyte-fairway-woods": {
+    tagline: "The standard head",
+    description:
+      "Neutral shape, shallow face, three lofts. It is the fairway wood most people leave this shop with, and there is nothing dull about being right for most people.",
+    headline: "Right for most people",
+    marks: ["Neutral shape", "3, 5 and 7 wood", "Fit first"],
+    notes: [
+      "Neutral. There is no draw bias hidden in this head.",
+      "Three lofts. Pick by the gap in your bag, not by the number on the sole.",
+      "Hit it off the turf before you decide. That is the test.",
+      "Shaft length measured here, because standard is long for a lot of people.",
+    ],
+    counter:
+      "Start here and let the monitor move you off it. That is what the monitor is for.",
+    specs: [
+      { label: "Spec", value: "3, 5 and 7 wood" },
+      { label: "Shape", value: "Neutral" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Nearly everybody carrying a fairway wood.",
+  },
+
+  "callaway-quantum-max-hybrids": {
+    tagline: "Buy the gap, not the number",
+    description:
+      "Half the trouble people have with hybrids is that they buy a number rather than a yardage. Bring the long iron you are replacing and we will tell you which one actually fills the hole in your bag.",
+    headline: "Bring the club you are replacing",
+    marks: ["Iron length", "High forgiveness", "Fit first"],
+    notes: [
+      "Set at iron length, so lie angle matters and we set it on the bench.",
+      "If your hybrid goes left it is usually head shape and aim, not your swing.",
+      "Aim it at a target before you hit anything. What you see at address decides a lot.",
+      "Nobody knows their hybrid yardage. Everybody knows their five iron yardage. Start there.",
+    ],
+    counter:
+      "The gap between your longest iron and your fairway wood is usually thirty yards. That is the club you are buying.",
+    specs: [
+      { label: "Spec", value: "Iron length" },
+      { label: "Lie", value: "Set on the bench" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone with a hole between the longest iron they hit and their fairway wood.",
+  },
+
+  "callaway-apex-utility-irons": {
+    tagline: "A driving iron, honestly",
+    description:
+      "This is an iron, not a hybrid, and it behaves like one. It flights lower, it turns over, and it asks to be struck. Most players who want one want a hybrid and have not hit both.",
+    headline: "It asks to be struck",
+    marks: ["Iron length", "Lower flight", "Fit first"],
+    notes: [
+      "Lower flighted and less forgiving than the hybrid it sits beside.",
+      "It works into a wind, which is the shot people buy it for.",
+      "Hit it and the hybrid back to back. Six shots each usually settles it.",
+      "Set for lie and length on the bench.",
+    ],
+    counter:
+      "Most people asking for a driving iron leave with a hybrid, and score better for it. A few do not, and they were right.",
+    specs: [
+      { label: "Spec", value: "Iron length" },
+      { label: "Flight", value: "Lower" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Good strikers with wind to play in, and nobody else.",
+  },
+
+  "callaway-paradym-ai-smoke-hybrid": {
+    tagline: "Last season, same job",
+    description:
+      "A hybrid does one thing: it fills a gap. This one filled it last year and it fills it now, for less money than the head that replaced it.",
+    headline: "The gap has not moved",
+    marks: ["Iron length", "Previous season", "Fit first"],
+    notes: [
+      "Previous season, which is why it costs what it costs.",
+      "Pick by the yardage gap, never by the number on the sole.",
+      "Set at iron length, so lie angle matters and we set it here.",
+      "Bring the club you are replacing and we will measure the gap properly.",
+    ],
+    counter:
+      "Hybrids date slower than drivers. A year old hybrid is a year old hybrid, not an old one.",
+    specs: [
+      { label: "Spec", value: "Iron length" },
+      { label: "Season", value: "Previous" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone filling a gap who would rather not pay for this year's paint.",
+  },
+
+  "callaway-quantum-max-irons": {
+    tagline: "Forgiveness first",
+    description:
+      "A wider sole and more help than a players iron, for people who would rather find the green than admire the top line. Nothing about that is a compromise unless you are already finding the middle.",
+    headline: "The green, not the top line",
+    marks: ["7 clubs, 4 to PW", "High forgiveness", "Fit first"],
+    notes: [
+      "Seven clubs, 4 iron to pitching wedge, steel or graphite.",
+      "Stronger lofts than a traditional set, so check the gap to your wedges before you commit.",
+      "Lie angle set on the bench before it goes in the bag, at no extra cost.",
+      "The shaft matters more here than the head does. Budget the time for it.",
+    ],
+    counter:
+      "Strong lofts move the problem to your wedges. We will look at the whole bag, not just the seven iron.",
+    specs: [
+      { label: "Set", value: "7 clubs, 4 to PW" },
+      { label: "Shaft", value: "Steel or graphite" },
+      { label: "Lie", value: "Set on the bench" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Mid to high handicaps who want the miss to still finish on the green.",
+  },
+
+  "callaway-apex-ai300-irons": {
+    tagline: "Help you can still look at",
+    description:
+      "The forgiving head in the Apex line. It gives you more than the Ai200 does and asks you to look at slightly more iron for it, which is a trade a lot of players should take and will not.",
+    headline: "More help than your pride wants",
+    marks: ["7 clubs, 4 to PW", "Forged face", "Fit first"],
+    notes: [
+      "Seven clubs, 4 iron to pitching wedge.",
+      "More forgiving than the Ai200 and a shade thicker behind the ball.",
+      "Hit both. Almost everybody guesses wrong about which one suits them.",
+      "Lie angle set on the bench, at no extra cost.",
+    ],
+    counter:
+      "Nobody has ever come back and said they wished they had bought the less forgiving iron.",
+    specs: [
+      { label: "Set", value: "7 clubs, 4 to PW" },
+      { label: "Face", value: "Forged" },
+      { label: "Lie", value: "Set on the bench" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Players who want a forged face and will take the help that comes with it.",
+  },
+
+  "callaway-elyte-x-irons": {
+    tagline: "The tighter head in the line",
+    description:
+      "Smaller, thinner through the top line and less forgiving than the standard Elyte. If you strike it, you get told about it. If you do not, you get told about that too.",
+    headline: "It tells you either way",
+    marks: ["7 clubs, 4 to PW", "Compact head", "Fit first"],
+    notes: [
+      "Seven clubs, 4 iron to pitching wedge.",
+      "Compact head. Set it down beside the standard Elyte before you decide.",
+      "Not a forgiving iron. We will say that before you hit it, not after.",
+      "Lie angle set on the bench.",
+    ],
+    counter:
+      "If you are not finding the middle four times in five, this iron will remind you every hole. Some people want that.",
+    specs: [
+      { label: "Set", value: "7 clubs, 4 to PW" },
+      { label: "Head", value: "Compact" },
+      { label: "Lie", value: "Set on the bench" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Low handicaps and anyone who has outgrown help they no longer need.",
+  },
+
+  "callaway-opus-sp-chrome-wedge": {
+    tagline: "Spin first",
+    description:
+      "The wedge in this line built around the face rather than the finish. Chrome, so it stays looking like a wedge, and ground so that the sole suits the turf you actually play on.",
+    headline: "The sole matters more than the loft",
+    marks: ["Loft and grind fitted", "Chrome", "Fit first"],
+    notes: [
+      "Gap it from your set pitching wedge upward, never downward.",
+      "A grind that works on links sand does not work on soft parkland.",
+      "Chrome wears with use. That is normal and it is not a fault.",
+      "Bring your current wedges. Half of fitting one is looking at the three you own.",
+    ],
+    counter:
+      "Nobody walks in asking about grind. Everybody fitted for one asks about it the next time.",
+    specs: [
+      { label: "Spec", value: "Loft and grind fitted" },
+      { label: "Finish", value: "Chrome" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone who plays the same turf most weeks and has never matched a sole to it.",
+  },
+
+  "callaway-full-toe-sp-wedge": {
+    tagline: "Face all the way up",
+    description:
+      "Grooves right to the top of the toe, for the shots played with the face open. If you never open a wedge, this does nothing for you that a standard head does not.",
+    headline: "For the shots played open",
+    marks: ["Full face", "Loft and grind fitted", "Fit first"],
+    notes: [
+      "Full face grooves, which only matter on a shot struck high on the toe.",
+      "If you play everything square, buy the standard head and save the money.",
+      "Sole grind still matters more than the face does. We start there.",
+      "Bring your current wedges so we can gap the whole set.",
+    ],
+    counter:
+      "A full face wedge is a specialist. Show us the shot you want it for and we will tell you whether it helps.",
+    specs: [
+      { label: "Spec", value: "Loft and grind fitted" },
+      { label: "Face", value: "Full toe" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Players who open the face around a green and know why they are doing it.",
+  },
+
+  "callaway-cb-12-wedge": {
+    tagline: "A cavity back wedge",
+    description:
+      "Most wedges are blades because most wedges are sold to people who strike them well. This one is not, and for a lot of golfers that is the more honest club.",
+    headline: "The wedge that matches your irons",
+    marks: ["Cavity back", "Loft and grind fitted", "Fit first"],
+    notes: [
+      "Cavity back, so it behaves more like the irons above it in your bag.",
+      "More forgiving on a thin strike, which is the miss most people actually have.",
+      "Gap it off your set pitching wedge before you pick lofts.",
+      "It will not spin like a tour blade. It will find more greens.",
+    ],
+    counter:
+      "If your irons are forgiving and your wedges are blades, your bag is arguing with itself.",
+    specs: [
+      { label: "Spec", value: "Loft and grind fitted" },
+      { label: "Head", value: "Cavity back" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone playing a forgiving iron set who has never questioned their wedges.",
+  },
+
+  "cleveland-hb-soft-2-putter-retreve-cb": {
+    tagline: "Counterbalanced",
+    description:
+      "Weight up the grip end, which quietens the hands and slows the stroke down. Whether that helps depends entirely on whether your hands are the problem, and we can tell you that on the mat.",
+    headline: "It quietens the hands",
+    marks: ["33, 34 and 35 inches", "Counterbalanced", "Fit first"],
+    notes: [
+      "Counterbalanced, so the head feels lighter and the stroke feels longer.",
+      "It suits a stroke that gets handsy under pressure. It does nothing for a stroke that does not.",
+      "Length is the most commonly wrong number in golf. Get measured.",
+      "Putter fitting is forty five pounds and we do it on the same mat every time.",
+    ],
+    counter:
+      "Roll twenty putts with this and twenty with a standard head. Your hands will tell you before the numbers do.",
+    specs: [
+      { label: "Length", value: "33, 34 and 35 inches" },
+      { label: "Build", value: "Counterbalanced" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Cleveland" },
+    ],
+    suits: "Players whose hands take over on a four footer.",
+  },
+
+  "cleveland-hb-soft-milled-11-putter": {
+    tagline: "Milled face",
+    description:
+      "A milled face rolls differently to an insert, and putting is the one place where a difference that small is worth paying for. Whether you prefer it is a question for the mat, not for a description.",
+    headline: "Roll it before you read about it",
+    marks: ["33, 34 and 35 inches", "Milled face", "Fit first"],
+    notes: [
+      "Milled face. Firmer off the putter than an insert, and a different sound.",
+      "Neither is better. One of them will suit how you like to feel a putt.",
+      "Get measured for length before you argue about the head.",
+      "Putter fitting is forty five pounds, on the same mat every time.",
+    ],
+    counter:
+      "Take the sight line away and a lot of people aim better. They had been lining up the line, not the putt.",
+    specs: [
+      { label: "Length", value: "33, 34 and 35 inches" },
+      { label: "Face", value: "Milled" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Cleveland" },
+    ],
+    suits: "Players who know what they want a putt to feel like off the face.",
+  },
+
+  "cleveland-hb-soft-2-putter-model-11-cb": {
+    tagline: "A mallet, counterbalanced",
+    description:
+      "The mallet head in this line with weight up the grip. It is stable through the ball in two different ways at once, which is either exactly what you need or more than you need.",
+    headline: "Stable twice over",
+    marks: ["33, 34 and 35 inches", "Mallet head", "Fit first"],
+    notes: [
+      "Mallet head and counterbalanced. Both slow a stroke down.",
+      "If you already putt with a quiet stroke, this can be too much of a good thing.",
+      "Length first, head second. That order is the whole of putter fitting.",
+      "We roll it on the same mat every time so the comparison means something.",
+    ],
+    counter:
+      "Aim it at a target before you hit a putt. What you see at address decides more than the head does.",
+    specs: [
+      { label: "Length", value: "33, 34 and 35 inches" },
+      { label: "Head", value: "Mallet, counterbalanced" },
+      { label: "Fitting", value: "Recommended" },
+      { label: "Brand", value: "Cleveland" },
+    ],
+    suits: "Players who miss short putts left and want the head to argue with that.",
+  },
+
+  "callaway-chrome-tour-triple-track": {
+    tagline: "Three lines",
+    description:
+      "The Chrome Tour with an alignment print. Whether it helps depends entirely on whether you aim the ball on the green, and plenty of people do without ever having thought about it.",
+    headline: "The same ball, with a line",
+    marks: ["Dozen", "Alignment print", "Urethane cover"],
+    notes: [
+      "Identical to the plain Chrome Tour. Only the print is different.",
+      "It helps if you aim the ball on the green and it does nothing if you do not.",
+      "Three lines rather than one, which some people find easier to square.",
+      "Roll ten putts with it and ten without before you commit to a box.",
+    ],
+    counter:
+      "An alignment aid helps or it distracts, and there is no middle. Ten putts on the mat tells you which.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Cover", value: "Urethane" },
+      { label: "Print", value: "Triple Track" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Players who line the ball up on the green and want more to line up with.",
+  },
+
+  "callaway-chrome-tour-yellow": {
+    tagline: "You will find it",
+    description:
+      "The same tour ball in a colour you can see. In flat Scottish light a white ball in the rough is a two minute search, and half the balls people lose are not lost, they are just not found.",
+    headline: "Half the balls people lose are just not found",
+    marks: ["Dozen", "High visibility", "Urethane cover"],
+    notes: [
+      "The same ball as the white Chrome Tour. The colour is the only difference.",
+      "Yellow reads against long grass in flat light, which white does not.",
+      "One round changes most minds about coloured balls.",
+      "If you have never played one, buy a dozen rather than a sleeve. It takes a round to stop noticing.",
+    ],
+    counter:
+      "A colour costs nothing and finds balls. That is the whole argument and it is a good one.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Cover", value: "Urethane" },
+      { label: "Colour", value: "Yellow" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone who plays in flat light or long rough, so most people here.",
+  },
+
+  "callaway-chrome-tour-triple-track-yellow": {
+    tagline: "A line and a colour",
+    description:
+      "Both at once: the alignment print for the green and the colour for the rough. If you have decided you want each of them, there is no reason to choose.",
+    headline: "Both, if you want both",
+    marks: ["Dozen", "Alignment print", "High visibility"],
+    notes: [
+      "The same ball as the plain Chrome Tour underneath all of it.",
+      "Yellow for finding it, three lines for aiming it.",
+      "If you have not tried either, try one at a time. Two changes at once tells you nothing.",
+      "Sold by the dozen, like everything on this shelf.",
+    ],
+    counter:
+      "Change one thing at a time. That is true of balls and it is true of clubs.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Cover", value: "Urethane" },
+      { label: "Colour", value: "Yellow" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Players who already know they want the line and the colour.",
+  },
+
+  "callaway-chrome-tour-trutrack": {
+    tagline: "One line, not three",
+    description:
+      "A single alignment stripe rather than a set of them. Some players find three lines busy at address, and for those players this is the same ball with less on it.",
+    headline: "Less on it",
+    marks: ["Dozen", "Single stripe", "Urethane cover"],
+    notes: [
+      "One stripe rather than the triple print. Same ball underneath.",
+      "If Triple Track looks busy to you at address, this is the answer.",
+      "Roll ten putts with each. Nobody can pick between them off a shelf.",
+      "Sold by the dozen.",
+    ],
+    counter:
+      "Aiming aids are personal in a way nothing else about a golf ball is. Look at both on the mat.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Cover", value: "Urethane" },
+      { label: "Print", value: "Single stripe" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Players who want an aiming line without a set of them.",
+  },
+
+  "callaway-chrome-tour-trutrack-yellow": {
+    tagline: "One line, in yellow",
+    description:
+      "A single stripe and a colour you can find. It is the quietest of the marked tour balls, which is why it stays on the shelf when the louder ones sell out.",
+    headline: "The quiet one on the shelf",
+    marks: ["Dozen", "Single stripe", "High visibility"],
+    notes: [
+      "One stripe, not three, on the yellow cover.",
+      "Yellow finds the ball, the stripe aims it, and neither shouts at address.",
+      "Same construction as the white Chrome Tour.",
+      "Two rounds before you judge it. Ball feel takes that long to settle.",
+    ],
+    counter:
+      "The ball you play on every shot deserves the forty minutes a fitting takes. Almost nobody gives it that.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Cover", value: "Urethane" },
+      { label: "Colour", value: "Yellow" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone who wants the colour and finds three lines too much.",
+  },
+
+  "callaway-chrome-tour-x-triple-track": {
+    tagline: "Firmer, with a line",
+    description:
+      "The X is the firmer, lower spinning ball in the line, and this is that ball with the alignment print on it. It needs speed to make sense, and without it you are paying for a firmer feel and nothing else.",
+    headline: "It needs speed to make sense",
+    marks: ["Dozen", "Lower spin", "Alignment print"],
+    notes: [
+      "Firmer than the standard Chrome Tour, with less spin off the driver.",
+      "Below about ninety five miles an hour you will not compress it properly.",
+      "If your driver spin is already low, this is the wrong ball on the shelf.",
+      "We will put both on the monitor. The numbers decide, not the box.",
+    ],
+    counter:
+      "Half the people playing an X ball should be playing the standard one. The monitor sorts it in twenty minutes.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Cover", value: "Urethane" },
+      { label: "Spin", value: "Lower than Chrome Tour" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Higher swing speeds already spinning the driver too much.",
+  },
+
+  "callaway-cargo-cart-bag": {
+    tagline: "Pockets facing the right way",
+    description:
+      "A cart bag earns its place by where the pockets sit once it is strapped down. This one puts them forward, which sounds obvious and is not what every bag does.",
+    headline: "Pockets where your hand goes",
+    marks: ["14 way, full length", "Cart bag", "Callaway"],
+    notes: [
+      "Full length dividers. A fourteen way top with an open base still tangles.",
+      "Pockets face forward, so you can reach them without unstrapping the bag.",
+      "It is heavy, and it is not meant to be carried.",
+      "Bring the trolley if you are unsure it will sit on the base.",
+    ],
+    counter:
+      "Fourteen ways at the top and an open bottom is the oldest trick in bags. Reach in and feel for the dividers.",
+    specs: [
+      { label: "Top", value: "Fourteen way" },
+      { label: "Dividers", value: "Full length" },
+      { label: "Type", value: "Cart" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Trolley and buggy players who want every club separated.",
+  },
+
+  "callaway-chase-14-cart-bag": {
+    tagline: "Plain, and fourteen ways",
+    description:
+      "Full separation without the pocket count of a tour bag. It is the cart bag for somebody who wants their clubs apart and does not need somewhere to put a second pair of shoes.",
+    headline: "Separation without the rest of it",
+    marks: ["14 way, full length", "Cart bag", "Callaway"],
+    notes: [
+      "Fourteen slots, full length, so nothing rubs on the way round.",
+      "Fewer pockets than the bags beside it. Count what you actually open on a round.",
+      "Cart bag, so it is not built for a shoulder.",
+      "Check it sits on your trolley base before you buy it.",
+    ],
+    counter:
+      "Pockets are where bag weight hides. Ask yourself which ones you opened last round.",
+    specs: [
+      { label: "Top", value: "Fourteen way" },
+      { label: "Dividers", value: "Full length" },
+      { label: "Type", value: "Cart" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Trolley players who want their clubs apart and nothing else.",
+  },
+
+  "callaway-fairway-stand-bag": {
+    tagline: "The middle of the rack",
+    description:
+      "Light enough to carry for eighteen, built enough to survive a season of it. Most people who walk in with no strong view about bags leave with this one.",
+    headline: "For people with no strong view",
+    marks: ["Stand bag, 4 way top", "Double strap", "Callaway"],
+    notes: [
+      "Four way top. Enough separation for a full set without fourteen dividers of weight.",
+      "Double strap, adjusted here before it leaves.",
+      "Carry it loaded round the shop. Four hours is the test, not four minutes.",
+      "Weighed empty on the same scale as everything else on this rack.",
+    ],
+    counter:
+      "Carry this and the Ping Hoofer round the shop loaded. Whichever one you forget about is the one to buy.",
+    specs: [
+      { label: "Top", value: "Four way" },
+      { label: "Strap", value: "Double, adjustable" },
+      { label: "Legs", value: "Stand" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Walkers who want one bag and want it to be the obvious choice.",
+  },
+
+  "callaway-quantum-fairway-14-stand-bag": {
+    tagline: "Fourteen slots, and legs",
+    description:
+      "Full separation on a bag you carry, which is rarer than it should be because every divider costs weight. You are paying that weight to never untangle grips again.",
+    headline: "Full separation on a carry bag",
+    marks: ["Stand bag, 4 way top", "Fourteen slots", "Callaway"],
+    notes: [
+      "Fourteen slots on a carry bag. Every club has its own and nothing rubs.",
+      "Heavier than a four way bag. That is what the dividers cost.",
+      "Double strap as standard, adjusted here.",
+      "Carry it loaded before you commit. Half a kilo feels different at the fourteenth.",
+    ],
+    counter:
+      "Fourteen ways or light. You can have one. Anybody selling you both is selling you a compromise.",
+    specs: [
+      { label: "Top", value: "Fourteen way" },
+      { label: "Strap", value: "Double, adjustable" },
+      { label: "Legs", value: "Stand" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Walkers who cannot stand grips tangling and will carry the weight for it.",
+  },
+
+  "callaway-summit-collection-stand-bag": {
+    tagline: "Quieter than the rest of the rack",
+    description:
+      "Plainer material, less branding, and a shape that does not announce itself on a first tee. It costs a little more for looking like less, which is a trade some people are happy to make.",
+    headline: "It does not announce itself",
+    marks: ["Stand bag, 4 way top", "Plain finish", "Callaway"],
+    notes: [
+      "Four way top, double strap, nothing unusual about the specification.",
+      "The material and the finish are what you are paying the difference for.",
+      "Weighed empty on the same scale as the loud bags beside it.",
+      "Carry it loaded round the shop like any other bag on this rack.",
+    ],
+    counter:
+      "Nobody has ever played worse because their bag was plain. Buy the one you want to look at for five years.",
+    specs: [
+      { label: "Top", value: "Four way" },
+      { label: "Strap", value: "Double, adjustable" },
+      { label: "Legs", value: "Stand" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Walkers who would rather their bag said nothing at all.",
+  },
+
+  "callaway-fairway-j-bag": {
+    tagline: "Small, and honest about it",
+    description:
+      "Half a set, an evening nine and nothing more asked of it. The second bag people buy and the one they end up using more than they expected.",
+    headline: "Not trying to hold fourteen",
+    marks: ["Stand bag, 4 way top", "Light carry", "Callaway"],
+    notes: [
+      "It is a small bag. That is the point, not a limitation.",
+      "Right for a summer evening and wrong for a medal.",
+      "Legs, which a lot of bags this size skip.",
+      "Carry it loaded before you decide how many clubs it really takes.",
+    ],
+    counter:
+      "The second bag people buy gets used more than the first one. Nobody believes that until they own two.",
+    specs: [
+      { label: "Top", value: "Four way" },
+      { label: "Use", value: "Nine holes" },
+      { label: "Legs", value: "Stand" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Evening nines, par three courses and practice rounds.",
+  },
+
+  "callaway-tour-authentic-triple-diamond-glove": {
+    tagline: "The thinnest on the wall",
+    description:
+      "The tour specification of the Tour Authentic, which means less leather between your hand and the grip and a shorter life for it. Everybody who buys one knows both halves of that sentence.",
+    headline: "Less glove, more grip",
+    marks: ["Sizes S to XL", "Premium cabretta", "Callaway"],
+    notes: [
+      "Thinner than the standard Tour Authentic, which is already thin.",
+      "Fifteen rounds is a fair season for one of these in the dry.",
+      "Buy it a shade tight. Cabretta gives and it gives quickly.",
+      "If replacing a glove every month annoys you, buy the Dawn Patrol.",
+    ],
+    counter:
+      "All leather feels better for ten rounds. Synthetic feels almost as good for thirty. Pick which you care about.",
+    specs: [
+      { label: "Leather", value: "Premium cabretta" },
+      { label: "Sizes", value: "S to XL" },
+      { label: "Life", value: "12 to 20 rounds" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Low handicaps who notice the grip and replace gloves without complaining.",
+  },
+
+  "callaway-aura-glove": {
+    tagline: "Cut for a smaller hand",
+    description:
+      "Most gloves are a men's pattern shrunk down, which is why so many of them bunch across the palm. This one is cut on its own last, and that is the whole difference.",
+    headline: "Cut on its own pattern",
+    marks: ["Sizes S to XL", "Cabretta leather", "Callaway"],
+    notes: [
+      "A different pattern, not a smaller version of the men's glove.",
+      "If gloves bunch across your palm when you regrip, that is what this fixes.",
+      "Cabretta leather, so buy it a shade tight.",
+      "Try it on here. A glove is the one thing in this shop you cannot judge from a packet.",
+    ],
+    counter:
+      "Half the gloves people play in are the wrong shape, not the wrong size. That is a fitting problem nobody talks about.",
+    specs: [
+      { label: "Leather", value: "Cabretta" },
+      { label: "Sizes", value: "S to XL" },
+      { label: "Cut", value: "Own pattern" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone whose glove has never quite sat flat across the palm.",
+  },
+
+  "callaway-opti-color-gloves": {
+    tagline: "A glove in a colour",
+    description:
+      "The same construction as the plain glove in something other than white. It will look worn in sooner and it will not look grubby, which is a fair trade for anybody who plays in weather.",
+    headline: "It will not look grubby",
+    marks: ["Sizes S to XL", "Cabretta leather", "Callaway"],
+    notes: [
+      "The same glove underneath. The colour is the only difference.",
+      "A white glove looks past it after six wet rounds. A coloured one does not.",
+      "Cabretta leather, so size it a shade tight.",
+      "Cold water, air dry, never a radiator.",
+    ],
+    counter:
+      "People replace white gloves because they look finished, not because they are. A colour buys you five more rounds.",
+    specs: [
+      { label: "Leather", value: "Cabretta" },
+      { label: "Sizes", value: "S to XL" },
+      { label: "Care", value: "Cold water, air dry" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone who plays in weather and hates the look of a tired white glove.",
+  },
+
+  "callaway-rain-spann-gloves-pair": {
+    tagline: "A pair, for wet grips",
+    description:
+      "Rain gloves come in twos because rain does not fall on one hand. They grip harder the wetter they get, which feels wrong for one hole and then makes perfect sense.",
+    headline: "Better wet than dry",
+    marks: ["Pair, sizes S to XL", "Grips wet", "Callaway"],
+    notes: [
+      "Sold as a pair. A single rain glove is half a solution.",
+      "They work wet. Dry they feel odd and slightly slick, which is normal.",
+      "Put them on at the first spot of rain, not when your grips are already soaked.",
+      "Rinse and air dry. They come back the same for years.",
+    ],
+    counter:
+      "The mistake is waiting until the third hole. By then the grips are wet and no glove fixes that.",
+    specs: [
+      { label: "Count", value: "Pair" },
+      { label: "Grip", value: "Improves when wet" },
+      { label: "Sizes", value: "S to XL" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone who plays through rain rather than waiting it out.",
+  },
+
+  "callaway-tour-authentic-performance-pro-lw-hat": {
+    tagline: "The light one",
+    description:
+      "The same tour cap in a lighter cloth, for the two months a year when the heavier one is too much. It dries faster and holds its shape less, which is the trade.",
+    headline: "For the two months it matters",
+    marks: ["One size, adjustable", "Lightweight", "Callaway"],
+    notes: [
+      "Lighter cloth than the standard Performance Pro. You can feel it in the hand.",
+      "It dries quicker and creases more easily. Both come from the same thing.",
+      "Adjustable strap, which gives a finer fit than a snapback.",
+      "Cold water only, and never a machine.",
+    ],
+    counter:
+      "In a Scottish summer a light cap matters for about eight weeks. Some people buy two caps for that reason.",
+    specs: [
+      { label: "Fit", value: "One size, adjustable" },
+      { label: "Cloth", value: "Lightweight" },
+      { label: "Care", value: "Cold water, air dry" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Hot rounds, and anyone who finds a structured cap heavy in July.",
+  },
+
+  "callaway-cg-weekender-hat": {
+    tagline: "Soft front, nothing shouting",
+    description:
+      "Unstructured, quiet, and the cap most likely to be worn somewhere other than a golf course. It takes the shape of your head rather than holding its own.",
+    headline: "For the round after the round",
+    marks: ["One size, adjustable", "Unstructured", "Callaway"],
+    notes: [
+      "Soft front. It will crease, and that is what people buy it for.",
+      "Cotton, which means it gets wet and stays wet.",
+      "Adjustable strap rather than a snapback.",
+      "Cold water only. Cotton shrinks in a machine.",
+    ],
+    counter:
+      "The cap you wear most is the one you forget you are wearing. Usually it is the plain soft one.",
+    specs: [
+      { label: "Fit", value: "One size, adjustable" },
+      { label: "Crown", value: "Unstructured" },
+      { label: "Care", value: "Cold water, air dry" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone who wants a cap rather than a piece of equipment.",
+  },
+
+  "callaway-rutherford-flexfit-snapback-hat": {
+    tagline: "Flat brim, snapback",
+    description:
+      "Structured front, flat brim, and a snapback that steps rather than slides. Nothing technical about it, which is the point of it.",
+    headline: "Nothing technical about it",
+    marks: ["One size, snapback", "Structured", "Callaway"],
+    notes: [
+      "Flat brim. Curve it yourself if you want it curved.",
+      "Structured front, so it holds its shape through a wet round.",
+      "Snapback, so the fit steps rather than slides.",
+      "Spot clean the front panel and leave the rest alone.",
+    ],
+    counter:
+      "A snapback either fits your head or it does not. There is no adjusting your way out of it.",
+    specs: [
+      { label: "Fit", value: "One size, snapback" },
+      { label: "Brim", value: "Flat" },
+      { label: "Crown", value: "Structured" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone who wears the cap after the round as well as during it.",
+  },
+
+  "callaway-performance-pro-adjustable-hat": {
+    tagline: "The everyday tour cap",
+    description:
+      "Structured, technical, adjustable, and the cap that does the job without asking for anything. Most people who buy one buy the same one again.",
+    headline: "It dries on the walk in",
+    marks: ["One size, adjustable", "Technical crown", "Callaway"],
+    notes: [
+      "Technical crown, so it sheds water rather than holding it.",
+      "Structured front, which keeps a shape when it is soaked.",
+      "Adjustable strap, finer than a snapback.",
+      "Cold water only, and never a machine.",
+    ],
+    counter:
+      "A structured cap in the rain is the difference between a cap and a wet cloth on your head.",
+    specs: [
+      { label: "Fit", value: "One size, adjustable" },
+      { label: "Crown", value: "Structured" },
+      { label: "Fabric", value: "Technical, quick dry" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone who wants a cap to disappear and just work.",
+  },
+
+  "callaway-magnetic-iron-headcover-set": {
+    tagline: "The set, magnetic",
+    description:
+      "Iron covers are a nuisance right up until you sell a set and find out what unmarked faces are worth. Magnetic, so they come off one handed and go back the same way.",
+    headline: "Your irons stop chewing each other",
+    marks: ["Set, magnetic", "Numbered", "Callaway"],
+    notes: [
+      "Magnetic. Velcro iron covers are the reason people give up on iron covers.",
+      "They add weight to the bag. That is the honest cost of them.",
+      "A covered set is worth real money more at trade in than an uncovered one.",
+      "Numbered, so the set goes back in the same order every time.",
+    ],
+    counter:
+      "We value a lot of trade in sets across this counter. Covered irons are always worth more.",
+    specs: [
+      { label: "Closure", value: "Magnetic" },
+      { label: "Marking", value: "Numbered" },
+      { label: "Fits", value: "Standard iron heads" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone who plans to sell the set on, and anyone who hates the rattle.",
+  },
+
+  "callaway-summit-driver-headcover": {
+    tagline: "Plain, structured, lined",
+    description:
+      "The test for a driver cover is whether it goes back on in the rain with cold hands. This one does, and most of the covers people already own do not.",
+    headline: "It goes back on in the rain",
+    marks: ["Fits up to 460cc", "Structured", "Lined"],
+    notes: [
+      "Structured, so it keeps its opening when it is soaked.",
+      "Lined, which is what stops the crown marking.",
+      "Fits any driver head up to 460cc.",
+      "Dry it off the club. Left on, it traps water against the paint.",
+    ],
+    counter:
+      "Try putting a headcover on with wet fingers before you buy it. Most of them fail that test.",
+    specs: [
+      { label: "Fits", value: "Up to 460cc" },
+      { label: "Build", value: "Structured" },
+      { label: "Lining", value: "Soft" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone who plays in weather and has fought a soaked cover on the second tee.",
+  },
+
+  "callaway-barrel-driver-headcover": {
+    tagline: "Slides on, does not pull over",
+    description:
+      "A barrel shape goes on down the shaft rather than over the crown, which is quicker and kinder to the paint. It looks older than anything else in your bag and it is meant to.",
+    headline: "It slides, it does not pull",
+    marks: ["Fits up to 460cc", "Barrel shape", "Lined"],
+    notes: [
+      "Barrel shape. It slides down the shaft rather than stretching over the head.",
+      "Kinder to a painted crown than a cover you have to pull on.",
+      "Fits any driver head up to 460cc.",
+      "Spot clean only.",
+    ],
+    counter:
+      "Look at a five year old driver crown. Most of the marks came from the cover, not from the golf.",
+    specs: [
+      { label: "Fits", value: "Up to 460cc" },
+      { label: "Shape", value: "Barrel" },
+      { label: "Lining", value: "Soft" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone who wants the crown to still look like a crown in three years.",
+  },
+
+  "callaway-vintage-hybrid-headcover": {
+    tagline: "The club nobody covers",
+    description:
+      "Hybrids sit low and short in the bag and take knocks from the irons all the way round. Almost nobody covers them, and almost everybody should.",
+    headline: "Nobody covers the hybrid",
+    marks: ["Fits most hybrid heads", "Lined", "Callaway"],
+    notes: [
+      "Fits most hybrid heads across the usual loft range.",
+      "Lined, because a hybrid crown chips as easily as a driver crown.",
+      "It is the club that rattles all the way round. This is what stops it.",
+      "Dry it off the club rather than on it.",
+    ],
+    counter:
+      "Look at a three year old hybrid and a three year old driver from the same bag. The hybrid always looks worse.",
+    specs: [
+      { label: "Fits", value: "Most hybrid heads" },
+      { label: "Build", value: "Lined" },
+      { label: "Care", value: "Air dry off the club" },
+      { label: "Brand", value: "Callaway" },
+    ],
+    suits: "Anyone carrying a hybrid without a cover, which is most people.",
+  },
+
   "ping-i230-irons": {
     tagline: "A cavity that reads like a blade",
     description:

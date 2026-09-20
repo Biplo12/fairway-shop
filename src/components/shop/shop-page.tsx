@@ -7,7 +7,14 @@ import { ProductCard } from "@/components/products/product-card";
 import { Footer } from "@/components/layout/footer";
 import { FloatingNav } from "@/components/layout/floating-nav";
 import { PageNav } from "@/components/layout/page-nav";
-import { categoryName, products, type Category } from "@/content/products";
+import {
+  categoryName,
+  inPriceBand,
+  priceBands,
+  products,
+  sortProducts,
+  type Category,
+} from "@/content/products";
 import { shelves } from "@/content/shelves";
 
 /**
@@ -27,18 +34,26 @@ export function ShopPage({
   category,
   brand,
   type,
+  price,
+  sort,
   page = 1,
 }: {
   category?: Category;
   brand?: string;
   type?: string;
+  price?: string;
+  sort?: string;
   page?: number;
 }) {
-  const shelf = products.filter(
-    (product) =>
-      (!category || product.category === category) &&
-      (!brand || product.brand.toLowerCase() === brand.toLowerCase()) &&
-      (!type || product.subcategory?.toLowerCase() === type.toLowerCase()),
+  const shelf = sortProducts(
+    products.filter(
+      (product) =>
+        (!category || product.category === category) &&
+        (!brand || product.brand.toLowerCase() === brand.toLowerCase()) &&
+        (!type || product.subcategory?.toLowerCase() === type.toLowerCase()) &&
+        inPriceBand(product, price),
+    ),
+    sort,
   );
 
   const pages = Math.max(1, Math.ceil(shelf.length / PAGE_SIZE));
@@ -50,6 +65,8 @@ export function ShopPage({
     const query = new URLSearchParams();
     if (brand) query.set("brand", brand.toLowerCase());
     if (type) query.set("type", type.toLowerCase());
+    if (price) query.set("price", price);
+    if (sort && sort !== "featured") query.set("sort", sort);
     if (next > 1) query.set("page", String(next));
     const search = query.toString();
     return search ? `${path}?${search}` : path;
@@ -61,6 +78,9 @@ export function ShopPage({
   // the catalogue spells it rather than the way the URL did
   const brandLabel = brand ? (shelf[0]?.brand ?? brand) : undefined;
   const typeLabel = type ? (shelf[0]?.subcategory ?? type) : undefined;
+  const priceLabel = price
+    ? priceBands.find((band) => band.slug === price)?.name
+    : undefined;
 
   return (
     <>
@@ -92,9 +112,12 @@ export function ShopPage({
                 {brandLabel ? (
                   <span className="text-charcoal/45">, {brandLabel}</span>
                 ) : null}
+                {priceLabel ? (
+                  <span className="text-charcoal/45">, {priceLabel}</span>
+                ) : null}
               </h2>
               <div className="flex items-center gap-4">
-                {brand || type ? (
+                {brand || type || price || sort ? (
                   <Link
                     href={category ? `/shop/${category}` : "/shop"}
                     className="text-[0.8125rem] uppercase tracking-[0.06em] text-charcoal/60 underline underline-offset-4 hover:text-charcoal"
@@ -102,7 +125,13 @@ export function ShopPage({
                     Clear
                   </Link>
                 ) : null}
-                <ShelfFilter category={category} brand={brand} type={type} />
+                <ShelfFilter
+                  category={category}
+                  brand={brand}
+                  type={type}
+                  price={price}
+                  sort={sort}
+                />
               </div>
             </div>
 

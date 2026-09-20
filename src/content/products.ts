@@ -8587,6 +8587,151 @@ export const shopBrands = [...new Set(products.map((product) => product.brand))]
     count: products.filter((product) => product.brand === name).length,
   }));
 
+const clubTypeOrder = [
+  "drivers",
+  "fairway woods",
+  "hybrids",
+  "irons",
+  "wedges",
+  "putters",
+];
+
+/**
+ * Clubs is six different things and nobody shops for a club, they shop for a
+ * wedge. Derived from the rack so a type with nothing behind it is never
+ * offered.
+ */
+export const clubTypes = clubTypeOrder
+  .map((slug) => ({
+    slug,
+    count: products.filter((product) => product.subcategory === slug).length,
+  }))
+  .filter((type) => type.count > 0);
+
+/** the week of the year, so the rack turns over without anyone editing a flag */
+function weekOfYear(today = new Date()) {
+  const start = Date.UTC(today.getUTCFullYear(), 0, 1);
+  const day = Date.UTC(
+    today.getUTCFullYear(),
+    today.getUTCMonth(),
+    today.getUTCDate(),
+  );
+  return Math.floor((day - start) / 604_800_000);
+}
+
+/**
+ * What the shop would put in your hands this week. The four marked `featured`
+ * lead, then one from each remaining shelf, rotated by the week so the front
+ * of the shop is not the same four products every time somebody rebuilds it.
+ */
+export function rackPicks(count = 8) {
+  const picks: Product[] = [...featuredProducts].slice(0, count);
+  const shelves = shopCategories.map((category) =>
+    products.filter(
+      (product) => product.category === category.slug && product.inStock,
+    ),
+  );
+
+  const seed = weekOfYear();
+  for (let round = 0; picks.length < count && round < 8; round++) {
+    for (const shelf of shelves) {
+      if (picks.length >= count || !shelf.length) continue;
+      const pick = shelf[(seed * 7 + round * 13) % shelf.length];
+      if (pick && !picks.includes(pick)) picks.push(pick);
+    }
+  }
+  return picks;
+}
+
+/** price bands, in pence, wide enough that a shelf is never cut into slivers */
+export const priceBands = [
+  { slug: "under-50", name: "Under £50", min: 0, max: 4999 },
+  { slug: "50-150", name: "£50 to £150", min: 5000, max: 14999 },
+  { slug: "150-400", name: "£150 to £400", min: 15000, max: 39999 },
+  { slug: "over-400", name: "Over £400", min: 40000, max: Infinity },
+];
+
+export function inPriceBand(product: Product, slug?: string) {
+  if (!slug) return true;
+  const band = priceBands.find((entry) => entry.slug === slug);
+  if (!band) return true;
+  return product.price >= band.min && product.price <= band.max;
+}
+
+export const sortOptions = [
+  { slug: "featured", name: "Featured" },
+  { slug: "price-asc", name: "Price, low to high" },
+  { slug: "price-desc", name: "Price, high to low" },
+  { slug: "brand", name: "Brand" },
+] as const;
+
+export function sortProducts(shelf: Product[], slug?: string) {
+  const sorted = [...shelf];
+  if (slug === "price-asc") return sorted.sort((a, b) => a.price - b.price);
+  if (slug === "price-desc") return sorted.sort((a, b) => b.price - a.price);
+  if (slug === "brand")
+    return sorted.sort(
+      (a, b) =>
+        a.brand.localeCompare(b.brand) || a.model.localeCompare(b.model),
+    );
+  return sorted;
+}
+
+/**
+ * Enough to find a club by name, brand or type. No index and no fuzziness: a
+ * shop this size needs the search to be honest about what it matched, not
+ * clever about what it guessed.
+ */
+export function searchProducts(query: string) {
+  const terms = query.toLowerCase().split(/\s+/).filter(Boolean);
+  if (!terms.length) return [];
+
+  return products
+    .map((product) => {
+      const haystack = [
+        product.brand,
+        product.model,
+        product.category,
+        product.subcategory ?? "",
+        product.statement,
+      ]
+        .join(" ")
+        .toLowerCase();
+      const hits = terms.filter((term) => haystack.includes(term));
+      if (hits.length < terms.length) return null;
+      const name = `${product.brand} ${product.model}`.toLowerCase();
+      return { product, rank: terms.every((term) => name.includes(term)) ? 0 : 1 };
+    })
+    .filter((entry): entry is { product: Product; rank: number } => entry !== null)
+    .sort((a, b) => a.rank - b.rank)
+    .map((entry) => entry.product);
+}
+
+/**
+ * The two or three we would put beside it on the bench. Same type where there
+ * is one, then the closest in price, because that is the comparison a customer
+ * is actually making. Section 3.
+ */
+export function relatedProducts(product: Product, count = 3) {
+  const sameType = products.filter(
+    (other) =>
+      other.slug !== product.slug &&
+      other.category === product.category &&
+      (product.subcategory
+        ? other.subcategory === product.subcategory
+        : !other.subcategory),
+  );
+  const pool = sameType.length >= count ? sameType : products.filter(
+    (other) => other.slug !== product.slug && other.category === product.category,
+  );
+
+  return pool
+    .map((other) => ({ other, gap: Math.abs(other.price - product.price) }))
+    .sort((a, b) => a.gap - b.gap || a.other.model.localeCompare(b.other.model))
+    .slice(0, count)
+    .map((entry) => entry.other);
+}
+
 export function isCategory(value: string): value is Category {
   return value in categoryNames;
 }

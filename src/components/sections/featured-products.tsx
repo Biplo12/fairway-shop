@@ -1,14 +1,21 @@
 import { Arrow } from "@/components/ui/arrow";
 import { Button } from "@/components/ui/button";
 import { ProductCard } from "@/components/products/product-card";
-import { featuredProducts } from "@/content/products";
+import { rackPicks } from "@/content/products";
 import Link from "next/link";
 
 /**
- * The grid moment. Four things a customer can actually buy, with prices, set
+ * The grid moment. Eight things a customer can actually buy, with prices, set
  * against the wide photographic bands either side of it.
+ *
+ * Picked from the rack rather than flagged by hand: the four the shop stands
+ * behind lead, then one from each remaining shelf on a weekly rotation. Five
+ * hundred products behind four hand picked cards is a shop pretending to be
+ * smaller than it is.
  */
 export function FeaturedProducts() {
+  const picks = rackPicks(8);
+
   return (
     <section className="px-3 pb-3 md:px-5 md:pb-5">
       <div className="rounded-card bg-paper p-6 md:p-10">
@@ -18,14 +25,14 @@ export function FeaturedProducts() {
               On the rack this week
             </p>
             <h2 className="mt-3 text-[clamp(1.75rem,2.8vw,2.5rem)] font-normal leading-[1.05] tracking-[-0.025em]">
-              Four we would fit today
+              Eight we would put in your hands
             </h2>
           </div>
           <Button href="/shop">Shop all equipment</Button>
         </div>
 
         <div className="mt-8 grid gap-3 sm:grid-cols-2 lg:grid-cols-4 md:gap-4">
-          {featuredProducts.map((product) => (
+          {picks.map((product) => (
             <ProductCard key={product.slug} product={product} />
           ))}
         </div>

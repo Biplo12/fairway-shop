@@ -88,13 +88,13 @@ export function FloatingNav() {
           </ul>
 
           <div className="flex items-center gap-1.5">
-            <button
-              type="button"
+            <Link
+              href="/search"
               aria-label="Search"
               className="grid size-9 place-items-center rounded-full text-offwhite transition-colors hover:bg-white/10"
             >
               <Search className="size-4" strokeWidth={1.5} />
-            </button>
+            </Link>
             <CartButton />
             <button
               type="button"

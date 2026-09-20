@@ -2,6 +2,7 @@ import { Hero } from "@/components/hero/hero";
 import { PromoBanner } from "@/components/sections/promo-banner";
 import { FeaturedProducts } from "@/components/sections/featured-products";
 import { Categories } from "@/components/sections/categories";
+import { ClubTypes } from "@/components/sections/club-types";
 import { BrandsBand } from "@/components/sections/brands-band";
 import { SplitFeature } from "@/components/sections/split-feature";
 import { Newsletter } from "@/components/sections/newsletter";
@@ -23,6 +24,10 @@ export default function Home() {
 
         <Reveal>
           <Categories />
+        </Reveal>
+
+        <Reveal>
+          <ClubTypes />
         </Reveal>
 
         <Reveal>

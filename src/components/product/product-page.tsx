@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { Plus } from "lucide-react";
 
-import { AddToBag } from "@/components/cart/add-to-bag";
+import { ProductBuy } from "@/components/product/product-buy";
+import { SideBySide } from "@/components/product/side-by-side";
 import { Footer } from "@/components/layout/footer";
 import { FloatingNav } from "@/components/layout/floating-nav";
 import { PageNav } from "@/components/layout/page-nav";
@@ -10,6 +11,7 @@ import { Media } from "@/components/ui/media";
 import { categoryName, formatPrice, type Product } from "@/content/products";
 import { type ProductPage as Detail } from "@/content/product-pages";
 import { clubFrames, productFrames } from "@/content/product-frames";
+import { productOptions } from "@/content/product-options";
 
 /**
  * One product, laid out the way the reference lays one out: the buy block on a
@@ -94,12 +96,12 @@ export function ProductPage({
                     </p>
                   </div>
 
-                  <div className="mt-5">
-                    <AddToBag
+                  <div className="mt-6">
+                    <ProductBuy
                       slug={product.slug}
                       model={product.model}
                       inStock={product.inStock}
-                      size="large"
+                      options={productOptions(product)}
                     />
                   </div>
 
@@ -244,6 +246,8 @@ export function ProductPage({
               Fairway fitting studio, St. Andrews
             </p>
           </div>
+
+          <SideBySide product={product} />
         </div>
       </main>
       <Footer />

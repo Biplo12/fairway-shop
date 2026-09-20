@@ -14,9 +14,17 @@ import { findProduct, type Product } from "@/content/products";
 
 const STORAGE_KEY = "fairway.bag";
 
-type Line = { slug: string; quantity: number };
+export type Chosen = Record<string, string>;
 
-export type BagLine = { product: Product; quantity: number };
+type Line = { slug: string; quantity: number; options?: Chosen };
+
+export type BagLine = {
+  /** a shaft and a flex make a different line to the same head in another */
+  key: string;
+  product: Product;
+  quantity: number;
+  options?: Chosen;
+};
 
 type Bag = {
   lines: BagLine[];
@@ -25,15 +33,25 @@ type Bag = {
   open: boolean;
   /** true once the saved bag has been read, so the count never flashes */
   ready: boolean;
-  add: (slug: string, quantity?: number) => void;
-  setQuantity: (slug: string, quantity: number) => void;
-  remove: (slug: string) => void;
+  add: (slug: string, quantity?: number, options?: Chosen) => void;
+  setQuantity: (key: string, quantity: number) => void;
+  remove: (key: string) => void;
   /** emptied when an order is placed, not when a customer changes their mind */
   clear: () => void;
   setOpen: (open: boolean) => void;
 };
 
 const BagContext = createContext<Bag | null>(null);
+
+/** two lines of the same club in different specs are two lines, not one */
+function lineKey(slug: string, options?: Chosen) {
+  const entries = Object.entries(options ?? {}).sort(([a], [b]) =>
+    a.localeCompare(b),
+  );
+  return entries.length
+    ? `${slug}|${entries.map(([id, value]) => `${id}:${value}`).join("|")}`
+    : slug;
+}
 
 /** localStorage is the only store. The checkout in front of it takes an order
     as far as a confirmation and no further: there is no till behind this. */
@@ -83,35 +101,40 @@ export function CartProvider({ children }: { children: ReactNode }) {
     if (ready) write(lines);
   }, [lines, ready]);
 
-  const add = useCallback((slug: string, quantity = 1) => {
+  const add = useCallback((slug: string, quantity = 1, options?: Chosen) => {
+    const key = lineKey(slug, options);
     setLines((current) => {
-      const existing = current.find((line) => line.slug === slug);
+      const existing = current.find(
+        (line) => lineKey(line.slug, line.options) === key,
+      );
       if (existing) {
         return current.map((line) =>
-          line.slug === slug
+          lineKey(line.slug, line.options) === key
             ? { ...line, quantity: Math.min(line.quantity + quantity, 99) }
             : line,
         );
       }
-      return [...current, { slug, quantity }];
+      return [...current, { slug, quantity, options }];
     });
     setOpen(true);
   }, []);
 
-  const setQuantity = useCallback((slug: string, quantity: number) => {
+  const setQuantity = useCallback((key: string, quantity: number) => {
     setLines((current) =>
       quantity <= 0
-        ? current.filter((line) => line.slug !== slug)
+        ? current.filter((line) => lineKey(line.slug, line.options) !== key)
         : current.map((line) =>
-            line.slug === slug
+            lineKey(line.slug, line.options) === key
               ? { ...line, quantity: Math.min(quantity, 99) }
               : line,
           ),
     );
   }, []);
 
-  const remove = useCallback((slug: string) => {
-    setLines((current) => current.filter((line) => line.slug !== slug));
+  const remove = useCallback((key: string) => {
+    setLines((current) =>
+      current.filter((line) => lineKey(line.slug, line.options) !== key),
+    );
   }, []);
 
   const clear = useCallback(() => setLines([]), []);
@@ -119,7 +142,16 @@ export function CartProvider({ children }: { children: ReactNode }) {
   const value = useMemo<Bag>(() => {
     const resolved = lines.flatMap((line) => {
       const product = findProduct(line.slug);
-      return product ? [{ product, quantity: line.quantity }] : [];
+      return product
+        ? [
+            {
+              key: lineKey(line.slug, line.options),
+              product,
+              quantity: line.quantity,
+              options: line.options,
+            },
+          ]
+        : [];
     });
 
     return {

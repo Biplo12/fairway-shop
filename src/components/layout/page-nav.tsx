@@ -15,7 +15,12 @@ const tabs = [
  * homepage has its hero. Same numbered tabs, so a customer knows which of the
  * three rooms of the shop they are standing in.
  */
-export function PageNav({ current }: { current: "home" | "shop" | "fitting" }) {
+export function PageNav({
+  current,
+}: {
+  /** "bag" stands on none of the three, so no tab is marked current */
+  current: "home" | "shop" | "fitting" | "bag";
+}) {
   return (
     <nav
       aria-label="Primary"
@@ -56,13 +61,13 @@ export function PageNav({ current }: { current: "home" | "shop" | "fitting" }) {
         </Link>
 
         <div className="flex items-center gap-2">
-          <button
-            type="button"
+          <Link
+            href="/search"
             aria-label="Search"
             className="grid size-9 place-items-center rounded-full border border-offwhite/40 text-offwhite transition-colors hover:bg-white/15"
           >
             <Search className="size-4" strokeWidth={1.5} />
-          </button>
+          </Link>
           <button
             type="button"
             className="hidden size-9 place-items-center rounded-full border border-offwhite/40 text-[0.75rem] text-offwhite transition-colors hover:bg-white/15 sm:grid"

@@ -23,17 +23,25 @@ export default async function ShopCategory({
   searchParams,
 }: {
   params: Promise<{ category: string }>;
-  searchParams: Promise<{ brand?: string; type?: string; page?: string }>;
+  searchParams: Promise<{
+    brand?: string;
+    type?: string;
+    price?: string;
+    sort?: string;
+    page?: string;
+  }>;
 }) {
   const { category } = await params;
   if (!isCategory(category)) notFound();
 
-  const { brand, type, page } = await searchParams;
+  const { brand, type, price, sort, page } = await searchParams;
   return (
     <ShopPage
       category={category}
       brand={brand}
       type={type}
+      price={price}
+      sort={sort}
       page={Number(page) || 1}
     />
   );

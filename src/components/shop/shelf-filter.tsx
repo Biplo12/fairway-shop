@@ -1,7 +1,13 @@
 import Link from "next/link";
 import { SlidersHorizontal } from "lucide-react";
 
-import { products, type Category } from "@/content/products";
+import {
+  inPriceBand,
+  priceBands,
+  products,
+  sortOptions,
+  type Category,
+} from "@/content/products";
 
 /**
  * One control, opened as a disclosure. `details` rather than state, so the
@@ -21,19 +27,32 @@ export function ShelfFilter({
   category,
   brand,
   type,
+  price,
+  sort,
 }: {
   category?: Category;
   brand?: string;
   type?: string;
+  price?: string;
+  sort?: string;
 }) {
   const path = category ? `/shop/${category}` : "/shop";
 
-  const href = (next: { brand?: string; type?: string }) => {
+  const href = (next: {
+    brand?: string;
+    type?: string;
+    price?: string;
+    sort?: string;
+  }) => {
     const query = new URLSearchParams();
     const nextBrand = "brand" in next ? next.brand : brand;
     const nextType = "type" in next ? next.type : type;
+    const nextPrice = "price" in next ? next.price : price;
+    const nextSort = "sort" in next ? next.sort : sort;
     if (nextBrand) query.set("brand", nextBrand.toLowerCase());
     if (nextType) query.set("type", nextType.toLowerCase());
+    if (nextPrice) query.set("price", nextPrice);
+    if (nextSort && nextSort !== "featured") query.set("sort", nextSort);
     const search = query.toString();
     return search ? `${path}?${search}` : path;
   };
@@ -48,12 +67,24 @@ export function ShelfFilter({
   const withinBrand = shelf.filter(
     (product) => !brand || product.brand.toLowerCase() === brand.toLowerCase(),
   );
+  const withinBoth = withinType.filter(
+    (product) => !brand || product.brand.toLowerCase() === brand.toLowerCase(),
+  );
 
-  const brands = [...new Set(withinType.map((product) => product.brand))]
+  const bands = priceBands
+    .map((band) => ({
+      ...band,
+      count: withinBoth.filter((product) => inPriceBand(product, band.slug))
+        .length,
+    }))
+    .filter((band) => band.count > 0);
+
+  const forBrands = withinType.filter((product) => inPriceBand(product, price));
+  const brands = [...new Set(forBrands.map((product) => product.brand))]
     .sort((a, b) => a.localeCompare(b))
     .map((name) => ({
       name,
-      count: withinType.filter((product) => product.brand === name).length,
+      count: forBrands.filter((product) => product.brand === name).length,
     }));
 
   const types = [
@@ -69,7 +100,7 @@ export function ShelfFilter({
       count: withinBrand.filter((product) => product.subcategory === name).length,
     }));
 
-  const on = Boolean(brand || type);
+  const on = Boolean(brand || type || price || sort);
 
   return (
     <details className="group relative">
@@ -120,6 +151,64 @@ export function ShelfFilter({
             </ul>
           </div>
         ) : null}
+
+        {bands.length > 1 ? (
+          <div className="mb-6">
+            <p className="text-[0.6875rem] uppercase tracking-[0.16em] text-olive">
+              Price
+            </p>
+            <ul className="mt-4 flex flex-wrap gap-2">
+              <li>
+                <Chip href={href({ price: undefined })} active={!price}>
+                  Any
+                </Chip>
+              </li>
+              {bands.map((band) => {
+                const active = price === band.slug;
+                return (
+                  <li key={band.slug}>
+                    <Chip
+                      href={href({ price: active ? undefined : band.slug })}
+                      active={active}
+                      label={
+                        active
+                          ? `Clear the ${band.name} filter`
+                          : `Show ${band.name} only`
+                      }
+                    >
+                      {band.name}
+                      <span className="text-[0.6875rem] tabular-nums opacity-55">
+                        {band.count}
+                      </span>
+                    </Chip>
+                  </li>
+                );
+              })}
+            </ul>
+          </div>
+        ) : null}
+
+        <div className="mb-6">
+          <p className="text-[0.6875rem] uppercase tracking-[0.16em] text-olive">
+            Sort
+          </p>
+          <ul className="mt-4 flex flex-wrap gap-2">
+            {sortOptions.map((option) => {
+              const active = (sort ?? "featured") === option.slug;
+              return (
+                <li key={option.slug}>
+                  <Chip
+                    href={href({ sort: option.slug })}
+                    active={active}
+                    label={`Sort by ${option.name}`}
+                  >
+                    {option.name}
+                  </Chip>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
 
         <p className="text-[0.6875rem] uppercase tracking-[0.16em] text-olive">
           Brand

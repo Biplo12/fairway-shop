@@ -11,8 +11,22 @@ export const metadata: Metadata = {
 export default async function Shop({
   searchParams,
 }: {
-  searchParams: Promise<{ brand?: string; type?: string; page?: string }>;
+  searchParams: Promise<{
+    brand?: string;
+    type?: string;
+    price?: string;
+    sort?: string;
+    page?: string;
+  }>;
 }) {
-  const { brand, type, page } = await searchParams;
-  return <ShopPage brand={brand} type={type} page={Number(page) || 1} />;
+  const { brand, type, price, sort, page } = await searchParams;
+  return (
+    <ShopPage
+      brand={brand}
+      type={type}
+      price={price}
+      sort={sort}
+      page={Number(page) || 1}
+    />
+  );
 }
