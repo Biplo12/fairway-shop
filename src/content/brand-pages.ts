@@ -253,8 +253,8 @@ export const brandPages: Record<string, BrandPage> = {
     founded: "1979",
     home: "Huntington Beach, California",
     since: "1996",
-    image: "/images/brands/cleveland-out-of-the-sand.jpg",
-    alt: "A golfer taking sand out of a bunker",
+    image: "/images/brands/cleveland-wedge-on-the-turf.jpg",
+    alt: "A wedge sole and a ball on cut grass, seen from above",
     body: [
       "The RTX is the wedge we sell to golfers who hit two hundred wedge shots a week, because at this price they can replace one when the grooves have gone rather than nursing it through another winter. Four grinds, and the same conversation about turf as any other wedge fitting.",
       "Cleveland sits under the same roof as Srixon, so the wedge and the irons can be built to match without anybody arguing about shafts. Their Huntington Beach putters are the other quiet bargain on the rack.",
@@ -275,8 +275,8 @@ export const brandPages: Record<string, BrandPage> = {
     founded: "1981",
     home: "Missoula, Montana",
     since: "1994",
-    image: "/images/brands/sun-mountain.jpg",
-    alt: "A golfer carrying a stand bag across a footbridge on the course",
+    image: "/images/brands/sun-mountain-stand-bag.jpg",
+    alt: "A red stand bag with its legs out, clubs sorted in the top",
     body: [
       "Sun Mountain is credited with the first stand bag, and the whole company still reads like it was built by people who walk. Straps that sit right, legs that hold on a slope, and rain gear made for weather rather than for a catalogue.",
       "We weigh every carry bag on the same scale before it goes on the rack, because the number on the label and the number on the shoulder are rarely the same. Two kilos is roughly the line between a bag you carry in August and a bag that ends up on a trolley.",
