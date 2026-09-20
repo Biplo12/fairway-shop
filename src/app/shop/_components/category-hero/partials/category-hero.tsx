@@ -89,7 +89,7 @@ export function CategoryHero({
                       active ? `/shop${query}` : `/shop/${entry.slug}${query}`
                     }
                     aria-current={active ? "true" : undefined}
-                    aria-label={
+                    title={
                       active
                         ? `Leave ${entry.name} and see the whole store`
                         : `Show ${entry.name}`

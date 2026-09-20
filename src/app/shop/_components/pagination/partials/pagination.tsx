@@ -50,7 +50,7 @@ export function Pagination({
             <span
               key={`gap-${index}`}
               aria-hidden
-              className="grid size-9 place-items-center text-[0.9375rem] text-charcoal/35"
+              className="grid size-9 place-items-center text-[0.9375rem] text-charcoal/65"
             >
               &hellip;
             </span>
@@ -66,7 +66,7 @@ export function Pagination({
             aria-label={`Page ${number}`}
             className={cn("grid size-9 place-items-center rounded-full text-[0.9375rem] tabular-nums transition-colors", current
                 ? "bg-charcoal text-offwhite"
-                : "text-charcoal/60 hover:bg-charcoal/10 hover:text-charcoal")}
+                : "text-charcoal/65 hover:bg-charcoal/10 hover:text-charcoal")}
           >
             {number}
           </Link>
@@ -114,7 +114,7 @@ function Step({
       href={href}
       rel={rel}
       aria-label={label}
-      className="grid size-9 place-items-center rounded-full text-charcoal/60 transition-colors hover:bg-charcoal/10 hover:text-charcoal"
+      className="grid size-9 place-items-center rounded-full text-charcoal/65 transition-colors hover:bg-charcoal/10 hover:text-charcoal"
     >
       {children}
     </Link>

@@ -65,7 +65,7 @@ export default function Privacy() {
                 </a>{" "}
                 and ask for whoever is behind the counter.
               </p>
-              <p className="mt-6 text-[0.8125rem] leading-[1.6] text-charcoal/50">
+              <p className="mt-6 text-[0.8125rem] leading-[1.6] text-charcoal/65">
                 FAIRWAY is a fictional shop, built as a design project. Nothing
                 typed into this site is sent anywhere or stored on a server.
               </p>

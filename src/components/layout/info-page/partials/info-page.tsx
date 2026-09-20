@@ -77,7 +77,7 @@ export function InfoPage({
               </p>
 
               {footnote ? (
-                <p className="mt-6 text-[0.8125rem] leading-[1.6] text-charcoal/50">
+                <p className="mt-6 text-[0.8125rem] leading-[1.6] text-charcoal/65">
                   {footnote}
                 </p>
               ) : null}

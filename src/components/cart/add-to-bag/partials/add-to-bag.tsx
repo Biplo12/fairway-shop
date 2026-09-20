@@ -23,7 +23,7 @@ export function AddToBag({
 
   if (!inStock) {
     return (
-      <span className={cn("block w-full rounded-control border border-mist text-center uppercase tracking-[0.06em] text-charcoal/40", sizes[size])}>
+      <span className={cn("block w-full rounded-control border border-mist text-center uppercase tracking-[0.06em] text-charcoal/65", sizes[size])}>
         Back in Friday
       </span>
     );
@@ -37,7 +37,7 @@ export function AddToBag({
         event.stopPropagation();
         add(slug);
       }}
-      aria-label={`Add ${model} to bag`}
+      aria-label={`Add to bag: ${model}`}
       className={cn("block w-full rounded-control uppercase tracking-[0.06em] transition-colors", sizes[size], size === "large"
           ? "bg-charcoal text-offwhite hover:bg-charcoal/90"
           : "border border-charcoal/25 hover:border-charcoal hover:bg-charcoal hover:text-offwhite")}

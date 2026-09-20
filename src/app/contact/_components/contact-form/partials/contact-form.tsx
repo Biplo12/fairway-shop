@@ -8,7 +8,7 @@ export function ContactForm() {
   const [sent, setSent] = useState(false);
 
   const field =
-    "w-full rounded-control border border-charcoal/20 bg-white px-4 py-3.5 text-[1rem] text-charcoal placeholder:text-charcoal/35 focus:border-charcoal";
+    "w-full rounded-control border border-charcoal/20 bg-white px-4 py-3.5 text-[1rem] text-charcoal placeholder:text-charcoal/65 focus:border-charcoal";
   const label = "block text-[0.6875rem] uppercase tracking-[0.16em] text-olive";
 
   if (sent) {
@@ -25,7 +25,7 @@ export function ContactForm() {
         <button
           type="button"
           onClick={() => setSent(false)}
-          className="mt-7 text-[0.875rem] uppercase tracking-[0.06em] text-charcoal/60 underline underline-offset-4 hover:text-charcoal"
+          className="mt-7 text-[0.875rem] uppercase tracking-[0.06em] text-charcoal/65 underline underline-offset-4 hover:text-charcoal"
         >
           Write another
         </button>

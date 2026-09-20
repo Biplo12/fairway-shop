@@ -32,7 +32,7 @@ export function ProductBuy({
         <p className="text-[1.75rem] leading-none tabular-nums">
           {formatPrice(price * factor)}
         </p>
-        <p className="text-[0.8125rem] text-charcoal/55">{detail}</p>
+        <p className="text-[0.8125rem] text-charcoal/65">{detail}</p>
       </div>
 
       {options.map((option) => (
@@ -61,7 +61,7 @@ export function ProductBuy({
             })}
           </div>
           {option.note ? (
-            <p className="mt-2 text-[0.8125rem] text-charcoal/55">
+            <p className="mt-2 text-[0.8125rem] text-charcoal/65">
               {option.note}
             </p>
           ) : null}
@@ -73,13 +73,13 @@ export function ProductBuy({
           <button
             type="button"
             onClick={() => add(slug, 1, options.length ? chosen : undefined)}
-            aria-label={`Add ${model} to bag`}
+            aria-label={`Add to bag: ${model}`}
             className="block w-full rounded-control bg-charcoal px-6 py-4 text-[0.875rem] uppercase tracking-[0.06em] text-offwhite transition-colors hover:bg-charcoal/90"
           >
             Add to bag
           </button>
         ) : (
-          <span className="block w-full rounded-control border border-mist px-6 py-4 text-center text-[0.875rem] uppercase tracking-[0.06em] text-charcoal/40">
+          <span className="block w-full rounded-control border border-mist px-6 py-4 text-center text-[0.875rem] uppercase tracking-[0.06em] text-charcoal/65">
             Back in Friday
           </span>
         )}

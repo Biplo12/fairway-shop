@@ -62,7 +62,7 @@ export function BagPage() {
   return (
     <div className="px-6 py-10 md:px-10 md:py-12">
       <nav aria-label="Breadcrumb">
-        <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-charcoal/55">
+        <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-charcoal/65">
           <li>
             <Link href="/" className="hover:text-charcoal">
               Home
@@ -117,12 +117,12 @@ export function BagPage() {
                         {product.model}
                       </Link>
                     </h2>
-                    <p className="mt-1 text-[0.875rem] text-charcoal/55">
+                    <p className="mt-1 text-[0.875rem] text-charcoal/65">
                       {product.detail}
                       {product.fittingRecommended ? ", fit first" : ""}
                     </p>
                   </div>
-                  <p className="text-[1.0625rem] tabular-nums text-charcoal/60">
+                  <p className="text-[1.0625rem] tabular-nums text-charcoal/65">
                     {formatPrice(unitPrice)} each
                   </p>
                 </div>
@@ -157,7 +157,7 @@ export function BagPage() {
                     <button
                       type="button"
                       onClick={() => remove(product.slug)}
-                      className="text-[0.75rem] uppercase tracking-[0.08em] text-charcoal/45 underline underline-offset-4 transition-colors hover:text-charcoal"
+                      className="text-[0.75rem] uppercase tracking-[0.08em] text-charcoal/65 underline underline-offset-4 transition-colors hover:text-charcoal"
                     >
                       Remove
                     </button>
@@ -198,7 +198,7 @@ export function BagPage() {
               </p>
             </div>
 
-            <p className="mt-3 text-[0.8125rem] leading-[1.6] text-charcoal/55">
+            <p className="mt-3 text-[0.8125rem] leading-[1.6] text-charcoal/65">
               {checkoutNotes.vat} Carriage is settled at the checkout, where
               collection is free.
             </p>
@@ -211,7 +211,7 @@ export function BagPage() {
             </Link>
             <Link
               href="/shop"
-              className="mt-3 block text-center text-[0.8125rem] uppercase tracking-[0.06em] text-charcoal/60 underline underline-offset-4 transition-colors hover:text-charcoal"
+              className="mt-3 block text-center text-[0.8125rem] uppercase tracking-[0.06em] text-charcoal/65 underline underline-offset-4 transition-colors hover:text-charcoal"
             >
               Keep looking
             </Link>

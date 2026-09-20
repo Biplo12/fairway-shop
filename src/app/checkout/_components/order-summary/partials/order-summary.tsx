@@ -24,14 +24,14 @@ export function OrderSummary({ option }: { option: DeliveryOption }) {
         </h2>
         <Link
           href="/bag"
-          className="text-[0.75rem] uppercase tracking-[0.16em] text-charcoal/55 underline underline-offset-4 transition-colors hover:text-charcoal"
+          className="text-[0.75rem] uppercase tracking-[0.16em] text-charcoal/65 underline underline-offset-4 transition-colors hover:text-charcoal"
         >
           Edit
         </Link>
       </div>
 
       {!ready ? (
-        <p className="mt-8 text-[0.875rem] text-charcoal/55">
+        <p className="mt-8 text-[0.875rem] text-charcoal/65">
           Reading your bag
         </p>
       ) : (
@@ -95,7 +95,7 @@ export function OrderSummary({ option }: { option: DeliveryOption }) {
             </p>
           </div>
 
-          <p className="mt-3 text-[0.8125rem] leading-[1.6] text-charcoal/55">
+          <p className="mt-3 text-[0.8125rem] leading-[1.6] text-charcoal/65">
             {checkoutNotes.vat}
           </p>
 

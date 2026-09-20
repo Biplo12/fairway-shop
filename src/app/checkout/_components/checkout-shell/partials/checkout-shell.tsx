@@ -40,7 +40,7 @@ export function CheckoutShell({
 
         {children}
 
-        <footer className="flex flex-wrap items-center justify-between gap-x-8 gap-y-3 border-t border-mist px-5 py-6 text-[0.8125rem] text-charcoal/55 md:px-8">
+        <footer className="flex flex-wrap items-center justify-between gap-x-8 gap-y-3 border-t border-mist px-5 py-6 text-[0.8125rem] text-charcoal/65 md:px-8">
           <p>
             Stuck on something? Call the shop on{" "}
             <a

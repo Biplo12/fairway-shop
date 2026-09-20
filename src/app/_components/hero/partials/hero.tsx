@@ -27,7 +27,7 @@ export function Hero() {
                     : "border-b border-b-mist/70 text-charcoal/80 hover:text-charcoal")}
               >
                 <span>{tab.name}</span>
-                <span className="self-start text-charcoal/50">{tab.index}</span>
+                <span className="self-start text-charcoal/65">{tab.index}</span>
               </Link>
             ))}
           </nav>

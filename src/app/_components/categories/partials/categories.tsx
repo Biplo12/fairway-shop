@@ -6,7 +6,16 @@ import { categories } from "../constants";
 
 export function Categories() {
   return (
-    <section className="px-3 pb-3 md:px-5 md:pb-5">
+    <section
+      aria-labelledby="categories-heading"
+      className="px-3 pb-3 md:px-5 md:pb-5"
+    >
+      {/* The cards carry the names, so the section's own heading is there for
+          the outline rather than for the page: without it the card titles sit
+          under the hero with no level between them and the h1. */}
+      <h2 id="categories-heading" className="sr-only">
+        The fastest moving shelves
+      </h2>
       <div className="grid gap-3 md:grid-cols-3 md:gap-4">
         {categories.map((category) => (
           <Link

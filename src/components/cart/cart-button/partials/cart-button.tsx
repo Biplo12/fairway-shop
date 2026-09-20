@@ -19,11 +19,12 @@ export function CartButton({
     <button
       type="button"
       onClick={() => setOpen(true)}
-      aria-label={`Open bag, ${count} ${count === 1 ? "item" : "items"}`}
+      aria-label={`Cart ${count} ${count === 1 ? "item" : "items"}`}
       className={cn("flex items-center gap-2.5 rounded-full py-1 pl-4 pr-1 text-[0.8125rem]", t.pill, className)}
     >
       Cart
       <span
+        aria-hidden
         className={cn("grid size-7 place-items-center rounded-full text-[0.75rem] tabular-nums", t.badge)}
       >
         {ready ? count : ""}

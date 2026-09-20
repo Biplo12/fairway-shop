@@ -38,7 +38,7 @@ export function SearchPage({ query }: { query?: string }) {
                   defaultValue={term}
                   autoComplete="off"
                   placeholder="Brand, model or type. Try wedge, or Chrome Tour."
-                  className="w-full rounded-control border border-charcoal/25 px-4 py-3.5 text-[1rem] placeholder:text-charcoal/40 focus:border-charcoal"
+                  className="w-full rounded-control border border-charcoal/25 px-4 py-3.5 text-[1rem] placeholder:text-charcoal/65 focus:border-charcoal"
                 />
                 <button
                   type="submit"
@@ -53,7 +53,7 @@ export function SearchPage({ query }: { query?: string }) {
             {term ? (
               <p className="mt-8 text-[1.375rem] leading-none">
                 {results.length} {results.length === 1 ? "result" : "results"}
-                <span className="text-charcoal/45"> for {term}</span>
+                <span className="text-charcoal/65"> for {term}</span>
               </p>
             ) : (
               <div className="mt-8 flex flex-wrap gap-2">

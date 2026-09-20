@@ -82,22 +82,22 @@ export function ShopPage({
               <h2 className="text-[1.375rem] leading-none">
                 {shelf.length} {shelf.length === 1 ? "result" : "results"}
                 {typeLabel ? (
-                  <span className="capitalize text-charcoal/45">
+                  <span className="capitalize text-charcoal/65">
                     , {typeLabel}
                   </span>
                 ) : null}
                 {brandLabel ? (
-                  <span className="text-charcoal/45">, {brandLabel}</span>
+                  <span className="text-charcoal/65">, {brandLabel}</span>
                 ) : null}
                 {priceLabel ? (
-                  <span className="text-charcoal/45">, {priceLabel}</span>
+                  <span className="text-charcoal/65">, {priceLabel}</span>
                 ) : null}
               </h2>
               <div className="flex items-center gap-4">
                 {brand || type || price || sort ? (
                   <Link
                     href={category ? `/shop/${category}` : "/shop"}
-                    className="text-[0.8125rem] uppercase tracking-[0.06em] text-charcoal/60 underline underline-offset-4 hover:text-charcoal"
+                    className="text-[0.8125rem] uppercase tracking-[0.06em] text-charcoal/65 underline underline-offset-4 hover:text-charcoal"
                   >
                     Clear
                   </Link>

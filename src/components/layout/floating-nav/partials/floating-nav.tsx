@@ -128,7 +128,7 @@ export function FloatingNav() {
                   onClick={() => setMenuOpen(false)}
                   className="flex items-baseline gap-5 py-5"
                 >
-                  <span className="text-[0.75rem] uppercase tracking-[0.16em] text-offwhite/45">
+                  <span className="text-[0.75rem] uppercase tracking-[0.16em] text-offwhite/55">
                     {link.index}
                   </span>
                   <span className="text-[2rem] font-normal leading-none tracking-[-0.02em]">

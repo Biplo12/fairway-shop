@@ -72,7 +72,7 @@ function Section({
         </h2>
       </div>
       {note ? (
-        <p className="ml-9 mt-3 max-w-[34rem] text-[0.875rem] leading-[1.6] text-charcoal/60">
+        <p className="ml-9 mt-3 max-w-[34rem] text-[0.875rem] leading-[1.6] text-charcoal/65">
           {note}
         </p>
       ) : null}
@@ -138,7 +138,7 @@ export function CheckoutForm() {
         className="px-6 py-10 md:px-10 md:py-12 lg:border-r lg:border-mist"
       >
         <nav aria-label="Breadcrumb">
-          <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-charcoal/55">
+          <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-charcoal/65">
             <li>
               <Link href="/bag" className="hover:text-charcoal">
                 Your bag
@@ -227,7 +227,7 @@ export function CheckoutForm() {
                     <span className="flex flex-1 flex-wrap items-baseline justify-between gap-x-6 gap-y-1">
                       <span>
                         <span className="block text-[1rem]">{entry.name}</span>
-                        <span className="mt-1 block text-[0.875rem] leading-[1.5] text-charcoal/60">
+                        <span className="mt-1 block text-[0.875rem] leading-[1.5] text-charcoal/65">
                           {entry.note}
                         </span>
                       </span>
@@ -277,7 +277,7 @@ export function CheckoutForm() {
                     />
                     <span>
                       <span className="block text-[1rem]">{entry.name}</span>
-                      <span className="mt-1 block text-[0.875rem] leading-[1.5] text-charcoal/60">
+                      <span className="mt-1 block text-[0.875rem] leading-[1.5] text-charcoal/65">
                         {available
                           ? entry.note
                           : "Choose collection above and you can settle it in the shop."}
@@ -317,7 +317,7 @@ export function CheckoutForm() {
           >
             {placing ? "Placing the order" : "Place the order"}
           </button>
-          <p className="mt-4 max-w-[36rem] text-[0.8125rem] leading-[1.6] text-charcoal/55">
+          <p className="mt-4 max-w-[36rem] text-[0.8125rem] leading-[1.6] text-charcoal/65">
             {checkoutNotes.demo}
           </p>
         </div>

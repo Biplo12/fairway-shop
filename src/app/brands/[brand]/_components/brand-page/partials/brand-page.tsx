@@ -42,7 +42,7 @@ export function BrandPage({ brand }: { brand: Brand }) {
               <div className="flex flex-col justify-between gap-12 p-6 md:p-12 lg:p-14">
                 <div>
                   <nav aria-label="Breadcrumb">
-                    <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-charcoal/55">
+                    <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-charcoal/65">
                       <li>
                         <Link href="/" className="hover:text-charcoal">
                           Home
@@ -164,7 +164,7 @@ export function BrandPage({ brand }: { brand: Brand }) {
                       </li>
                     ))}
                   </ul>
-                  <p className="mt-6 border-t border-charcoal/12 pt-5 text-[0.875rem] leading-[1.6] text-charcoal/60">
+                  <p className="mt-6 border-t border-charcoal/12 pt-5 text-[0.875rem] leading-[1.6] text-charcoal/65">
                     {brand.note}. Anything not on the rack is ordered in and
                     fitted here first.
                   </p>

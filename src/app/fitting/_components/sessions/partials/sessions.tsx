@@ -20,7 +20,7 @@ export function Sessions() {
             the wrong one we will say so at the door and swap it.
           </p>
         </div>
-        <p className="max-w-[20rem] text-[0.875rem] leading-[1.6] text-charcoal/60">
+        <p className="max-w-[20rem] text-[0.875rem] leading-[1.6] text-charcoal/65">
           {feeNote}
         </p>
       </div>

@@ -246,7 +246,8 @@ function Chip({
     <Link
       href={href}
       aria-current={active ? "true" : undefined}
-      aria-label={label}
+      /* No aria-label: the chip's own text is the name, and an aria-label that
+         does not contain it leaves voice control with nothing to say. */
       title={label}
       className={cn("inline-flex items-center gap-2 rounded-full border px-3.5 py-1.5 text-[0.8125rem] transition-colors", active
           ? "border-charcoal bg-charcoal text-offwhite"

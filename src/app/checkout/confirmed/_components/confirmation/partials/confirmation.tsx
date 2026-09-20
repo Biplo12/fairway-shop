@@ -118,7 +118,7 @@ export function Confirmation({
                     <div className="flex min-w-0 flex-1 items-baseline justify-between gap-4">
                       <p className="min-w-0 text-[0.9375rem]">
                         {product.model}
-                        <span className="text-charcoal/50">
+                        <span className="text-charcoal/65">
                           {" "}
                           &times; {quantity}
                         </span>
@@ -146,7 +146,7 @@ export function Confirmation({
                   {formatPrice(placed.subtotal + carriage)}
                 </p>
               </div>
-              <p className="mt-3 text-[0.8125rem] leading-[1.6] text-charcoal/55">
+              <p className="mt-3 text-[0.8125rem] leading-[1.6] text-charcoal/65">
                 {checkoutNotes.vat}
               </p>
             </>
@@ -174,7 +174,7 @@ export function Confirmation({
         </Link>
       </div>
 
-      <p className="mt-8 max-w-[36rem] text-[0.8125rem] leading-[1.6] text-charcoal/55">
+      <p className="mt-8 max-w-[36rem] text-[0.8125rem] leading-[1.6] text-charcoal/65">
         {checkoutNotes.demo}
       </p>
     </div>

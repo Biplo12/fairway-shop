@@ -32,7 +32,7 @@ export default function Contact() {
           <div className="grid lg:grid-cols-[1.25fr_1fr]">
             <div className="px-6 pb-10 pt-12 md:px-12 md:pb-10 md:pt-14">
               <nav aria-label="Breadcrumb">
-                <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-charcoal/55">
+                <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-charcoal/65">
                   <li>
                     <Link href="/" className="hover:text-charcoal">
                       Home
@@ -96,7 +96,7 @@ export default function Contact() {
                 <br />
                 KY16 9JA
               </address>
-              <p className="mt-4 text-[0.875rem] leading-[1.6] text-charcoal/55">
+              <p className="mt-4 text-[0.875rem] leading-[1.6] text-charcoal/65">
                 Parking behind the shop, three spaces, first come. The studio is
                 through the shop, past the rack, on the left.
               </p>
@@ -110,13 +110,13 @@ export default function Contact() {
                 {hours.map((entry) => (
                   <div key={entry.days} className="flex justify-between gap-6">
                     <dt>{entry.days}</dt>
-                    <dd className="tabular-nums text-charcoal/55">
+                    <dd className="tabular-nums text-charcoal/65">
                       {entry.time}
                     </dd>
                   </div>
                 ))}
               </dl>
-              <p className="mt-4 text-[0.875rem] leading-[1.6] text-charcoal/55">
+              <p className="mt-4 text-[0.875rem] leading-[1.6] text-charcoal/65">
                 Closed Christmas Day and Boxing Day. The last fitting starts
                 ninety minutes before we close.
               </p>
@@ -138,7 +138,7 @@ export default function Contact() {
                   </li>
                 ))}
               </ul>
-              <p className="mt-4 text-[0.875rem] leading-[1.6] text-charcoal/55">
+              <p className="mt-4 text-[0.875rem] leading-[1.6] text-charcoal/65">
                 The telephone is answered faster than the inbox, and on a
                 Saturday morning it is answered slowest of all.
               </p>

@@ -55,7 +55,7 @@ export default function Error({
                 </Link>
               </div>
 
-              <p className="mt-10 border-t border-mist pt-6 text-[0.9375rem] leading-[1.65] text-charcoal/60">
+              <p className="mt-10 border-t border-mist pt-6 text-[0.9375rem] leading-[1.65] text-charcoal/65">
                 Ring{" "}
                 <a
                   href="tel:+441334555187"

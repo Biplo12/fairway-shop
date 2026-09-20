@@ -32,7 +32,7 @@ export function ProductCard({ product }: { product: Product }) {
             <p className="text-[1rem] leading-none">
               {formatPrice(product.price)}
             </p>
-            <p className="mt-1.5 text-[0.6875rem] text-charcoal/55">
+            <p className="mt-1.5 text-[0.6875rem] text-charcoal/65">
               {product.detail}
             </p>
           </div>

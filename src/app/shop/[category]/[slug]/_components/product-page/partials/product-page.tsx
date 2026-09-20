@@ -44,7 +44,7 @@ export function ProductPage({
 
                 <div className="flex flex-col border-t border-mist bg-white p-6 md:rounded-card md:border-0 md:p-9">
                   <nav aria-label="Breadcrumb">
-                    <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-charcoal/50">
+                    <ol className="flex flex-wrap items-center gap-2 text-[0.8125rem] text-charcoal/65">
                       <li>
                         <Link href="/shop" className="hover:text-charcoal">
                           Equipment store
@@ -83,7 +83,7 @@ export function ProductPage({
                     />
                   </div>
 
-                  <p className="mt-3 text-[0.8125rem] leading-[1.5] text-charcoal/55">
+                  <p className="mt-3 text-[0.8125rem] leading-[1.5] text-charcoal/65">
                     {product.fittingRecommended ? (
                       <>
                         Worth fitting before you buy it. The session fee comes
@@ -240,7 +240,7 @@ function Disclosure({
       <summary className="flex cursor-pointer select-none items-center justify-between gap-4 py-4 text-[0.875rem] uppercase tracking-[0.06em] [&::-webkit-details-marker]:hidden">
         {title}
         <Plus
-          className="size-4 shrink-0 text-charcoal/50 transition-transform duration-200 group-open:rotate-45"
+          className="size-4 shrink-0 text-charcoal/65 transition-transform duration-200 group-open:rotate-45"
           strokeWidth={1.75}
         />
       </summary>

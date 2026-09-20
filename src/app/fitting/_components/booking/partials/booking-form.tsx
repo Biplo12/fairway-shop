@@ -55,7 +55,7 @@ export function BookingForm({
   const [sent, setSent] = useState(false);
 
   const field =
-    "w-full rounded-control border border-offwhite/35 bg-white/10 px-4 py-3.5 text-[1rem] text-offwhite placeholder:text-offwhite/45 focus:border-offwhite/80";
+    "w-full rounded-control border border-offwhite/35 bg-white/10 px-4 py-3.5 text-[1rem] text-offwhite placeholder:text-offwhite/55 focus:border-offwhite/80";
   const label =
     "block text-[0.6875rem] uppercase tracking-[0.16em] text-offwhite/55";
 

@@ -30,7 +30,7 @@ export function PageNav({
               >
                 <span>{tab.name}</span>
                 <span
-                  className={active ? "text-offwhite/60" : "text-offwhite/35"}
+                  className={active ? "text-offwhite/60" : "text-offwhite/55"}
                 >
                   {tab.index}
                 </span>

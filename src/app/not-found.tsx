@@ -51,7 +51,7 @@ export default function NotFound() {
                   type="search"
                   autoComplete="off"
                   placeholder="Brand, model or type. Try wedge, or Pro V1."
-                  className="w-full rounded-control border border-charcoal/25 px-4 py-3.5 text-[1rem] placeholder:text-charcoal/40 focus:border-charcoal"
+                  className="w-full rounded-control border border-charcoal/25 px-4 py-3.5 text-[1rem] placeholder:text-charcoal/65 focus:border-charcoal"
                 />
                 <button
                   type="submit"
@@ -101,7 +101,7 @@ export default function NotFound() {
               </div>
             </div>
 
-            <p className="mt-12 max-w-[38rem] text-[0.9375rem] leading-[1.65] text-charcoal/60">
+            <p className="mt-12 max-w-[38rem] text-[0.9375rem] leading-[1.65] text-charcoal/65">
               If you followed a link from somewhere and it landed here, ring the
               shop on{" "}
               <a

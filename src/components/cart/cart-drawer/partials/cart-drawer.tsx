@@ -132,7 +132,7 @@ export function CartDrawer() {
                       <p className="mt-1 truncate text-[1rem]">
                         {product.model}
                       </p>
-                      <p className="mt-0.5 text-[0.8125rem] text-charcoal/55">
+                      <p className="mt-0.5 text-[0.8125rem] text-charcoal/65">
                         {options && Object.keys(options).length
                           ? Object.values(options).join(", ")
                           : product.detail}
@@ -144,7 +144,7 @@ export function CartDrawer() {
                       tabIndex={open ? 0 : -1}
                       onClick={() => remove(key)}
                       aria-label={`Remove ${product.model}`}
-                      className="shrink-0 text-[0.75rem] uppercase tracking-[0.08em] text-charcoal/45 underline underline-offset-4 transition-colors hover:text-charcoal"
+                      className="shrink-0 text-[0.75rem] uppercase tracking-[0.08em] text-charcoal/65 underline underline-offset-4 transition-colors hover:text-charcoal"
                     >
                       Remove
                     </button>
@@ -198,7 +198,7 @@ export function CartDrawer() {
                 {formatPrice(subtotal)}
               </p>
             </div>
-            <p className="mt-2 text-[0.8125rem] leading-[1.5] text-charcoal/55">
+            <p className="mt-2 text-[0.8125rem] leading-[1.5] text-charcoal/65">
               {fittingLines > 0
                 ? "Clubs in this bag are worth fitting first. The session fee comes off the price."
                 : "Delivery calculated at checkout. Free over £75."}
@@ -212,7 +212,7 @@ export function CartDrawer() {
             >
               Checkout
             </Link>
-            <div className="mt-3 flex items-center justify-center gap-6 text-[0.8125rem] uppercase tracking-[0.06em] text-charcoal/60">
+            <div className="mt-3 flex items-center justify-center gap-6 text-[0.8125rem] uppercase tracking-[0.06em] text-charcoal/65">
               <Link
                 href="/bag"
                 tabIndex={open ? 0 : -1}

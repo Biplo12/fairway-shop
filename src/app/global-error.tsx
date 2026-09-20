@@ -51,7 +51,7 @@ export default function GlobalError({
             </div>
 
             {error.digest ? (
-              <p className="mt-8 border-t border-mist pt-5 text-[0.875rem] text-charcoal/55">
+              <p className="mt-8 border-t border-mist pt-5 text-[0.875rem] text-charcoal/65">
                 Reference{" "}
                 <span className="font-mono text-charcoal/80">
                   {error.digest}

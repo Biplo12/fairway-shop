@@ -49,7 +49,7 @@ export function SessionSuits({ session, page }: SessionViewProps) {
                 </li>
               ))}
             </ul>
-            <p className="mt-6 border-t border-charcoal/12 pt-5 text-[0.875rem] leading-[1.6] text-charcoal/60">
+            <p className="mt-6 border-t border-charcoal/12 pt-5 text-[0.875rem] leading-[1.6] text-charcoal/65">
               {session.duration} in the bay, {session.price}, and the fee comes
               off anything you buy on the day.
             </p>

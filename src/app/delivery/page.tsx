@@ -30,7 +30,7 @@ export default function Delivery() {
             >
               <dt className="text-[1.0625rem]">
                 {option.name}
-                <span className="mt-1 block text-[0.875rem] leading-[1.5] text-charcoal/60">
+                <span className="mt-1 block text-[0.875rem] leading-[1.5] text-charcoal/65">
                   {option.note}
                 </span>
               </dt>
