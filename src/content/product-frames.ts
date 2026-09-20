@@ -101,18 +101,18 @@ export const clubFrames: Record<string, { band: Frame; note: Frame }> = {
   },
   hybrids: {
     band: {
-      image: "/images/product/the-long-approach.jpg",
-      alt: "A long links hole with bunkers short of the green",
+      image: "/images/product/an-iron-on-the-turf.jpg",
+      alt: "Balls and an iron head sitting on the turf in low sun",
     },
     note: {
-      image: "/images/product/clubs-at-the-range.jpg",
-      alt: "Clubs standing in a bag at the end of a range mat",
+      image: "/images/product/two-clubs-on-the-turf.jpg",
+      alt: "Two clubs lying together on cut grass",
     },
   },
   wedges: {
     band: {
-      image: "/images/product/out-of-the-bunker.jpg",
-      alt: "A golfer playing out of a bunker in low evening light",
+      image: "/images/product/sand-at-dusk.jpg",
+      alt: "A golfer taking sand out of a bunker at dusk",
     },
     note: {
       image: "/images/product/wedge-behind-the-ball.jpg",
@@ -121,8 +121,8 @@ export const clubFrames: Record<string, { band: Frame; note: Frame }> = {
   },
   putters: {
     band: {
-      image: "/images/product/over-the-putt.jpg",
-      alt: "A putter and a ball at a golfer's feet on the green",
+      image: "/images/product/on-the-putting-green.jpg",
+      alt: "A putter and ball on the green beside a golfer",
     },
     note: {
       image: "/images/product/blade-behind-the-ball.jpg",
