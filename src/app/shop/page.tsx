@@ -11,8 +11,8 @@ export const metadata: Metadata = {
 export default async function Shop({
   searchParams,
 }: {
-  searchParams: Promise<{ brand?: string; page?: string }>;
+  searchParams: Promise<{ brand?: string; type?: string; page?: string }>;
 }) {
-  const { brand, page } = await searchParams;
-  return <ShopPage brand={brand} page={Number(page) || 1} />;
+  const { brand, type, page } = await searchParams;
+  return <ShopPage brand={brand} type={type} page={Number(page) || 1} />;
 }

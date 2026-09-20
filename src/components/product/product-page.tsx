@@ -118,19 +118,30 @@ export function ProductPage({
                   <div className="mt-7 border-t border-mist">
                     <Disclosure title="Specifications">
                       <dl className="grid gap-x-8 gap-y-3 sm:grid-cols-2">
-                        {detail.specs.map((spec) => (
-                          <div
-                            key={spec.label}
-                            className="flex items-baseline justify-between gap-4 border-b border-mist pb-2"
-                          >
-                            <dt className="text-[0.6875rem] uppercase tracking-[0.16em] text-olive">
-                              {spec.label}
-                            </dt>
-                            <dd className="text-right text-[0.9375rem]">
-                              {spec.value}
-                            </dd>
-                          </div>
-                        ))}
+                        {detail.specs.map((spec, index) => {
+                          // the rule under the last row would sit against the
+                          // panel's own edge, and the grid is one column on a
+                          // phone and two above it
+                          const inLastRow =
+                            index >=
+                            detail.specs.length -
+                              (detail.specs.length % 2 === 0 ? 2 : 1);
+                          return (
+                            <div
+                              key={spec.label}
+                              className={`flex items-baseline justify-between gap-4 border-b border-mist pb-2 last:border-0 last:pb-0 ${
+                                inLastRow ? "sm:border-0 sm:pb-0" : ""
+                              }`}
+                            >
+                              <dt className="text-[0.6875rem] uppercase tracking-[0.16em] text-olive">
+                                {spec.label}
+                              </dt>
+                              <dd className="text-right text-[0.9375rem]">
+                                {spec.value}
+                              </dd>
+                            </div>
+                          );
+                        })}
                       </dl>
                     </Disclosure>
                     <Disclosure title="Who it suits">

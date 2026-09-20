@@ -95,14 +95,14 @@ export const clubFrames: Record<string, { band: Frame; note: Frame }> = {
       alt: "A fairway wood head and three balls lying on cut grass",
     },
     note: {
-      image: "/images/product/a-basket-at-the-range.jpg",
-      alt: "A basket of range balls beside a club on the mat",
+      image: "/images/product/a-wood-behind-the-ball.jpg",
+      alt: "A fairway wood set behind a ball on cut grass",
     },
   },
   hybrids: {
     band: {
-      image: "/images/product/a-hybrid-at-address.jpg",
-      alt: "A hybrid set behind a ball at address on cut grass",
+      image: "/images/product/a-hybrid-off-the-turf.jpg",
+      alt: "A hybrid set behind a ball on cut grass",
     },
     note: {
       image: "/images/product/two-clubs-on-the-turf.jpg",
@@ -125,8 +125,8 @@ export const clubFrames: Record<string, { band: Frame; note: Frame }> = {
       alt: "A mallet putter and a ball beside the hole on a green",
     },
     note: {
-      image: "/images/product/blade-behind-the-ball.jpg",
-      alt: "A blade putter set behind a ball on the green",
+      image: "/images/product/blade-on-the-green.jpg",
+      alt: "A blade putter set behind a ball on a putting green",
     },
   },
 };

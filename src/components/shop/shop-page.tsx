@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-import { BrandFilter } from "@/components/shop/brand-filter";
+import { ShelfFilter } from "@/components/shop/shelf-filter";
 import { CategoryHero } from "@/components/shop/category-hero";
 import { Pagination } from "@/components/shop/pagination";
 import { ProductCard } from "@/components/products/product-card";
@@ -26,16 +26,19 @@ const PAGE_SIZE = 16;
 export function ShopPage({
   category,
   brand,
+  type,
   page = 1,
 }: {
   category?: Category;
   brand?: string;
+  type?: string;
   page?: number;
 }) {
   const shelf = products.filter(
     (product) =>
       (!category || product.category === category) &&
-      (!brand || product.brand.toLowerCase() === brand.toLowerCase()),
+      (!brand || product.brand.toLowerCase() === brand.toLowerCase()) &&
+      (!type || product.subcategory?.toLowerCase() === type.toLowerCase()),
   );
 
   const pages = Math.max(1, Math.ceil(shelf.length / PAGE_SIZE));
@@ -46,6 +49,7 @@ export function ShopPage({
   const pageHref = (next: number) => {
     const query = new URLSearchParams();
     if (brand) query.set("brand", brand.toLowerCase());
+    if (type) query.set("type", type.toLowerCase());
     if (next > 1) query.set("page", String(next));
     const search = query.toString();
     return search ? `${path}?${search}` : path;
@@ -56,6 +60,7 @@ export function ShopPage({
   // only when a brand is actually being filtered on, and spelled the way
   // the catalogue spells it rather than the way the URL did
   const brandLabel = brand ? (shelf[0]?.brand ?? brand) : undefined;
+  const typeLabel = type ? (shelf[0]?.subcategory ?? type) : undefined;
 
   return (
     <>
@@ -79,12 +84,17 @@ export function ShopPage({
             <div className="flex flex-wrap items-center justify-between gap-x-6 gap-y-4">
               <h2 className="text-[1.375rem] leading-none">
                 {shelf.length} {shelf.length === 1 ? "result" : "results"}
+                {typeLabel ? (
+                  <span className="capitalize text-charcoal/45">
+                    , {typeLabel}
+                  </span>
+                ) : null}
                 {brandLabel ? (
                   <span className="text-charcoal/45">, {brandLabel}</span>
                 ) : null}
               </h2>
               <div className="flex items-center gap-4">
-                {brand ? (
+                {brand || type ? (
                   <Link
                     href={category ? `/shop/${category}` : "/shop"}
                     className="text-[0.8125rem] uppercase tracking-[0.06em] text-charcoal/60 underline underline-offset-4 hover:text-charcoal"
@@ -92,7 +102,7 @@ export function ShopPage({
                     Clear
                   </Link>
                 ) : null}
-                <BrandFilter category={category} brand={brand} />
+                <ShelfFilter category={category} brand={brand} type={type} />
               </div>
             </div>
 

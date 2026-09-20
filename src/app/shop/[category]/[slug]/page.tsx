@@ -23,7 +23,7 @@ export async function generateMetadata({
 
   return {
     title: `${product.brand} ${product.model}`,
-    description: productPage(slug)?.description ?? product.statement,
+    description: productPage(product).description,
   };
 }
 
@@ -34,9 +34,8 @@ export default async function Product({
 }) {
   const { category, slug } = await params;
   const product = findProduct(slug);
-  const detail = productPage(slug);
 
-  if (!product || !detail || product.category !== category) notFound();
+  if (!product || product.category !== category) notFound();
 
-  return <ProductPage product={product} detail={detail} />;
+  return <ProductPage product={product} detail={productPage(product)} />;
 }

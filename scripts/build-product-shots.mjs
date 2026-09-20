@@ -56,15 +56,19 @@ async function contentBox(file) {
   return { minX, minY, maxX, maxY, frame: info, background: bg };
 }
 
+const failed = [];
+
 for (const file of fs.readdirSync(SOURCE).sort()) {
   const slug = path.parse(file).name;
   const input = path.join(SOURCE, file);
+  try {
   const { minX, minY, maxX, maxY, frame, background } = await contentBox(input);
 
   // Some studios shoot on a light grey rather than paper white. Lift the whole
   // frame until that grey clips to white, which leaves the drop shadow intact
-  // and barely touches the product.
-  const lift = 255 / Math.max(...background);
+  // and barely touches the product. A shot on black has nothing to lift, and a
+  // runaway multiplier would blow the product out, so it is clamped.
+  const lift = Math.min(255 / Math.max(...background, 1), 1.25);
 
   const width = maxX - minX + 1;
   const height = maxY - minY + 1;
@@ -103,4 +107,14 @@ for (const file of fs.readdirSync(SOURCE).sort()) {
       `${lift > 1.01 ? `  lift ${lift.toFixed(3)}` : ""}` +
       `${bleedTop || bleedBottom || bleedLeft || bleedRight ? "  (bleeds)" : ""}`,
   );
+  } catch (error) {
+    // One unusable source should not stop the rack being rebuilt.
+    failed.push(`${slug}: ${error.message}`);
+  }
+}
+
+if (failed.length) {
+  console.log(`
+${failed.length} source(s) skipped:`);
+  for (const line of failed) console.log(`  ${line}`);
 }

@@ -1,6 +1,8 @@
 "use client";
 
 import Image from "next/image";
+
+import { Lens } from "@/components/ui/lens";
 import { useState } from "react";
 
 /**
@@ -25,17 +27,14 @@ export function ProductGallery({
 
   return (
     <div className="flex flex-col gap-4">
-      <div className="overflow-hidden rounded-card bg-white">
-        <Image
-          src={current}
-          alt={alt}
-          width={1000}
-          height={1000}
-          priority
-          sizes="(min-width: 1024px) 45vw, 92vw"
-          className="aspect-square w-full object-cover"
-        />
-      </div>
+      <Lens
+        src={current}
+        alt={alt}
+        zoom={2.4}
+        priority
+        sizes="(min-width: 1024px) 45vw, 92vw"
+        className="aspect-square w-full rounded-card bg-white"
+      />
 
       {images.length > 1 ? (
         <ul className="flex flex-wrap gap-2">

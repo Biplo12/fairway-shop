@@ -1,3 +1,6 @@
+import { generatedPage } from "@/content/product-copy";
+import type { Product } from "@/content/products";
+
 /**
  * What the shop has to say about a product, kept apart from the catalogue so
  * products.ts stays a list of things with prices.
@@ -2787,6 +2790,13 @@ export const productPages: Record<string, ProductPage> = {
   },
 };
 
-export function productPage(slug: string) {
-  return productPages[slug];
+/**
+ * A bespoke page if the shop wrote one, otherwise one built from the product's
+ * own data. Either way a product on the rack always has a page behind it.
+ */
+export function productPage(product: Product): ProductPage {
+  const page = productPages[product.slug] ?? generatedPage(product);
+  return page.gallery || !product.gallery
+    ? page
+    : { ...page, gallery: product.gallery };
 }
