@@ -63,12 +63,12 @@ export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
   },
   accessories: {
     band: {
-      image: "/images/product/what-hangs-off-the-bag.jpg",
-      alt: "A glove and a towel clipped to the outside of a bag",
+      image: "/images/product/a-bag-of-balls-on-the-green.jpg",
+      alt: "A mesh bag of balls spilling onto a practice green",
     },
     note: {
-      image: "/images/product/gear-in-the-bag.jpg",
-      alt: "Woods and irons standing in a bag, lit against black",
+      image: "/images/product/headcovers-in-the-bag.jpg",
+      alt: "Headcovers standing among the irons in a bag",
     },
   },
 };

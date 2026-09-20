@@ -905,6 +905,1731 @@ export const productPages: Record<string, ProductPage> = {
     suits: "Blade players who want the face to stay as it came.",
   },
 
+  "ping-hoofer": {
+    tagline: "The original",
+    description:
+      "The bag every other carry bag has been answering since. Heavier than the Lite, lighter than the Tour, and the one we sell when somebody has no strong opinion and wants us to have one.",
+    headline: "The one everything else answers",
+    marks: ["2.3 kg", "5 way top", "Double strap"],
+    notes: [
+      "Two point three kilos, which is the middle of our carry bag rack.",
+      "Five way top. Enough separation for fourteen clubs without the weight of fourteen slots.",
+      "If you have no strong view, buy this one. That is not a cop out, it is the answer.",
+      "Weighed on the shop scale like everything else here.",
+    ],
+    counter:
+      "When someone asks which bag, and has no other requirement, this is the one. It has been for twenty years.",
+    specs: [
+      { label: "Weight", value: "2.3 kg empty" },
+      { label: "Top", value: "Five way" },
+      { label: "Strap", value: "Double, adjustable" },
+      { label: "Legs", value: "Stand" },
+    ],
+    suits: "Walkers who want one bag and do not want to think about it again.",
+  },
+
+  "ping-moonlander": {
+    tagline: "Between the two",
+    description:
+      "Heavier than the Moonlite, lighter than the Hoofer. It exists because a lot of people want a bag for eighteen holes that still feels like nothing on the back nine.",
+    headline: "Light enough for eighteen",
+    marks: ["1.6 kg", "4 way top", "Double strap"],
+    notes: [
+      "One point six kilos, which is the gap between the Moonlite and the Hoofer.",
+      "Four way top. Not fourteen slots, but enough to keep a full set apart.",
+      "Double strap on a bag this light, which is unusual and is why it works over eighteen.",
+      "Pockets are minimal. That is where the weight was saved.",
+    ],
+    counter:
+      "Most people buy too much bag. Carry a loaded one round the shop before you decide what you need.",
+    specs: [
+      { label: "Weight", value: "1.6 kg empty" },
+      { label: "Top", value: "Four way" },
+      { label: "Strap", value: "Double" },
+      { label: "Legs", value: "Stand" },
+    ],
+    suits: "Walkers playing full rounds who find the Hoofer more than they need.",
+  },
+
+  "srixon-z-star-diamond": {
+    tagline: "Built around the wedges",
+    description:
+      "A Z-Star tuned for greenside spin rather than distance. If your scoring happens inside a hundred yards and you want the ball to help, this is the one built for that.",
+    headline: "For the golf inside a hundred yards",
+    marks: ["Urethane cover", "High wedge spin", "Dozen"],
+    notes: [
+      "More spin on partial wedges than the standard Z-Star, which is the whole point.",
+      "You give a little back off the tee. Most players never notice it.",
+      "If you score with your wedges, this ball helps. If you score with your driver, it does not.",
+      "Two rounds before you judge it. Wedge spin shows up slowly.",
+    ],
+    counter:
+      "Pick a ball for the part of your game that scores. For most decent players that is inside a hundred yards.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Cover", value: "Urethane" },
+      { label: "Spin", value: "High on wedges" },
+      { label: "Fitting", value: "Forty pounds, forty five minutes" },
+    ],
+    suits: "Good short games. Players who miss greens and get up and down anyway.",
+  },
+
+  "srixon-q-star-tour": {
+    tagline: "Tour cover, softer core",
+    description:
+      "A urethane cover on a ball that does not need tour speed to compress. The sensible middle of the rack, and the ball a lot of people should be playing instead of the one above it.",
+    headline: "The sensible middle",
+    marks: ["Urethane cover", "Lower compression", "Dozen"],
+    notes: [
+      "Urethane cover, so it does check on the green, unlike anything cheaper.",
+      "Lower compression, which suits swing speeds under about ninety five.",
+      "A third less than a tour ball and most players cannot tell on the course.",
+      "Yellow is easier to follow in flat light, which we get a lot of here.",
+    ],
+    counter:
+      "The number of people playing a tour ball who would score better on this one is higher than anybody in the trade admits.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Cover", value: "Urethane" },
+      { label: "Compression", value: "Lower" },
+      { label: "Colour", value: "White or yellow" },
+    ],
+    suits: "Swing speeds under ninety five who still want greenside spin.",
+  },
+
+  "srixon-q-star-ultispeed": {
+    tagline: "Fast and cheap",
+    description:
+      "A two piece ball built for speed and priced so that losing one does not ruin the hole. It will not check and it does not claim to, which is more than most balls at this price manage.",
+    headline: "It does one thing and says so",
+    marks: ["Two piece", "Low spin", "Dozen"],
+    notes: [
+      "Two piece, low spin, long. That is the whole specification.",
+      "It will not hold a green from a full wedge. Nothing at this price will.",
+      "Good winter ball. The ground is hard and the ball rolls out anyway.",
+      "Dozen. Buy two if your course has water on it.",
+    ],
+    counter:
+      "If your last three balls went in the burn, the ball is not your problem and the expensive one is not the fix.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Build", value: "Two piece" },
+      { label: "Spin", value: "Low" },
+      { label: "Flight", value: "Long and flat" },
+    ],
+    suits: "Higher handicaps, winter rounds and courses that eat golf balls.",
+  },
+
+  "srixon-soft-feel-brite": {
+    tagline: "The Soft Feel, in a colour",
+    description:
+      "Exactly the same ball as the Soft Feel with a finish you can actually see. In flat Scottish light a white ball in the rough is a two minute search. This one is not.",
+    headline: "You will find it",
+    marks: ["Soft feel", "High visibility", "Dozen"],
+    notes: [
+      "The same ball as the Soft Feel. The colour is the only difference.",
+      "Green shows up against long grass in flat light, which white does not.",
+      "Low compression, so it suits slower speeds and cold mornings.",
+      "If you have never played a coloured ball, one round changes most minds.",
+    ],
+    counter:
+      "Half the balls people lose are not lost, they are just not found. A colour fixes that for twenty four pounds.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Compression", value: "Low" },
+      { label: "Feel", value: "Soft" },
+      { label: "Colour", value: "Brite green" },
+    ],
+    suits: "Anyone who plays in flat light or long rough, so most people here.",
+  },
+
+  "ping-sport-tech-glove": {
+    tagline: "Part leather, part synthetic",
+    description:
+      "Cabretta where you need the feel and synthetic where the glove wears out. It lasts longer than an all leather glove and gives up a little of the connection to the grip.",
+    headline: "It outlasts cabretta",
+    marks: ["Leather palm", "Synthetic back", "Sizes S to XL"],
+    notes: [
+      "Leather on the palm, synthetic on the back and knuckles where gloves split.",
+      "It will last longer than the Tour glove and feel slightly less direct.",
+      "Buy it a shade tight. Synthetic gives less than leather, so less than a shade.",
+      "This is the one to buy if you play twice a week and hate replacing gloves.",
+    ],
+    counter:
+      "All leather feels better for ten rounds. This feels almost as good for thirty. Pick which you care about.",
+    specs: [
+      { label: "Palm", value: "Cabretta leather" },
+      { label: "Back", value: "Synthetic" },
+      { label: "Sizes", value: "S to XL" },
+      { label: "Life", value: "25 to 40 rounds" },
+    ],
+    suits: "Players out more than once a week who want a glove to last.",
+  },
+
+  "ping-mr-ping-snapback": {
+    tagline: "The old mark",
+    description:
+      "The figure that has been on Ping putters since the sixties, on a grey crown in gold. It is the only cap in here that is genuinely about the brand's history rather than its logo.",
+    headline: "The mark, back where it belongs",
+    marks: ["Structured front", "Snapback", "One size"],
+    notes: [
+      "Structured front, so the figure sits flat and does not fold.",
+      "Grey and gold. It goes with less than a plain cap and looks better than one.",
+      "One size, snapback.",
+      "Cold water only. The gold is a print and a machine will lift it.",
+    ],
+    counter:
+      "If you know what the little figure is, you will want this cap. If you do not, buy the plain one.",
+    specs: [
+      { label: "Fit", value: "One size, snapback" },
+      { label: "Crown", value: "Structured" },
+      { label: "Detail", value: "Gold print" },
+      { label: "Care", value: "Cold water, air dry" },
+    ],
+    suits: "Anyone who has owned a Ping putter and knows the figure.",
+  },
+
+  "ping-finish-line-cap": {
+    tagline: "Unstructured and light",
+    description:
+      "A soft front cap that folds into a pocket and comes out without a crease. The one to keep in the bag for the day the sun arrives halfway round.",
+    headline: "It lives in the bag",
+    marks: ["Unstructured", "Adjustable", "Packable"],
+    notes: [
+      "Soft front, so it folds flat and recovers.",
+      "Adjustable rather than snapback, which gives a finer fit.",
+      "White reflects, which matters more than it sounds in July.",
+      "Cold water, air dry. It will not hold a shape it does not have.",
+    ],
+    counter:
+      "Keep a spare cap in the bag. The day you need one is never the day you remembered.",
+    specs: [
+      { label: "Fit", value: "One size, adjustable" },
+      { label: "Crown", value: "Unstructured" },
+      { label: "Packs", value: "Yes" },
+      { label: "Care", value: "Cold water, air dry" },
+    ],
+    suits: "Anyone who wants a second cap that lives in the bag.",
+  },
+
+  "ping-weekender-cap": {
+    tagline: "Soft front, navy",
+    description:
+      "Nothing shouting and nothing structured. The cap for the round after the round, and the one most likely to end up worn off the course.",
+    headline: "For the round after the round",
+    marks: ["Soft front", "Navy", "Adjustable"],
+    notes: [
+      "Soft front. It will take the shape of your head rather than holding its own.",
+      "Navy, so it goes with the rest of what you own.",
+      "Adjustable strap, finer than a snapback.",
+      "Cold water only, and never a machine.",
+    ],
+    counter:
+      "The cap you wear most is the one you forget you are wearing. Usually it is the plain soft one.",
+    specs: [
+      { label: "Fit", value: "One size, adjustable" },
+      { label: "Crown", value: "Unstructured" },
+      { label: "Colour", value: "Navy" },
+      { label: "Care", value: "Cold water, air dry" },
+    ],
+    suits: "Anyone who wants a cap and not a statement.",
+  },
+
+  "ping-icon-driver-cover": {
+    tagline: "Plain and structured",
+    description:
+      "A driver cover that holds its shape after a wet round, which sounds like nothing until you have wrestled a soggy one back onto a head in the rain on the second tee.",
+    headline: "It goes back on when it is wet",
+    marks: ["Fits 460cc", "Structured", "Lined"],
+    notes: [
+      "Structured, so it keeps its opening when soaked.",
+      "Lined, which is what stops the crown marking.",
+      "Fits any driver head up to 460cc.",
+      "Dry it off the club. Leaving it on traps water against the crown.",
+    ],
+    counter:
+      "The test for a headcover is whether it goes back on in the rain with cold hands. Most fail it.",
+    specs: [
+      { label: "Fits", value: "Up to 460cc" },
+      { label: "Build", value: "Structured" },
+      { label: "Lining", value: "Soft" },
+      { label: "Care", value: "Air dry off the club" },
+    ],
+    suits: "Anyone who plays in weather and has fought a wet headcover.",
+  },
+
+  "ping-captains-driver-cover": {
+    tagline: "White, and it will not stay white",
+    description:
+      "It marks, and after a season it looks like it has been somewhere. That is either the reason to buy it or the reason not to, and we are not going to pretend it stays clean.",
+    headline: "It will not stay white",
+    marks: ["Fits 460cc", "Structured", "White"],
+    notes: [
+      "White marks. Within a season it will look used, and that is the deal.",
+      "Structured and lined, same as the Icon, so it works the same in the wet.",
+      "Fits any driver head up to 460cc.",
+      "Spot clean. Washing it will take the shape out.",
+    ],
+    counter:
+      "If a white headcover getting grubby is going to bother you in April, buy the black one now.",
+    specs: [
+      { label: "Fits", value: "Up to 460cc" },
+      { label: "Build", value: "Structured" },
+      { label: "Colour", value: "White" },
+      { label: "Care", value: "Spot clean" },
+    ],
+    suits: "People who like their gear to look played with.",
+  },
+
+  "ping-captains-mallet-cover": {
+    tagline: "Deeper, for mallets",
+    description:
+      "A blade cover on a mallet head is a cover that falls off on the third green. This one is cut deep enough for the modern mallet shapes and closes with a magnet.",
+    headline: "Cut for the head you actually have",
+    marks: ["Mallet putters", "Magnetic", "Lined"],
+    notes: [
+      "Mallets only. A blade cover will not stay on and a mallet cover on a blade flaps.",
+      "Magnetic closure, so it goes back on one handed.",
+      "Lined, because putter faces mark more easily than anything else in the bag.",
+      "Bring the putter if you are not sure which shape you have.",
+    ],
+    counter:
+      "Bring the putter in. Half the covers people buy do not fit the head they own.",
+    specs: [
+      { label: "Fits", value: "Mallet putters" },
+      { label: "Closure", value: "Magnetic" },
+      { label: "Lining", value: "Soft" },
+      { label: "Colour", value: "White" },
+    ],
+    suits: "Mallet players whose current cover comes off in the bag.",
+  },
+
+  "ping-fur-fairway-cover": {
+    tagline: "For the club that gets chipped",
+    description:
+      "Fairway woods live next to irons and take more knocks than drivers do, because nobody covers them. Thirty pounds now against a chipped crown you will notice every time you set it down.",
+    headline: "Nobody covers the fairway wood",
+    marks: ["Fits 3, 5 and 7", "Fur", "Elasticated"],
+    notes: [
+      "Fits a 3, 5 or 7 wood head. One cover, all three.",
+      "Fur is soft on a painted crown. Stiff covers are what cause the marks.",
+      "Fairway woods get knocked more than drivers because they sit lower in the bag.",
+      "Air dry. It will get wet and it will be fine.",
+    ],
+    counter:
+      "Look at a five year old fairway wood and then at the driver from the same bag. The wood always looks worse.",
+    specs: [
+      { label: "Fits", value: "3, 5 and 7 wood" },
+      { label: "Material", value: "Fur" },
+      { label: "Closure", value: "Elasticated" },
+      { label: "Care", value: "Air dry" },
+    ],
+    suits: "Anyone carrying a fairway wood without a cover, which is most people.",
+  },
+
+  "ping-icon-fairway-cover": {
+    tagline: "Numbered",
+    description:
+      "Three covers, numbered three, five and seven, so you stop pulling the wrong club out of the bag on a tight tee shot. A small thing that saves a shot a season.",
+    headline: "Stop pulling the wrong one",
+    marks: ["Numbered", "Structured", "Lined"],
+    notes: [
+      "Numbered 3, 5 and 7. Sold individually, so buy for what you carry.",
+      "Structured, so it holds its shape and goes back on wet.",
+      "Lined, which keeps the crown unmarked.",
+      "If you carry two woods, the numbers matter more than you think.",
+    ],
+    counter:
+      "People pull the wrong wood more often than they admit. Numbers on the covers fix it for the price of a sleeve of balls.",
+    specs: [
+      { label: "Fits", value: "3, 5 or 7 wood" },
+      { label: "Build", value: "Structured" },
+      { label: "Marking", value: "Numbered" },
+      { label: "Care", value: "Air dry off the club" },
+    ],
+    suits: "Anyone carrying more than one fairway wood.",
+  },
+
+  "ping-stars-tri-fold-towel": {
+    tagline: "Same towel, louder",
+    description:
+      "The tri-fold in red, white and navy. It works exactly the same way and you will spot it on a wet fairway from thirty yards, which is when towels get left behind.",
+    headline: "You will see this one",
+    marks: ["Cotton", "Carabiner clip", "Tri-fold"],
+    notes: [
+      "Identical to the plain tri-fold. Three panels, one wet, two dry.",
+      "The colour is the point. Towels get dropped and left on wet ground.",
+      "Cotton, which lifts mud rather than pushing it around.",
+      "Cold wash, no softener, or it stops absorbing anything.",
+    ],
+    counter:
+      "The towel you lose is always the grey one lying on a wet fairway. Buy a colour.",
+    specs: [
+      { label: "Fabric", value: "Cotton" },
+      { label: "Fold", value: "Tri-fold" },
+      { label: "Clip", value: "Carabiner" },
+      { label: "Care", value: "Cold wash, no softener" },
+    ],
+    suits: "Anyone who has left a towel on a fairway, which is everyone eventually.",
+  },
+
+  "callaway-tour-authentic-glove": {
+    tagline: "Premium cabretta, nothing else",
+    description:
+      "The thinnest leather Callaway sell, cut for feel rather than for life. It will wear through at the heel of the palm, and the players who buy it know that and buy it anyway.",
+    headline: "It wears out because it is good",
+    marks: ["Premium cabretta", "Thin cut", "Sizes S to XL"],
+    notes: [
+      "Thin leather. You feel more of the grip and you replace it sooner.",
+      "Expect twenty rounds, not forty. That is the trade and we will not dress it up.",
+      "Buy it a shade tight. Cabretta gives, synthetics do not.",
+      "If it lasts you a season you are not playing enough.",
+    ],
+    counter:
+      "Try this and the Dawn Patrol on opposite hands for one round. Most people can tell, and then they decide whether they care.",
+    specs: [
+      { label: "Leather", value: "Premium cabretta" },
+      { label: "Sizes", value: "S to XL, cadet available" },
+      { label: "Life", value: "15 to 25 rounds" },
+      { label: "Hand", value: "Left or right" },
+    ],
+    suits: "Better players who notice the grip and replace gloves without complaining.",
+  },
+
+  "callaway-weather-spann-glove": {
+    tagline: "For a damp grip",
+    description:
+      "A glove built to keep working when the leather one has gone slick. In Scotland that is not an occasional problem, it is most of March and most of October.",
+    headline: "It still works when the grip is wet",
+    marks: ["All weather", "Tacky when damp", "Sizes S to XL"],
+    notes: [
+      "It grips better damp than a cabretta glove does dry.",
+      "Less feel than leather. That is what you are paying for and giving up.",
+      "Keep one in the bag even if you play leather. The day you need it you will not have planned for it.",
+      "Washes out. Cold water, air dry, never a radiator.",
+    ],
+    counter:
+      "Every bag in here should have a weather glove in it. It costs seventeen pounds and it saves a round.",
+    specs: [
+      { label: "Material", value: "Synthetic, all weather" },
+      { label: "Sizes", value: "S to XL" },
+      { label: "Life", value: "30 to 45 rounds" },
+      { label: "Care", value: "Cold wash, air dry" },
+    ],
+    suits: "Anyone who plays in weather, and anyone who sweats through a leather glove.",
+  },
+
+  "callaway-dawn-patrol-glove": {
+    tagline: "Leather at the right price",
+    description:
+      "Full leather without the thin tour cut, which means it lasts longer and costs less. This is the glove most people should be buying and the one they walk past on the way to the expensive one.",
+    headline: "The one most people should buy",
+    marks: ["Full leather", "Everyday cut", "Sizes S to XL"],
+    notes: [
+      "Full leather, slightly thicker than the Tour Authentic.",
+      "Thirty rounds rather than twenty, for less money.",
+      "You lose a little feel. Almost nobody notices it on the course.",
+      "Buy two. The second one lives in the bag and doubles the life of both.",
+    ],
+    counter:
+      "Buy two and rotate them. A glove that gets a day to dry out lasts half again as long.",
+    specs: [
+      { label: "Leather", value: "Full cabretta" },
+      { label: "Sizes", value: "S to XL, cadet available" },
+      { label: "Life", value: "25 to 35 rounds" },
+      { label: "Hand", value: "Left or right" },
+    ],
+    suits: "Anyone who plays weekly and does not want to think about gloves.",
+  },
+
+  "callaway-fusion-glove": {
+    tagline: "Leather palm, mesh back",
+    description:
+      "Leather where your hand meets the grip and mesh over the knuckles, so it moves and it breathes. In summer it is the difference between a glove you keep on and one you keep taking off.",
+    headline: "It breathes over the knuckles",
+    marks: ["Leather palm", "Mesh back", "Sizes S to XL"],
+    notes: [
+      "Mesh across the knuckles, which is where a glove binds when you close your hand.",
+      "Leather palm, so the contact with the grip is unchanged.",
+      "Summer glove. In January the mesh is a hole where the wind goes.",
+      "Cold wash, air dry, and it will keep its shape.",
+    ],
+    counter:
+      "If you take your glove off between shots, it is usually the back that bothers you, not the palm.",
+    specs: [
+      { label: "Palm", value: "Cabretta leather" },
+      { label: "Back", value: "Mesh" },
+      { label: "Sizes", value: "S to XL" },
+      { label: "Season", value: "Warm weather" },
+    ],
+    suits: "Warm hands, summer rounds and anyone who finds a full leather glove stifling.",
+  },
+
+  "callaway-x-spann-glove": {
+    tagline: "Cut tight",
+    description:
+      "A compression fit, which means it goes on harder and then does not move at all. Some people find that the whole point of a glove and some find it a nuisance. Put one on before you decide.",
+    headline: "It does not move once it is on",
+    marks: ["Compression fit", "All weather", "Sizes S to XL"],
+    notes: [
+      "Tighter than any other glove on this wall. Take your normal size, not a smaller one.",
+      "Once it is on it does not shift, which is the whole argument for it.",
+      "It takes longer to put on. Some people find that irritating by the fourth hole.",
+      "Try it on here. This is not a glove to buy unseen.",
+    ],
+    counter:
+      "If your glove bunches at the palm when you regrip, this fixes it. If it does not, you do not need this glove.",
+    specs: [
+      { label: "Fit", value: "Compression" },
+      { label: "Material", value: "Leather and synthetic" },
+      { label: "Sizes", value: "S to XL" },
+      { label: "Hand", value: "Left or right" },
+    ],
+    suits: "Players who regrip at the top and find their glove has moved.",
+  },
+
+  "callaway-rain-spann-gloves": {
+    tagline: "A pair, not one",
+    description:
+      "Rain gloves come in twos because rain does not fall on one hand. They grip harder the wetter they get, which feels wrong the first time and then makes perfect sense.",
+    headline: "Better wet than dry",
+    marks: ["Pair", "Grips wet", "Sizes S to XL"],
+    notes: [
+      "Sold as a pair. A single rain glove is half a solution.",
+      "They work wet. Dry they feel odd and slightly slick, which is normal.",
+      "Put them on before the rain starts, not after your grips are already soaked.",
+      "Rinse and air dry. They come back the same.",
+    ],
+    counter:
+      "The mistake is waiting until the third hole. By then the grips are wet and no glove fixes that.",
+    specs: [
+      { label: "Count", value: "Pair" },
+      { label: "Grip", value: "Improves when wet" },
+      { label: "Sizes", value: "S to XL" },
+      { label: "Care", value: "Rinse, air dry" },
+    ],
+    suits: "Anyone who plays through rain rather than waiting it out.",
+  },
+
+  "callaway-thermal-grip-gloves": {
+    tagline: "For the cold months",
+    description:
+      "A lined pair for the four months a year when you cannot feel the club. They are thicker than a playing glove and you swing in them anyway, because numb hands cost more than the thickness does.",
+    headline: "You swing in these",
+    marks: ["Pair", "Lined", "Sizes S to XL"],
+    notes: [
+      "Thicker than a playing glove. You will notice it and you will still score better than with cold hands.",
+      "Sold as a pair, which is the only way a winter glove makes sense.",
+      "Not waterproof. For rain buy the Rain Spann.",
+      "Air dry between rounds or the lining stays damp.",
+    ],
+    counter:
+      "People play winter golf in a summer glove and one bare hand. Then they wonder why the first five holes are terrible.",
+    specs: [
+      { label: "Count", value: "Pair" },
+      { label: "Lining", value: "Thermal" },
+      { label: "Sizes", value: "S to XL" },
+      { label: "Season", value: "Cold weather" },
+    ],
+    suits: "Winter golf, early tee times and anybody who plays through to March.",
+  },
+
+  "srixon-premium-cabretta-glove": {
+    tagline: "Thin leather, no panels",
+    description:
+      "One piece of cabretta cut simply, with nothing added across the back. It is the most direct connection to a grip in this shop and it will not last the season.",
+    headline: "Nothing between hand and grip",
+    marks: ["Premium cabretta", "Unpanelled", "Sizes S to XL"],
+    notes: [
+      "No mesh, no synthetic panels, no stretch inserts. Just leather.",
+      "Fifteen to twenty rounds if you play in the dry. Fewer if you do not.",
+      "The thinnest glove here, and you can feel the difference through the grip.",
+      "A shade tight when new. It will take the shape of your hand in two rounds.",
+    ],
+    counter:
+      "This is a glove for feel, not for value. If replacing it every month annoys you, buy the All Weather.",
+    specs: [
+      { label: "Leather", value: "Premium cabretta" },
+      { label: "Build", value: "Unpanelled" },
+      { label: "Sizes", value: "S to XL" },
+      { label: "Life", value: "15 to 20 rounds" },
+    ],
+    suits: "Low handicaps and anyone who has ever said a glove felt thick.",
+  },
+
+  "srixon-all-weather-glove": {
+    tagline: "Synthetic where it wears",
+    description:
+      "Built to survive rather than to impress, with synthetic across the parts of a glove that split first. It gives up a little feel and returns it as another twenty rounds.",
+    headline: "It outlasts leather",
+    marks: ["Synthetic", "Hard wearing", "Sizes S to XL"],
+    notes: [
+      "Synthetic across the back and the knuckles, which is where gloves go first.",
+      "Forty rounds is normal. A cabretta glove will not see half of that.",
+      "Less feel than leather, and most players stop noticing after two holes.",
+      "Cold wash. It survives that too.",
+    ],
+    counter:
+      "Buy this if you play twice a week. Buy leather if you play once a month and want it to feel special.",
+    specs: [
+      { label: "Material", value: "Synthetic and leather" },
+      { label: "Sizes", value: "S to XL" },
+      { label: "Life", value: "35 to 45 rounds" },
+      { label: "Care", value: "Cold wash, air dry" },
+    ],
+    suits: "Anyone out more than once a week who resents replacing gloves.",
+  },
+
+  "srixon-rain-gloves": {
+    tagline: "Better wet than dry",
+    description:
+      "A pair built so that water improves the grip rather than ruining it. Counterintuitive, and entirely true, and worth having in the bag before the sky decides.",
+    headline: "Put them on before it starts",
+    marks: ["Pair", "Grips wet", "Sizes S to XL"],
+    notes: [
+      "Sold as a pair. That is how rain works.",
+      "They grip harder the wetter they get. Dry, they feel slightly odd.",
+      "Put them on at the first spot of rain, not when your grips are already wet.",
+      "Rinse them after, air dry, and they last years.",
+    ],
+    counter:
+      "A rain glove in the bag is worth more than a fourth wedge. We will say that to anybody who asks.",
+    specs: [
+      { label: "Count", value: "Pair" },
+      { label: "Grip", value: "Improves when wet" },
+      { label: "Sizes", value: "S to XL" },
+      { label: "Care", value: "Rinse, air dry" },
+    ],
+    suits: "Anyone playing links golf in anything other than July.",
+  },
+
+  "srixon-winter-cart-mitten": {
+    tagline: "Not for swinging",
+    description:
+      "These go over your hands between shots and come off to hit. They keep your hands warm for the three minutes that matter, which is the walk, not the swing.",
+    headline: "For the walk, not the shot",
+    marks: ["Pair", "Fleece lined", "One size"],
+    notes: [
+      "You take these off to play. That is the design, not a limitation.",
+      "Fleece lined, and windproof on the back.",
+      "Clip them to the bag. A mitten left on a tee box is gone.",
+      "One size. They go over a playing glove.",
+    ],
+    counter:
+      "Warm hands on the tee is worth more than any winter glove you can swing in. This is the cheaper answer.",
+    specs: [
+      { label: "Count", value: "Pair" },
+      { label: "Lining", value: "Fleece" },
+      { label: "Fit", value: "One size, over gloves" },
+      { label: "Season", value: "Winter" },
+    ],
+    suits: "Winter golf, and anyone who walks and loses feeling by the fourth.",
+  },
+
+  "srixon-junior-glove": {
+    tagline: "A real glove, small",
+    description:
+      "Built the same way as the adult All Weather and cut to fit a child's hand. It is not a novelty, and a junior who is gripping the club properly should have one that fits.",
+    headline: "Not a toy with a logo",
+    marks: ["Junior sizes", "All weather", "Left or right"],
+    notes: [
+      "The same construction as the adult glove, scaled down.",
+      "Junior small through large. Bring them in and we will measure.",
+      "A glove that is too big teaches a bad grip. That is the whole reason to buy the right size.",
+      "Cold wash. Juniors are hard on gloves.",
+    ],
+    counter:
+      "Half the juniors we see are playing in a men's small. It is the first thing we fix and it is free to fix.",
+    specs: [
+      { label: "Sizes", value: "Junior S to L" },
+      { label: "Material", value: "Synthetic and leather" },
+      { label: "Hand", value: "Left or right" },
+      { label: "Care", value: "Cold wash, air dry" },
+    ],
+    suits: "Juniors who have started gripping the club properly.",
+  },
+
+  "callaway-tour-authentic-performance-pro-hat": {
+    tagline: "What the staff players wear",
+    description:
+      "The tour issue cap, sold as it is made rather than with a player's name added. Structured front, technical crown, and it holds a shape through a wet round.",
+    headline: "Tour issue, nothing added",
+    marks: ["Structured", "Technical fabric", "Adjustable"],
+    notes: [
+      "Structured front. It keeps its shape when it is soaked.",
+      "Technical crown, so it dries on the walk in rather than on a radiator.",
+      "Adjustable strap, which gives a finer fit than a snapback.",
+      "Cold water only, and never a machine.",
+    ],
+    counter:
+      "A structured cap in the rain is the difference between a cap and a wet cloth on your head.",
+    specs: [
+      { label: "Fit", value: "One size, adjustable" },
+      { label: "Crown", value: "Structured" },
+      { label: "Fabric", value: "Technical, quick dry" },
+      { label: "Care", value: "Cold water, air dry" },
+    ],
+    suits: "Anyone who wants the cap the tour staff actually wear.",
+  },
+
+  "callaway-liquid-metal-hat": {
+    tagline: "It catches light",
+    description:
+      "A navy structured cap with a metallic badge rather than embroidery. It is the loudest thing we stock in headwear and it is still fairly quiet.",
+    headline: "The badge does the work",
+    marks: ["Structured", "Metal badge", "Adjustable"],
+    notes: [
+      "The badge is metal, not thread. It catches light and it does not fray.",
+      "Navy, so it shows nothing and goes with everything you own.",
+      "Structured front. It holds a shape through rain.",
+      "Adjustable strap.",
+    ],
+    counter:
+      "Navy is the cap colour that survives a season. White looks better for a month and worse for eleven.",
+    specs: [
+      { label: "Fit", value: "One size, adjustable" },
+      { label: "Crown", value: "Structured" },
+      { label: "Detail", value: "Metal badge" },
+      { label: "Colour", value: "Navy" },
+    ],
+    suits: "Anyone who wants one detail on an otherwise plain cap.",
+  },
+
+  "callaway-stretch-fit-fitted-hat": {
+    tagline: "No strap at the back",
+    description:
+      "A fitted cap in two sizes, which means no plastic strap sitting on the back of your head. If adjustable caps have never quite sat right on you, this is the reason why.",
+    headline: "For heads that adjustable caps do not fit",
+    marks: ["Fitted", "Two sizes", "Structured"],
+    notes: [
+      "Two sizes, S/M and L/XL. Try both, the difference is obvious.",
+      "No strap, so nothing presses on the back of your head.",
+      "It will loosen slightly with wear, so take the tighter of the two.",
+      "Cold water, air dry, and it will keep its shape.",
+    ],
+    counter:
+      "If you have been wearing adjustable caps loose because the strap digs in, the problem was never the strap setting.",
+    specs: [
+      { label: "Fit", value: "Fitted, S/M and L/XL" },
+      { label: "Crown", value: "Structured" },
+      { label: "Strap", value: "None" },
+      { label: "Colour", value: "White" },
+    ],
+    suits: "Anyone who has never found an adjustable cap that sits right.",
+  },
+
+  "callaway-carlsbad-trucker-hat": {
+    tagline: "Mesh back, flat front",
+    description:
+      "A trucker, which on a hot day moves more air than any technical fabric does. It is also the cap most likely to be worn somewhere other than a golf course.",
+    headline: "It moves more air than fabric does",
+    marks: ["Mesh back", "Flat brim", "Snapback"],
+    notes: [
+      "Mesh back. Nothing keeps a head cooler and no fabric claim beats a hole.",
+      "Flat brim, structured front.",
+      "Snapback rather than adjustable, so the fit steps rather than slides.",
+      "Cold water on the front panel only. The mesh does not need washing.",
+    ],
+    counter:
+      "On a hot day a mesh back beats every technical fabric in the shop, and it costs less.",
+    specs: [
+      { label: "Fit", value: "One size, snapback" },
+      { label: "Back", value: "Mesh" },
+      { label: "Brim", value: "Flat" },
+      { label: "Care", value: "Spot clean" },
+    ],
+    suits: "Hot rounds, and anyone who wears the cap after the round too.",
+  },
+
+  "callaway-bucket-hat": {
+    tagline: "A brim all the way round",
+    description:
+      "The only thing in this cabinet that covers the back of your neck, which is where people actually burn. It looks like a bucket hat because it is one.",
+    headline: "It covers the back of your neck",
+    marks: ["Full brim", "Two sizes", "Packable"],
+    notes: [
+      "Full brim. A cap leaves your neck and your ears exposed and always has.",
+      "Two sizes. Try both, the fit matters more on a bucket than on a cap.",
+      "Packs flat into a bag pocket and comes out without a crease.",
+      "Cold water, air dry.",
+    ],
+    counter:
+      "Every burnt neck we see in August belongs to somebody wearing a cap. That is not a coincidence.",
+    specs: [
+      { label: "Fit", value: "S/M and L/XL" },
+      { label: "Brim", value: "Full, all round" },
+      { label: "Packs", value: "Yes" },
+      { label: "Care", value: "Cold water, air dry" },
+    ],
+    suits: "Summer rounds, fair skin, and anyone who has burned once.",
+  },
+
+  "callaway-liquid-metal-visor": {
+    tagline: "Shade, no crown",
+    description:
+      "All the brim and none of the heat trapped on top. A visor is either exactly what you want or exactly what you do not, and there is very little in between.",
+    headline: "Shade without the heat",
+    marks: ["Visor", "Metal badge", "Adjustable"],
+    notes: [
+      "No crown, so nothing holds heat on top of your head.",
+      "No cover either. If you are thin on top, buy the cap.",
+      "Metal badge rather than embroidery.",
+      "Adjustable strap. Cold water only.",
+    ],
+    counter:
+      "A visor is the coolest thing you can wear and the worst thing for sunburn on your scalp. Pick your problem.",
+    specs: [
+      { label: "Fit", value: "One size, adjustable" },
+      { label: "Type", value: "Visor" },
+      { label: "Detail", value: "Metal badge" },
+      { label: "Care", value: "Cold water, air dry" },
+    ],
+    suits: "Hot weather, and heads that do not need covering.",
+  },
+
+  "callaway-heritage-twill-hat": {
+    tagline: "Cotton twill, flag and all",
+    description:
+      "Soft front, cotton twill, and a small flag patch on the side panel that we are not going to pretend is not there. Everything else about it is as plain as headwear gets.",
+    headline: "Plain, apart from the one thing",
+    marks: ["Cotton twill", "Soft front", "Adjustable"],
+    notes: [
+      "Cotton twill, which means it will get wet and stay wet. That is the trade for how it feels.",
+      "Soft front. It takes the shape of your head rather than holding its own.",
+      "A flag patch on the side. That is either fine with you or it is not.",
+      "Cold water only. Cotton shrinks in a machine.",
+    ],
+    counter:
+      "This is the cap people buy third and then wear first. Take that for what it is worth.",
+    specs: [
+      { label: "Fit", value: "One size, adjustable" },
+      { label: "Fabric", value: "Cotton twill" },
+      { label: "Crown", value: "Unstructured" },
+      { label: "Care", value: "Cold water, air dry" },
+    ],
+    suits: "Anyone who wants a cap rather than a piece of equipment.",
+  },
+
+  "srixon-tour-tech-hat": {
+    tagline: "Structured and technical",
+    description:
+      "Srixon's tour cap, navy and plain, with a crown that dries faster than it gets wet. Nothing about it asks for attention, which is most of why we stock it.",
+    headline: "It dries on the walk in",
+    marks: ["Structured", "Quick dry", "Adjustable"],
+    notes: [
+      "Technical crown. It sheds water rather than holding it.",
+      "Structured front, so it keeps its shape soaked.",
+      "Navy, which goes with everything and shows nothing.",
+      "Cold water only.",
+    ],
+    counter:
+      "Navy is the cap colour that survives a season. White looks better for a month.",
+    specs: [
+      { label: "Fit", value: "One size, adjustable" },
+      { label: "Crown", value: "Structured" },
+      { label: "Fabric", value: "Technical, quick dry" },
+      { label: "Care", value: "Cold water, air dry" },
+    ],
+    suits: "Anyone who wants a cap to disappear and just work.",
+  },
+
+  "srixon-genuine-tour-hat": {
+    tagline: "As it leaves the truck",
+    description:
+      "The cap Srixon's tour staff are issued, sold unchanged. Black, structured, and marked exactly the way the ones on television are marked.",
+    headline: "Unchanged from tour issue",
+    marks: ["Tour issue", "Structured", "Adjustable"],
+    notes: [
+      "Tour issue specification, not a retail version of it.",
+      "Structured front, technical crown.",
+      "Black, so it holds heat in July and hides everything else.",
+      "Cold water only, and never a machine.",
+    ],
+    counter:
+      "There is usually a retail version and a tour version and they are not the same cap. This is the tour one.",
+    specs: [
+      { label: "Fit", value: "One size, adjustable" },
+      { label: "Crown", value: "Structured" },
+      { label: "Spec", value: "Tour issue" },
+      { label: "Care", value: "Cold water, air dry" },
+    ],
+    suits: "Players who want the same cap as the staff bag on Sunday.",
+  },
+
+  "srixon-tour-bucket-hat": {
+    tagline: "White, wide, packs flat",
+    description:
+      "A bucket that folds into a bag pocket and comes out without a crease. White, which is the right colour for a hat whose job is keeping sun off you.",
+    headline: "It lives in the bag pocket",
+    marks: ["Full brim", "Packable", "Two sizes"],
+    notes: [
+      "Packs flat and recovers. That is the whole reason to own a second hat.",
+      "White reflects, which matters more on a bucket than on a cap.",
+      "Two sizes. Fit matters here, a loose bucket blows off.",
+      "Cold water, air dry.",
+    ],
+    counter:
+      "Keep it in the bag from May. The day the sun arrives is never the day you packed for it.",
+    specs: [
+      { label: "Fit", value: "S/M and L/XL" },
+      { label: "Brim", value: "Full, all round" },
+      { label: "Packs", value: "Yes" },
+      { label: "Care", value: "Cold water, air dry" },
+    ],
+    suits: "Anyone who wants sun cover without carrying a second cap.",
+  },
+
+  "cleveland-structured-cap": {
+    tagline: "White crown, black script",
+    description:
+      "Cleveland have not changed this cap much and there has been no reason to. Structured, adjustable, and the script on the front is the one that has been there for years.",
+    headline: "It has looked like this for years",
+    marks: ["Structured", "Adjustable", "White"],
+    notes: [
+      "Structured front. It holds its shape wet.",
+      "White marks, and after a season it looks like a golf cap should.",
+      "Adjustable strap rather than a snapback.",
+      "Spot clean. Washing it takes the shape out.",
+    ],
+    counter:
+      "The caps that last are the ones the brand has not redesigned. This is one of them.",
+    specs: [
+      { label: "Fit", value: "One size, adjustable" },
+      { label: "Crown", value: "Structured" },
+      { label: "Colour", value: "White" },
+      { label: "Care", value: "Spot clean" },
+    ],
+    suits: "Anyone who buys a cap once and wears it until it dies.",
+  },
+
+  "cleveland-bucket-hat": {
+    tagline: "Charcoal, not white",
+    description:
+      "A bucket in a colour that does not look filthy after three rounds. You lose a little heat reflection and you gain a hat you will still wear in August.",
+    headline: "It will not look grubby in a month",
+    marks: ["Full brim", "Charcoal", "Two sizes"],
+    notes: [
+      "Charcoal. A white bucket looks worn out faster than a white cap does.",
+      "Full brim, so the back of your neck is covered.",
+      "Two sizes. Fit matters on a bucket.",
+      "Cold water, air dry.",
+    ],
+    counter:
+      "Dark hats are hotter and they last. If you play in Scotland the heat is rarely the problem.",
+    specs: [
+      { label: "Fit", value: "S/M and L/XL" },
+      { label: "Brim", value: "Full, all round" },
+      { label: "Colour", value: "Charcoal" },
+      { label: "Care", value: "Cold water, air dry" },
+    ],
+    suits: "Anyone who wants a bucket and does not want to baby it.",
+  },
+
+  "cleveland-leather-patch-hat": {
+    tagline: "One patch, no embroidery",
+    description:
+      "A leather patch instead of stitching, which means the front ages rather than frays. Black crown, nothing else on it, and it looks better in year two.",
+    headline: "It ages the way leather does",
+    marks: ["Leather patch", "Structured", "Adjustable"],
+    notes: [
+      "The patch is real leather. It darkens and softens with use.",
+      "No embroidery anywhere else on the cap.",
+      "Structured front, adjustable strap.",
+      "Keep it out of the machine. Leather and drums do not agree.",
+    ],
+    counter:
+      "Embroidery frays at the edges after a season. A patch does not, it just gets older.",
+    specs: [
+      { label: "Fit", value: "One size, adjustable" },
+      { label: "Crown", value: "Structured" },
+      { label: "Detail", value: "Leather patch" },
+      { label: "Care", value: "Spot clean" },
+    ],
+    suits: "Anyone who prefers things that improve rather than wear out.",
+  },
+
+  "cleveland-retro-snapback": {
+    tagline: "The old script",
+    description:
+      "Flat brim, snapback, and the Cleveland script as it was drawn rather than as it has been modernised. There is nothing technical about it and that is the point.",
+    headline: "Nothing modern about it",
+    marks: ["Flat brim", "Snapback", "Old script"],
+    notes: [
+      "Flat brim. Curve it yourself if you want it curved.",
+      "Snapback, so the fit steps rather than slides.",
+      "The old script, large, on a plain black crown.",
+      "Cold water on the front panel only.",
+    ],
+    counter:
+      "If you owned a Cleveland wedge in the nineties you already know whether you want this cap.",
+    specs: [
+      { label: "Fit", value: "One size, snapback" },
+      { label: "Brim", value: "Flat" },
+      { label: "Crown", value: "Structured" },
+      { label: "Care", value: "Spot clean" },
+    ],
+    suits: "Anyone who remembers the script from the first time.",
+  },
+
+  "callaway-premium-driver-headcover": {
+    tagline: "Lined, and it goes back on wet",
+    description:
+      "The test for a driver cover is whether you can get it back on in the rain with cold hands. This one is structured enough to keep its opening when everything else has gone limp.",
+    headline: "It goes back on in the rain",
+    marks: ["Fits 460cc", "Lined", "Structured"],
+    notes: [
+      "Structured, so it holds its shape soaked.",
+      "Lined, which is what stops the crown marking.",
+      "Fits any driver head up to 460cc.",
+      "Dry it off the club. Left on, it traps water against the paint.",
+    ],
+    counter:
+      "Most headcovers fail the cold hands test. Try putting one on with wet fingers before you buy it.",
+    specs: [
+      { label: "Fits", value: "Up to 460cc" },
+      { label: "Build", value: "Structured" },
+      { label: "Lining", value: "Soft" },
+      { label: "Care", value: "Air dry off the club" },
+    ],
+    suits: "Anyone who plays in weather and has wrestled a soaked cover.",
+  },
+
+  "callaway-premium-fairway-headcover": {
+    tagline: "Marked F",
+    description:
+      "A fairway cover with a letter on it rather than a number, which sounds small until you have pulled the three wood on a hole that needed the five. One cover, all of them.",
+    headline: "Stop pulling the wrong one",
+    marks: ["Fits 3, 5 and 7", "Lined", "Marked"],
+    notes: [
+      "Marked so you can tell it apart from the driver and hybrid covers at a glance.",
+      "Fits a 3, 5 or 7 wood head.",
+      "Lined, which keeps the crown unmarked.",
+      "Air dry off the club.",
+    ],
+    counter:
+      "People pull the wrong wood more often than they admit. A marked cover fixes it for the price of a sleeve.",
+    specs: [
+      { label: "Fits", value: "3, 5 and 7 wood" },
+      { label: "Build", value: "Structured" },
+      { label: "Lining", value: "Soft" },
+      { label: "Care", value: "Air dry off the club" },
+    ],
+    suits: "Anyone carrying more than one fairway wood.",
+  },
+
+  "callaway-premium-hybrid-headcover": {
+    tagline: "The club that rattles",
+    description:
+      "Hybrids sit low and short in the bag, which means they knock against the irons all the way round. Nobody covers them and nearly everybody should.",
+    headline: "Nobody covers the hybrid",
+    marks: ["Most hybrids", "Lined", "Marked"],
+    notes: [
+      "Fits most hybrid heads, from 17 to 30 degrees.",
+      "Marked, so it does not get mixed up with the fairway cover.",
+      "Lined. Hybrid crowns chip as easily as driver crowns.",
+      "Air dry off the club.",
+    ],
+    counter:
+      "Look at a three year old hybrid and a three year old driver from the same bag. The hybrid always looks worse.",
+    specs: [
+      { label: "Fits", value: "Most hybrid heads" },
+      { label: "Build", value: "Structured" },
+      { label: "Lining", value: "Soft" },
+      { label: "Care", value: "Air dry off the club" },
+    ],
+    suits: "Anyone carrying a hybrid without a cover, which is most people.",
+  },
+
+  "callaway-magnetic-iron-headcovers": {
+    tagline: "Ten covers",
+    description:
+      "Iron covers are a nuisance right up until you sell a set and find out what unmarked faces are worth. Magnetic, so they come off with one hand and go back the same way.",
+    headline: "Your irons stop chewing each other",
+    marks: ["Set of 10", "Magnetic", "Numbered"],
+    notes: [
+      "Ten covers, numbered, which covers a full set with the wedges.",
+      "Magnetic. Velcro iron covers are the reason people give up on iron covers.",
+      "They add about half a kilo to the bag. That is the cost.",
+      "They pay for themselves the day you trade the set in.",
+    ],
+    counter:
+      "We value a lot of trade in sets across this counter. Covered irons are worth real money more than uncovered ones.",
+    specs: [
+      { label: "Count", value: "Set of 10" },
+      { label: "Closure", value: "Magnetic" },
+      { label: "Marking", value: "Numbered" },
+      { label: "Weight", value: "About 0.5 kg per set" },
+    ],
+    suits: "Anyone who plans to sell the set on, and anyone who hates the rattle.",
+  },
+
+  "callaway-vintage-driver-headcover": {
+    tagline: "Barrel shaped, striped",
+    description:
+      "A barrel cover cut the way headcovers were cut before everything went aerodynamic. It looks older than anything in your bag and it will keep looking that way.",
+    headline: "Older looking than the club under it",
+    marks: ["Fits 460cc", "Barrel shape", "Striped"],
+    notes: [
+      "Barrel shape, which slides on rather than pulling over.",
+      "Fits a driver head up to 460cc.",
+      "Striped. If you want plain, buy the Premium.",
+      "Spot clean only.",
+    ],
+    counter:
+      "Nobody needs a striped headcover. That has never stopped it being the one people pick up.",
+    specs: [
+      { label: "Fits", value: "Up to 460cc" },
+      { label: "Shape", value: "Barrel" },
+      { label: "Lining", value: "Soft" },
+      { label: "Care", value: "Spot clean" },
+    ],
+    suits: "Anyone whose bag is already plain enough to take one loud thing.",
+  },
+
+  "callaway-tour-fold-towel": {
+    tagline: "Two faces, two jobs",
+    description:
+      "Waffle weave on one side for the grooves and smooth on the other for the face and the ball. It is the only towel here that does two different things properly.",
+    headline: "One side scrubs, one side dries",
+    marks: ["Two faces", "Waffle weave", "Clip"],
+    notes: [
+      "Waffle side lifts mud out of grooves. Smooth side dries a face.",
+      "Bigger than the trifold, and it hangs rather than folds.",
+      "Cold wash, no fabric softener, or it stops absorbing.",
+      "The clip is a carabiner.",
+    ],
+    counter:
+      "A clean groove is worth more spin than any wedge on this wall, and it costs nothing but a towel.",
+    specs: [
+      { label: "Faces", value: "Waffle and smooth" },
+      { label: "Clip", value: "Carabiner" },
+      { label: "Size", value: "Full length" },
+      { label: "Care", value: "Cold wash, no softener" },
+    ],
+    suits: "Anyone who actually cleans a club between shots.",
+  },
+
+  "callaway-trifold-towel": {
+    tagline: "Three panels",
+    description:
+      "One panel wet, two dry, folded so you always know which is which. The simplest solution to the oldest problem on the bag and still the one most people buy.",
+    headline: "One wet, two dry",
+    marks: ["Cotton", "Tri-fold", "Clip"],
+    notes: [
+      "Wet one panel on the first tee and keep the other two dry.",
+      "Cotton lifts mud. Microfibre pushes it around.",
+      "Carabiner clip, so it comes off without threading.",
+      "Cold wash, no softener.",
+    ],
+    counter:
+      "Every towel we sell works. The trifold is the one people still have three years later.",
+    specs: [
+      { label: "Fabric", value: "Cotton" },
+      { label: "Fold", value: "Tri-fold" },
+      { label: "Clip", value: "Carabiner" },
+      { label: "Care", value: "Cold wash, no softener" },
+    ],
+    suits: "Anyone who plays in weather, so everyone here.",
+  },
+
+  "callaway-players-towel": {
+    tagline: "Bigger than it looks",
+    description:
+      "A microfibre towel that holds more water than its size suggests, which matters on a wet day when a cotton towel has already given up. It dries faster too.",
+    headline: "It holds more than it should",
+    marks: ["Microfibre", "High absorbency", "Clip"],
+    notes: [
+      "Microfibre, so it absorbs more and dries quicker than cotton.",
+      "It will not lift dried mud as well as a cotton waffle does.",
+      "Good wet weather towel, less good for a dusty summer round.",
+      "Cold wash, no softener, tumble on low if you must.",
+    ],
+    counter:
+      "Carry cotton in summer and microfibre in winter. Or carry both, they weigh nothing.",
+    specs: [
+      { label: "Fabric", value: "Microfibre" },
+      { label: "Clip", value: "Carabiner" },
+      { label: "Best for", value: "Wet rounds" },
+      { label: "Care", value: "Cold wash, no softener" },
+    ],
+    suits: "Winter and wet weather golf, where cotton stops working by the ninth.",
+  },
+
+  "odyssey-microfibre-towel": {
+    tagline: "For the putter and the ball",
+    description:
+      "A small, soft towel that never touches a muddy sole. It lives on the putter end of the bag and it keeps the face and the ball clean, which is all it is for.",
+    headline: "It never touches a muddy sole",
+    marks: ["Microfibre", "Small", "Clip"],
+    notes: [
+      "Soft microfibre, so it will not scratch a putter insert.",
+      "Small. It is not a second bag towel and it is not meant to be.",
+      "Keep it clean, which is the whole point of having a second towel.",
+      "Cold wash, no softener.",
+    ],
+    counter:
+      "The towel you clean your wedges with is not the towel to wipe a putter face. Two towels, one bag.",
+    specs: [
+      { label: "Fabric", value: "Microfibre" },
+      { label: "Use", value: "Putter and ball" },
+      { label: "Clip", value: "Carabiner" },
+      { label: "Care", value: "Cold wash, no softener" },
+    ],
+    suits: "Anyone with an insert putter and a bag towel that is always filthy.",
+  },
+
+  "odyssey-tempest-blade-headcover": {
+    tagline: "Cut for a blade",
+    description:
+      "Blade covers and mallet covers are not interchangeable and half the covers people own are the wrong one. This is cut for a blade and it stays on a blade.",
+    headline: "Blades only",
+    marks: ["Blade putters", "Magnetic", "Lined"],
+    notes: [
+      "Blades only. On a mallet it will not close and on a blade a mallet cover flaps.",
+      "Magnetic closure, so it goes back on one handed.",
+      "Lined. Putter faces mark more easily than anything else in the bag.",
+      "Bring the putter if you are not certain which shape you have.",
+    ],
+    counter:
+      "Bring the putter in. We see more badly fitting putter covers than badly fitting shoes.",
+    specs: [
+      { label: "Fits", value: "Blade putters" },
+      { label: "Closure", value: "Magnetic" },
+      { label: "Lining", value: "Soft" },
+      { label: "Care", value: "Spot clean" },
+    ],
+    suits: "Blade players whose current cover comes off in the bag.",
+  },
+
+  "odyssey-tempest-mallet-headcover": {
+    tagline: "Cut deep for a mallet",
+    description:
+      "Modern mallets are wide and deep and a standard cover gives up by the third green. This one is cut for the shapes people actually putt with now.",
+    headline: "It stays on past the third",
+    marks: ["Mallet putters", "Magnetic", "Lined"],
+    notes: [
+      "Cut for modern mallet shapes, including the wide ones.",
+      "Magnetic closure, one handed on and off.",
+      "Lined, so the face stays unmarked.",
+      "If your current cover keeps falling off, this is why.",
+    ],
+    counter:
+      "A cover that falls off is worse than no cover, because you stop looking for it.",
+    specs: [
+      { label: "Fits", value: "Mallet putters" },
+      { label: "Closure", value: "Magnetic" },
+      { label: "Lining", value: "Soft" },
+      { label: "Care", value: "Spot clean" },
+    ],
+    suits: "Mallet players, which now means most players.",
+  },
+
+  "callaway-fairway-14-stand-bag": {
+    tagline: "Fourteen slots, and legs",
+    description:
+      "Full separation on a bag you carry, which is rarer than it should be because every divider costs weight. Two and a half kilos is the price of never untangling grips again.",
+    headline: "Full separation on a carry bag",
+    marks: ["2.5 kg", "14 way top", "Double strap"],
+    notes: [
+      "Fourteen slots. Every club has its own and nothing rubs.",
+      "Two point five kilos, which is heavy for a carry bag and light for fourteen ways.",
+      "Double strap as standard.",
+      "Carry it loaded round the shop before you commit. Half a kilo feels different at the fourteenth.",
+    ],
+    counter:
+      "Fourteen ways or light. You can have one. Anybody selling you both is selling you a compromise.",
+    specs: [
+      { label: "Weight", value: "2.5 kg empty" },
+      { label: "Top", value: "Fourteen way" },
+      { label: "Strap", value: "Double, adjustable" },
+      { label: "Legs", value: "Stand" },
+    ],
+    suits: "Walkers who cannot stand grips tangling and will carry the weight for it.",
+  },
+
+  "callaway-fairway-c-stand-bag": {
+    tagline: "Two kilos, double strap",
+    description:
+      "The bag we hand people who want one carry bag and no argument about it. Two kilos, a proper double strap and four ways, which is the specification most walkers actually need.",
+    headline: "Light enough to mean it",
+    marks: ["2.0 kg", "4 way top", "Double strap"],
+    notes: [
+      "Two kilos empty, which is the number worth comparing across this rack.",
+      "Four way top. Enough separation for a full set without fourteen dividers of weight.",
+      "Double strap, adjusted here before it leaves.",
+      "This and the Ping Hoofer sit side by side for a reason. Carry both.",
+    ],
+    counter:
+      "Carry this and the Hoofer round the shop loaded. Whichever one you forget about is the one to buy.",
+    specs: [
+      { label: "Weight", value: "2.0 kg empty" },
+      { label: "Top", value: "Four way" },
+      { label: "Strap", value: "Double, adjustable" },
+      { label: "Legs", value: "Stand" },
+    ],
+    suits: "Walkers who want one bag and want it to be the obvious choice.",
+  },
+
+  "callaway-hyperlite-zero-stand-bag": {
+    tagline: "The lightest thing with legs",
+    description:
+      "One point four kilos, which is less than the water you will carry in it. Everything that could be cut has been, and what is left is a bag for people who count grams.",
+    headline: "Everything that could be cut has been",
+    marks: ["1.4 kg", "4 way top", "Double strap"],
+    notes: [
+      "One point four kilos empty. Nothing else in here with legs is close.",
+      "Pockets are minimal. That is where the weight went.",
+      "Four way top. Fourteen slots at this weight does not exist.",
+      "If you carry a full waterproof set and a flask, buy a heavier bag.",
+    ],
+    counter:
+      "Weigh what you put in a bag before you buy a light one. Most people carry two kilos of things they never use.",
+    specs: [
+      { label: "Weight", value: "1.4 kg empty" },
+      { label: "Top", value: "Four way" },
+      { label: "Strap", value: "Double" },
+      { label: "Legs", value: "Stand" },
+    ],
+    suits: "Walkers who count grams and carry very little.",
+  },
+
+  "callaway-org-14-cart-bag": {
+    tagline: "Full length dividers",
+    description:
+      "Fourteen slots that run the whole depth of the bag, so grips are separated at the bottom as well as the top. That is what stops the tangle, and most cart bags do not do it.",
+    headline: "Separated at the bottom, not just the top",
+    marks: ["14 way", "Full length", "Cart bag"],
+    notes: [
+      "Full length dividers. A fourteen way top with an open base still tangles.",
+      "Cart bag, so the pockets face forward on a trolley.",
+      "Heavier than any stand bag here, and it is not meant to be carried.",
+      "Check it fits your trolley base. Bring the trolley if you are unsure.",
+    ],
+    counter:
+      "Fourteen ways at the top and an open bottom is the most common trick in bags. Reach in and feel for the dividers.",
+    specs: [
+      { label: "Top", value: "Fourteen way" },
+      { label: "Dividers", value: "Full length" },
+      { label: "Type", value: "Cart" },
+      { label: "Pockets", value: "Forward facing" },
+    ],
+    suits: "Trolley and buggy players who want every club separated.",
+  },
+
+  "callaway-chase-stand-bag": {
+    tagline: "Plain black, four pockets",
+    description:
+      "Nothing on it you will not use, which is a harder specification to meet than it sounds. Most bags this price are carrying two pockets nobody opens.",
+    headline: "Nothing on it you will not use",
+    marks: ["2.2 kg", "4 way top", "Four pockets"],
+    notes: [
+      "Four pockets. Count what you actually open on a round, it is rarely more.",
+      "Two point two kilos, the middle of our carry bag rack.",
+      "Four way top, double strap.",
+      "Plain black. It will look the same in three years.",
+    ],
+    counter:
+      "Pockets are where bag weight hides. Ask yourself which ones you opened last round.",
+    specs: [
+      { label: "Weight", value: "2.2 kg empty" },
+      { label: "Top", value: "Four way" },
+      { label: "Pockets", value: "Four" },
+      { label: "Legs", value: "Stand" },
+    ],
+    suits: "Walkers who want a bag and not a project.",
+  },
+
+  "callaway-par-3-stand-bag": {
+    tagline: "Seven clubs, nine holes",
+    description:
+      "A pencil bag for an evening nine or a par three course. It will not hold a full set and it is not trying to, which is why it weighs what it weighs.",
+    headline: "It is not trying to hold fourteen",
+    marks: ["1.3 kg", "Seven clubs", "Stand"],
+    notes: [
+      "Seven clubs comfortably, and that is the honest number.",
+      "One point three kilos, so it barely registers on a shoulder.",
+      "Legs, which most pencil bags skip.",
+      "The right bag for a summer evening and the wrong bag for a medal.",
+    ],
+    counter:
+      "The second bag people buy is usually this one, and they use it more than they expected.",
+    specs: [
+      { label: "Weight", value: "1.3 kg empty" },
+      { label: "Capacity", value: "Seven clubs" },
+      { label: "Top", value: "Four way" },
+      { label: "Legs", value: "Stand" },
+    ],
+    suits: "Evening nines, par three courses and practice rounds.",
+  },
+
+  "odyssey-shadow-stand-bag": {
+    tagline: "Built by Ogio",
+    description:
+      "Ogio make the harness and Odyssey put their name on the bag, and the harness is the reason to buy it. Straps are the part of a carry bag people notice last and regret first.",
+    headline: "Buy it for the harness",
+    marks: ["2.4 kg", "Ogio harness", "4 way top"],
+    notes: [
+      "The strap system is the point. It sits differently on the shoulders to a standard double strap.",
+      "Two point four kilos, so it is not a light bag.",
+      "Four way top with full separation at the front slot.",
+      "Try it loaded. A harness is not something you can judge empty.",
+    ],
+    counter:
+      "Nobody buys a bag for the straps and everybody complains about the straps by August.",
+    specs: [
+      { label: "Weight", value: "2.4 kg empty" },
+      { label: "Harness", value: "Ogio" },
+      { label: "Top", value: "Four way" },
+      { label: "Legs", value: "Stand" },
+    ],
+    suits: "Walkers who have had a bag hurt their shoulders and will not repeat it.",
+  },
+
+  "callaway-chrome-tour": {
+    tagline: "The one that changed the argument",
+    description:
+      "For twenty years the tour ball conversation had one answer. The Chrome Tour is the reason it now has two, and the number of people who switch after a fitting says the rest.",
+    headline: "It gave the question a second answer",
+    marks: ["Urethane cover", "Tour spin", "Dozen"],
+    notes: [
+      "Urethane cover, full tour construction.",
+      "Test it against the Pro V1 on the monitor. It is a forty five minute job and it settles it.",
+      "Marginally softer feel than the Tour X. That is the choice between them.",
+      "Dozen. Buy one before you buy four.",
+    ],
+    counter:
+      "Ball fitting is forty pounds and it is the cheapest change to your scoring we sell. Bring your wedges.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Cover", value: "Urethane" },
+      { label: "Spin", value: "Tour level" },
+      { label: "Fitting", value: "Forty pounds, forty five minutes" },
+    ],
+    suits: "Anybody who has played one tour ball for a decade and never tested another.",
+  },
+
+  "callaway-chrome-tour-x": {
+    tagline: "Firmer, lower spinning",
+    description:
+      "The Tour X wants speed. Given it, it flights lower and spins less off the long clubs. Without it, it is simply a firmer ball that does nothing for you.",
+    headline: "It needs speed to make sense",
+    marks: ["Urethane cover", "Lower spin", "Dozen"],
+    notes: [
+      "Firmer than the Chrome Tour, with less spin off the driver.",
+      "Below about ninety five miles an hour you will not compress it properly.",
+      "If your driver spin is already low, this is the wrong ball.",
+      "We will put both on the monitor. The numbers decide, not the box.",
+    ],
+    counter:
+      "Half the people playing an X ball should be playing the standard one. The monitor sorts it in twenty minutes.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Cover", value: "Urethane" },
+      { label: "Spin", value: "Lower than Chrome Tour" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits: "Higher swing speeds that are already spinning the driver too much.",
+  },
+
+  "callaway-chrome-soft-triple-track": {
+    tagline: "Three lines",
+    description:
+      "The same ball as the Chrome Soft with an alignment print on it. Whether that helps depends entirely on whether you aim better with a line, and plenty of people do.",
+    headline: "The same ball, with a line",
+    marks: ["Urethane cover", "Alignment print", "Dozen"],
+    notes: [
+      "Identical to the Chrome Soft. Only the print is different.",
+      "It helps if you aim the ball on the green. It does nothing if you do not.",
+      "Three lines rather than one, which some people find easier to square.",
+      "Roll ten putts with it and ten without before you commit to a box.",
+    ],
+    counter:
+      "An alignment aid helps or it distracts, and there is no middle. Ten putts on the mat tells you which.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Cover", value: "Urethane" },
+      { label: "Print", value: "Triple Track" },
+      { label: "Feel", value: "Soft" },
+    ],
+    suits: "Players who line the ball up on the green and want more to line up with.",
+  },
+
+  "callaway-supersoft": {
+    tagline: "The one everyone buys",
+    description:
+      "The best selling ball in Britain, which is usually a warning and here is not. It is soft, it is long for the price, and it does what a seventy percent of golfers actually need.",
+    headline: "Popular for the right reason",
+    marks: ["Low compression", "Soft feel", "Dozen"],
+    notes: [
+      "Low compression, so it works at speeds that a tour ball will not.",
+      "It will not check from a full wedge. Nothing at this price does.",
+      "Half the price of a tour ball, and for a lot of players it scores the same.",
+      "Dozen. Two dozen if your course has water.",
+    ],
+    counter:
+      "If you lose more than three balls a round, the ball is not your problem and the tour ball is not the fix.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Compression", value: "Low" },
+      { label: "Feel", value: "Soft" },
+      { label: "Flight", value: "High and straight" },
+    ],
+    suits: "Mid to high handicaps, and anybody under about ninety miles an hour.",
+  },
+
+  "callaway-supersoft-max": {
+    tagline: "Oversized, and legal",
+    description:
+      "A larger ball, still inside the rules, built to get airborne for players who struggle to. It sits up better in the rough too, which is a benefit nobody markets.",
+    headline: "It gets up when you cannot",
+    marks: ["Oversized", "Conforming", "Dozen"],
+    notes: [
+      "Larger than a standard ball and still legal. Check the conforming list if you want to.",
+      "Easier to launch, which is the whole design.",
+      "It sits up in light rough, which helps more than the launch does.",
+      "If you already flight it high, buy the standard Supersoft.",
+    ],
+    counter:
+      "This is a genuine help for slower speeds and does nothing for anybody else. That is a rare thing to be able to say.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Size", value: "Oversized, conforming" },
+      { label: "Compression", value: "Low" },
+      { label: "Launch", value: "High" },
+    ],
+    suits: "Slower swing speeds who struggle to get the ball airborne.",
+  },
+
+  "callaway-erc-soft": {
+    tagline: "Soft, and still long",
+    description:
+      "Most soft balls give up carry to get the feel. This one gives up less of it than the rest, which puts it in the gap between the Supersoft and a tour ball.",
+    headline: "The gap between the two shelves",
+    marks: ["Soft feel", "Good carry", "Dozen"],
+    notes: [
+      "Softer than a tour ball, longer than most soft balls.",
+      "Ten pounds more than the Supersoft and ten less than a tour ball. The performance sits there too.",
+      "Some greenside check, though not a urethane ball's check.",
+      "Alignment print available. Ask if you want it.",
+    ],
+    counter:
+      "There is a real middle shelf in golf balls and almost nobody shops it. This is the middle shelf.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Feel", value: "Soft" },
+      { label: "Carry", value: "Long for a soft ball" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits: "Players who want soft feel and are not ready to give up carry for it.",
+  },
+
+  "callaway-warbird": {
+    tagline: "Long and cheap",
+    description:
+      "A two piece distance ball priced so that the burn on the seventh does not ruin the round. It will not stop on a green and it has never claimed to.",
+    headline: "It does one thing",
+    marks: ["Two piece", "Low spin", "Dozen"],
+    notes: [
+      "Two piece, low spin, long off the tee.",
+      "No greenside check at all. That is the price of the price.",
+      "Good winter ball. The ground is hard and it releases anyway.",
+      "Buy it by the dozen and stop worrying about the water.",
+    ],
+    counter:
+      "There is no shame in a cheap ball. There is some in losing four expensive ones and blaming the equipment.",
+    specs: [
+      { label: "Count", value: "Dozen" },
+      { label: "Build", value: "Two piece" },
+      { label: "Spin", value: "Low" },
+      { label: "Flight", value: "Long and flat" },
+    ],
+    suits: "Winter golf, high handicaps and courses that swallow golf balls.",
+  },
+
+  "callaway-elyte-driver": {
+    tagline: "The standard head",
+    description:
+      "Neutral shape, high forgiveness, three lofts. It is the head most people leave this shop with and there is nothing dull about being right for most people.",
+    headline: "Right for most people",
+    marks: ["Neutral shape", "Three lofts", "Adjustable hosel"],
+    notes: [
+      "Three lofts. More loft fixes more slices than anybody wants to hear.",
+      "Adjustable hosel, set here so you never need to touch it.",
+      "Neutral. There is no draw bias hidden in this head.",
+      "Shaft first, head second. That is the order that matters.",
+    ],
+    counter:
+      "Everybody asks for the longest driver. The longest one you own is the one you can find afterwards.",
+    specs: [
+      { label: "Loft", value: "9, 10.5 and 12 degrees" },
+      { label: "Hosel", value: "Adjustable, set here" },
+      { label: "Shape", value: "Neutral" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits: "Nearly everybody. Start here and let the monitor move you off it.",
+  },
+
+  "callaway-elyte-triple-diamond-driver": {
+    tagline: "Smaller and lower spinning",
+    description:
+      "A compact head with the spin taken out of it, built for players who already deliver it well and are losing yards to spin rather than to strike. It punishes a miss.",
+    headline: "It punishes a miss",
+    marks: ["Compact head", "Low spin", "Adjustable hosel"],
+    notes: [
+      "Smaller footprint than the standard Elyte, and it looks it at address.",
+      "Lower spinning. If your driver spin is already low this makes it worse.",
+      "Less forgiving off the toe. That is not a flaw, it is the specification.",
+      "We will say no to this head more often than we sell it.",
+    ],
+    counter:
+      "If you are not finding the middle four times in five, this head will cost you yards, not gain them.",
+    specs: [
+      { label: "Loft", value: "8, 9 and 10.5 degrees" },
+      { label: "Head", value: "Compact, low spin" },
+      { label: "Hosel", value: "Adjustable, set here" },
+      { label: "Fitting", value: "Required, not optional" },
+    ],
+    suits: "High speed players losing distance to spin, and nobody else.",
+  },
+
+  "callaway-elyte-fairway": {
+    tagline: "Shallow, and usable",
+    description:
+      "Most fairway woods get hit off a tee and never off the turf. This one sits low enough behind the ball to work from the deck, which is the only reason a fairway wood earns a slot.",
+    headline: "It works off the deck",
+    marks: ["Shallow face", "Three lofts", "Low profile"],
+    notes: [
+      "Three lofts. The 5 wood leaves this shop more often than the 3 and that is not an accident.",
+      "Hit it off the turf in the bay. If it only works off a peg it is a second driver.",
+      "The 7 wood fills the yardage most players cannot fill with a long iron.",
+      "Standard shaft length is long for a lot of people. We measure.",
+    ],
+    counter:
+      "If your 3 wood only ever comes out on a tee, you are carrying fourteen clubs and playing thirteen.",
+    specs: [
+      { label: "Lofts", value: "3, 5 and 7 wood" },
+      { label: "Face", value: "Shallow" },
+      { label: "Use", value: "Off the deck" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits: "Players who need a club that works from the fairway, not just from a peg.",
+  },
+
+  "callaway-elyte-hybrid": {
+    tagline: "Four lofts",
+    description:
+      "Hybrids are bought by number and they should be bought by yardage. Four lofts here, and the right one is whichever fills the gap your long irons have left.",
+    headline: "Buy the gap, not the number",
+    marks: ["Four lofts", "Iron length", "Adjustable"],
+    notes: [
+      "Eighteen to twenty seven degrees. Bring the long iron you are replacing.",
+      "Set at iron length, so lie angle matters and we set it on the bench.",
+      "If your hybrid goes left, it is usually shape and aim, not swing.",
+      "Aim it at a target before you hit anything.",
+    ],
+    counter:
+      "Nobody knows their hybrid yardage. Everybody knows their five iron yardage. Start from the one you know.",
+    specs: [
+      { label: "Lofts", value: "18 to 27 degrees" },
+      { label: "Length", value: "Iron length" },
+      { label: "Lie", value: "Set on the bench" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits: "Anyone with a gap between the longest iron they hit and their fairway wood.",
+  },
+
+  "callaway-apex-ai200-irons": {
+    tagline: "Distance that looks right",
+    description:
+      "A players distance iron with a top line that will not put a good player off. You get the extra carry and you do not have to look down at a shovel to get it.",
+    headline: "The carry without the look",
+    marks: ["Forged face", "Thin top line", "4 to PW"],
+    notes: [
+      "Seven clubs, 4 iron to pitching wedge.",
+      "Stronger lofts than a traditional set. Check the gap to your wedges before you commit.",
+      "Compare it to the Apex CB back to back. Six shots each settles it.",
+      "Lie angle set on the bench before it goes in the bag, at no extra cost.",
+    ],
+    counter:
+      "Strong lofts move the problem to your wedges. We will look at the whole set, not just the seven iron.",
+    specs: [
+      { label: "Set", value: "7 clubs, 4 to PW" },
+      { label: "Face", value: "Forged" },
+      { label: "Lofts", value: "Stronger than traditional" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits: "Players who want another club of carry and will not look at a thick top line.",
+  },
+
+  "callaway-apex-cb-irons": {
+    tagline: "Forged cavity back",
+    description:
+      "Traditional lofts, a compact head and a forged face. It gives you nothing you did not ask for, which is exactly what the people who buy it want from an iron.",
+    headline: "No help you did not ask for",
+    marks: ["Forged", "Compact head", "Traditional lofts"],
+    notes: [
+      "Seven clubs, 4 iron to pitching wedge, steel as standard.",
+      "Traditional lofts, so your gapping stays where it is.",
+      "Not a forgiving iron. We will tell you that before you hit it, not after.",
+      "Shaft matters more here than in any distance iron. Budget the time.",
+    ],
+    counter:
+      "If you are striking it well this iron rewards it. If you are not, it will tell you every hole.",
+    specs: [
+      { label: "Set", value: "7 clubs, 4 to PW" },
+      { label: "Build", value: "Forged cavity back" },
+      { label: "Lofts", value: "Traditional" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits: "Low handicaps, and anyone who has outgrown help they no longer need.",
+  },
+
+  "callaway-opus-wedge": {
+    tagline: "Four grinds",
+    description:
+      "Enough sole options to match a wedge to your turf and your attack angle, which is the single most overlooked fitting in golf. We will narrow it to two in ten minutes.",
+    headline: "One of these four is yours",
+    marks: ["Four grinds", "48 to 60 degrees", "Chrome or black"],
+    notes: [
+      "Four grinds. We narrow it to two in the bay and you pick from there.",
+      "Lofts 48 to 60. Gap from your set pitching wedge upward, never downward.",
+      "A grind that works on links sand does not work on soft parkland.",
+      "Chrome or black. Both wear with use and that is normal.",
+    ],
+    counter:
+      "Nobody walks in asking about grind. Everybody who has been fitted for one asks about it the next time.",
+    specs: [
+      { label: "Loft", value: "48 to 60 degrees" },
+      { label: "Grinds", value: "Four" },
+      { label: "Finish", value: "Chrome or black" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits: "Anyone who plays the same turf most weeks and has never matched a sole to it.",
+  },
+
+  "callaway-jaws-raw-wedge": {
+    tagline: "It rusts on purpose",
+    description:
+      "An unplated face that oxidises in a few weeks and holds spin better for it. It will look terrible by August and it will still be checking, which is the entire deal.",
+    headline: "It will look terrible and work better",
+    marks: ["Raw face", "50 to 60 degrees", "Full groove"],
+    notes: [
+      "The face rusts. That is the design, not a fault, and it will not spread to the shaft.",
+      "More spin in the wet than a plated face, which is where it matters here.",
+      "It looks used within a month. Some people cannot live with that.",
+      "Clean the grooves. A rusty face with mud in it spins less than a clean plated one.",
+    ],
+    counter:
+      "If a rusting wedge is going to bother you in April, buy the Opus in chrome today and save the argument.",
+    specs: [
+      { label: "Loft", value: "50 to 60 degrees" },
+      { label: "Face", value: "Raw, unplated" },
+      { label: "Spin", value: "Higher in the wet" },
+      { label: "Fitting", value: "Recommended" },
+    ],
+    suits: "Players who want spin and do not mind the club looking its age.",
+  },
+
   "ping-i230-irons": {
     tagline: "A cavity that reads like a blade",
     description:

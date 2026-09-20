@@ -47,8 +47,8 @@ export const shelves: Partial<Record<Category, Shelf>> & { all: Shelf } = {
     body: "Cabretta leather wears out. That is the point of it. Buy the size that feels a shade tight on the first hole.",
   },
   accessories: {
-    image: "/images/shop/what-hangs-off-the-bag.jpg",
-    alt: "A glove and a towel clipped to the outside of a bag",
+    image: "/images/shop/a-handful-of-tees.jpg",
+    alt: "A scattered handful of wooden tees lying on cut grass",
     body: "Towels, tools and the small things that decide whether your grooves are clean on the fourteenth. None of it is exciting and all of it matters.",
   },
   headwear: {

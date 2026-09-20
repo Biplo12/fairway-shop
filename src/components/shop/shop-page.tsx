@@ -21,7 +21,7 @@ import { shelves } from "@/content/shelves";
 
 
 /** one full row at xl, where the grid runs four across */
-const PAGE_SIZE = 8;
+const PAGE_SIZE = 16;
 
 export function ShopPage({
   category,
