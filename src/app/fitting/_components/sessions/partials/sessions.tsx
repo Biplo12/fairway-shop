@@ -76,12 +76,12 @@ export function Sessions() {
               </ul>
 
               <Link
-                href={`/fitting?session=${session.slug}#book`}
+                href={`/fitting/${session.slug}`}
                 className="mt-auto inline-flex items-center gap-3 pt-7 text-[0.875rem] uppercase tracking-[0.04em]"
               >
                 <Arrow className="transition-transform duration-200 group-hover:translate-x-1" />
                 <span className="underline underline-offset-4">
-                  Book {session.name.toLowerCase()}
+                  What {session.name.toLowerCase()} covers
                 </span>
               </Link>
             </div>
@@ -111,11 +111,11 @@ export function Sessions() {
               {fullBag.price}
             </span>
             <Link
-              href={`/fitting?session=${fullBag.slug}#book`}
+              href={`/fitting/${fullBag.slug}`}
               className="inline-flex items-center gap-3 text-[0.875rem] uppercase tracking-[0.04em]"
             >
               <Arrow className="transition-transform duration-200 group-hover:translate-x-1" />
-              <span className="underline underline-offset-4">Book the day</span>
+              <span className="underline underline-offset-4">What the day covers</span>
             </Link>
           </div>
         </article>

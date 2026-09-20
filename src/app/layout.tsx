@@ -1,6 +1,7 @@
 import type { Metadata } from "next";
 import { Inter, Instrument_Serif } from "next/font/google";
 import "./globals.css";
+import { site } from "@/content/site";
 import { CartProvider } from "@/components/cart/cart-context";
 import { CartDrawer } from "@/components/cart/cart-drawer";
 import { cn } from "@/utils";
@@ -19,6 +20,8 @@ const instrumentSerif = Instrument_Serif({
 });
 
 export const metadata: Metadata = {
+  /** so the generated og:image and canonical urls come out absolute */
+  metadataBase: new URL(site.url),
   title: {
     default: "FAIRWAY. Golf equipment, fitted properly",
     template: "%s | FAIRWAY",

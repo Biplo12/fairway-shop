@@ -2,7 +2,14 @@ import { BookingForm } from "./booking-form";
 import { Media } from "@/components/ui/media";
 import { bring, fullBag, hours, sessions } from "@/content/fitting";
 
-export function Booking({ selected }: { selected?: string }) {
+import { bookingBody, bookingHeading } from "../constants";
+import type { BookingProps } from "../types";
+
+export function Booking({
+  selected,
+  heading = bookingHeading,
+  body = bookingBody,
+}: BookingProps) {
   const options = [...sessions, fullBag].map((session) => ({
     slug: session.slug,
     name: session.name,
@@ -34,11 +41,10 @@ export function Booking({ selected }: { selected?: string }) {
                 Booking
               </span>
               <h2 className="mt-5 text-[clamp(2rem,3.2vw,3rem)] font-normal leading-[1.05] tracking-[-0.025em] text-white">
-                Take the bay for an hour
+                {heading}
               </h2>
               <p className="mt-4 max-w-[30rem] text-[1.0625rem] leading-[1.55] text-white/80">
-                One bay, one fitter, no queue behind you. Tell us which session
-                and roughly when, and somebody will call to put it in the diary.
+                {body}
               </p>
               <p className="mt-6 text-[0.9375rem] text-white/70">
                 Or ring the studio on{" "}

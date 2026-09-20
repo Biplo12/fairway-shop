@@ -2,7 +2,12 @@ import type { Metadata } from "next";
 import { notFound } from "next/navigation";
 
 import { ShopPage } from "../_components/shop-page";
-import { categoryName, isCategory, shopCategories } from "@/content/products";
+import {
+  categoryName,
+  isCategory,
+  products,
+  shopCategories,
+} from "@/content/products";
 
 export function generateStaticParams() {
   return shopCategories.map((category) => ({ category: category.slug }));
@@ -15,7 +20,17 @@ export async function generateMetadata({
 }): Promise<Metadata> {
   const { category } = await params;
   if (!isCategory(category)) return {};
-  return { title: categoryName(category) };
+  const name = categoryName(category);
+  const shelf = products.filter((product) => product.category === category);
+  const makers = [...new Set(shelf.map((product) => product.brand))];
+  return {
+    title: name,
+    description: `${shelf.length} ${name.toLowerCase()} on the rack from ${makers
+      .slice(0, 4)
+      .join(
+        ", ",
+      )} and more, fitted to the way you play at FAIRWAY near St. Andrews.`,
+  };
 }
 
 export default async function ShopCategory({
