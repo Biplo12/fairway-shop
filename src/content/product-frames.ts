@@ -17,8 +17,8 @@ export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
       alt: "A driver and irons laid out on cut grass, seen from above",
     },
     note: {
-      image: "/images/product/iron-in-hand.jpg",
-      alt: "An iron held up against a black studio background",
+      image: "/images/product/irons-on-black.jpg",
+      alt: "Three irons laid out on black cloth in low studio light",
     },
   },
   balls: {
@@ -27,8 +27,8 @@ export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
       alt: "A single golf ball sitting up on a mown fairway",
     },
     note: {
-      image: "/images/product/reading-the-putt.jpg",
-      alt: "A golfer over a putt on a green, flagstick in the hole",
+      image: "/images/product/ball-at-the-lip.jpg",
+      alt: "A golf ball at rest on the lip of the hole",
     },
   },
   bags: {
@@ -37,14 +37,14 @@ export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
       alt: "A bag standing alone on an empty fairway in morning haze",
     },
     note: {
-      image: "/images/product/irons-in-the-bag.jpg",
-      alt: "Irons standing in a bag at the end of a range mat",
+      image: "/images/product/clubs-in-the-bag.jpg",
+      alt: "Woods and irons standing in a bag, lit against black",
     },
   },
   gloves: {
     band: {
-      image: "/images/product/hands-on-the-grip.jpg",
-      alt: "Two hands set on a grip, the top one in a white glove",
+      image: "/images/product/glove-carrying-clubs.jpg",
+      alt: "A gloved hand holding clubs over a shoulder on the walk in",
     },
     note: {
       image: "/images/product/glove-on-the-grip.jpg",
@@ -53,12 +53,12 @@ export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
   },
   headwear: {
     band: {
-      image: "/images/product/swing-against-the-sky.jpg",
-      alt: "A golfer in a cap at the finish of a swing against open sky",
+      image: "/images/product/links-in-october.jpg",
+      alt: "Two golfers standing out on an open links in autumn light",
     },
     note: {
-      image: "/images/product/mid-swing.jpg",
-      alt: "A golfer at the top of the backswing seen from below",
+      image: "/images/product/cap-over-the-shoulder.jpg",
+      alt: "A golfer in a cap with a club over the shoulder, looking back",
     },
   },
   accessories: {
@@ -67,8 +67,8 @@ export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
       alt: "A driver and irons laid out on cut grass, seen from above",
     },
     note: {
-      image: "/images/product/iron-in-hand.jpg",
-      alt: "An iron held up against a black studio background",
+      image: "/images/product/irons-on-black.jpg",
+      alt: "Three irons laid out on black cloth in low studio light",
     },
   },
 };
