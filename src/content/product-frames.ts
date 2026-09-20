@@ -37,8 +37,8 @@ export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
       alt: "A bag standing alone on an empty fairway in morning haze",
     },
     note: {
-      image: "/images/product/clubs-in-the-bag.jpg",
-      alt: "Woods and irons standing in a bag, lit against black",
+      image: "/images/product/clubs-against-the-bag.jpg",
+      alt: "A driver and irons leaning against a stand bag on cut grass",
     },
   },
   gloves: {
@@ -47,8 +47,8 @@ export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
       alt: "A gloved hand holding clubs over a shoulder on the walk in",
     },
     note: {
-      image: "/images/product/glove-on-the-grip.jpg",
-      alt: "A gloved hand closed around a grip, lit against black",
+      image: "/images/product/pulling-the-glove-on.jpg",
+      alt: "A golfer pulling a white leather glove onto their hand",
     },
   },
   headwear: {
@@ -63,12 +63,12 @@ export const productFrames: Record<Category, { band: Frame; note: Frame }> = {
   },
   accessories: {
     band: {
-      image: "/images/product/a-bag-of-balls-on-the-green.jpg",
-      alt: "A mesh bag of balls spilling onto a practice green",
+      image: "/images/product/a-cap-a-glove-and-a-ball.jpg",
+      alt: "A cap, a glove and two balls lying on the grass beside a driver",
     },
     note: {
-      image: "/images/product/headcovers-in-the-bag.jpg",
-      alt: "Headcovers standing among the irons in a bag",
+      image: "/images/product/driver-glove-and-balls.jpg",
+      alt: "A driver head, a glove and two balls resting on cut grass",
     },
   },
 };
