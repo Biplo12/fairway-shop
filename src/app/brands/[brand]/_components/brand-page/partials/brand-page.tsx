@@ -164,7 +164,7 @@ export function BrandPage({ brand }: { brand: Brand }) {
                       </li>
                     ))}
                   </ul>
-                  <p className="mt-6 border-t border-charcoal/12 pt-5 text-[0.875rem] leading-[1.6] text-charcoal/65">
+                  <p className="mt-8 text-[0.875rem] leading-[1.6] text-charcoal/65">
                     {brand.note}. Anything not on the rack is ordered in and
                     fitted here first.
                   </p>
