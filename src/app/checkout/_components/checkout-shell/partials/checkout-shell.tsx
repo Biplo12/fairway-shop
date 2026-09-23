@@ -15,7 +15,10 @@ export function CheckoutShell({
 }) {
   return (
     <main id="main" className="p-3 md:p-5">
-      <div className="overflow-hidden rounded-card bg-white">
+      {/* overflow-clip, not overflow-hidden: hidden would make this a scroll
+          container and the sticky order summary would stop sticking. Clip
+          rounds the corners without that side effect. */}
+      <div className="overflow-clip rounded-card bg-white">
         <header className="flex flex-wrap items-center justify-between gap-4 bg-charcoal px-5 py-4 text-offwhite md:px-8 md:py-5">
           <Link href="/" className="flex items-center gap-3">
             <Mark compact className="h-5 w-5" />

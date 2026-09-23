@@ -17,7 +17,7 @@ export function OrderSummary({ option }: { option: DeliveryOption }) {
   const needsFitting = lines.some((line) => line.product.fittingRecommended);
 
   return (
-    <div className="px-6 py-10 md:px-10 md:py-12 lg:sticky lg:top-0">
+    <div className="px-6 py-10 md:px-10 md:py-12 lg:sticky lg:top-5">
       <div className="flex items-baseline justify-between gap-6">
         <h2 className="text-[0.75rem] uppercase tracking-[0.16em] text-olive">
           Your order
