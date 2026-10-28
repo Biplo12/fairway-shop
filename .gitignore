@@ -45,3 +45,6 @@ next-env.d.ts
 
 # transient browser-tool output
 /.playwright-mcp
+
+# webp variants, rebuilt by scripts/build-image-variants.mjs
+/public/_img

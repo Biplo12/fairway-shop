@@ -1,0 +1,42 @@
+{
+  "dirs": {
+    "/brands/": 1200,
+    "/images/brands/": 1600,
+    "/images/categories/": 1400,
+    "/images/fitting/": 2000,
+    "/images/products/": 1000
+  },
+  "files": {
+    "/brand/mark-flight.png": 240,
+    "/images/brands/callaway.jpg": 2200,
+    "/images/brands/odyssey.jpg": 2200,
+    "/images/brands/scotty-cameron.jpg": 2200,
+    "/images/brands/srixon.jpg": 2200,
+    "/images/brands/sun-mountain-stand-bag.jpg": 1400,
+    "/images/brands/taylormade.jpg": 2200,
+    "/images/brands/the-rack.jpg": 3200,
+    "/images/editorial/hero-links.jpg": 1688,
+    "/images/fitting/monitor-on-the-mat.jpg": 2400,
+    "/images/fitting/rack-bw.jpg": 3200,
+    "/images/fitting/session-ball-fitting.jpg": 2200,
+    "/images/fitting/session-club-fitting.jpg": 2200,
+    "/images/fitting/session-full-bag.jpg": 2200,
+    "/images/fitting/session-putter-fitting.jpg": 2200,
+    "/images/fitting/session-wedge-gapping.jpg": 2200,
+    "/images/fitting/the-bay.jpg": 2400,
+    "/images/product/a-wood-behind-the-ball.jpg": 2400,
+    "/images/product/ball-at-the-lip.jpg": 2400,
+    "/images/product/cap-over-the-shoulder.jpg": 2400,
+    "/images/product/clubs-against-the-bag.jpg": 2400,
+    "/images/product/driver-and-balls.jpg": 2400,
+    "/images/product/irons-on-black.jpg": 2400,
+    "/images/product/ping-blade-low-on-the-green.jpg": 2340,
+    "/images/product/pulling-the-glove-on.jpg": 2400,
+    "/images/product/two-clubs-on-the-turf.jpg": 2400,
+    "/images/product/wedge-behind-the-ball.jpg": 2400,
+    "/images/products/tour-balls.jpg": 2400,
+    "/images/shop-info/about-backroom.jpg": 2200,
+    "/images/shop-info/about-evening-links.jpg": 3000,
+    "/images/shop-info/contact-counter.jpg": 2400
+  }
+}
